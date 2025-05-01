@@ -483,7 +483,6 @@ C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.AvatarF
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\BaseForm.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Home.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Login.resources
-C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectActivityFeed.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Projects.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Register.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Tasks.resources
@@ -507,3 +506,4 @@ C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.pdb
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.genruntimeconfig.cache
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\ref\OOP.dll
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.MainUser.resources
+C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectReport.resources

@@ -35,11 +35,12 @@ namespace OOP
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Projects));
             projectPanel = new Panel();
+            btnReport = new Button();
             label6 = new Label();
             projectContainer = new Panel();
             panel11 = new Panel();
             comboBox1 = new ComboBox();
-            button3 = new Button();
+            btnDeleteProject = new Button();
             btnCreateProject = new Button();
             sidebar = new FlowLayoutPanel();
             panel4 = new ReaLTaiizor.Controls.Panel();
@@ -85,15 +86,27 @@ namespace OOP
             // 
             projectPanel.BackColor = Color.FromArgb(30, 30, 32);
             projectPanel.BorderStyle = BorderStyle.FixedSingle;
+            projectPanel.Controls.Add(btnReport);
             projectPanel.Controls.Add(label6);
             projectPanel.Controls.Add(projectContainer);
-            projectPanel.Controls.Add(button3);
+            projectPanel.Controls.Add(btnDeleteProject);
             projectPanel.Controls.Add(btnCreateProject);
             projectPanel.Location = new Point(356, 134);
             projectPanel.Margin = new Padding(5, 6, 5, 6);
             projectPanel.Name = "projectPanel";
-            projectPanel.Size = new Size(1325, 128);
+            projectPanel.Size = new Size(1378, 128);
             projectPanel.TabIndex = 10;
+            // 
+            // btnReport
+            // 
+            btnReport.Location = new Point(1153, 28);
+            btnReport.Margin = new Padding(5, 6, 5, 6);
+            btnReport.Name = "btnReport";
+            btnReport.Size = new Size(150, 68);
+            btnReport.TabIndex = 9;
+            btnReport.Text = "Report";
+            btnReport.UseVisualStyleBackColor = true;
+            btnReport.Click += btnReport_Click;
             // 
             // label6
             // 
@@ -138,25 +151,25 @@ namespace OOP
             comboBox1.Text = " Project List";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // button3
+            // btnDeleteProject
             // 
-            button3.Location = new Point(1063, 26);
-            button3.Margin = new Padding(5, 6, 5, 6);
-            button3.Name = "button3";
-            button3.Size = new Size(195, 68);
-            button3.TabIndex = 8;
-            button3.Text = "Xóa Project";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            btnDeleteProject.Location = new Point(974, 28);
+            btnDeleteProject.Margin = new Padding(5, 6, 5, 6);
+            btnDeleteProject.Name = "btnDeleteProject";
+            btnDeleteProject.Size = new Size(138, 68);
+            btnDeleteProject.TabIndex = 8;
+            btnDeleteProject.Text = "Delete";
+            btnDeleteProject.UseVisualStyleBackColor = true;
+            btnDeleteProject.Click += button3_Click;
             // 
             // btnCreateProject
             // 
-            btnCreateProject.Location = new Point(809, 30);
+            btnCreateProject.Location = new Point(791, 28);
             btnCreateProject.Margin = new Padding(5, 6, 5, 6);
             btnCreateProject.Name = "btnCreateProject";
-            btnCreateProject.Size = new Size(195, 68);
+            btnCreateProject.Size = new Size(135, 68);
             btnCreateProject.TabIndex = 7;
-            btnCreateProject.Text = "Tạo Project";
+            btnCreateProject.Text = "Create";
             btnCreateProject.UseVisualStyleBackColor = true;
             btnCreateProject.Click += btnCreateProject_Click;
             // 
@@ -389,7 +402,7 @@ namespace OOP
             // memberPanel
             // 
             memberPanel.AutoScroll = true;
-            memberPanel.Location = new Point(642, 224);
+            memberPanel.Location = new Point(658, 230);
             memberPanel.Margin = new Padding(5, 4, 5, 4);
             memberPanel.Name = "memberPanel";
             memberPanel.Size = new Size(679, 118);
@@ -423,7 +436,7 @@ namespace OOP
             btnAddMember.Image = Properties.Resources.add_White;
             btnAddMember.ImageAlign = ContentAlignment.MiddleLeft;
             btnAddMember.InactiveColor = Color.Transparent;
-            btnAddMember.Location = new Point(642, 84);
+            btnAddMember.Location = new Point(658, 116);
             btnAddMember.Margin = new Padding(5, 6, 5, 6);
             btnAddMember.Name = "btnAddMember";
             btnAddMember.Padding = new Padding(162, 0, 0, 0);
@@ -440,7 +453,7 @@ namespace OOP
             projectName.AutoSize = true;
             projectName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             projectName.ForeColor = SystemColors.ButtonHighlight;
-            projectName.Location = new Point(20, -12);
+            projectName.Location = new Point(16, 0);
             projectName.Margin = new Padding(5, 0, 5, 0);
             projectName.Name = "projectName";
             projectName.Size = new Size(287, 65);
@@ -453,7 +466,7 @@ namespace OOP
             projectRole.AutoSize = true;
             projectRole.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             projectRole.ForeColor = SystemColors.ButtonHighlight;
-            projectRole.Location = new Point(630, -12);
+            projectRole.Location = new Point(658, 10);
             projectRole.Margin = new Padding(5, 0, 5, 0);
             projectRole.Name = "projectRole";
             projectRole.Size = new Size(299, 65);
@@ -614,7 +627,7 @@ namespace OOP
 
         #endregion
         private System.Windows.Forms.Panel panel1;
-        private Button button3;
+        private Button btnDeleteProject;
         private Button btnCreateProject;
         private Panel TopPanel;
         private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
@@ -645,5 +658,6 @@ namespace OOP
         private Panel taskContainer;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnNoti;
+        private Button btnReport;
     }
 }

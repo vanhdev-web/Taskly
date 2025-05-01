@@ -14,6 +14,7 @@ using System.Reflection;
 
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using OOP.Forms;
 
 namespace OOP
 {
@@ -152,7 +153,7 @@ namespace OOP
 
             using (var dbContext = new TaskManagementDBContext())
             {
-               
+
                 Project newProject = new Project
                 {
                     projectName = inputName,
@@ -286,7 +287,7 @@ namespace OOP
                     // Tạo một task mặc định để gán user vào project
                     Task newTask = new Task
                     {
-                      
+
                         taskName = $"Auto-Assigned Task for {newMember}",
                         status = "Unfinished",
                         deadline = DateTime.Now.AddDays(7),
@@ -305,7 +306,7 @@ namespace OOP
                 }
             }
         }
-        
+
 
         private ProjectManager projectManager = new ProjectManager();
         private void UpdateComboBox()
@@ -598,6 +599,13 @@ namespace OOP
                 taskContainer.Controls.Add(taskItem);
                 ApplyMouseEvents(taskItem.TaskPanel);
             }
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ProjectReport feedForm = new ProjectReport();
+            feedForm.StartPosition = FormStartPosition.CenterParent;
+            feedForm.ShowDialog();
         }
     }
 
