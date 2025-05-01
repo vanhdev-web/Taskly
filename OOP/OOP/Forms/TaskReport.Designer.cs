@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label2 = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
             label2 = new System.Windows.Forms.Label();
             SuspendLayout();
@@ -53,8 +54,18 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(1533, 92);
             label2.TabIndex = 8;
-            label2.Text = "Report";
+            label2.Text = "Task Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // listViewActivityLog
+            // 
+            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
+            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.Name = "listViewActivityLog";
+            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
+            listViewActivityLog.TabIndex = 7;
+            listViewActivityLog.UseCompatibleStateImageBehavior = false;
+            listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
             // TaskReport
             // 
@@ -66,13 +77,13 @@
             Controls.Add(listViewActivityLog);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Name = "TaskReport";
-            Text = "Report";
-            Load += TaskReport_Load;
+            Text = "TaskReport";
             ResumeLayout(false);
         }
 
         #endregion
-        private System.Windows.Forms.ListView listViewActivityLog;
+
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView listViewActivityLog;
     }
 }

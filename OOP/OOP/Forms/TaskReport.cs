@@ -87,6 +87,6 @@ namespace OOP.Forms
         private void TaskReport_Load(object sender, EventArgs e)
         {
             
-        }
     }
+}
 }

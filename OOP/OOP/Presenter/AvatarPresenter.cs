@@ -3,7 +3,7 @@ using System.Drawing;
 using System.IO;
 using OOP.Services;
 using System.Windows.Forms;
-using OOP.Models; // Thêm namespace của Model
+using OOP.Model; // Thêm namespace của Model
 
 namespace OOP.Presenter
 {
