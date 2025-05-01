@@ -4,12 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-<<<<<<< HEAD
 using System.Windows.Forms;
 using OOP.Services;
 using User = OOP.Models.User;
 using OOP.Models;
-=======
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +15,7 @@ using OOP.Models; // ModelUser, Meeting
 using ModelUser = OOP.Models.User; // Alias for clarity
 using OOP.Presenter; // AddMeetingPresenter
 
->>>>>>> MinhTuan
+
 namespace OOP.Forms
 {
     public partial class AddMeeting : Form, IAddMeetingView

@@ -1,11 +1,34 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\presenter\\avatarpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\avatarpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\usercontrols\\tasksfullusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\tasksfullusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\usercontrols\\meetingusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -48,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\mainuser\\mainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\mainuser\\mainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\usercontrols\\tasksfullusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -78,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\usercontrols\\hometaskusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\hometaskusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\mainuser\\mainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\mainuser\\mainuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -148,10 +143,6 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -166,18 +157,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\forms\\avaterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\avaterform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\mainuser\\iuserview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\mainuser\\iuserview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -208,10 +187,6 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\customcontrols\\textbox.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\mainuser\\mainuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\mainuser\\mainuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\tasks.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\tasks.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -220,20 +195,8 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\tasks.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\projectreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projectreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\mac\\home\\documents\\github\\taskly\\oop\\oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\oop\\usercontrols\\memberitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -279,10 +242,6 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\migrations\\20250527014334_v12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
-=======
-  "WorkspaceRootPath": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\",
-  "Documents": [],
->>>>>>> MinhTuan
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -290,45 +249,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 301,
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "MainUser.cs [Design]",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\MainUser\\MainUser.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.cs [Design]",
-              "RelativeToolTip": "OOP\\Forms\\MainUser\\MainUser.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:46:03.027Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MainUser.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\MainUser\\MainUser.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.cs",
-              "RelativeToolTip": "OOP\\Forms\\MainUser\\MainUser.cs",
-              "ViewState": "AgIAAC8AAAAAppmZmZkIwDMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:48:10.43Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Projects.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Projects.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Projects.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Projects.cs",
               "RelativeToolTip": "OOP\\Forms\\Projects.cs",
-              "ViewState": "AgIAADAAAAAAIM3MzMzovzYAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAJYBAAAANDMzMzMZwNoBAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T07:52:13.86Z",
               "IsPinned": true,
@@ -336,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "TasksFullUserControl.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\TasksFullUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\TasksFullUserControl.cs",
@@ -347,60 +278,92 @@
               "WhenOpened": "2025-05-25T02:15:30.658Z",
               "IsPinned": true,
               "EditorCaption": ""
-=======
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
->>>>>>> MinhTuan
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddMilestonePresenter.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs",
+              "RelativeDocumentMoniker": "OOP\\Presenter\\AddMilestonePresenter.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs",
+              "RelativeToolTip": "OOP\\Presenter\\AddMilestonePresenter.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:15:34.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AvatarPresenter.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
+              "RelativeDocumentMoniker": "OOP\\Presenter\\AvatarPresenter.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
+              "RelativeToolTip": "OOP\\Presenter\\AvatarPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:12:10.671Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-<<<<<<< HEAD
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Program.cs",
-              "RelativeDocumentMoniker": "OOP\\Program.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Program.cs",
-              "RelativeToolTip": "OOP\\Program.cs",
-              "ViewState": "AgIAAAQAAAA4AAAAAOAwwA8AAAAaAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AddMilestone.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMilestone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T01:05:12.87Z",
+              "WhenOpened": "2025-05-23T08:49:28.575Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskReport.cs [Design]",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\TaskReport.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs [Design]",
-              "RelativeToolTip": "OOP\\Forms\\TaskReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:49:36.527Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MilestoneUserControl.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs",
-              "RelativeDocumentMoniker": "OOP\\Usercontrols\\MilestoneUserControl.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs",
-              "RelativeToolTip": "OOP\\Usercontrols\\MilestoneUserControl.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBYAAAA4AAAAAAAAAA==",
+              "Title": "Addtask.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
+              "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:16:59.815Z",
+              "WhenOpened": "2025-05-01T10:02:16.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
+              "Title": "AddMembers.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
+              "ViewState": "AgIAAAMAAACAmpmZmRkWwAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T08:49:11.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddMeeting.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAMwBoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T08:48:48.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MeetingUserControl.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MeetingUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\MeetingUserControl.cs",
@@ -413,31 +376,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
+              "Title": "MilestoneUserControl.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\MilestoneUserControl.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs",
+              "RelativeToolTip": "OOP\\Usercontrols\\MilestoneUserControl.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T02:16:59.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Program.cs",
+              "RelativeDocumentMoniker": "OOP\\Program.cs",
+              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Program.cs",
+              "RelativeToolTip": "OOP\\Program.cs",
+              "ViewState": "AgIAAAQAAAA4AAAAAOAwwA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T01:05:12.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MeetingUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MeetingUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\MeetingUserControl.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MeetingUserControl.cs [Design]",
               "RelativeToolTip": "OOP\\Usercontrols\\MeetingUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:17:28.217Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-25T02:17:28.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "MilestoneUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\MilestoneUserControl.cs",
               "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.cs [Design]",
               "RelativeToolTip": "OOP\\Usercontrols\\MilestoneUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T02:16:53.287Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-25T02:16:53.287Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "Projectmanager.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\Projectmanager.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\Projectmanager.cs",
@@ -445,12 +431,11 @@
               "RelativeToolTip": "OOP\\Services\\Projectmanager.cs",
               "ViewState": "AgIAAEYAAAAAAQAAAEAmwFkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:54:10.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T08:54:10.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "TaskManager.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\TaskManager.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\TaskManager.cs",
@@ -458,12 +443,11 @@
               "RelativeToolTip": "OOP\\Services\\TaskManager.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAswDsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-24T08:17:09.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-24T08:17:09.012Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\UserService.cs",
@@ -471,38 +455,11 @@
               "RelativeToolTip": "OOP\\Services\\UserService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:54:20.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T08:54:20.636Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TaskReport.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\TaskReport.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
-              "RelativeToolTip": "OOP\\Forms\\TaskReport.cs",
-              "ViewState": "AgIAACEAAADANDMzM/MmwEgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T09:51:52.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Addtask.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
-              "ViewState": "AgIAACIBAAAAwJqZmZnRvywBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T10:02:16.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Addtask.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
@@ -510,17 +467,6 @@
               "RelativeToolTip": "OOP\\Forms\\Addtask.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-01T04:39:58.035Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ProjectReport.cs [Design]",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\ProjectReport.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs [Design]",
-              "RelativeToolTip": "OOP\\Forms\\ProjectReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T00:58:40.249Z"
             },
             {
               "$type": "Document",
@@ -532,18 +478,6 @@
               "RelativeToolTip": "OOP\\Usercontrols\\TasksFullUserControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-25T02:15:25.049Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProjectReport.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\ProjectReport.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs",
-              "RelativeToolTip": "OOP\\Forms\\ProjectReport.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAcwIYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T01:01:15.388Z"
             },
             {
               "$type": "Document",
@@ -559,7 +493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\User.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\User.cs",
@@ -571,7 +505,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Tasks.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.cs",
@@ -582,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "HomeTaskUserControl.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\HomeTaskUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeTaskUserControl.cs",
@@ -595,7 +529,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "HomeTaskUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\HomeTaskUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeTaskUserControl.cs",
@@ -606,7 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "TaskManagementDBContext.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\TaskManagementDBContext.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\TaskManagementDBContext.cs",
@@ -618,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "ActivityLog.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\ActivityLog.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\ActivityLog.cs",
@@ -630,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "MeetingMemberManagement.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\MeetingMemberManagement.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\MeetingMemberManagement.cs",
@@ -642,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "MilestoneMemberManagement.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\MilestoneMemberManagement.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\MilestoneMemberManagement.cs",
@@ -654,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 27,
               "Title": "Notification.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\Notification.cs",
@@ -666,7 +600,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\Task.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\Task.cs",
@@ -678,7 +612,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 28,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Models\\Project.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\Project.cs",
@@ -690,7 +624,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "HomeProjectUserControl.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeProjectUserControl.cs",
@@ -701,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "AddMilestone.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.cs",
@@ -712,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Home.cs",
@@ -723,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Home.cs",
@@ -735,7 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "AddMeeting.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
@@ -746,7 +680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "AddMembers.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
@@ -758,18 +692,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 36,
-              "Title": "Home.Designer.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Home.Designer.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Home.Designer.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Home.Designer.cs",
-              "RelativeToolTip": "OOP\\Forms\\Home.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:24:06.413Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
               "Title": "Projects.Designer.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Projects.Designer.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Projects.Designer.cs",
@@ -781,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Login.cs",
@@ -792,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "Projects.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Projects.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Projects.cs",
@@ -803,18 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AvaterForm.cs [Design]",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AvaterForm.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AvaterForm.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AvaterForm.cs [Design]",
-              "RelativeToolTip": "OOP\\Forms\\AvaterForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:36:31.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 39,
               "Title": "Tasks.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.cs",
@@ -826,31 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "IUserView.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\IUserView.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\MainUser\\IUserView.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\IUserView.cs",
-              "RelativeToolTip": "OOP\\Forms\\MainUser\\IUserView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T04:45:51.223Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AddMeeting.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAMAtwAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:48:48.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 40,
               "Title": "Register.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Register.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Register.cs",
@@ -861,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 41,
               "Title": "BaseForm.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\BaseForm.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\BaseForm.cs",
@@ -872,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 42,
               "Title": "BaseForm.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\BaseForm.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\BaseForm.cs",
@@ -884,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 43,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Login.cs",
@@ -896,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 45,
               "Title": "Textbox.resx",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\CustomControls\\Textbox.resx",
               "RelativeDocumentMoniker": "OOP\\CustomControls\\Textbox.resx",
@@ -907,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 44,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "OOP\\Properties\\Resources.resx",
@@ -918,20 +805,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "MainUser.Designer.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.Designer.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\MainUser\\MainUser.Designer.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.Designer.cs",
-              "RelativeToolTip": "OOP\\Forms\\MainUser\\MainUser.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-01T03:54:07.826Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 46,
               "Title": "Tasks.resx",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Tasks.resx",
               "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.resx",
@@ -942,7 +816,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 47,
               "Title": "Tasks.Designer.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Tasks.Designer.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.Designer.cs",
@@ -954,7 +828,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 59,
               "Title": "20250527014334_v12.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Migrations\\20250527014334_v12.cs",
               "RelativeDocumentMoniker": "OOP\\Migrations\\20250527014334_v12.cs",
@@ -966,19 +840,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "ProjectReport.Designer.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.Designer.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\ProjectReport.Designer.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.Designer.cs",
-              "RelativeToolTip": "OOP\\Forms\\ProjectReport.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T02:27:34.027Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 48,
               "Title": "Register.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\Register.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Register.cs",
@@ -990,7 +852,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 52,
               "Title": "TaskManagementDBContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Migrations\\TaskManagementDBContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "OOP\\Migrations\\TaskManagementDBContextModelSnapshot.cs",
@@ -1002,7 +864,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 51,
               "Title": "20250526085700_v11.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Migrations\\20250526085700_v11.cs",
               "RelativeDocumentMoniker": "OOP\\Migrations\\20250526085700_v11.cs",
@@ -1014,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 53,
               "Title": "20250526085425_v12.cs",
               "DocumentMoniker": "C:\\Users\\dovie\\OneDrive\\Desktop\\DesktopFinal\\OOP\\OOP\\Migrations\\20250526085425_v12.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Users\\dovie\\OneDrive\\Desktop\\DesktopFinal\\OOP\\OOP\\Migrations\\20250526085425_v12.cs",
@@ -1026,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 50,
               "Title": "ActivityLogService.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\ActivityLogService.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\ActivityLogService.cs",
@@ -1038,7 +900,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 54,
               "Title": "IActivityLogService.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\IActivityLogService.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\IActivityLogService.cs",
@@ -1050,7 +912,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 49,
               "Title": "MemberItem.cs [Design]",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Usercontrols\\MemberItem.cs",
               "RelativeDocumentMoniker": "OOP\\Usercontrols\\MemberItem.cs",
@@ -1061,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 57,
               "Title": "20250525013533_v10.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Migrations\\20250525013533_v10.cs",
               "RelativeDocumentMoniker": "OOP\\Migrations\\20250525013533_v10.cs",
@@ -1073,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 58,
               "Title": "20250525012529_v9.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Migrations\\20250525012529_v9.cs",
               "RelativeDocumentMoniker": "OOP\\Migrations\\20250525012529_v9.cs",
@@ -1085,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 56,
               "Title": "AddMilestone.Designer.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.Designer.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.Designer.cs",
@@ -1097,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 55,
               "Title": "NotificationManager.cs",
               "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Services\\NotificationManager.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\NotificationManager.cs",
@@ -1106,34 +968,6 @@
               "ViewState": "AgIAALwAAAAAAAAAAAAswMMAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-23T08:53:58.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "AddMilestone.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMilestone.cs",
-              "ViewState": "AgIAAHcAAAAAAAAAAAAcwI0AAACLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:49:28.575Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "AddMembers.cs",
-              "DocumentMoniker": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
-              "ToolTip": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGQAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T08:49:11.414Z"
-=======
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
->>>>>>> MinhTuan
             }
           ]
         },

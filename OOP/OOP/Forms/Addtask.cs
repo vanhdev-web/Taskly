@@ -5,6 +5,8 @@ using System.Windows.Forms;
 using OOP.Models; // Ensure this points to your Models namespace for Task, Project, User
 using ModelUser = OOP.Models.User; // Alias for clarity
 using OOP.Presenter; // AddtaskPresenter
+using System.Linq; // Ensure LINQ is available for queries
+
 
 namespace OOP.Forms
 {
@@ -61,7 +63,6 @@ namespace OOP.Forms
             cbbSelectProject.Items.Clear(); // [cite: 8]
             foreach (string projectName in projectNames) // [cite: 9]
             {
-<<<<<<< HEAD
                 // giả sử có thuộc tính adminId trong form này
 
                 // lấy danh sách project có adminid phù hợp
@@ -127,9 +128,8 @@ namespace OOP.Forms
                     }
 
                 }
-=======
+
                 cbbSelectProject.Items.Add(projectName); // [cite: 9]
->>>>>>> MinhTuan
             }
         }
 

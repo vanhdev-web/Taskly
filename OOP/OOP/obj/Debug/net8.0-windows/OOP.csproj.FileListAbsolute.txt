@@ -682,3 +682,5 @@ C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Main
 C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectReport.resources
 C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.TaskReport.resources
 >>>>>>> MinhTuan
+C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.Addmember.resources
+C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.Addtask.resources

@@ -5,13 +5,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using Newtonsoft.Json;
-
 using System.IO;
 using System.Xml;
 using OOP.Usercontrols;
 using System.Reflection;
-
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using OOP.Forms;
@@ -29,16 +26,6 @@ namespace OOP
 
             LoadProjectsFromFile();
             UpdateComboBox();
-
-        }
-
-
-        private void SaveProjectsToFile()
-        {
-            string filePath = "projects.json";
-            string json = JsonConvert.SerializeObject(projects, Newtonsoft.Json.Formatting.Indented);
-            File.WriteAllText(filePath, json);
-            MessageBox.Show("Dữ liệu đã được lưu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }
 
@@ -485,7 +472,7 @@ namespace OOP
                     {
                         selectedProject.projectDescription = description.Text; // Cập nhật mô tả
 
-                        SaveProjectsToFile(); // Lưu vào file JSON
+                        //SaveProjectsToFile(); // Lưu vào file JSON
                         MessageBox.Show("Mô tả đã được lưu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
