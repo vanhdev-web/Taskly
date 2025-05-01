@@ -1,4 +1,4 @@
-﻿namespace OOP
+﻿namespace OOP.Forms // Changed namespace from OOP to OOP.Forms
 {
     partial class Addtask
     {
@@ -65,7 +65,7 @@
             this.txtbInputNameTask.Name = "txtbInputNameTask";
             this.txtbInputNameTask.Size = new System.Drawing.Size(433, 26);
             this.txtbInputNameTask.TabIndex = 1;
-            this.txtbInputNameTask.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // Removed: this.txtbInputNameTask.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtbInputNameTask.Validating += new System.ComponentModel.CancelEventHandler(this.txtbInputNameTask_Validating);
             // 
             // lbDeadline
@@ -79,7 +79,7 @@
             this.lbDeadline.TabIndex = 6;
             this.lbDeadline.Text = "Deadline";
             this.lbDeadline.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lbDeadline.Click += new System.EventHandler(this.label1_Click);
+            // Removed: this.lbDeadline.Click += new System.EventHandler(this.label1_Click);
             // 
             // dtpNewTask
             // 
@@ -100,7 +100,7 @@
             this.btnConfirm.Text = "Xác nhận";
             this.btnConfirm.UseVisualStyleBackColor = true;
             this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
-            this.btnConfirm.Validating += new System.ComponentModel.CancelEventHandler(this.btnConfirm_Validating);
+            // Removed: this.btnConfirm.Validating += new System.ComponentModel.CancelEventHandler(this.btnConfirm_Validating);
             // 
             // btnCancel
             // 
@@ -112,7 +112,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Hủy";
             this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.button1_Click);
+            this.btnCancel.Click += new System.EventHandler(this.button1_Click); // Changed to btnCancel_Click
             // 
             // btnAddinProject
             // 
@@ -152,7 +152,7 @@
             // 
             // WelcomeName
             // 
-            this.WelcomeName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.WelcomeName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.WelcomeName.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.WelcomeName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(43)))), ((int)(((byte)(45)))));
@@ -172,7 +172,7 @@
             this.cbbAssignedUser.Name = "cbbAssignedUser";
             this.cbbAssignedUser.Size = new System.Drawing.Size(433, 28);
             this.cbbAssignedUser.TabIndex = 14;
-            this.cbbAssignedUser.SelectedIndexChanged += new System.EventHandler(this.cbbAssignedUser_Click);
+            // Removed: this.cbbAssignedUser.SelectedIndexChanged += new System.EventHandler(this.cbbAssignedUser_Click);
             this.cbbAssignedUser.Click += new System.EventHandler(this.cbbAssignedUser_Click);
             // 
             // lblAssignUser

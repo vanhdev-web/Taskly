@@ -1,7 +1,8 @@
 ﻿using OOP.Models;
 using System;
+using System.Windows.Forms;
 
-namespace OOP
+namespace OOP.Forms // Changed namespace from OOP to OOP.Forms
 {
     partial class Addmember
     {
@@ -114,7 +115,7 @@ namespace OOP
             // 
             // WelcomeName
             // 
-            this.WelcomeName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.WelcomeName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -156,5 +157,6 @@ namespace OOP
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel TopPanel;
         private System.Windows.Forms.Label WelcomeName;
+        public System.Windows.Forms.TextBox txtUsername;
     }
 }

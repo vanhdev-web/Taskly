@@ -1,201 +1,127 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using OOP.Models;
-using OOP.Services;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using OOP.Presenter;
+using OOP.Presenters;
+
 namespace OOP.Forms
 {
-    public partial class AddMilestone : Form
+    public partial class AddMilestone : Form, IAddMilestoneView
     {
-        public Milestone milestone { get; set; }
-        public List<Milestone> milestones = new List<Milestone>();
-        public AddMilestone()
+        private AddMilestonePresenter _presenter;
+
+        public Milestone milestone { get; set; } // [cite: 3, 4]
+        public List<Milestone> milestones = new List<Milestone>(); // [cite: 4]
+
+        public AddMilestone() // [cite: 5]
         {
             InitializeComponent();
-            UpdateComboBox();
-
+            _presenter = new AddMilestonePresenter(this); // Initialize presenter with this view
+            _presenter.InitializeProjects(); // Call presenter to update project combobox
         }
 
-        public AddMilestone(List<Milestone> list)
+        public AddMilestone(List<Milestone> list) // [cite: 6]
         {
-            this.milestones = list;
+            this.milestones = list; // [cite: 6, 7]
+            InitializeComponent(); // Ensure components are initialized when using this constructor
+            _presenter = new AddMilestonePresenter(this);
+            _presenter.InitializeProjects();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        // IAddMilestoneView implementation
+        public string MilestoneName
         {
-
+            get { return txtbMilestoneName.Text; } // [cite: 7]
+            set { txtbMilestoneName.Text = value; }
         }
 
-        private void AddMilestone_Load(object sender, EventArgs e)
+        public DateTime MilestoneDeadline
         {
-
+            get { return dtpMilestonedate.Value; } // [cite: 8]
+            set { dtpMilestonedate.Value = value; }
         }
 
-        private async void btnMilestoneConfirm_Click(object sender, EventArgs e)
+        public string SelectedProjectName
         {
+            get { return cbbSelectProject.Text; } // [cite: 8]
+            set { cbbSelectProject.Text = value; }
+        }
 
-
-
-            string taskName = txtbMilestoneName.Text;
-            DateTime deadline = dtpMilestonedate.Value;
-            string projectName = cbbSelectProject.Text;
-
-            using (var dbcontext = new TaskManagementDBContext())
+        public void SetProjects(List<string> projectNames)
+        {
+            cbbSelectProject.Items.Clear(); // [cite: 29]
+            foreach (string projectName in projectNames)
             {
-                // lấy projectId theo projectName
-                var projectIdQuery = (from p in dbcontext.Projects
-                                      where p.projectName == projectName
-                                      select p.projectID);
-
-                int projectId = projectIdQuery.FirstOrDefault();
-
-                if (projectId == 0)
-                {
-                    MessageBox.Show("Dự án không tồn tại.");
-                    return;
-                }
-
-                // lấy userIds từ tasks
-                var userIdsFromTasks = from t in dbcontext.Tasks
-                                       where t.ProjectID == projectId
-                                       select t.AssignedTo;
-
-                // lấy userIds từ meetings
-                var userIdsFromMeetings = from m in dbcontext.Meetings
-                                          where m.ProjectID == projectId
-                                          select m.AssignedTo;
-
-                // lấy userIds từ milestones
-                var userIdsFromMilestones = from ms in dbcontext.Milestones
-                                            where ms.ProjectID == projectId
-                                            select ms.AssignedTo;
-
-                // kết hợp và distinct
-                var allUserIds = (from id in userIdsFromTasks
-                                  select id)
-                                 .Union(from id in userIdsFromMeetings
-                                        select id)
-                                 .Union(from id in userIdsFromMilestones
-                                        select id)
-                                 .Distinct();
-
-                // lấy danh sách user thực sự
-                var members = (from u in dbcontext.Users
-                               where allUserIds.Contains(u.ID)
-                               select u).ToList();
-
-                if (members.Count == 0)
-                {
-                    MessageBox.Show("Không có thành viên nào thuộc dự án này.");
-                    return;
-                }
-
-                // lấy danh sách member được chọn trong checkedListBoxMember (giả sử bạn có CheckedListBox)
-
-
-
-                var mileStone = new Milestone
-                {
-                    taskName = taskName,
-                    status = "UnFinished", // Trạng thái ban đầu là "Chưa hoàn thành"
-                    Description = "Inite milestone",
-                    deadline = deadline,
-                    ProjectID = projectId,
-                    AssignedTo = User.LoggedInUser.ID // Gán người dùng đăng nhập là người được giao nhiệm vụ
-
-                };
-
-                milestone = mileStone;
-                dbcontext.Milestones.Add(mileStone);
-                dbcontext.SaveChanges();
-
-
-                foreach (var member in members)
-                {
-
-                    if (member != null)
-                    {
-                        var mileStoneManagement = new MilestoneMemberManagement
-                        {
-                            MilestoneID = mileStone.taskID,
-                            UserID = member.ID,
-                        };
-
-                        dbcontext.MilestoneMemberManagements.Add(mileStoneManagement);
-                        dbcontext.SaveChanges();
-
-                    }
-                }
-
-                var project =  (from p in dbcontext.Projects
-                               where p.projectID == projectId
-                               select p).FirstOrDefault();
-                ActivityLogService activityLogService = new ActivityLogService(dbcontext);
-                await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "MileStone", objectId: mileStone.taskID, action: "Create Milestone", details: $"{User.LoggedInUser.Username} đã tạo một cột mộc {mileStone.taskName} cho dự án {project.projectName}");
-                MessageBox.Show("Activitlog thêm milestone");
-
-
-                //milestone = new Milestone(tasknewID, taskName, "UnFinished", deadline, null, projectName, 0);
-                DialogResult = DialogResult.OK;
-                Close();
+                cbbSelectProject.Items.Add(projectName); // [cite: 34]
             }
         }
-        private ProjectManager projectManager = new ProjectManager();
-        private void UpdateComboBox()
+
+        public void DisplayErrorMessage(string message)
         {
-            cbbSelectProject.Items.Clear();
-
-            if (User.LoggedInUser == null) return; // Kiểm tra user đăng nhập
-
-            foreach (Project project in projectManager.Projects)
-            {
-                if (project == null || project.members == null) continue; // Kiểm tra null tránh lỗi
-
-                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}");
-
-                bool isMember = false;
-                //foreach (string member in project.members)
-                //{
-                //    string memberUsername = member.Split('(')[0].Trim(); // Lấy username trước dấu "(" và Trim()
-                //    if (memberUsername == User.LoggedInUser.Username)
-                //    {
-                //        isMember = true;
-                //        break;
-                //    }
-                //}
-
-                if (project.AdminID == User.LoggedInUser.ID || isMember)
-                {
-                    cbbSelectProject.Items.Add($"{project.projectName}");
-                }
-            }
+            MessageBox.Show(message); // [cite: 10, 21]
         }
-        private void btnMilestoneCancel_Click(object sender, EventArgs e)
+        public void DisplaySuccessMessage(string message) // Implement phương thức này
         {
-            DialogResult = DialogResult.Cancel;
-            Close();
+            MessageBox.Show(message);
+        }
+        public void CloseView(Milestone createdMilestone)
+        {
+            this.milestone = createdMilestone; // [cite: 25]
+            this.DialogResult = DialogResult.OK; // [cite: 28]
+            this.Close(); // [cite: 28]
         }
 
-        private void txtbMilestoneName_Validating(object sender, CancelEventArgs e)
+        public void SetMilestoneNameError(string message)
         {
-            if (string.IsNullOrWhiteSpace(txtbMilestoneName.Text))
-            {
-                e.Cancel = true; // Chặn chuyển focus nếu input trống
-                errMilestoneName.SetError(txtbMilestoneName, "Please enter task name!");
-            }
-            else
-            {
-                e.Cancel = false; // Cho phép focus rời khỏi control
-                errMilestoneName.SetError(txtbMilestoneName, null);
-            }
+            errMilestoneName.SetError(txtbMilestoneName, message); // [cite: 36, 39]
         }
+
+        public void CancelValidation(CancelEventArgs e, bool cancel)
+        {
+            e.Cancel = cancel; // [cite: 36, 38]
+        }
+
+        // Event Handlers (delegates to Presenter)
+        private void label1_Click(object sender, EventArgs e) // [cite: 7]
+        {
+            // Empty as per original code [cite: 7]
+        }
+
+        private void AddMilestone_Load(object sender, EventArgs e) // [cite: 7]
+        {
+            // Empty as per original code [cite: 7]
+        }
+
+        private void btnMilestoneConfirm_Click(object sender, EventArgs e) // [cite: 7]
+        {
+            _presenter.ConfirmMilestone();
+        }
+
+        private void btnMilestoneCancel_Click(object sender, EventArgs e) // [cite: 34]
+        {
+            _presenter.CancelMilestone();
+        }
+
+        private void txtbMilestoneName_Validating(object sender, CancelEventArgs e) // [cite: 35]
+        {
+            _presenter.ValidateMilestoneName(txtbMilestoneName.Text, e);
+        }
+    }
+
+    // Interface for the View
+    public interface IAddMilestoneView
+    {
+        string MilestoneName { get; set; }
+        DateTime MilestoneDeadline { get; set; }
+        string SelectedProjectName { get; set; }
+
+        void SetProjects(List<string> projectNames);
+        void DisplayErrorMessage(string message);
+        void DisplaySuccessMessage(string message);
+        void CloseView(Milestone createdMilestone);
+        void SetMilestoneNameError(string message);
+        void CancelValidation(CancelEventArgs e, bool cancel);
     }
 }

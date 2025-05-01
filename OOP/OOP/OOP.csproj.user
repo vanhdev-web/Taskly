@@ -16,9 +16,6 @@
     <Compile Update="Forms\Addtask.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\AvaterForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Forms\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
