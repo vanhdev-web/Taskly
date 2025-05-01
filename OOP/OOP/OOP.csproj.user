@@ -40,6 +40,9 @@
     <Compile Update="Forms\Register.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\TaskReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\Tasks.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -507,3 +507,4 @@ C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.genrunt
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\ref\OOP.dll
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.MainUser.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectReport.resources
+C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.TaskReport.resources

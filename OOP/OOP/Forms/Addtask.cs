@@ -87,13 +87,19 @@ namespace OOP
                                   .Where(u => userIds.Contains(u.ID))
                                   .ToList();
 
-                    // đổ username vào combobox
+                    // Add "Myself" first
                     cbbAssignedUser.Items.Clear();
-                    cbbAssignedUser.Items.Add("Myself"); 
+                    cbbAssignedUser.Items.Add("Myself");
+
+                    // Then add all other users except the logged-in user
                     foreach (var user in users)
                     {
-                        cbbAssignedUser.Items.Add(user.Username);
+                        if (user.ID != User.LoggedInUser.ID) // skip logged-in user here
+                        {
+                            cbbAssignedUser.Items.Add(user.Username);
+                        }
                     }
+
                 }
             }
         }
