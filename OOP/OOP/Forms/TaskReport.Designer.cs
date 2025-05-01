@@ -67,6 +67,7 @@
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Name = "TaskReport";
             Text = "Report";
+            Load += TaskReport_Load;
             ResumeLayout(false);
         }
 
