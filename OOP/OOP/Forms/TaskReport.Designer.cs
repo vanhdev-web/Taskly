@@ -53,7 +53,7 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(1533, 92);
             label2.TabIndex = 8;
-            label2.Text = "Task Report";
+            label2.Text = "Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // TaskReport
