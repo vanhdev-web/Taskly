@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label2 = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
+            label2 = new System.Windows.Forms.Label();
             SuspendLayout();
+            // 
+            // listViewActivityLog
+            // 
+            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
+            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.Name = "listViewActivityLog";
+            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
+            listViewActivityLog.TabIndex = 7;
+            listViewActivityLog.UseCompatibleStateImageBehavior = false;
+            listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
             // label2
             // 
@@ -46,16 +56,6 @@
             label2.Text = "Task Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // listViewActivityLog
-            // 
-            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
-            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
-            listViewActivityLog.Name = "listViewActivityLog";
-            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
-            listViewActivityLog.TabIndex = 7;
-            listViewActivityLog.UseCompatibleStateImageBehavior = false;
-            listViewActivityLog.View = System.Windows.Forms.View.List;
-            // 
             // TaskReport
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -66,13 +66,12 @@
             Controls.Add(listViewActivityLog);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Name = "TaskReport";
-            Text = "TaskReport";
+            Text = "Report";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListView listViewActivityLog;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
 using OOP.Models;
 using OOP.Services;
+using OOP.Forms;
 
 namespace OOP.Usercontrols
 {
@@ -23,12 +24,22 @@ namespace OOP.Usercontrols
         {
             get { return panel9; } // panelContainer là tên Panel bên trong MeetingUserControl
         }
+        private void TaskPanel_Click(object sender, EventArgs e)
+        {
+            TaskReport report = new TaskReport(meeting.taskID);
+            report.ShowDialog();
+        }
 
         public MeetingUserControl(Meeting meeting)
         {
             InitializeComponent();
             this.meeting = meeting;
             UpdateUI();
+            // Bắt sự kiện click
+            this.Click += TaskPanel_Click;
+            panel9.Click += TaskPanel_Click;
+            taskContent.Click += TaskPanel_Click;
+            taskDeadline.Click += TaskPanel_Click;
         }
 
         private void UpdateUI()
@@ -54,36 +65,37 @@ namespace OOP.Usercontrols
 
         private async void checkBox_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(meeting.status);
-            using(var dbcontext = new TaskManagementDBContext())
+            using (var dbcontext = new TaskManagementDBContext())
             {
-                if (meeting.status == "Finished")
-                {
-                    meeting.status = "UnFinished"; // Cập nhật trạng thái Meeting gốc
-                }
-                else
-                {
-                    meeting.status = "Finished"; // Cập nhật trạng thái Meeting gốc
-                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
-                    await activityLogService.LogActivityAsync(userId: null, objectType: "Task", objectId: meeting.taskID, action: "Finish Task", details: $"{User.LoggedInUser.Username} đã tham gia cuộc họp {meeting.taskName} lúc {DateTime.Now}");
-                    MessageBox.Show("Activitlog hoàn thành task");
-                }
+                bool isFinished = meeting.status == "Finished";
+
+                // Toggle trạng thái task
+                meeting.status = isFinished ? "Unfinished" : "Finished";
+
+                // Cập nhật DB
                 dbcontext.Meetings.Attach(meeting);
                 dbcontext.Entry(meeting).State = EntityState.Modified;
                 dbcontext.SaveChanges();
 
+                // Nếu chuyển thành Finished thì ghi log
+                if (!isFinished)
+                {
+                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
+                    await activityLogService.LogActivityAsync(
+                        userId: User.LoggedInUser.ID,
+                        objectType: "Task",
+                        objectId: meeting.taskID,
+                        action: "Finish Task",
+                        details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{meeting.taskName}\" lúc {DateTime.Now}"
+                    );
+
+
+                }
             }
-            MessageBox.Show(meeting.status);
 
             UpdateButtonState();
             OnMeetingFinished?.Invoke(this, meeting);
             TaskManager.GetInstance().UpdateTask(meeting);
-
-            // Chỉ gửi thông báo nếu trạng thái thực sự thay đổi thành "Finished"
-            //if (meeting.status == "Finished")
-            //{
-            //    NotificationManager.Instance.SendTaskUpdateNotification(User.GetLoggedInUserName(), meeting.taskName, meeting.status);
-            //}
         }
 
 

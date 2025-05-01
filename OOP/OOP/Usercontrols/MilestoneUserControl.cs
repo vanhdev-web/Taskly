@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
+using OOP.Forms;
 using OOP.Models;
 using OOP.Services;
 
@@ -17,12 +18,21 @@ namespace OOP.Usercontrols
         {
             get { return panel9; } // panelContainer là tên Panel bên trong TaskControl
         }
-
+        private void TaskPanel_Click(object sender, EventArgs e)
+        {
+            TaskReport report = new TaskReport(milestone.taskID);
+            report.ShowDialog();
+        }
         public MilestoneUserControl(Milestone milestone)
         {
             InitializeComponent();
             this.milestone = milestone;
             UpdateUI();
+            // Bắt sự kiện click
+            this.Click += TaskPanel_Click;
+            panel9.Click += TaskPanel_Click;
+            taskContent.Click += TaskPanel_Click;
+            taskDeadline.Click += TaskPanel_Click;
         }
 
         private void UpdateUI()
@@ -49,32 +59,34 @@ namespace OOP.Usercontrols
         {
             using (var dbcontext = new TaskManagementDBContext())
             {
-                if (milestone.status == "Finished")
-                {
-                    milestone.status = "UnFinished"; // Cập nhật trạng thái Meeting gốc
-                }
-                else
-                {
-                    milestone.status = "Finished"; // Cập nhật trạng thái Meeting gốc
-                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
-                    await activityLogService.LogActivityAsync(userId: null, objectType: "Task", objectId: milestone.taskID, action: "Finish Task", details: $"{User.LoggedInUser} đã hoàn thành cột mốc {milestone.taskName} lúc {DateTime.Now}");
-                    MessageBox.Show("Activitlog hoàn thành milestone");
-                }
+                bool isFinished = milestone.status == "Finished";
+
+                // Toggle trạng thái task
+                milestone.status = isFinished ? "Unfinished" : "Finished";
+
+                // Cập nhật DB
                 dbcontext.Milestones.Attach(milestone);
                 dbcontext.Entry(milestone).State = EntityState.Modified;
                 dbcontext.SaveChanges();
 
+                // Nếu chuyển thành Finished thì ghi log
+                if (!isFinished)
+                {
+                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
+                    await activityLogService.LogActivityAsync(
+                        userId: User.LoggedInUser.ID,
+                        objectType: "Task",
+                        objectId: milestone.taskID,
+                        action: "Finish Task",
+                        details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{milestone.taskName}\" lúc {DateTime.Now}"
+                    );
+
+
+                }
             }
 
             UpdateButtonState();
             OnTaskFinished?.Invoke(this, milestone);
-            TaskManager.GetInstance().UpdateTask(milestone);
-
-            // Chỉ gửi thông báo nếu trạng thái thực sự thay đổi thành "Finished"
-            //if (milestone.status == "Finished")
-            //{
-            //    NotificationManager.Instance.SendTaskUpdateNotification(User.GetLoggedInUserName(), milestone.taskName, milestone.status);
-            //}
         }
     }
 }
