@@ -4,17 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic.ApplicationServices;
-using OOP.Models;
 using OOP.Services;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using User = OOP.Models.User;
-
+using OOP.Models;
 namespace OOP.Forms
 {
     public partial class AddMeeting : Form

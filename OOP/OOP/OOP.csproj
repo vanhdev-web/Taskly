@@ -55,6 +55,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="Data\" />
+    <Folder Include="Presenter\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %283%29.jpg" />
