@@ -47,45 +47,46 @@ namespace OOP.Usercontrols
             
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private async void checkBox_Click(object sender, EventArgs e)
         {
-           using (var dbcontext = new TaskManagementDBContext())
+            using (var dbcontext = new TaskManagementDBContext())
             {
-                MessageBox.Show(task.status);
+                bool isFinished = task.status == "Finished";
 
-                if (task.status == "Finished")
-                {
-    
-                    task.status = "Unfinished"; // Cập nhật trạng thái Task gốc
-             
-                }
-                else
-                {
+                // Toggle trạng thái task
+                task.status = isFinished ? "Unfinished" : "Finished";
 
-
-                    task.status = "Finished"; // Cập nhật trạng thái Task gốc
-                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
-                    await activityLogService.LogActivityAsync(userId: null, objectType: "Task", objectId:task.taskID, action: "Finish Task", details: $"{User.LoggedInUser.Username} đã hoàn thành task {task.taskName} lúc {DateTime.Now}");
-                    MessageBox.Show("Activitlog hoàn thành task");
-                }
+                // Cập nhật DB
                 dbcontext.Tasks.Attach(task);
                 dbcontext.Entry(task).State = EntityState.Modified;
                 dbcontext.SaveChanges();
+
+                // Nếu chuyển thành Finished thì ghi log
+                if (!isFinished)
+                {
+                    ActivityLogService activityLogService = new ActivityLogService(dbcontext);
+                    await activityLogService.LogActivityAsync(
+                        userId: User.LoggedInUser.ID,
+                        objectType: "Task",
+                        objectId: task.taskID,
+                        action: "Finish Task",
+                        details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{task.taskName}\" lúc {DateTime.Now}"
+                    );
+
+                  
+                }
             }
+
             UpdateButtonState();
-            MessageBox.Show(task.status);
             OnTaskFinished?.Invoke(this, task);
-            //TaskManager.GetInstance().UpdateTask(task);
-            // Chỉ gửi thông báo nếu trạng thái thực sự thay đổi thành "Finished"
+
+            // Gửi thông báo nếu task mới đổi thành Finished
             if (task.status == "Finished")
             {
                 NotificationManager.Instance.SendTaskUpdateNotification(User.GetLoggedInUserName(), task.taskName, task.status);
             }
         }
+
     }
 }

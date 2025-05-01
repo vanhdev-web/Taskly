@@ -20,8 +20,58 @@ namespace OOP
         public MainUser()
         {
             InitializeComponent();
-            //Mouse Hover
+            LoadUserActivities();
+            lblUserName.Text = User.LoggedInUser.Username;
+            lblEmail.Text = User.LoggedInUser.Email;
+            if (User.LoggedInUser.Avatar != null && User.LoggedInUser.Avatar.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(User.LoggedInUser.Avatar))
+                {
+                    try
+                    {
+                        avatar.Image = Image.FromStream(ms);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Lỗi hiển thị ảnh đại diện: {ex.Message}");
+                        avatar.Image = Properties.Resources.DefaultAvatar; // Ảnh mặc định nếu lỗi
+                    }
+                }
+            }
+            else
+            {
+                avatar.Image = Properties.Resources.DefaultAvatar; // Ảnh mặc định nếu không có ảnh
+            }
+
         }
+        private void LoadUserActivities()
+        {
+            int userId = User.LoggedInUser.ID;
+
+            using (var context = new TaskManagementDBContext())
+            {
+                var activities = context.ActivityLogs
+                    .Where(a => a.UserId == userId)
+                    .OrderByDescending(a => a.Timestamp)
+                    .ToList();
+
+                listViewActivityLog.Items.Clear();
+
+                if (activities.Any())
+                {
+                    foreach (var act in activities)
+                    {
+                        string display = $"[{act.Timestamp}] {act.Action} - {act.Details}";
+                        listViewActivityLog.Items.Add(display);
+                    }
+                }
+                else
+                {
+                    listViewActivityLog.Items.Add("You have no activity logs yet!");
+                }
+            }
+        }
+
 
         private void btnHome_Click(object sender, EventArgs e)
         {

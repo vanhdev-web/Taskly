@@ -48,7 +48,7 @@
             this.checkBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.checkBox.TabIndex = 1;
             this.checkBox.TabStop = false;
-            this.checkBox.Click += new System.EventHandler(this.checkBox_Click_1);
+          
             // 
             // taskDeadline
             // 

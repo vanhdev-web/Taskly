@@ -45,10 +45,11 @@
             btnNoti = new ReaLTaiizor.Controls.Button();
             panel2 = new ReaLTaiizor.Controls.Panel();
             btnExit = new ReaLTaiizor.Controls.Button();
-            pictureBox1 = new System.Windows.Forms.PictureBox();
+            avatar = new System.Windows.Forms.PictureBox();
             lblUserName = new System.Windows.Forms.Label();
             lblEmail = new System.Windows.Forms.Label();
             lblActivityLog = new System.Windows.Forms.Label();
+            listViewActivityLog = new System.Windows.Forms.ListView();
             TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
@@ -57,7 +58,7 @@
             menu.SuspendLayout();
             panel5.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)avatar).BeginInit();
             SuspendLayout();
             // 
             // TopPanel
@@ -349,13 +350,14 @@
             btnExit.TextAlignment = System.Drawing.StringAlignment.Near;
             btnExit.Click += btnExit_Click;
             // 
-            // pictureBox1
+            // avatar
             // 
-            pictureBox1.Location = new System.Drawing.Point(475, 173);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(460, 314);
-            pictureBox1.TabIndex = 17;
-            pictureBox1.TabStop = false;
+            avatar.Location = new System.Drawing.Point(475, 173);
+            avatar.Name = "avatar";
+            avatar.Size = new System.Drawing.Size(460, 314);
+            avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            avatar.TabIndex = 17;
+            avatar.TabStop = false;
             // 
             // lblUserName
             // 
@@ -381,11 +383,21 @@
             // 
             lblActivityLog.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             lblActivityLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            lblActivityLog.Location = new System.Drawing.Point(514, 541);
+            lblActivityLog.Location = new System.Drawing.Point(461, 562);
             lblActivityLog.Name = "lblActivityLog";
             lblActivityLog.Size = new System.Drawing.Size(566, 67);
             lblActivityLog.TabIndex = 20;
             lblActivityLog.Text = "Activity Log";
+            // 
+            // listViewActivityLog
+            // 
+            listViewActivityLog.Location = new System.Drawing.Point(472, 654);
+            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.Name = "listViewActivityLog";
+            listViewActivityLog.Size = new System.Drawing.Size(1196, 443);
+            listViewActivityLog.TabIndex = 21;
+            listViewActivityLog.UseCompatibleStateImageBehavior = false;
+            listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
             // MainUser
             // 
@@ -393,10 +405,11 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
             ClientSize = new System.Drawing.Size(1707, 1148);
+            Controls.Add(listViewActivityLog);
             Controls.Add(lblActivityLog);
             Controls.Add(lblEmail);
             Controls.Add(lblUserName);
-            Controls.Add(pictureBox1);
+            Controls.Add(avatar);
             Controls.Add(sidebar);
             Controls.Add(TopPanel);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -411,7 +424,7 @@
             menu.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)avatar).EndInit();
             ResumeLayout(false);
         }
 
@@ -433,9 +446,10 @@
         private ReaLTaiizor.Controls.Button btnNoti;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnExit;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox avatar;
         private System.Windows.Forms.Label lblUserName;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblActivityLog;
+        private System.Windows.Forms.ListView listViewActivityLog;
     }
 }
