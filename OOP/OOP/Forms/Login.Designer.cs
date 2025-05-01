@@ -54,16 +54,16 @@ namespace OOP
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(585, 108);
+            txtUsername.Location = new Point(848, 142);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(229, 24);
+            txtUsername.Size = new Size(229, 40);
             txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(585, 169);
+            txtPassword.Location = new Point(848, 243);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(229, 24);
+            txtPassword.Size = new Size(229, 40);
             txtPassword.TabIndex = 1;
             // 
             // label1
@@ -71,9 +71,9 @@ namespace OOP
             label1.AutoSize = true;
             label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(438, 108);
+            label1.Location = new Point(640, 142);
             label1.Name = "label1";
-            label1.Size = new Size(63, 15);
+            label1.Size = new Size(131, 32);
             label1.TabIndex = 3;
             label1.Text = "User name";
             // 
@@ -82,17 +82,17 @@ namespace OOP
             label2.AutoSize = true;
             label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, FontStyle.Bold);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(438, 169);
+            label2.Location = new Point(656, 251);
             label2.Name = "label2";
-            label2.Size = new Size(57, 15);
+            label2.Size = new Size(115, 32);
             label2.TabIndex = 4;
             label2.Text = "Password";
             // 
             // btnLogin
             // 
-            btnLogin.Location = new Point(516, 308);
+            btnLogin.Location = new Point(689, 356);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(94, 43);
+            btnLogin.Size = new Size(151, 63);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
@@ -100,9 +100,9 @@ namespace OOP
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(673, 308);
+            btnRegister.Location = new Point(924, 356);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(123, 43);
+            btnRegister.Size = new Size(153, 63);
             btnRegister.TabIndex = 6;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@ namespace OOP
             TopPanel.Location = new Point(0, 0);
             TopPanel.Margin = new Padding(3, 5, 3, 5);
             TopPanel.Name = "TopPanel";
-            TopPanel.Size = new Size(889, 60);
+            TopPanel.Size = new Size(1169, 105);
             TopPanel.TabIndex = 16;
             // 
             // Logintext
@@ -129,7 +129,7 @@ namespace OOP
             Logintext.ForeColor = Color.Cornsilk;
             Logintext.Location = new Point(127, -1);
             Logintext.Name = "Logintext";
-            Logintext.Size = new Size(617, 51);
+            Logintext.Size = new Size(897, 96);
             Logintext.TabIndex = 19;
             Logintext.Text = "Login";
             Logintext.TextAlign = ContentAlignment.MiddleCenter;
@@ -150,7 +150,7 @@ namespace OOP
             nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
             nightControlBox1.EnableMinimizeButton = true;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(750, 0);
+            nightControlBox1.Location = new Point(1030, 0);
             nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
             nightControlBox1.MaximizeHoverForeColor = Color.White;
             nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
@@ -164,9 +164,9 @@ namespace OOP
             appName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             appName.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, FontStyle.Bold);
             appName.ForeColor = SystemColors.ControlLightLight;
-            appName.Location = new Point(24, 109);
+            appName.Location = new Point(3, 120);
             appName.Name = "appName";
-            appName.Size = new Size(324, 74);
+            appName.Size = new Size(604, 74);
             appName.TabIndex = 20;
             appName.Text = "Welcome to ";
             appName.TextAlign = ContentAlignment.MiddleCenter;
@@ -176,18 +176,18 @@ namespace OOP
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.Font = new System.Drawing.Font("Segoe UI Semibold", 32F, FontStyle.Bold);
             label3.ForeColor = SystemColors.ControlLightLight;
-            label3.Location = new Point(16, 158);
+            label3.Location = new Point(-20, 194);
             label3.Name = "label3";
-            label3.Size = new Size(347, 96);
+            label3.Size = new Size(627, 96);
             label3.TabIndex = 21;
-            label3.Text = "FLOWHUB";
+            label3.Text = "TASKLY";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // description
             // 
             description.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
             description.ForeColor = SystemColors.ActiveBorder;
-            description.Location = new Point(42, 254);
+            description.Location = new Point(155, 329);
             description.Margin = new Padding(4, 0, 4, 0);
             description.Name = "description";
             description.Size = new Size(298, 30);
@@ -198,33 +198,35 @@ namespace OOP
             // panel1
             // 
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(description);
             panel1.Controls.Add(label2);
+            panel1.Controls.Add(appName);
+            panel1.Controls.Add(label3);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txtPassword);
             panel1.Controls.Add(txtUsername);
-            panel1.Location = new Point(0, 38);
+            panel1.Controls.Add(btnLogin);
+            panel1.Controls.Add(btnRegister);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(889, 363);
+            panel1.Size = new Size(1169, 541);
             panel1.TabIndex = 23;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleDimensions = new SizeF(192F, 192F);
             AutoScaleMode = AutoScaleMode.Dpi;
             AutoValidate = AutoValidate.EnableAllowFocusChange;
             BackColor = Color.FromArgb(30, 30, 32);
-            ClientSize = new Size(889, 403);
-            Controls.Add(description);
-            Controls.Add(label3);
-            Controls.Add(appName);
+            ClientSize = new Size(1169, 541);
             Controls.Add(TopPanel);
-            Controls.Add(btnRegister);
-            Controls.Add(btnLogin);
             Controls.Add(panel1);
             Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Inbox";
             Load += Login_Load;
             TopPanel.ResumeLayout(false);

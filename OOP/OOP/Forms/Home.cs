@@ -20,6 +20,7 @@ namespace OOP
     public partial class Home : BaseForm
     {
 
+
         TaskManager taskManager = TaskManager.GetInstance();
         public List<AbaseTask> GetUserTasks()
         {
@@ -108,7 +109,7 @@ namespace OOP
 
             // Xóa các control cũ trong panel trước khi thêm mới
             taskContainer.Controls.Clear();
-            
+
 
             foreach (AbaseTask task in GetUserTasks())
             {
@@ -161,12 +162,13 @@ namespace OOP
                 }
             }
         }
-      
+
 
 
         public Home()
-{
+        {
             InitializeComponent();
+
             //Mouse Hover
             ApplyMouseEvents(TopPanel);
             ApplyMouseEvents(projectPanel);
@@ -177,7 +179,7 @@ namespace OOP
             Loadprojects();
 
             if (User.LoggedInUser != null)
-            { 
+            {
                 WelcomeName.Text = $"Hey {User.LoggedInUser.Username}, sẵn sàng làm việc chưa? 🚀";
                 if (User.LoggedInUser.Avatar != null && User.LoggedInUser.Avatar.Length > 0)
                 {
@@ -190,7 +192,7 @@ namespace OOP
                         catch (Exception ex)
                         {
                             MessageBox.Show($"Lỗi hiển thị ảnh đại diện: {ex.Message}");
-                           avatar.Image = Properties.Resources.DefaultAvatar; // Ảnh mặc định nếu lỗi
+                            avatar.Image = Properties.Resources.DefaultAvatar; // Ảnh mặc định nếu lỗi
                         }
                     }
                 }
@@ -201,37 +203,39 @@ namespace OOP
             }
         }
 
+
         private void btnHome_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            SwitchForm(new Home());
         }
-
         private void btnTask_Click(object sender, EventArgs e)
         {
-            Tasks tasks = new Tasks();
-            tasks.Show();
-            this.Hide();
+            SwitchForm(new Tasks());
         }
 
-        private void btnNoti_Click(object sender, EventArgs e)
+        private void btnUser_Click(object sender, EventArgs e)
         {
-            Inbox inbox = new Inbox();
-            inbox.Show();
-            this.Hide();
+            SwitchForm(new MainUser());
         }
 
         private void btnProject_Click(object sender, EventArgs e)
         {
-            Projects projects = new Projects();
-            projects.Show();
-            this.Hide();
+            SwitchForm(new Projects());
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             ExitApplication(); // Gọi hàm chung để thoát
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void WelcomeName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

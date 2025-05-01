@@ -28,812 +28,807 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tasks));
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.ctmCloset = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctmFarest = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctmFinished = new System.Windows.Forms.ToolStripMenuItem();
-            this.ctnSection = new System.Windows.Forms.ToolStripMenuItem();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.TopPanel = new System.Windows.Forms.Panel();
-            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
-            this.WelcomeName = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.btnHam = new System.Windows.Forms.PictureBox();
-            this.miniToolStrip = new System.Windows.Forms.MenuStrip();
-            this.mnuList = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuBoard = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCalendar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuDashboard = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuFiles = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.taskContainer = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.taskProject = new System.Windows.Forms.Label();
-            this.taskContent = new System.Windows.Forms.Label();
-            this.checkBox = new System.Windows.Forms.PictureBox();
-            this.taskDeadline = new System.Windows.Forms.Label();
-            this.btnMore = new System.Windows.Forms.Button();
-            this.btnAddTask = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new ReaLTaiizor.Controls.Panel();
-            this.btnHome = new ReaLTaiizor.Controls.Button();
-            this.panel5 = new ReaLTaiizor.Controls.Panel();
-            this.btnTask = new ReaLTaiizor.Controls.Button();
-            this.panel6 = new ReaLTaiizor.Controls.Panel();
-            this.btnNoti = new ReaLTaiizor.Controls.Button();
-            this.menu = new ReaLTaiizor.Controls.Panel();
-            this.btnProject = new ReaLTaiizor.Controls.Button();
-            this.panel7 = new ReaLTaiizor.Controls.Panel();
-            this.btnExit = new ReaLTaiizor.Controls.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.ctmsAddoption = new ReaLTaiizor.Controls.CrownContextMenuStrip();
-            this.taskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.milestoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.meetingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1.SuspendLayout();
-            this.TopPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
-            this.menuStrip1.SuspendLayout();
-            this.taskContainer.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.sidebar.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.menu.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.ctmsAddoption.SuspendLayout();
-            this.SuspendLayout();
+            contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(components);
+            ctmCloset = new System.Windows.Forms.ToolStripMenuItem();
+            ctmFarest = new System.Windows.Forms.ToolStripMenuItem();
+            ctmFinished = new System.Windows.Forms.ToolStripMenuItem();
+            ctnSection = new System.Windows.Forms.ToolStripMenuItem();
+            imageList1 = new System.Windows.Forms.ImageList(components);
+            TopPanel = new System.Windows.Forms.Panel();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
+            WelcomeName = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            btnHam = new System.Windows.Forms.PictureBox();
+            miniToolStrip = new System.Windows.Forms.MenuStrip();
+            mnuList = new System.Windows.Forms.ToolStripMenuItem();
+            mnuBoard = new System.Windows.Forms.ToolStripMenuItem();
+            mnuCalendar = new System.Windows.Forms.ToolStripMenuItem();
+            mnuDashboard = new System.Windows.Forms.ToolStripMenuItem();
+            mnuFiles = new System.Windows.Forms.ToolStripMenuItem();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            taskContainer = new System.Windows.Forms.Panel();
+            panel8 = new System.Windows.Forms.Panel();
+            label4 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            pictureBox2 = new System.Windows.Forms.PictureBox();
+            label7 = new System.Windows.Forms.Label();
+            panel1 = new System.Windows.Forms.Panel();
+            label1 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            pictureBox1 = new System.Windows.Forms.PictureBox();
+            label3 = new System.Windows.Forms.Label();
+            panel9 = new System.Windows.Forms.Panel();
+            taskProject = new System.Windows.Forms.Label();
+            taskContent = new System.Windows.Forms.Label();
+            checkBox = new System.Windows.Forms.PictureBox();
+            taskDeadline = new System.Windows.Forms.Label();
+            btnMore = new System.Windows.Forms.Button();
+            btnAddTask = new System.Windows.Forms.Button();
+            pictureBox3 = new System.Windows.Forms.PictureBox();
+            sidebar = new System.Windows.Forms.FlowLayoutPanel();
+            panel4 = new ReaLTaiizor.Controls.Panel();
+            btnHome = new ReaLTaiizor.Controls.Button();
+            panel5 = new ReaLTaiizor.Controls.Panel();
+            btnTask = new ReaLTaiizor.Controls.Button();
+            menu = new ReaLTaiizor.Controls.Panel();
+            btnProject = new ReaLTaiizor.Controls.Button();
+            panel2 = new ReaLTaiizor.Controls.Panel();
+            btnNoti = new ReaLTaiizor.Controls.Button();
+            panel7 = new ReaLTaiizor.Controls.Panel();
+            btnExit = new ReaLTaiizor.Controls.Button();
+            pictureBox4 = new System.Windows.Forms.PictureBox();
+            ctmsAddoption = new ReaLTaiizor.Controls.CrownContextMenuStrip();
+            taskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            milestoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            meetingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            contextMenuStrip1.SuspendLayout();
+            TopPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
+            menuStrip1.SuspendLayout();
+            taskContainer.SuspendLayout();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)checkBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            sidebar.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            menu.SuspendLayout();
+            panel2.SuspendLayout();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ctmsAddoption.SuspendLayout();
+            SuspendLayout();
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ctmCloset,
-            this.ctmFarest,
-            this.ctmFinished,
-            this.ctnSection});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(221, 132);
+            contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { ctmCloset, ctmFarest, ctmFinished, ctnSection });
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new System.Drawing.Size(274, 156);
             // 
             // ctmCloset
             // 
-            this.ctmCloset.Name = "ctmCloset";
-            this.ctmCloset.Size = new System.Drawing.Size(220, 32);
-            this.ctmCloset.Text = "Gần nhất";
-            this.ctmCloset.Click += new System.EventHandler(this.ctmCloset_Click);
+            ctmCloset.Name = "ctmCloset";
+            ctmCloset.Size = new System.Drawing.Size(273, 38);
+            ctmCloset.Text = "Gần nhất";
+            ctmCloset.Click += ctmCloset_Click;
             // 
             // ctmFarest
             // 
-            this.ctmFarest.Name = "ctmFarest";
-            this.ctmFarest.Size = new System.Drawing.Size(220, 32);
-            this.ctmFarest.Text = "Xa nhất";
-            this.ctmFarest.Click += new System.EventHandler(this.ctmFarest_Click);
+            ctmFarest.Name = "ctmFarest";
+            ctmFarest.Size = new System.Drawing.Size(273, 38);
+            ctmFarest.Text = "Xa nhất";
+            ctmFarest.Click += ctmFarest_Click;
             // 
             // ctmFinished
             // 
-            this.ctmFinished.Name = "ctmFinished";
-            this.ctmFinished.Size = new System.Drawing.Size(220, 32);
-            this.ctmFinished.Text = "Hoàn thành";
-            this.ctmFinished.Click += new System.EventHandler(this.ctmFinished_Click);
+            ctmFinished.Name = "ctmFinished";
+            ctmFinished.Size = new System.Drawing.Size(273, 38);
+            ctmFinished.Text = "Hoàn thành";
+            ctmFinished.Click += ctmFinished_Click;
             // 
             // ctnSection
             // 
-            this.ctnSection.Name = "ctnSection";
-            this.ctnSection.Size = new System.Drawing.Size(220, 32);
-            this.ctnSection.Text = "Chưa hoàn thành";
-            this.ctnSection.Click += new System.EventHandler(this.ctnSection_Click);
+            ctnSection.Name = "ctnSection";
+            ctnSection.Size = new System.Drawing.Size(273, 38);
+            ctnSection.Text = "Chưa hoàn thành";
+            ctnSection.Click += ctnSection_Click;
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // TopPanel
             // 
-            this.TopPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.TopPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TopPanel.Controls.Add(this.nightControlBox1);
-            this.TopPanel.Controls.Add(this.WelcomeName);
-            this.TopPanel.Controls.Add(this.label5);
-            this.TopPanel.Controls.Add(this.btnHam);
-            this.TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TopPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.TopPanel.Location = new System.Drawing.Point(0, 0);
-            this.TopPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.TopPanel.Name = "TopPanel";
-            this.TopPanel.Size = new System.Drawing.Size(1200, 73);
-            this.TopPanel.TabIndex = 14;
+            TopPanel.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            TopPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            TopPanel.Controls.Add(nightControlBox1);
+            TopPanel.Controls.Add(WelcomeName);
+            TopPanel.Controls.Add(label5);
+            TopPanel.Controls.Add(btnHam);
+            TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            TopPanel.ForeColor = System.Drawing.SystemColors.Control;
+            TopPanel.Location = new System.Drawing.Point(0, 0);
+            TopPanel.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            TopPanel.Name = "TopPanel";
+            TopPanel.Size = new System.Drawing.Size(1733, 116);
+            TopPanel.TabIndex = 14;
             // 
             // nightControlBox1
             // 
-            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox1.DefaultLocation = true;
-            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMaximizeButton = true;
-            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMinimizeButton = true;
-            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(1044, 0);
-            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Name = "nightControlBox1";
-            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox1.TabIndex = 1;
+            nightControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            nightControlBox1.BackColor = System.Drawing.Color.Transparent;
+            nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = true;
+            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMinimizeButton = true;
+            nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new System.Drawing.Point(1534, 0);
+            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
+            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
+            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new System.Drawing.Size(139, 31);
+            nightControlBox1.TabIndex = 1;
             // 
             // WelcomeName
             // 
-            this.WelcomeName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.WelcomeName.Location = new System.Drawing.Point(486, 8);
-            this.WelcomeName.Name = "WelcomeName";
-            this.WelcomeName.Size = new System.Drawing.Size(351, 51);
-            this.WelcomeName.TabIndex = 18;
-            this.WelcomeName.Text = "Welcome back";
-            this.WelcomeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            WelcomeName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            WelcomeName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            WelcomeName.Location = new System.Drawing.Point(702, 13);
+            WelcomeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            WelcomeName.Name = "WelcomeName";
+            WelcomeName.Size = new System.Drawing.Size(508, 82);
+            WelcomeName.TabIndex = 18;
+            WelcomeName.Text = "Welcome back";
+            WelcomeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(76, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 38);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "FlowHub";
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label5.Location = new System.Drawing.Point(110, 29);
+            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(139, 50);
+            label5.TabIndex = 2;
+            label5.Text = "Taskly";
             // 
             // btnHam
             // 
-            this.btnHam.Image = global::OOP.Properties.Resources.image__8_;
-            this.btnHam.Location = new System.Drawing.Point(26, 18);
-            this.btnHam.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(45, 35);
-            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnHam.TabIndex = 1;
-            this.btnHam.TabStop = false;
+            btnHam.Image = Properties.Resources.image__8_;
+            btnHam.Location = new System.Drawing.Point(38, 29);
+            btnHam.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            btnHam.Name = "btnHam";
+            btnHam.Size = new System.Drawing.Size(65, 56);
+            btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            btnHam.TabIndex = 1;
+            btnHam.TabStop = false;
             // 
             // miniToolStrip
             // 
-            this.miniToolStrip.AccessibleName = "New item selection";
-            this.miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
-            this.miniToolStrip.AutoSize = false;
-            this.miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.miniToolStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.miniToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.miniToolStrip.Location = new System.Drawing.Point(276, 2);
-            this.miniToolStrip.Name = "miniToolStrip";
-            this.miniToolStrip.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.miniToolStrip.Size = new System.Drawing.Size(278, 24);
-            this.miniToolStrip.TabIndex = 0;
+            miniToolStrip.AccessibleName = "New item selection";
+            miniToolStrip.AccessibleRole = System.Windows.Forms.AccessibleRole.ComboBox;
+            miniToolStrip.AutoSize = false;
+            miniToolStrip.Dock = System.Windows.Forms.DockStyle.None;
+            miniToolStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+            miniToolStrip.Location = new System.Drawing.Point(276, 2);
+            miniToolStrip.Name = "miniToolStrip";
+            miniToolStrip.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
+            miniToolStrip.Size = new System.Drawing.Size(278, 24);
+            miniToolStrip.TabIndex = 0;
             // 
             // mnuList
             // 
-            this.mnuList.BackColor = System.Drawing.SystemColors.Control;
-            this.mnuList.Name = "mnuList";
-            this.mnuList.Size = new System.Drawing.Size(54, 22);
-            this.mnuList.Text = "List";
+            mnuList.BackColor = System.Drawing.SystemColors.Control;
+            mnuList.Name = "mnuList";
+            mnuList.Size = new System.Drawing.Size(69, 22);
+            mnuList.Text = "List";
             // 
             // mnuBoard
             // 
-            this.mnuBoard.Name = "mnuBoard";
-            this.mnuBoard.Size = new System.Drawing.Size(75, 22);
-            this.mnuBoard.Text = "Board";
+            mnuBoard.Name = "mnuBoard";
+            mnuBoard.Size = new System.Drawing.Size(96, 22);
+            mnuBoard.Text = "Board";
             // 
             // mnuCalendar
             // 
-            this.mnuCalendar.Name = "mnuCalendar";
-            this.mnuCalendar.Size = new System.Drawing.Size(97, 22);
-            this.mnuCalendar.Text = "Calendar";
+            mnuCalendar.Name = "mnuCalendar";
+            mnuCalendar.Size = new System.Drawing.Size(128, 22);
+            mnuCalendar.Text = "Calendar";
             // 
             // mnuDashboard
             // 
-            this.mnuDashboard.Name = "mnuDashboard";
-            this.mnuDashboard.Size = new System.Drawing.Size(116, 22);
-            this.mnuDashboard.Text = "Dashboard";
+            mnuDashboard.Name = "mnuDashboard";
+            mnuDashboard.Size = new System.Drawing.Size(149, 22);
+            mnuDashboard.Text = "Dashboard";
             // 
             // mnuFiles
             // 
-            this.mnuFiles.Name = "mnuFiles";
-            this.mnuFiles.Size = new System.Drawing.Size(62, 22);
-            this.mnuFiles.Text = "Files";
+            mnuFiles.Name = "mnuFiles";
+            mnuFiles.Size = new System.Drawing.Size(81, 22);
+            mnuFiles.Text = "Files";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuList,
-            this.mnuBoard,
-            this.mnuCalendar,
-            this.mnuDashboard,
-            this.mnuFiles});
-            this.menuStrip1.Location = new System.Drawing.Point(13, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(278, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
+            menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { mnuList, mnuBoard, mnuCalendar, mnuDashboard, mnuFiles });
+            menuStrip1.Location = new System.Drawing.Point(13, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
+            menuStrip1.Size = new System.Drawing.Size(278, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // taskContainer
             // 
-            this.taskContainer.AllowDrop = true;
-            this.taskContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.taskContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.taskContainer.Controls.Add(this.panel8);
-            this.taskContainer.Controls.Add(this.panel1);
-            this.taskContainer.Controls.Add(this.panel9);
-            this.taskContainer.Location = new System.Drawing.Point(240, 191);
-            this.taskContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.taskContainer.Name = "taskContainer";
-            this.taskContainer.Padding = new System.Windows.Forms.Padding(14, 9, 0, 0);
-            this.taskContainer.Size = new System.Drawing.Size(934, 547);
-            this.taskContainer.TabIndex = 22;
+            taskContainer.AllowDrop = true;
+            taskContainer.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            taskContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            taskContainer.Controls.Add(panel8);
+            taskContainer.Controls.Add(panel1);
+            taskContainer.Controls.Add(panel9);
+            taskContainer.Location = new System.Drawing.Point(347, 306);
+            taskContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            taskContainer.Name = "taskContainer";
+            taskContainer.Padding = new System.Windows.Forms.Padding(20, 14, 0, 0);
+            taskContainer.Size = new System.Drawing.Size(1348, 874);
+            taskContainer.TabIndex = 22;
             // 
             // panel8
             // 
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Controls.Add(this.pictureBox2);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(10, 134);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(899, 43);
-            this.panel8.TabIndex = 5;
+            panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel8.Controls.Add(label4);
+            panel8.Controls.Add(label6);
+            panel8.Controls.Add(pictureBox2);
+            panel8.Controls.Add(label7);
+            panel8.Location = new System.Drawing.Point(14, 214);
+            panel8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel8.Name = "panel8";
+            panel8.Size = new System.Drawing.Size(1298, 68);
+            panel8.TabIndex = 5;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.Color.DarkGray;
-            this.label4.Location = new System.Drawing.Point(708, -2);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(192, 42);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "OOP";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label4.ForeColor = System.Drawing.Color.DarkGray;
+            label4.Location = new System.Drawing.Point(1023, -3);
+            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label4.Size = new System.Drawing.Size(277, 67);
+            label4.TabIndex = 4;
+            label4.Text = "OOP";
+            label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label6.Location = new System.Drawing.Point(44, 1);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label6.Size = new System.Drawing.Size(543, 40);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Check bài nhóm";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            label6.Location = new System.Drawing.Point(64, 2);
+            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Name = "label6";
+            label6.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label6.Size = new System.Drawing.Size(784, 64);
+            label6.TabIndex = 3;
+            label6.Text = "Check bài nhóm";
+            label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.ErrorImage = global::OOP.Properties.Resources.check;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            pictureBox2.ErrorImage = Properties.Resources.check;
+            pictureBox2.Image = (System.Drawing.Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.InitialImage = null;
+            pictureBox2.Location = new System.Drawing.Point(9, 10);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new System.Drawing.Size(46, 50);
+            pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(575, -2);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label7.Size = new System.Drawing.Size(127, 42);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "29/03/2025";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label7.ForeColor = System.Drawing.Color.DarkGray;
+            label7.Location = new System.Drawing.Point(831, -3);
+            label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label7.Name = "label7";
+            label7.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label7.Size = new System.Drawing.Size(183, 67);
+            label7.TabIndex = 2;
+            label7.Text = "29/03/2025";
+            label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(10, 72);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(899, 43);
-            this.panel1.TabIndex = 5;
+            panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label3);
+            panel1.Location = new System.Drawing.Point(14, 115);
+            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(1298, 68);
+            panel1.TabIndex = 5;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.DarkGray;
-            this.label1.Location = new System.Drawing.Point(708, -2);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(192, 42);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "OOP";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label1.ForeColor = System.Drawing.Color.DarkGray;
+            label1.Location = new System.Drawing.Point(1023, -3);
+            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label1.Size = new System.Drawing.Size(277, 67);
+            label1.TabIndex = 4;
+            label1.Text = "OOP";
+            label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(44, 1);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(543, 40);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Check bài nhóm";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            label2.Location = new System.Drawing.Point(64, 2);
+            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label2.Size = new System.Drawing.Size(784, 64);
+            label2.TabIndex = 3;
+            label2.Text = "Check bài nhóm";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = global::OOP.Properties.Resources.check;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.ErrorImage = Properties.Resources.check;
+            pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new System.Drawing.Point(9, 10);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new System.Drawing.Size(46, 50);
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(575, 1);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(127, 42);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "29/03/2025";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            label3.ForeColor = System.Drawing.Color.DarkGray;
+            label3.Location = new System.Drawing.Point(831, 2);
+            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            label3.Size = new System.Drawing.Size(183, 67);
+            label3.TabIndex = 2;
+            label3.Text = "29/03/2025";
+            label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel9
             // 
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.taskProject);
-            this.panel9.Controls.Add(this.taskContent);
-            this.panel9.Controls.Add(this.checkBox);
-            this.panel9.Controls.Add(this.taskDeadline);
-            this.panel9.Location = new System.Drawing.Point(10, 14);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(899, 43);
-            this.panel9.TabIndex = 4;
+            panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panel9.Controls.Add(taskProject);
+            panel9.Controls.Add(taskContent);
+            panel9.Controls.Add(checkBox);
+            panel9.Controls.Add(taskDeadline);
+            panel9.Location = new System.Drawing.Point(14, 22);
+            panel9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel9.Name = "panel9";
+            panel9.Size = new System.Drawing.Size(1298, 68);
+            panel9.TabIndex = 4;
             // 
             // taskProject
             // 
-            this.taskProject.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.taskProject.ForeColor = System.Drawing.Color.DarkGray;
-            this.taskProject.Location = new System.Drawing.Point(708, -2);
-            this.taskProject.Name = "taskProject";
-            this.taskProject.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.taskProject.Size = new System.Drawing.Size(192, 42);
-            this.taskProject.TabIndex = 4;
-            this.taskProject.Text = "OOP";
-            this.taskProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            taskProject.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            taskProject.ForeColor = System.Drawing.Color.DarkGray;
+            taskProject.Location = new System.Drawing.Point(1023, -3);
+            taskProject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskProject.Name = "taskProject";
+            taskProject.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            taskProject.Size = new System.Drawing.Size(277, 67);
+            taskProject.TabIndex = 4;
+            taskProject.Text = "OOP";
+            taskProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // taskContent
             // 
-            this.taskContent.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.taskContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.taskContent.Location = new System.Drawing.Point(44, 1);
-            this.taskContent.Name = "taskContent";
-            this.taskContent.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.taskContent.Size = new System.Drawing.Size(525, 40);
-            this.taskContent.TabIndex = 3;
-            this.taskContent.Text = "Check bài nhóm";
-            this.taskContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            taskContent.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            taskContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            taskContent.Location = new System.Drawing.Point(64, 2);
+            taskContent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskContent.Name = "taskContent";
+            taskContent.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            taskContent.Size = new System.Drawing.Size(758, 64);
+            taskContent.TabIndex = 3;
+            taskContent.Text = "Check bài nhóm";
+            taskContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // checkBox
             // 
-            this.checkBox.ErrorImage = global::OOP.Properties.Resources.check;
-            this.checkBox.Image = ((System.Drawing.Image)(resources.GetObject("checkBox.Image")));
-            this.checkBox.InitialImage = null;
-            this.checkBox.Location = new System.Drawing.Point(6, 6);
-            this.checkBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox.Name = "checkBox";
-            this.checkBox.Size = new System.Drawing.Size(32, 31);
-            this.checkBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.checkBox.TabIndex = 1;
-            this.checkBox.TabStop = false;
+            checkBox.ErrorImage = Properties.Resources.check;
+            checkBox.Image = (System.Drawing.Image)resources.GetObject("checkBox.Image");
+            checkBox.InitialImage = null;
+            checkBox.Location = new System.Drawing.Point(9, 10);
+            checkBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBox.Name = "checkBox";
+            checkBox.Size = new System.Drawing.Size(46, 50);
+            checkBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            checkBox.TabIndex = 1;
+            checkBox.TabStop = false;
             // 
             // taskDeadline
             // 
-            this.taskDeadline.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.taskDeadline.ForeColor = System.Drawing.Color.DarkGray;
-            this.taskDeadline.Location = new System.Drawing.Point(575, -2);
-            this.taskDeadline.Name = "taskDeadline";
-            this.taskDeadline.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.taskDeadline.Size = new System.Drawing.Size(127, 42);
-            this.taskDeadline.TabIndex = 2;
-            this.taskDeadline.Text = "29/03/2025";
-            this.taskDeadline.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            taskDeadline.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            taskDeadline.ForeColor = System.Drawing.Color.DarkGray;
+            taskDeadline.Location = new System.Drawing.Point(831, -3);
+            taskDeadline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskDeadline.Name = "taskDeadline";
+            taskDeadline.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            taskDeadline.Size = new System.Drawing.Size(183, 67);
+            taskDeadline.TabIndex = 2;
+            taskDeadline.Text = "29/03/2025";
+            taskDeadline.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // btnMore
             // 
-            this.btnMore.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnMore.ContextMenuStrip = this.contextMenuStrip1;
-            this.btnMore.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnMore.ImageList = this.imageList1;
-            this.btnMore.Location = new System.Drawing.Point(426, 99);
-            this.btnMore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnMore.Name = "btnMore";
-            this.btnMore.Size = new System.Drawing.Size(105, 48);
-            this.btnMore.TabIndex = 19;
-            this.btnMore.Text = "Sort";
-            this.btnMore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMore.UseVisualStyleBackColor = false;
-            this.btnMore.Click += new System.EventHandler(this.btnMore_Click_1);
+            btnMore.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            btnMore.ContextMenuStrip = contextMenuStrip1;
+            btnMore.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            btnMore.ImageList = imageList1;
+            btnMore.Location = new System.Drawing.Point(615, 158);
+            btnMore.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            btnMore.Name = "btnMore";
+            btnMore.Size = new System.Drawing.Size(152, 77);
+            btnMore.TabIndex = 19;
+            btnMore.Text = "Sort";
+            btnMore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            btnMore.UseVisualStyleBackColor = false;
+            btnMore.Click += btnMore_Click_1;
             // 
             // btnAddTask
             // 
-            this.btnAddTask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddTask.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnAddTask.Location = new System.Drawing.Point(249, 99);
-            this.btnAddTask.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(147, 48);
-            this.btnAddTask.TabIndex = 17;
-            this.btnAddTask.Text = "Add";
-            this.btnAddTask.UseVisualStyleBackColor = false;
-            this.btnAddTask.Click += new System.EventHandler(this.lblAddoption_Click);
+            btnAddTask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            btnAddTask.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
+            btnAddTask.Location = new System.Drawing.Point(360, 158);
+            btnAddTask.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            btnAddTask.Name = "btnAddTask";
+            btnAddTask.Size = new System.Drawing.Size(212, 77);
+            btnAddTask.TabIndex = 17;
+            btnAddTask.Text = "Add";
+            btnAddTask.UseVisualStyleBackColor = false;
+            btnAddTask.Click += lblAddoption_Click;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::OOP.Properties.Resources.add;
-            this.pictureBox3.Location = new System.Drawing.Point(256, 106);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 23;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.BackColor = System.Drawing.Color.White;
+            pictureBox3.Image = Properties.Resources.add;
+            pictureBox3.Location = new System.Drawing.Point(370, 170);
+            pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new System.Drawing.Size(46, 51);
+            pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
             // 
             // sidebar
             // 
-            this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.sidebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sidebar.Controls.Add(this.panel4);
-            this.sidebar.Controls.Add(this.panel5);
-            this.sidebar.Controls.Add(this.panel6);
-            this.sidebar.Controls.Add(this.menu);
-            this.sidebar.Controls.Add(this.panel7);
-            this.sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar.Location = new System.Drawing.Point(0, 73);
-            this.sidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(214, 689);
-            this.sidebar.TabIndex = 25;
+            sidebar.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            sidebar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            sidebar.Controls.Add(panel4);
+            sidebar.Controls.Add(panel5);
+            sidebar.Controls.Add(menu);
+            sidebar.Controls.Add(panel2);
+            sidebar.Controls.Add(panel7);
+            sidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            sidebar.Location = new System.Drawing.Point(0, 116);
+            sidebar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            sidebar.Name = "sidebar";
+            sidebar.Size = new System.Drawing.Size(308, 1103);
+            sidebar.TabIndex = 25;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.panel4.Controls.Add(this.btnHome);
-            this.panel4.EdgeColor = System.Drawing.Color.Transparent;
-            this.panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel4.Location = new System.Drawing.Point(3, 2);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(17, 6, 6, 6);
-            this.panel4.Size = new System.Drawing.Size(328, 68);
-            this.panel4.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel4.TabIndex = 4;
-            this.panel4.Text = "Dashboard";
+            panel4.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel4.Controls.Add(btnHome);
+            panel4.EdgeColor = System.Drawing.Color.Transparent;
+            panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            panel4.Location = new System.Drawing.Point(4, 3);
+            panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel4.Name = "panel4";
+            panel4.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
+            panel4.Size = new System.Drawing.Size(474, 109);
+            panel4.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            panel4.TabIndex = 4;
+            panel4.Text = "Dashboard";
             // 
             // btnHome
             // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHome.EnteredBorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.EnteredColor = System.Drawing.Color.Transparent;
-            this.btnHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHome.Image = global::OOP.Properties.Resources.Home__2_;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnHome.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnHome.Location = new System.Drawing.Point(17, 6);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(112, 0, 0, 0);
-            this.btnHome.PressedBorderColor = System.Drawing.Color.Transparent;
-            this.btnHome.PressedColor = System.Drawing.Color.Transparent;
-            this.btnHome.Size = new System.Drawing.Size(305, 56);
-            this.btnHome.TabIndex = 2;
-            this.btnHome.Text = "              Home";
-            this.btnHome.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            btnHome.BackColor = System.Drawing.Color.Transparent;
+            btnHome.BorderColor = System.Drawing.Color.Transparent;
+            btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnHome.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnHome.EnteredColor = System.Drawing.Color.Transparent;
+            btnHome.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnHome.Image = Properties.Resources.Home__2_;
+            btnHome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            btnHome.InactiveColor = System.Drawing.Color.Transparent;
+            btnHome.Location = new System.Drawing.Point(25, 10);
+            btnHome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnHome.Name = "btnHome";
+            btnHome.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnHome.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnHome.PressedColor = System.Drawing.Color.Transparent;
+            btnHome.Size = new System.Drawing.Size(440, 89);
+            btnHome.TabIndex = 2;
+            btnHome.Text = "              Home";
+            btnHome.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnHome.Click += btnHome_Click;
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.panel5.Controls.Add(this.btnTask);
-            this.panel5.EdgeColor = System.Drawing.Color.Transparent;
-            this.panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel5.Location = new System.Drawing.Point(3, 74);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(17, 6, 6, 6);
-            this.panel5.Size = new System.Drawing.Size(328, 68);
-            this.panel5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel5.TabIndex = 4;
-            this.panel5.Text = "Dashboard";
+            panel5.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel5.Controls.Add(btnTask);
+            panel5.EdgeColor = System.Drawing.Color.Transparent;
+            panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            panel5.Location = new System.Drawing.Point(4, 118);
+            panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel5.Name = "panel5";
+            panel5.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
+            panel5.Size = new System.Drawing.Size(474, 109);
+            panel5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            panel5.TabIndex = 4;
+            panel5.Text = "Dashboard";
             // 
             // btnTask
             // 
-            this.btnTask.BackColor = System.Drawing.Color.Transparent;
-            this.btnTask.BorderColor = System.Drawing.Color.Transparent;
-            this.btnTask.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTask.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTask.EnteredBorderColor = System.Drawing.Color.Transparent;
-            this.btnTask.EnteredColor = System.Drawing.Color.Transparent;
-            this.btnTask.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTask.Image = global::OOP.Properties.Resources.image__1___1_1;
-            this.btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTask.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnTask.Location = new System.Drawing.Point(17, 6);
-            this.btnTask.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTask.Name = "btnTask";
-            this.btnTask.Padding = new System.Windows.Forms.Padding(112, 0, 0, 0);
-            this.btnTask.PressedBorderColor = System.Drawing.Color.Transparent;
-            this.btnTask.PressedColor = System.Drawing.Color.Transparent;
-            this.btnTask.Size = new System.Drawing.Size(305, 56);
-            this.btnTask.TabIndex = 2;
-            this.btnTask.Text = "              Task";
-            this.btnTask.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.btnTask.Click += new System.EventHandler(this.btnTask_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.panel6.Controls.Add(this.btnNoti);
-            this.panel6.EdgeColor = System.Drawing.Color.Transparent;
-            this.panel6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.panel6.Location = new System.Drawing.Point(3, 146);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(17, 6, 6, 6);
-            this.panel6.Size = new System.Drawing.Size(328, 68);
-            this.panel6.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel6.TabIndex = 5;
-            this.panel6.Text = "Dashboard";
-            // 
-            // btnNoti
-            // 
-            this.btnNoti.BackColor = System.Drawing.Color.Transparent;
-            this.btnNoti.BorderColor = System.Drawing.Color.Transparent;
-            this.btnNoti.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNoti.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnNoti.EnteredBorderColor = System.Drawing.Color.Transparent;
-            this.btnNoti.EnteredColor = System.Drawing.Color.Transparent;
-            this.btnNoti.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnNoti.Image = global::OOP.Properties.Resources.noti;
-            this.btnNoti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNoti.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnNoti.Location = new System.Drawing.Point(17, 6);
-            this.btnNoti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnNoti.Name = "btnNoti";
-            this.btnNoti.Padding = new System.Windows.Forms.Padding(112, 0, 0, 0);
-            this.btnNoti.PressedBorderColor = System.Drawing.Color.Transparent;
-            this.btnNoti.PressedColor = System.Drawing.Color.Transparent;
-            this.btnNoti.Size = new System.Drawing.Size(305, 56);
-            this.btnNoti.TabIndex = 2;
-            this.btnNoti.Text = "              Notification";
-            this.btnNoti.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.btnNoti.Click += new System.EventHandler(this.btnNoti_Click);
+            btnTask.BackColor = System.Drawing.Color.Transparent;
+            btnTask.BorderColor = System.Drawing.Color.Transparent;
+            btnTask.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnTask.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnTask.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnTask.EnteredColor = System.Drawing.Color.Transparent;
+            btnTask.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnTask.Image = Properties.Resources.image__1___1_1;
+            btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnTask.InactiveColor = System.Drawing.Color.Transparent;
+            btnTask.Location = new System.Drawing.Point(25, 10);
+            btnTask.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnTask.Name = "btnTask";
+            btnTask.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnTask.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnTask.PressedColor = System.Drawing.Color.Transparent;
+            btnTask.Size = new System.Drawing.Size(440, 89);
+            btnTask.TabIndex = 2;
+            btnTask.Text = "              Task";
+            btnTask.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnTask.Click += btnTask_Click;
             // 
             // menu
             // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.menu.Controls.Add(this.btnProject);
-            this.menu.EdgeColor = System.Drawing.Color.Transparent;
-            this.menu.ForeColor = System.Drawing.Color.Transparent;
-            this.menu.Location = new System.Drawing.Point(0, 216);
-            this.menu.Margin = new System.Windows.Forms.Padding(0);
-            this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(17, 6, 6, 6);
-            this.menu.Size = new System.Drawing.Size(328, 68);
-            this.menu.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.menu.TabIndex = 3;
-            this.menu.Text = "Dashboard";
+            menu.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            menu.Controls.Add(btnProject);
+            menu.EdgeColor = System.Drawing.Color.Transparent;
+            menu.ForeColor = System.Drawing.Color.Transparent;
+            menu.Location = new System.Drawing.Point(0, 230);
+            menu.Margin = new System.Windows.Forms.Padding(0);
+            menu.Name = "menu";
+            menu.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
+            menu.Size = new System.Drawing.Size(474, 109);
+            menu.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            menu.TabIndex = 3;
+            menu.Text = "Dashboard";
             // 
             // btnProject
             // 
-            this.btnProject.BackColor = System.Drawing.Color.Transparent;
-            this.btnProject.BorderColor = System.Drawing.Color.Transparent;
-            this.btnProject.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProject.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnProject.EnteredBorderColor = System.Drawing.Color.Transparent;
-            this.btnProject.EnteredColor = System.Drawing.Color.Transparent;
-            this.btnProject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnProject.Image = global::OOP.Properties.Resources.image;
-            this.btnProject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProject.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnProject.Location = new System.Drawing.Point(17, 6);
-            this.btnProject.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnProject.Name = "btnProject";
-            this.btnProject.Padding = new System.Windows.Forms.Padding(112, 0, 0, 0);
-            this.btnProject.PressedBorderColor = System.Drawing.Color.Transparent;
-            this.btnProject.PressedColor = System.Drawing.Color.Transparent;
-            this.btnProject.Size = new System.Drawing.Size(305, 56);
-            this.btnProject.TabIndex = 2;
-            this.btnProject.Text = "               Project";
-            this.btnProject.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.btnProject.Click += new System.EventHandler(this.btnProject_Click);
+            btnProject.BackColor = System.Drawing.Color.Transparent;
+            btnProject.BorderColor = System.Drawing.Color.Transparent;
+            btnProject.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnProject.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnProject.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnProject.EnteredColor = System.Drawing.Color.Transparent;
+            btnProject.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnProject.Image = Properties.Resources.image;
+            btnProject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnProject.InactiveColor = System.Drawing.Color.Transparent;
+            btnProject.Location = new System.Drawing.Point(25, 10);
+            btnProject.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnProject.Name = "btnProject";
+            btnProject.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnProject.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnProject.PressedColor = System.Drawing.Color.Transparent;
+            btnProject.Size = new System.Drawing.Size(440, 89);
+            btnProject.TabIndex = 2;
+            btnProject.Text = "               Project";
+            btnProject.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnProject.Click += btnProject_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel2.Controls.Add(btnNoti);
+            panel2.EdgeColor = System.Drawing.Color.Transparent;
+            panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            panel2.Location = new System.Drawing.Point(5, 345);
+            panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            panel2.Name = "panel2";
+            panel2.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
+            panel2.Size = new System.Drawing.Size(474, 108);
+            panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            panel2.TabIndex = 10;
+            panel2.Text = "Dashboard";
+            // 
+            // btnNoti
+            // 
+            btnNoti.BackColor = System.Drawing.Color.Transparent;
+            btnNoti.BorderColor = System.Drawing.Color.Transparent;
+            btnNoti.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnNoti.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnNoti.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnNoti.EnteredColor = System.Drawing.Color.Transparent;
+            btnNoti.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnNoti.Image = (System.Drawing.Image)resources.GetObject("btnNoti.Image");
+            btnNoti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnNoti.InactiveColor = System.Drawing.Color.Transparent;
+            btnNoti.Location = new System.Drawing.Point(24, 10);
+            btnNoti.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            btnNoti.Name = "btnNoti";
+            btnNoti.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnNoti.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnNoti.PressedColor = System.Drawing.Color.Transparent;
+            btnNoti.Size = new System.Drawing.Size(442, 88);
+            btnNoti.TabIndex = 2;
+            btnNoti.Text = "              User";
+            btnNoti.TextAlignment = System.Drawing.StringAlignment.Near;
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.panel7.Controls.Add(this.btnExit);
-            this.panel7.EdgeColor = System.Drawing.Color.Transparent;
-            this.panel7.ForeColor = System.Drawing.Color.White;
-            this.panel7.Location = new System.Drawing.Point(3, 288);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(17, 6, 6, 6);
-            this.panel7.Size = new System.Drawing.Size(328, 68);
-            this.panel7.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            this.panel7.TabIndex = 9;
-            this.panel7.Text = "Dashboard";
+            panel7.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel7.Controls.Add(btnExit);
+            panel7.EdgeColor = System.Drawing.Color.Transparent;
+            panel7.ForeColor = System.Drawing.Color.White;
+            panel7.Location = new System.Drawing.Point(4, 465);
+            panel7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            panel7.Name = "panel7";
+            panel7.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
+            panel7.Size = new System.Drawing.Size(474, 109);
+            panel7.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+            panel7.TabIndex = 9;
+            panel7.Text = "Dashboard";
             // 
             // btnExit
             // 
-            this.btnExit.BackColor = System.Drawing.Color.Transparent;
-            this.btnExit.BorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExit.EnteredBorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.EnteredColor = System.Drawing.Color.Transparent;
-            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnExit.Image = global::OOP.Properties.Resources.exit;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.InactiveColor = System.Drawing.Color.Transparent;
-            this.btnExit.Location = new System.Drawing.Point(17, 6);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(112, 0, 0, 0);
-            this.btnExit.PressedBorderColor = System.Drawing.Color.Transparent;
-            this.btnExit.PressedColor = System.Drawing.Color.Transparent;
-            this.btnExit.Size = new System.Drawing.Size(305, 56);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "              Exit";
-            this.btnExit.TextAlignment = System.Drawing.StringAlignment.Near;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            btnExit.BackColor = System.Drawing.Color.Transparent;
+            btnExit.BorderColor = System.Drawing.Color.Transparent;
+            btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnExit.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnExit.EnteredColor = System.Drawing.Color.Transparent;
+            btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnExit.Image = Properties.Resources.exit;
+            btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnExit.InactiveColor = System.Drawing.Color.Transparent;
+            btnExit.Location = new System.Drawing.Point(25, 10);
+            btnExit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnExit.Name = "btnExit";
+            btnExit.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnExit.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnExit.PressedColor = System.Drawing.Color.Transparent;
+            btnExit.Size = new System.Drawing.Size(440, 89);
+            btnExit.TabIndex = 2;
+            btnExit.Text = "              Exit";
+            btnExit.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnExit.Click += btnExit_Click;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = global::OOP.Properties.Resources.sort;
-            this.pictureBox4.Location = new System.Drawing.Point(436, 106);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 24;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            pictureBox4.BackColor = System.Drawing.Color.White;
+            pictureBox4.Image = Properties.Resources.sort;
+            pictureBox4.Location = new System.Drawing.Point(630, 170);
+            pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new System.Drawing.Size(46, 51);
+            pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 24;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // ctmsAddoption
             // 
-            this.ctmsAddoption.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.ctmsAddoption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.ctmsAddoption.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.ctmsAddoption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.taskToolStripMenuItem,
-            this.milestoneToolStripMenuItem,
-            this.meetingToolStripMenuItem});
-            this.ctmsAddoption.Name = "ctmsAddoption";
-            this.ctmsAddoption.Size = new System.Drawing.Size(162, 100);
+            ctmsAddoption.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
+            ctmsAddoption.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
+            ctmsAddoption.ImageScalingSize = new System.Drawing.Size(20, 20);
+            ctmsAddoption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { taskToolStripMenuItem, milestoneToolStripMenuItem, meetingToolStripMenuItem });
+            ctmsAddoption.Name = "ctmsAddoption";
+            ctmsAddoption.Size = new System.Drawing.Size(195, 118);
             // 
             // taskToolStripMenuItem
             // 
-            this.taskToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.taskToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(161, 32);
-            this.taskToolStripMenuItem.Text = "Task";
-            this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
+            taskToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
+            taskToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
+            taskToolStripMenuItem.Name = "taskToolStripMenuItem";
+            taskToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            taskToolStripMenuItem.Text = "Task";
+            taskToolStripMenuItem.Click += taskToolStripMenuItem_Click;
             // 
             // milestoneToolStripMenuItem
             // 
-            this.milestoneToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.milestoneToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.milestoneToolStripMenuItem.Name = "milestoneToolStripMenuItem";
-            this.milestoneToolStripMenuItem.Size = new System.Drawing.Size(161, 32);
-            this.milestoneToolStripMenuItem.Text = "Milestone";
-            this.milestoneToolStripMenuItem.Click += new System.EventHandler(this.milestoneToolStripMenuItem_Click);
+            milestoneToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
+            milestoneToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
+            milestoneToolStripMenuItem.Name = "milestoneToolStripMenuItem";
+            milestoneToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            milestoneToolStripMenuItem.Text = "Milestone";
+            milestoneToolStripMenuItem.Click += milestoneToolStripMenuItem_Click;
             // 
             // meetingToolStripMenuItem
             // 
-            this.meetingToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
-            this.meetingToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.meetingToolStripMenuItem.Name = "meetingToolStripMenuItem";
-            this.meetingToolStripMenuItem.Size = new System.Drawing.Size(161, 32);
-            this.meetingToolStripMenuItem.Text = "Meeting";
-            this.meetingToolStripMenuItem.Click += new System.EventHandler(this.meetingToolStripMenuItem_Click);
+            meetingToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
+            meetingToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
+            meetingToolStripMenuItem.Name = "meetingToolStripMenuItem";
+            meetingToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            meetingToolStripMenuItem.Text = "Meeting";
+            meetingToolStripMenuItem.Click += meetingToolStripMenuItem_Click;
             // 
             // Tasks
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(32)))));
-            this.ClientSize = new System.Drawing.Size(1200, 762);
-            this.ControlBox = false;
-            this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.taskContainer);
-            this.Controls.Add(this.btnMore);
-            this.Controls.Add(this.btnAddTask);
-            this.Controls.Add(this.TopPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximizeBox = false;
-            this.Name = "Tasks";
-            this.contextMenuStrip1.ResumeLayout(false);
-            this.TopPanel.ResumeLayout(false);
-            this.TopPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.taskContainer.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.checkBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.sidebar.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.menu.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.ctmsAddoption.ResumeLayout(false);
-            this.ResumeLayout(false);
+            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            ClientSize = new System.Drawing.Size(1733, 1219);
+            ControlBox = false;
+            Controls.Add(sidebar);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox3);
+            Controls.Add(taskContainer);
+            Controls.Add(btnMore);
+            Controls.Add(btnAddTask);
+            Controls.Add(TopPanel);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            MaximizeBox = false;
+            Name = "Tasks";
+            contextMenuStrip1.ResumeLayout(false);
+            TopPanel.ResumeLayout(false);
+            TopPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)btnHam).EndInit();
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            taskContainer.ResumeLayout(false);
+            panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)checkBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            sidebar.ResumeLayout(false);
+            panel4.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            menu.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ctmsAddoption.ResumeLayout(false);
+            ResumeLayout(false);
 
         }
 
@@ -880,8 +875,6 @@
         private ReaLTaiizor.Controls.Button btnHome;
         private ReaLTaiizor.Controls.Panel panel5;
         private ReaLTaiizor.Controls.Button btnTask;
-        private ReaLTaiizor.Controls.Panel panel6;
-        private ReaLTaiizor.Controls.Button btnNoti;
         private ReaLTaiizor.Controls.Panel menu;
         private ReaLTaiizor.Controls.Button btnProject;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -891,5 +884,7 @@
         private System.Windows.Forms.ToolStripMenuItem meetingToolStripMenuItem;
         private ReaLTaiizor.Controls.Panel panel7;
         private ReaLTaiizor.Controls.Button btnExit;
+        private ReaLTaiizor.Controls.Panel panel2;
+        private ReaLTaiizor.Controls.Button btnNoti;
     }
 }

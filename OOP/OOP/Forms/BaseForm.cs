@@ -6,6 +6,13 @@ using System.Windows.Forms;
 
 public class BaseForm : Form
 {
+    public void SwitchForm(Form nextForm)
+    {
+        nextForm.StartPosition = FormStartPosition.Manual;
+        nextForm.Location = this.Location;
+        nextForm.Show();
+        this.Hide();
+    }
     public class ExitHandler
     {
         public bool ConfirmExit()

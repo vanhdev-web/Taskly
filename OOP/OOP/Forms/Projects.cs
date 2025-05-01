@@ -553,31 +553,23 @@ namespace OOP
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            Home home = new Home();
-            home.Show();
-            this.Hide();
+            SwitchForm(new Home());
         }
-
         private void btnTask_Click(object sender, EventArgs e)
         {
-            Tasks tasks = new Tasks();
-            tasks.Show();
-            this.Hide();
+            SwitchForm(new Tasks());
         }
 
-        private void btnNoti_Click(object sender, EventArgs e)
+        private void btnUser_Click(object sender, EventArgs e)
         {
-            Inbox inbox = new Inbox();
-            inbox.Show();
-            this.Hide();
+            SwitchForm(new MainUser());
         }
 
         private void btnProject_Click(object sender, EventArgs e)
         {
-            Projects projects = new Projects();
-            projects.Show();
-            this.Hide();
+            SwitchForm(new Projects());
         }
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             ExitApplication(); // Gọi hàm chung để thoát
