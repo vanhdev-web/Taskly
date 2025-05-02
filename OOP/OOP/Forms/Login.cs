@@ -53,7 +53,7 @@ namespace Taskly
                     //activitylog đăng nhập
                     ActivityLogService activityLogService = new ActivityLogService(context);
                     await activityLogService.LogActivityAsync(userId: null, objectType: "User", objectId: User.LoggedInUser.ID, action: "LoggedIn", details: $"User Name : {User.LoggedInUser.Username}");
-                    MessageBox.Show("Activitlog đăng nhập");
+                  
                 }
                 else
                 {
