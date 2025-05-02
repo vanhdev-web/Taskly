@@ -1,9 +1,9 @@
-# Visual Studio & build artifacts
+*.vsidx
 .vs/
-[Oo]bj/
-[Bb]in/
-OOP/.vs/
-OOP/obj/
-/OOP/.vs
+.vscode/
 *.dll
-*.db
+*.pdb
+*.cache
+*.json
+*.db-wal
+*.db-shm

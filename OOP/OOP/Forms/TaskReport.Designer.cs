@@ -30,7 +30,18 @@
         {
             label2 = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
+            label2 = new System.Windows.Forms.Label();
             SuspendLayout();
+            // 
+            // listViewActivityLog
+            // 
+            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
+            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.Name = "listViewActivityLog";
+            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
+            listViewActivityLog.TabIndex = 7;
+            listViewActivityLog.UseCompatibleStateImageBehavior = false;
+            listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
             // label2
             // 

@@ -57,15 +57,68 @@ namespace OOP.Forms
             get { return cbbAssignedUser.Text.Trim(); } // [cite: 24]
             set { cbbAssignedUser.Text = value; }
         }
-
         public void SetProjectOptions(List<string> projectNames)
         {
-            cbbSelectProject.Items.Clear(); // [cite: 8]
-            foreach (string projectName in projectNames) // [cite: 9]
+            using (var db = new TaskManagementDBContext())
             {
-                cbbSelectProject.Items.Add(projectName); // [cite: 9]
+                // Lọc các project do chính user quản lý
+                var filteredProjects = db.Projects
+                                         .Where(p => p.AdminID == User.LoggedInUser.ID &&
+                                                     projectNames.Contains(p.projectName))
+                                         .ToList();
+
+                // Đổ tên project vào combobox
+                cbbSelectProject.Items.Clear();
+                foreach (var project in filteredProjects)
+                {
+                    cbbSelectProject.Items.Add(project.projectName);
+                }
+
+                // Nếu có project thì chọn mặc định là project đầu tiên
+                if (cbbSelectProject.Items.Count > 0)
+                {
+                    cbbSelectProject.SelectedIndex = 0;
+                    string selectedProjectName = cbbSelectProject.SelectedItem.ToString();
+
+                    var selectedProject = filteredProjects
+                                          .FirstOrDefault(p => p.projectName == selectedProjectName);
+                    if (selectedProject == null) return;
+
+                    int selectedProjectId = selectedProject.projectID;
+
+                    // Lấy tất cả userId liên quan đến task, meeting, milestone
+                    var userIds = db.Tasks
+                                    .Where(t => t.ProjectID == selectedProjectId)
+                                    .Select(t => t.AssignedTo)
+                                    .Union(db.Meetings
+                                              .Where(m => m.ProjectID == selectedProjectId)
+                                              .Select(m => m.AssignedTo))
+                                    .Union(db.Milestones
+                                              .Where(ms => ms.ProjectID == selectedProjectId)
+                                              .Select(ms => ms.AssignedTo))
+                                    .Distinct()
+                                    .ToList();
+
+                    // Lấy user theo danh sách userId
+                    var users = db.Users
+                                  .Where(u => userIds.Contains(u.ID))
+                                  .ToList();
+
+                    // Đổ user vào combobox
+                    cbbAssignedUser.Items.Clear();
+                    cbbAssignedUser.Items.Add("Myself");
+                    foreach (var user in users)
+                    {
+                        if (user.ID != User.LoggedInUser.ID)
+                        {
+                            cbbAssignedUser.Items.Add(user.Username);
+                        }
+                    }
+                }
             }
         }
+
+
 
         public void SetAssignedUserOptions(List<string> userNames)
         {

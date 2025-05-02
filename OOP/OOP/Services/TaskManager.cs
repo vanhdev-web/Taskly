@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -32,57 +33,45 @@ namespace OOP.Services
         }
 
         // ✅ Thêm task mới
-        public async void AddTask(AbaseTask task)
+        public async System.Threading.Tasks.Task AddTask(AbaseTask task)
         {
             if (task == null) return;
 
-            if (task is Task newtask)
+            if (task is OOP.Models.Task newtask)
             {
-                MessageBox.Show("Chuẩn bị vào");
                 using (var db = new TaskManagementDBContext())
                 {
+                    bool exists = db.Tasks.Any(t => t.taskID == newtask.taskID);
+                    if (exists)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Task with ID {newtask.taskID} already exists! Skipping add.");
+                        return;
+                    }
+
                     db.Tasks.Add(newtask);
-                    db.SaveChanges();
-                    var AssingedUser = (from u in db.Users
-                                        where u.ID == newtask.AssignedTo
-                                        select u).FirstOrDefault();
-                    var project = (from p in db.Projects
-                                   where p.projectID == newtask.ProjectID
-                                   select p).FirstOrDefault();
+                    await db.SaveChangesAsync();
+
+                    var assignedUser = db.Users.FirstOrDefault(u => u.ID == newtask.AssignedTo);
+                    var project = db.Projects.FirstOrDefault(p => p.projectID == newtask.ProjectID);
 
                     ActivityLogService activityLogService = new ActivityLogService(db);
-                    await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "Task", objectId: newtask.taskID, action: "Create Task", details: $"{User.LoggedInUser.Username} đã tạo task {newtask.taskName} trong dự án{project.projectName} cho {AssingedUser.Username}");
-                    MessageBox.Show("Activitlog thêm task");
-
+                    await activityLogService.LogActivityAsync(
+                        userId: User.LoggedInUser.ID,
+                        objectType: "Task",
+                        objectId: newtask.taskID,
+                        action: "Create Task",
+                        details: $"{User.LoggedInUser.Username} đã tạo task {newtask.taskName} trong dự án {project?.projectName} cho {assignedUser?.Username}");
                 }
-                MessageBox.Show("Chuẩn bị ra");
-
             }
-            //else if (task is Meeting newMeeting)
-            //{
-            //    using (var db = new TaskManagementDBContext())
-            //    {
-            //        db.Meetings.Add(newMeeting);
-            //        db.SaveChanges();
-            //    }
-            //    MessageBox.Show("Chuẩn bị ra");
-            //}
-            //else if (task is Milestone newMilestone)
-            //{
-            //    using (var db = new TaskManagementDBContext())
-            //    {
-            //        db.Milestones.Add(newMilestone);
-            //        db.SaveChanges();
-            //    }
-            //    MessageBox.Show("Chuẩn bị ra");
-            //}
 
-
-            Tasks.Add(task);
-            //SaveTasksToFile();
+            if (!Tasks.Any(t => t.taskID == task.taskID))
+            {
+                Tasks.Add(task);
+            }
         }
 
-        // ✅ Xóa task theo ID
+
+
         public void RemoveTask(int taskID)
         {
             for (int i = 0; i < Tasks.Count; i++)
@@ -125,7 +114,7 @@ namespace OOP.Services
                 // lấy các task, meeting, milestone có cùng projectID
                 var taskList = db.Tasks
                                  .Where(t => t.ProjectID == projectId)
-                                 .Select(t => new Task
+                                 .Select(t => new OOP.Models.Task
                                  {
                                      taskID = t.taskID,
                                      taskName = t.taskName,
@@ -171,29 +160,6 @@ namespace OOP.Services
                 return allTasks;
             }
         }
-
-        // ✅ Lưu danh sách task vào file
-        //public void SaveTasksToFile()
-        //{
-        //    try
-        //    {
-        //        JsonSerializerSettings settings = new JsonSerializerSettings
-        //        {
-        //            TypeNameHandling = TypeNameHandling.Auto,
-        //            ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
-        //            Formatting = Formatting.Indented
-        //        };
-
-        //        string json = JsonConvert.SerializeObject(Tasks, settings);
-        //        File.WriteAllText(filePath, json);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine($"Error saving tasks: {ex.Message}");
-        //    }
-        //}
-
-        // ✅ Load task từ file nếu có
         public void LoadTasksFromFile()
         {
             try
@@ -230,20 +196,6 @@ namespace OOP.Services
                     //SaveTasksToFile(); // Lưu lại file
                     return;
                 }
-            }
-        }
-
-        // ✅ Xóa file JSON
-        public void DeleteTaskFile()
-        {
-            if (File.Exists(filePath))
-            {
-                File.Delete(filePath);
-                Console.WriteLine("Deleted tasks.json successfully!");
-            }
-            else
-            {
-                Console.WriteLine("File not found.");
             }
         }
     }

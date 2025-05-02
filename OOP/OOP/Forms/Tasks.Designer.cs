@@ -75,7 +75,7 @@
             menu = new ReaLTaiizor.Controls.Panel();
             btnProject = new ReaLTaiizor.Controls.Button();
             panel2 = new ReaLTaiizor.Controls.Panel();
-            btnUser = new ReaLTaiizor.Controls.Button();
+            btnNoti = new ReaLTaiizor.Controls.Button();
             panel7 = new ReaLTaiizor.Controls.Panel();
             btnExit = new ReaLTaiizor.Controls.Button();
             pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -665,7 +665,7 @@
             // panel2
             // 
             panel2.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
-            panel2.Controls.Add(btnUser);
+            panel2.Controls.Add(btnNoti);
             panel2.EdgeColor = System.Drawing.Color.Transparent;
             panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             panel2.Location = new System.Drawing.Point(5, 345);
@@ -677,28 +677,29 @@
             panel2.TabIndex = 10;
             panel2.Text = "Dashboard";
             // 
-            // btnUser
+            // btnNoti
             // 
-            btnUser.BackColor = System.Drawing.Color.Transparent;
-            btnUser.BorderColor = System.Drawing.Color.Transparent;
-            btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            btnUser.EnteredBorderColor = System.Drawing.Color.Transparent;
-            btnUser.EnteredColor = System.Drawing.Color.Transparent;
-            btnUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
-            btnUser.Image = (System.Drawing.Image)resources.GetObject("btnUser.Image");
-            btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnUser.InactiveColor = System.Drawing.Color.Transparent;
-            btnUser.Location = new System.Drawing.Point(24, 10);
-            btnUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            btnUser.Name = "btnUser";
-            btnUser.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
-            btnUser.PressedBorderColor = System.Drawing.Color.Transparent;
-            btnUser.PressedColor = System.Drawing.Color.Transparent;
-            btnUser.Size = new System.Drawing.Size(442, 88);
-            btnUser.TabIndex = 2;
-            btnUser.Text = "              User";
-            btnUser.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnNoti.BackColor = System.Drawing.Color.Transparent;
+            btnNoti.BorderColor = System.Drawing.Color.Transparent;
+            btnNoti.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnNoti.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnNoti.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnNoti.EnteredColor = System.Drawing.Color.Transparent;
+            btnNoti.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnNoti.Image = (System.Drawing.Image)resources.GetObject("btnNoti.Image");
+            btnNoti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnNoti.InactiveColor = System.Drawing.Color.Transparent;
+            btnNoti.Location = new System.Drawing.Point(24, 10);
+            btnNoti.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            btnNoti.Name = "btnNoti";
+            btnNoti.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnNoti.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnNoti.PressedColor = System.Drawing.Color.Transparent;
+            btnNoti.Size = new System.Drawing.Size(442, 88);
+            btnNoti.TabIndex = 2;
+            btnNoti.Text = "              User";
+            btnNoti.TextAlignment = System.Drawing.StringAlignment.Near;
+            //btnNoti.Click += btnUser_Click;
             // 
             // panel7
             // 
@@ -885,6 +886,6 @@
         private ReaLTaiizor.Controls.Panel panel7;
         private ReaLTaiizor.Controls.Button btnExit;
         private ReaLTaiizor.Controls.Panel panel2;
-        private ReaLTaiizor.Controls.Button btnUser;
+        private ReaLTaiizor.Controls.Button btnNoti;
     }
 }
