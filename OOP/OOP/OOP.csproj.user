@@ -28,7 +28,7 @@
     <Compile Update="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\MainUser.cs">
+    <Compile Update="Forms\MainUser\MainUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\ProjectReport.cs">
@@ -72,7 +72,7 @@
     <EmbeddedResource Update="Forms\Login.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Update="Forms\MainUser.resx">
+    <EmbeddedResource Update="Forms\MainUser\MainUser.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Forms\ProjectReport.resx">
