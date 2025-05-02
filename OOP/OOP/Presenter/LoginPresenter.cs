@@ -68,7 +68,7 @@ namespace Taskly.Presenter
 
                     // activitylog đăng nhập
                     await _model.LogActivity(userId: null, objectType: "User", objectId: user.ID, action: "LoggedIn", details: $"User Name : {user.Username}");
-                    _view.ShowMessage("Activity log đăng nhập");
+
                 }
                 else
                 {

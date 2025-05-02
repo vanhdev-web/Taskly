@@ -4,11 +4,11 @@ using Taskly.Models; // Assuming TaskManagementDBContext and Project are in Task
 
 namespace Taskly.Models
 {
-    public class ProjectReportModel
+    public class ProjectReportService
     {
         private readonly TaskManagementDBContext _dbContext;
 
-        public ProjectReportModel(TaskManagementDBContext dbContext)
+        public ProjectReportService(TaskManagementDBContext dbContext)
         {
             _dbContext = dbContext;
         }

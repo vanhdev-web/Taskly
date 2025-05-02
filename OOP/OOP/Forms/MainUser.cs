@@ -12,8 +12,6 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Taskly.Models;
 using Taskly.Services;
 using Taskly.Usercontrols;
-using Taskly.Forms.MainUser; // Added for IUserView
-
 namespace Taskly
 {
     public partial class MainUser : BaseForm, IUserView

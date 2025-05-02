@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace Taskly.Presenter
 {
@@ -15,6 +16,7 @@ namespace Taskly.Presenter
         private TaskService _taskService;
         private ProjectManager _projectManager;
         private UserService _userService;
+        private ActivityLogService _activityLogService;
 
         public AddtaskPresenter(IAddtaskView view)
         {
@@ -22,6 +24,7 @@ namespace Taskly.Presenter
             _taskService = new TaskService();
             _projectManager = new ProjectManager();
             _userService = new UserService();
+            _activityLogService = new ActivityLogService(new TaskManagementDBContext());
         }
 
         public void InitializeData()
@@ -99,7 +102,7 @@ namespace Taskly.Presenter
         }
 
 
-        public void ConfirmTask()
+        public async void ConfirmTask()
         {
             string taskName = _view.TaskName;
             DateTime deadline = _view.TaskDeadline;
@@ -139,7 +142,17 @@ namespace Taskly.Presenter
 
             // Create and save the new task using the service
             Task newTask = _taskService.CreateTask(taskName, deadline, receiverID, projectId);
-
+            if (ModelUser.LoggedInUser != null)
+            {
+                await _activityLogService.LogActivityAsync(
+                    userId: ModelUser.LoggedInUser.ID,
+                    objectType: "Task",
+                    objectId: newTask.taskID,
+                    action: "Create Meeting",
+                    details: $"{ModelUser.LoggedInUser.Username} đã tạo một Task {newTask.taskName} cho dự án {projectName}"
+                );
+                MessageBox.Show("Task đã được tạo thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             _view.CloseView(newTask);
         }
 

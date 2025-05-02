@@ -4,11 +4,11 @@ using Taskly.Models; // Assuming TaskManagementDBContext is in Taskly.Models
 
 namespace Taskly.Models
 {
-    public class TaskReportModel
+    public class TaskReportService
     {
         private readonly TaskManagementDBContext _dbContext; // Assuming TaskManagementDBContext is your EF Core DbContext
 
-        public TaskReportModel(TaskManagementDBContext dbContext)
+        public TaskReportService(TaskManagementDBContext dbContext)
         {
             _dbContext = dbContext;
         }

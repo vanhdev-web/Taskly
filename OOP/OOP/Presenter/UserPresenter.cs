@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Taskly.Models;
 using Taskly.Services;
 using Taskly;
-using Taskly.Forms.MainUser; // For User.LoggedInUser
+using Taskly.Forms; // For User.LoggedInUser
 
 namespace Taskly.Services
 {

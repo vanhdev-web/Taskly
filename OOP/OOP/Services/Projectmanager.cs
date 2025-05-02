@@ -9,9 +9,11 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
+using Taskly.Models;
+using Taskly.Services;
 namespace Taskly.Services
 {
-    internal class ProjectManager
+    public class ProjectManager
     {
         public List<Project> Projects { get; set; }
 
