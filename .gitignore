@@ -1,3 +1,9 @@
-*.vsidx
+# Visual Studio & build artifacts
 .vs/
+[Oo]bj/
+[Bb]in/
+OOP/.vs/
+OOP/obj/
 /OOP/.vs
+*.dll
+*.db
