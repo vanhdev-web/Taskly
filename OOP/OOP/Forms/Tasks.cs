@@ -35,8 +35,8 @@ namespace OOP
 
                 // lấy các task mà được assign cho user
                 var tasks = db.Tasks
-                              .Where(t => t.AssignedTo == userId)
-                              .ToList();
+                    .Where(t => t.AssignedTo == userId && !t.taskName.Contains("AddUserToNewProject###"))
+                    .ToList();
 
                 userTasks.AddRange(tasks);
 

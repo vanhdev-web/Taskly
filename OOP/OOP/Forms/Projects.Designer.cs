@@ -60,13 +60,13 @@ namespace OOP
             projectName = new Label();
             projectRole = new Label();
             TopPanel = new Panel();
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             label3 = new Label();
             btnHam = new PictureBox();
             WelcomeName = new Label();
             panel1 = new Panel();
             AllTasks = new Label();
             taskContainer = new Panel();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             projectPanel.SuspendLayout();
             projectContainer.SuspendLayout();
             panel11.SuspendLayout();
@@ -490,30 +490,6 @@ namespace OOP
             TopPanel.Size = new Size(1734, 116);
             TopPanel.TabIndex = 10;
             // 
-            // nightControlBox1
-            // 
-            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            nightControlBox1.BackColor = Color.Transparent;
-            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
-            nightControlBox1.CloseHoverForeColor = Color.White;
-            nightControlBox1.Cursor = Cursors.Hand;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = Color.FromArgb(105, 105, 105);
-            nightControlBox1.DisableMinimizeColor = Color.FromArgb(105, 105, 105);
-            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMinimizeButton = true;
-            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1509, 0);
-            nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MaximizeHoverForeColor = Color.White;
-            nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MinimizeHoverForeColor = Color.White;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new Size(139, 31);
-            nightControlBox1.TabIndex = 1;
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -585,6 +561,30 @@ namespace OOP
             taskContainer.Size = new Size(1346, 474);
             taskContainer.TabIndex = 23;
             // 
+            // nightControlBox1
+            // 
+            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            nightControlBox1.BackColor = Color.Transparent;
+            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = Color.White;
+            nightControlBox1.Cursor = Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = Color.Transparent;
+            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
+            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new Point(1590, 11);
+            nightControlBox1.MaximizeHoverColor = Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = Color.Transparent;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new Size(139, 31);
+            nightControlBox1.TabIndex = 4;
+            // 
             // Projects
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -630,7 +630,6 @@ namespace OOP
         private Button btnDeleteProject;
         private Button btnCreateProject;
         private Panel TopPanel;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Label label3;
         private PictureBox btnHam;
         private Label WelcomeName;
@@ -659,5 +658,6 @@ namespace OOP
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnUser;
         private Button btnReport;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }

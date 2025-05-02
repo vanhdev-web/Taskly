@@ -170,21 +170,21 @@
             nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
             nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
-            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.Transparent;
             nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMinimizeButton = true;
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
             nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new System.Drawing.Point(1534, 0);
-            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Location = new System.Drawing.Point(1589, 0);
+            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Transparent;
             nightControlBox1.Name = "nightControlBox1";
             nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            nightControlBox1.TabIndex = 1;
+            nightControlBox1.TabIndex = 19;
             // 
             // WelcomeName
             // 
@@ -281,6 +281,7 @@
             // taskContainer
             // 
             taskContainer.AllowDrop = true;
+            taskContainer.AutoScroll = true;
             taskContainer.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
             taskContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             taskContainer.Controls.Add(panel8);
@@ -844,7 +845,6 @@
         private System.Windows.Forms.ToolStripMenuItem ctnSection;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel TopPanel;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnHam;
         private System.Windows.Forms.MenuStrip miniToolStrip;
@@ -890,5 +890,6 @@
         private ReaLTaiizor.Controls.Button btnExit;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnUser;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }

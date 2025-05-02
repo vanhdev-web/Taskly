@@ -93,7 +93,7 @@ namespace OOP
             if (taskItem.TaskPanel != null) // Đảm bảo TaskPanel tồn tại
             {
                 taskItem.TaskPanel.Click += (s, e) => TaskItemClicked?.Invoke(task);
-                ApplyMouseEvents(taskItem.TaskPanel); // Áp dụng hiệu ứng hover nếu có
+                //ApplyMouseEvents(taskItem.TaskPanel); // Áp dụng hiệu ứng hover nếu có
             }
         }
 
@@ -112,7 +112,7 @@ namespace OOP
             if (projectItem.ProjectPanel != null) // Đảm bảo ProjectPanel tồn tại
             {
                 projectItem.ProjectPanel.Click += (s, e) => ProjectItemClicked?.Invoke(project);
-                ApplyMouseEvents(projectItem.ProjectPanel); // Áp dụng hiệu ứng hover nếu có
+                //ApplyMouseEvents(projectItem.ProjectPanel); // Áp dụng hiệu ứng hover nếu có
             }
         }
 
@@ -134,9 +134,7 @@ namespace OOP
                 }
             };
 
-            // Nếu bạn có một logic chung cho tất cả các click của ApplyMouseEvents
-            // ví dụ: phát ra âm thanh, hoặc hiệu ứng chung, bạn có thể thêm vào đây.
-            // Tuy nhiên, đối với việc mở form chi tiết Task/Project, chúng ta đã xử lý riêng ở AddTaskItem/AddProjectItem.
+           
         }
 
         public void SwitchForm(Form newForm)
@@ -172,13 +170,7 @@ namespace OOP
         private void panel6_Paint(object sender, PaintEventArgs e) { }
         private void WelcomeName_Click(object sender, EventArgs e) { }
 
-        // Các sự kiện click của các nút điều hướng chính đã được gán ở constructor
-        // nên các phương thức btnHome_Click, btnTask_Click,... có thể bị xóa
-        // nếu không còn đoạn code nào khác trong đó.
-        // Nếu có, bạn có thể chuyển chúng thành private và gọi Invoke() như ở constructor.
-        // private void btnHome_Click(object sender, EventArgs e) { HomeButtonClicked?.Invoke(); }
-        // private void btnTask_Click(object sender, EventArgs e) { TaskButtonClicked?.Invoke(); }
-        // ...
+     
     }
     public interface IHomeView
     {

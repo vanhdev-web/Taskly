@@ -274,8 +274,7 @@ namespace OOP
                     // Tạo một task mặc định để gán user vào project
                     Task newTask = new Task
                     {
-
-                        taskName = $"Auto-Assigned Task for {newMember}",
+                        taskName ="AddUserToNewProject###",
                         status = "Unfinished",
                         deadline = DateTime.Now.AddDays(7),
                         AssignedTo = user.ID,

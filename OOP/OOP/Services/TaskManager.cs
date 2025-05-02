@@ -113,7 +113,7 @@ namespace OOP.Services
 
                 // lấy các task, meeting, milestone có cùng projectID
                 var taskList = db.Tasks
-                                 .Where(t => t.ProjectID == projectId)
+                                 .Where(t => t.ProjectID == projectId && t.taskName != "AddUserToNewProject###")
                                  .Select(t => new OOP.Models.Task
                                  {
                                      taskID = t.taskID,

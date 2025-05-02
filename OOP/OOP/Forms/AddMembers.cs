@@ -25,17 +25,7 @@ namespace OOP.Forms
             _presenter = new AddmemberPresenter(this); // Initialize presenter with this view
         }
 
-        //// Phương thức Addmembercs có vẻ trùng lặp với constructor, giữ nguyên để không làm thay đổi cấu trúc gốc
-        //public void Addmembercs(Projects parent)
-        //{
-        //    if (parent == null)
-        //    {
-        //        MessageBox.Show("Error: Parent form is null!");
-        //        return;
-        //    }
-        //    this.parentForm = parent;
-        //    InitializeComponent();
-        //}
+       
 
         // IAddmemberView implementation
         public string MemberName
@@ -43,11 +33,7 @@ namespace OOP.Forms
             get { return txtUsername?.Text.Trim() ?? string.Empty; }
         }
 
-        // If you decide to re-introduce roles, uncomment this and its usage in Presenter
-        //public RoleType SelectedRole
-        //{
-        //    get { return RoleType.Member; }
-        //}
+      
 
         public void DisplayErrorMessage(string message)
         {
@@ -63,11 +49,7 @@ namespace OOP.Forms
         public void SetRoleOptions(string[] roles)
         {
             comboBox1.Items.Clear();
-            //comboBox1.Items.AddRange(roles);
-            //if (roles.Length > 0)
-            //{
-            //    comboBox1.SelectedItem = roles[0]; // Select the first role by default
-            //}
+         
         }
 
         // Event Handlers (delegates to Presenter)
