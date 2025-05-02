@@ -1,3 +1,7 @@
 *.vsidx
 .vs/
 .vscode/
+*.dll
+*.pdb
+*.cache
+*.json
