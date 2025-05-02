@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     [Table("ActivityLog")]
     public class ActivityLog

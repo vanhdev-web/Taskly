@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP.Models;
-using OOP;
+using Taskly.Models;
+using Taskly;
 
-namespace OOP.Usercontrols
+namespace Taskly.Usercontrols
 {
     public partial class MemberItem : UserControl
     {

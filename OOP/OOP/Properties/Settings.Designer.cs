@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OOP.Properties
+namespace Taskly.Properties
 {
 
 

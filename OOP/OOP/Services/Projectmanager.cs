@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OOP.Models;
-using OOP;
+using Taskly.Models;
+using Taskly;
 using Newtonsoft.Json;
 using System.IO;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
-namespace OOP.Services
+namespace Taskly.Services
 {
     internal class ProjectManager
     {

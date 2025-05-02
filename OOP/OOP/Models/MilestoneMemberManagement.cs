@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     [Table("MilestoneMemberManagement")]
     public class MilestoneMemberManagement

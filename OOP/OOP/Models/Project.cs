@@ -1,16 +1,16 @@
-﻿using OOP.Services;
-using OOP;
+﻿using Taskly.Services;
+using Taskly;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
-using OOP.Usercontrols;
+using Taskly.Usercontrols;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
    
     [Table("Projects")]

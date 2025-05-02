@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
-using OOP.Models;
+using Taskly.Models;
 using System.Linq;
-using OOP.Services;
+using Taskly.Services;
 
-namespace OOP
+namespace Taskly
 {
     public partial class Register : Form
     {

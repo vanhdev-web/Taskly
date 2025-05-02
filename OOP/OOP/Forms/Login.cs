@@ -1,13 +1,13 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Windows.Forms;
-using OOP.Models;
+using Taskly.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using OOP.Services;
+using Taskly.Services;
 
-namespace OOP
+namespace Taskly
 {
     public partial class Login : Form
     {

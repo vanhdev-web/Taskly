@@ -1,6 +1,6 @@
 ﻿// HomePresenter.cs
-using OOP.Models;
-using OOP.Services;
+using Taskly.Models;
+using Taskly.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Drawing;
 using System.Windows.Forms; // Cần cho Timer, MessageBox
 
-namespace OOP
+namespace Taskly
 {
     public class HomePresenter
     {

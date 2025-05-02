@@ -5,18 +5,18 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using OOP.Services;
-using User = OOP.Models.User;
-using OOP.Models;
+using Taskly.Services;
+using User = Taskly.Models.User;
+using Taskly.Models;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP.Models; // ModelUser, Meeting
-using ModelUser = OOP.Models.User; // Alias for clarity
-using OOP.Presenter; // AddMeetingPresenter
+using Taskly.Models; // ModelUser, Meeting
+using ModelUser = Taskly.Models.User; // Alias for clarity
+using Taskly.Presenter; // AddMeetingPresenter
 
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class AddMeeting : Form, IAddMeetingView
     {

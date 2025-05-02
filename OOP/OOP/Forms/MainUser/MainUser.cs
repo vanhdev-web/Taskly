@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using OOP.Models;
-using OOP.Services;
-using OOP.Usercontrols;
-using OOP.Forms.MainUser; // Added for IUserView
+using Taskly.Models;
+using Taskly.Services;
+using Taskly.Usercontrols;
+using Taskly.Forms.MainUser; // Added for IUserView
 
-namespace OOP
+namespace Taskly
 {
     public partial class MainUser : BaseForm, IUserView
     {

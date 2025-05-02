@@ -1,10 +1,10 @@
-﻿using OOP.Models;
+﻿using Taskly.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System;
-using ModelUser = OOP.Models.User;
+using ModelUser = Taskly.Models.User;
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class MeetingService
     {

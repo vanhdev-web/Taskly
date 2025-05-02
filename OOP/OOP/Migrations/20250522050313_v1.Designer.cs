@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using OOP.Models;
+using Taskly.Models;
 
 #nullable disable
 
-namespace OOP.Migrations
+namespace Taskly.Migrations
 {
     [DbContext(typeof(TaskManagementDBContext))]
     [Migration("20250522050313_v1")]
@@ -52,7 +52,7 @@ namespace OOP.Migrations
                     b.ToTable("Notifications");
                 });
 
-            modelBuilder.Entity("OOP.Models.Meeting", b =>
+            modelBuilder.Entity("Taskly.Models.Meeting", b =>
                 {
                     b.Property<int>("taskID")
                         .HasColumnType("INTEGER");
@@ -95,7 +95,7 @@ namespace OOP.Migrations
                     b.UseTpcMappingStrategy();
                 });
 
-            modelBuilder.Entity("OOP.Models.Milestone", b =>
+            modelBuilder.Entity("Taskly.Models.Milestone", b =>
                 {
                     b.Property<int>("taskID")
                         .HasColumnType("INTEGER");
@@ -134,7 +134,7 @@ namespace OOP.Migrations
                     b.UseTpcMappingStrategy();
                 });
 
-            modelBuilder.Entity("OOP.Models.Project", b =>
+            modelBuilder.Entity("Taskly.Models.Project", b =>
                 {
                     b.Property<int>("projectID")
                         .ValueGeneratedOnAdd()
@@ -160,7 +160,7 @@ namespace OOP.Migrations
                     b.ToTable("Projects");
                 });
 
-            modelBuilder.Entity("OOP.Models.Task", b =>
+            modelBuilder.Entity("Taskly.Models.Task", b =>
                 {
                     b.Property<int>("taskID")
                         .HasColumnType("INTEGER");
@@ -195,7 +195,7 @@ namespace OOP.Migrations
                     b.UseTpcMappingStrategy();
                 });
 
-            modelBuilder.Entity("OOP.Models.User", b =>
+            modelBuilder.Entity("Taskly.Models.User", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -227,7 +227,7 @@ namespace OOP.Migrations
 
             modelBuilder.Entity("Notification", b =>
                 {
-                    b.HasOne("OOP.Models.User", "Owner")
+                    b.HasOne("Taskly.Models.User", "Owner")
                         .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -236,15 +236,15 @@ namespace OOP.Migrations
                     b.Navigation("Owner");
                 });
 
-            modelBuilder.Entity("OOP.Models.Meeting", b =>
+            modelBuilder.Entity("Taskly.Models.Meeting", b =>
                 {
-                    b.HasOne("OOP.Models.User", "UserAssignedTo")
+                    b.HasOne("Taskly.Models.User", "UserAssignedTo")
                         .WithMany()
                         .HasForeignKey("AssignedTo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OOP.Models.Project", "Project")
+                    b.HasOne("Taskly.Models.Project", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -255,15 +255,15 @@ namespace OOP.Migrations
                     b.Navigation("UserAssignedTo");
                 });
 
-            modelBuilder.Entity("OOP.Models.Milestone", b =>
+            modelBuilder.Entity("Taskly.Models.Milestone", b =>
                 {
-                    b.HasOne("OOP.Models.User", "UserAssignedTo")
+                    b.HasOne("Taskly.Models.User", "UserAssignedTo")
                         .WithMany()
                         .HasForeignKey("AssignedTo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OOP.Models.Project", "Project")
+                    b.HasOne("Taskly.Models.Project", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -274,9 +274,9 @@ namespace OOP.Migrations
                     b.Navigation("UserAssignedTo");
                 });
 
-            modelBuilder.Entity("OOP.Models.Project", b =>
+            modelBuilder.Entity("Taskly.Models.Project", b =>
                 {
-                    b.HasOne("OOP.Models.User", "Admin")
+                    b.HasOne("Taskly.Models.User", "Admin")
                         .WithMany()
                         .HasForeignKey("AdminID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -285,15 +285,15 @@ namespace OOP.Migrations
                     b.Navigation("Admin");
                 });
 
-            modelBuilder.Entity("OOP.Models.Task", b =>
+            modelBuilder.Entity("Taskly.Models.Task", b =>
                 {
-                    b.HasOne("OOP.Models.User", "UserAssignedTo")
+                    b.HasOne("Taskly.Models.User", "UserAssignedTo")
                         .WithMany("Tasks")
                         .HasForeignKey("AssignedTo")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("OOP.Models.Project", "Project")
+                    b.HasOne("Taskly.Models.Project", "Project")
                         .WithMany()
                         .HasForeignKey("ProjectID")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -304,21 +304,21 @@ namespace OOP.Migrations
                     b.Navigation("UserAssignedTo");
                 });
 
-            modelBuilder.Entity("OOP.Models.User", b =>
+            modelBuilder.Entity("Taskly.Models.User", b =>
                 {
-                    b.HasOne("OOP.Models.Meeting", null)
+                    b.HasOne("Taskly.Models.Meeting", null)
                         .WithMany("Participants")
                         .HasForeignKey("MeetingID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("OOP.Models.Meeting", b =>
+            modelBuilder.Entity("Taskly.Models.Meeting", b =>
                 {
                     b.Navigation("Participants");
                 });
 
-            modelBuilder.Entity("OOP.Models.User", b =>
+            modelBuilder.Entity("Taskly.Models.User", b =>
                 {
                     b.Navigation("Tasks");
                 });

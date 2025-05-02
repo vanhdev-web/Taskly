@@ -8,9 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP.Presenter; // Thêm namespace của Presenter
+using Taskly.Presenter; // Thêm namespace của Presenter
 
-namespace OOP
+namespace Taskly
 {
     public partial class AvatarForm : Form, IAvatarView // Kế thừa IAvatarView
     {

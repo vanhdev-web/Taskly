@@ -1,4 +1,4 @@
-﻿namespace OOP.Usercontrols
+﻿namespace Taskly.Usercontrols
 {
     partial class HomeProjectUserControl
     {
@@ -65,7 +65,7 @@
             this.projectName.Name = "projectName";
             this.projectName.Size = new System.Drawing.Size(52, 25);
             this.projectName.TabIndex = 4;
-            this.projectName.Text = "OOP";
+            this.projectName.Text = "Taskly";
             // 
             // HomeProjectUserControl
             // 

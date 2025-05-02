@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace OOP.Migrations
+namespace Taskly.Migrations
 {
     /// <inheritdoc />
     public partial class v8 : Migration

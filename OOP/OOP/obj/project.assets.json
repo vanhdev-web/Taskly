@@ -3453,9 +3453,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\OOP.csproj",
-      "projectName": "OOP",
-      "projectPath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\OOP.csproj",
+      "projectUniqueName": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Taskly.csproj",
+      "projectName": "Taskly",
+      "projectPath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Taskly.csproj",
       "packagesPath": "C:\\Users\\bao\\.nuget\\packages\\",
       "outputPath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\obj\\",
       "projectStyle": "PackageReference",

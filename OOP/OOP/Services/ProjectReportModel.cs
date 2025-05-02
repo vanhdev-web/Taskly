@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using OOP.Models; // Assuming TaskManagementDBContext and Project are in OOP.Models
+using Taskly.Models; // Assuming TaskManagementDBContext and Project are in Taskly.Models
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     public class ProjectReportModel
     {

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     [Table("Users")] // Đặt tên bảng là "Users"
     [Serializable] // Thêm attribute Serializable để có thể serialize object
@@ -52,7 +52,7 @@ namespace OOP.Models
         public static void Login(string username)
         {
             // Tạo một đối tượng User và gán cho LoggedInUser
-            LoggedInUser = new User(1, username, "123", "OOP@.com"); // Ví dụ, ID = 1, bạn có thể thay bằng cách tạo ID tự động
+            LoggedInUser = new User(1, username, "123", "Taskly@.com"); // Ví dụ, ID = 1, bạn có thể thay bằng cách tạo ID tự động
         }
 
         // Phương thức để lấy thông tin người dùng đăng nhập

@@ -3,11 +3,11 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
-using OOP.Forms;
-using OOP.Models;
-using OOP.Services;
+using Taskly.Forms;
+using Taskly.Models;
+using Taskly.Services;
 
-namespace OOP.Usercontrols
+namespace Taskly.Usercontrols
 {
     public partial class MilestoneUserControl : UserControl
     {

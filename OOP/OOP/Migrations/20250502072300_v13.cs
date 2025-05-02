@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace OOP.Migrations
+namespace Taskly.Migrations
 {
     /// <inheritdoc />
     public partial class v13 : Migration

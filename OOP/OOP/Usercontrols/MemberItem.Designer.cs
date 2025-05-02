@@ -1,4 +1,4 @@
-﻿namespace OOP.Usercontrols
+﻿namespace Taskly.Usercontrols
 {
     partial class MemberItem
     {

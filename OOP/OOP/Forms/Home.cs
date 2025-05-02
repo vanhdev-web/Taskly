@@ -1,9 +1,9 @@
 ﻿// Home.cs
 using Microsoft.VisualBasic.ApplicationServices;
-using OOP;
-using OOP.Models;
-using OOP.Services;
-using OOP.Usercontrols;
+using Taskly;
+using Taskly.Models;
+using Taskly.Services;
+using Taskly.Usercontrols;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +14,9 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows.Forms;
-using User = OOP.Models.User;
+using User = Taskly.Models.User;
 
-namespace OOP
+namespace Taskly
 {
     public partial class Home : BaseForm, IHomeView // Kế thừa BaseForm và triển khai IHomeView
     {

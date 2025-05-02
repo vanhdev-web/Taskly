@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     [Table("MeetingMemberManagement")]
     public class MeetingMemberManagement

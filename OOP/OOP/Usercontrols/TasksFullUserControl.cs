@@ -2,12 +2,12 @@
 
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
-using OOP.Forms;
-using OOP.Models;
-using OOP.Services;
-using OOP.Usercontrols;
-using Task = OOP.Models.Task;
-namespace OOP.Usercontrols
+using Taskly.Forms;
+using Taskly.Models;
+using Taskly.Services;
+using Taskly.Usercontrols;
+using Task = Taskly.Models.Task;
+namespace Taskly.Usercontrols
 {
     public partial class TasksFullUserControl : UserControl
     {

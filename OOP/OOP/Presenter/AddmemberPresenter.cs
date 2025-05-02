@@ -1,10 +1,10 @@
-﻿using OOP.Forms;
-using OOP.Models;
-using OOP.Services;
+﻿using Taskly.Forms;
+using Taskly.Models;
+using Taskly.Services;
 using System;
 using System.Windows.Forms;
 
-namespace OOP.Presenters
+namespace Taskly.Presenters
 {
     public class AddmemberPresenter
     {

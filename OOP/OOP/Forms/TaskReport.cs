@@ -1,5 +1,5 @@
-﻿using OOP.Models;
-using OOP.Services;
+﻿using Taskly.Models;
+using Taskly.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -9,14 +9,14 @@ using Newtonsoft.Json;
 
 using System.IO;
 using System.Xml;
-using OOP.Usercontrols;
+using Taskly.Usercontrols;
 using System.Reflection;
 
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using OOP.Forms;
+using Taskly.Forms;
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class TaskReport : Form, ITaskReportView
     {

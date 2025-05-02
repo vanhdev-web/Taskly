@@ -1,8 +1,8 @@
-﻿using OOP.Models;
+﻿using Taskly.Models;
 using System;
 using System.Windows.Forms;
 
-namespace OOP.Forms // Changed namespace from OOP to OOP.Forms
+namespace Taskly.Forms // Changed namespace from Taskly to Taskly.Forms
 {
     partial class Addmember
     {

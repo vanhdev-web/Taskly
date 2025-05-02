@@ -1,4 +1,4 @@
-﻿namespace OOP
+﻿namespace Taskly
 {
     partial class Tasks
     {
@@ -317,7 +317,7 @@
             label4.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             label4.Size = new System.Drawing.Size(277, 67);
             label4.TabIndex = 4;
-            label4.Text = "OOP";
+            label4.Text = "Taskly";
             label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label6
@@ -382,7 +382,7 @@
             label1.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             label1.Size = new System.Drawing.Size(277, 67);
             label1.TabIndex = 4;
-            label1.Text = "OOP";
+            label1.Text = "Taskly";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
@@ -447,7 +447,7 @@
             taskProject.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
             taskProject.Size = new System.Drawing.Size(277, 67);
             taskProject.TabIndex = 4;
-            taskProject.Text = "OOP";
+            taskProject.Text = "Taskly";
             taskProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // taskContent

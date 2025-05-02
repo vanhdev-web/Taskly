@@ -1,13 +1,13 @@
-﻿using OOP.Forms;
-using OOP.Models;
-using ModelUser = OOP.Models.User;
-using OOP.Services;
+﻿using Taskly.Forms;
+using Taskly.Models;
+using ModelUser = Taskly.Models.User;
+using Taskly.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 
-namespace OOP.Presenter
+namespace Taskly.Presenter
 {
     public class AddtaskPresenter
     {

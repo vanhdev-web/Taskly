@@ -1,4 +1,4 @@
-﻿namespace OOP
+﻿namespace Taskly
 {
     partial class Home
     {
@@ -695,7 +695,7 @@
             label8.Name = "label8";
             label8.Size = new System.Drawing.Size(101, 50);
             label8.TabIndex = 4;
-            label8.Text = "OOP";
+            label8.Text = "Taskly";
             // 
             // Home
             // 

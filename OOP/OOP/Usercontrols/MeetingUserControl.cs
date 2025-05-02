@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
-using OOP.Models;
-using OOP.Services;
-using OOP.Forms;
+using Taskly.Models;
+using Taskly.Services;
+using Taskly.Forms;
 
-namespace OOP.Usercontrols
+namespace Taskly.Usercontrols
 {
     public partial class MeetingUserControl : UserControl
     {

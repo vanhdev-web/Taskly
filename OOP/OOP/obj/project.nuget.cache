@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BICFJ1epsc8=",
+  "dgSpecHash": "HKCFhMOczzU=",
   "success": true,
-  "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\OOP.csproj",
+  "projectFilePath": "C:\\Mac\\Home\\Documents\\GitHub\\Taskly\\OOP\\OOP\\Taskly.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bao\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\bao\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

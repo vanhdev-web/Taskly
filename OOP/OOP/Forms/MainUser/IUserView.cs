@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP.Forms.MainUser
+namespace Taskly.Forms.MainUser
 {
     public interface IUserView
     {

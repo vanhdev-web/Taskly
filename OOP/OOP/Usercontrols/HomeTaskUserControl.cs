@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using OOP.Models;
-using OOP.Services;
-using Task = OOP.Models.Task;
+using Taskly.Models;
+using Taskly.Services;
+using Task = Taskly.Models.Task;
 
-namespace OOP.Usercontrols
+namespace Taskly.Usercontrols
 {
     public partial class HomeTaskUserControl : UserControl
     {

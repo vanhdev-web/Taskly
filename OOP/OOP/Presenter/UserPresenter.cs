@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OOP.Models;
-using OOP.Services;
-using OOP;
-using OOP.Forms.MainUser; // For User.LoggedInUser
+using Taskly.Models;
+using Taskly.Services;
+using Taskly;
+using Taskly.Forms.MainUser; // For User.LoggedInUser
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class UserPresenter
     {

@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     public class TaskManagementDBContext : DbContext
     {

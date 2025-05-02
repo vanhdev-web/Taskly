@@ -1,10 +1,10 @@
-﻿using OOP.Models;
+﻿using Taskly.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using ModelUser = OOP.Models.User; // Alias for clarity
+using ModelUser = Taskly.Models.User; // Alias for clarity
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class MilestoneService
     {

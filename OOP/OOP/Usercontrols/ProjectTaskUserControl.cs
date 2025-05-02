@@ -1,5 +1,5 @@
-﻿using OOP.Models;
-using OOP.Services;
+﻿using Taskly.Models;
+using Taskly.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OOP.Usercontrols
+namespace Taskly.Usercontrols
 {
     public partial class ProjectTaskUserControl : UserControl
     {

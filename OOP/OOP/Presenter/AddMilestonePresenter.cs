@@ -1,13 +1,13 @@
-﻿using OOP.Forms; // IAddMilestoneView
-using OOP.Models; // ModelUser, Milestone, Project
-using OOP.Services; // MilestoneService, ProjectManager
+﻿using Taskly.Forms; // IAddMilestoneView
+using Taskly.Models; // ModelUser, Milestone, Project
+using Taskly.Services; // MilestoneService, ProjectManager
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
-using ModelUser = OOP.Models.User;
+using ModelUser = Taskly.Models.User;
 
-namespace OOP.Presenters
+namespace Taskly.Presenters
 {
     public class AddMilestonePresenter
     {

@@ -1,13 +1,13 @@
-﻿using OOP.Forms; // IAddMeetingView
-using OOP.Models; // ModelUser, Meeting, Project
-using OOP.Services; // MeetingService, ProjectManager
+﻿using Taskly.Forms; // IAddMeetingView
+using Taskly.Models; // ModelUser, Meeting, Project
+using Taskly.Services; // MeetingService, ProjectManager
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using ModelUser = OOP.Models.User;
+using ModelUser = Taskly.Models.User;
 using System.Linq;
 
-namespace OOP.Presenter
+namespace Taskly.Presenter
 {
     public class AddMeetingPresenter
     {

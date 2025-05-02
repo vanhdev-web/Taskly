@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using OOP.Models; // Assuming Project and User are in OOP.Models
-using OOP.Services; // For TaskManagementDBContext and User.LoggedInUser
+using Taskly.Models; // Assuming Project and User are in Taskly.Models
+using Taskly.Services; // For TaskManagementDBContext and User.LoggedInUser
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class ProjectReport : Form, IProjectReportView
     {

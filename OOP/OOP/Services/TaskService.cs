@@ -1,9 +1,9 @@
-﻿using OOP.Models;
+﻿using Taskly.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class TaskService
     {

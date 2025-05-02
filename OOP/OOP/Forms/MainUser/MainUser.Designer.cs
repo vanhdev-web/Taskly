@@ -1,4 +1,4 @@
-﻿namespace OOP
+﻿namespace Taskly
 {
     partial class MainUser
     {

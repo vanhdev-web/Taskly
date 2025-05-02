@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OOP.Models; // Ensure this points to your Models namespace for Task, Project, User
-using ModelUser = OOP.Models.User; // Alias for clarity
-using OOP.Presenter; // AddtaskPresenter
+using Taskly.Models; // Ensure this points to your Models namespace for Task, Project, User
+using ModelUser = Taskly.Models.User; // Alias for clarity
+using Taskly.Presenter; // AddtaskPresenter
 using System.Linq; // Ensure LINQ is available for queries
 
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class Addtask : Form, IAddtaskView
     {

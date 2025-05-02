@@ -1,8 +1,8 @@
-﻿using OOP.Models;
-using OOP.Services; // If TaskManagementDBContext is initialized here, otherwise in the form directly.
+﻿using Taskly.Models;
+using Taskly.Services; // If TaskManagementDBContext is initialized here, otherwise in the form directly.
 using System.Collections.Generic;
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public class TaskReportPresenter
     {

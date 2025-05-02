@@ -1,4 +1,4 @@
-﻿namespace OOP.Forms
+﻿namespace Taskly.Forms
 {
     partial class TaskReport
     {

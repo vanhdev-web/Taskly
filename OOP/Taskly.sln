@@ -1,9 +1,8 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{498AF7CB-ABCC-481F-A120-99E5FB569005}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Taskly", "OOP\Taskly.csproj", "{498AF7CB-ABCC-481F-A120-99E5FB569005}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

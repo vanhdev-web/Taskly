@@ -1,5 +1,5 @@
-﻿using OOP.Models;
-using OOP.Services;
+﻿using Taskly.Models;
+using Taskly.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,13 +7,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Xml;
-using OOP.Usercontrols;
+using Taskly.Usercontrols;
 using System.Reflection;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using OOP.Forms;
+using Taskly.Forms;
 
-namespace OOP
+namespace Taskly
 {
     public partial class Projects : BaseForm
     {

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using OOP.Models;
+using Taskly.Models;
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class TaskManager
     {
@@ -37,7 +37,7 @@ namespace OOP.Services
         {
             if (task == null) return;
 
-            if (task is OOP.Models.Task newtask)
+            if (task is Taskly.Models.Task newtask)
             {
                 using (var db = new TaskManagementDBContext())
                 {
@@ -114,7 +114,7 @@ namespace OOP.Services
                 // lấy các task, meeting, milestone có cùng projectID
                 var taskList = db.Tasks
                                  .Where(t => t.ProjectID == projectId && t.taskName != "AddUserToNewProject###")
-                                 .Select(t => new OOP.Models.Task
+                                 .Select(t => new Taskly.Models.Task
                                  {
                                      taskID = t.taskID,
                                      taskName = t.taskName,

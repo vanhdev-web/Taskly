@@ -1,4 +1,4 @@
-﻿namespace OOP.Usercontrols
+﻿namespace Taskly.Usercontrols
 {
     partial class MilestoneUserControl
     {
@@ -74,7 +74,7 @@
             this.taskProject.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.taskProject.Size = new System.Drawing.Size(95, 44);
             this.taskProject.TabIndex = 4;
-            this.taskProject.Text = "OOP";
+            this.taskProject.Text = "Taskly";
             this.taskProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // taskContent
@@ -91,7 +91,7 @@
             // 
             // checkBox
             // 
-            this.checkBox.ErrorImage = global::OOP.Properties.Resources.check;
+            this.checkBox.ErrorImage = global::Taskly.Properties.Resources.check;
             this.checkBox.InitialImage = null;
             this.checkBox.Location = new System.Drawing.Point(7, 6);
             this.checkBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

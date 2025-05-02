@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OOP.Models;
+using Taskly.Models;
 using System.Windows.Forms;
 
-namespace OOP.Services
+namespace Taskly.Services
 {
     public class ActivityLogService: IActivityLogService
     {

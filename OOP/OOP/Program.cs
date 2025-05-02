@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP.Forms;
+using Taskly.Forms;
 
-namespace OOP
+namespace Taskly
 {
     internal static class Program
     {

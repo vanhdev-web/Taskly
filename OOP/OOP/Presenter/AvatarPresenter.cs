@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-using OOP.Services;
+using Taskly.Services;
 using System.Windows.Forms;
-using OOP.Model; // Thêm namespace của Model
+using Taskly.Model; // Thêm namespace của Model
 
-namespace OOP.Presenter
+namespace Taskly.Presenter
 {
     public class AvatarPresenter
     {

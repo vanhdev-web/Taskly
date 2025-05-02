@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Drawing.Imaging;
-using OOP.Models;
+using Taskly.Models;
 using System.Windows.Forms; // Thêm namespace cho ImageFormat
 
-namespace OOP.Model
+namespace Taskly.Model
 {
     public class AvatarService
     {

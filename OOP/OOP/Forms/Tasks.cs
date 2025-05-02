@@ -5,13 +5,13 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
-using OOP.Forms;
-using OOP.Models;
-using OOP.Services;
-using OOP.Usercontrols;
+using Taskly.Forms;
+using Taskly.Models;
+using Taskly.Services;
+using Taskly.Usercontrols;
 using System.Linq;
 
-namespace OOP
+namespace Taskly
 {
     public partial class Tasks : BaseForm
     {

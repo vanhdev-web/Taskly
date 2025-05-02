@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OOP.Models;
-using OOP.Presenter;
-using OOP.Presenters; // AddmemberPresenter
+using Taskly.Models;
+using Taskly.Presenter;
+using Taskly.Presenters; // AddmemberPresenter
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class Addmember : Form, IAddmemberView
     {

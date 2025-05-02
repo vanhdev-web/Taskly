@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Windows.Forms;
-using OOP.Models;
-using OOP.Presenter;
-using OOP.Presenters;
+using Taskly.Models;
+using Taskly.Presenter;
+using Taskly.Presenters;
 
-namespace OOP.Forms
+namespace Taskly.Forms
 {
     public partial class AddMilestone : Form, IAddMilestoneView
     {

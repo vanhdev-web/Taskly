@@ -1,4 +1,4 @@
-﻿namespace OOP.Usercontrols
+﻿namespace Taskly.Usercontrols
 {
     partial class ProjectTaskUserControl
     {
@@ -89,7 +89,7 @@
             // 
             // checkBox
             // 
-            this.checkBox.ErrorImage = global::OOP.Properties.Resources.check;
+            this.checkBox.ErrorImage = global::Taskly.Properties.Resources.check;
             this.checkBox.InitialImage = null;
             this.checkBox.Location = new System.Drawing.Point(15, 7);
             this.checkBox.Name = "checkBox";

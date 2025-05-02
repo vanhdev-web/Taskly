@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using OOP.Models;
-using OOP.Services;
+using Taskly.Models;
+using Taskly.Services;
 using Newtonsoft.Json;
 using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace OOP.Models
+namespace Taskly.Models
 {
     public abstract class AbaseTask : IComparable<AbaseTask>
     {
