@@ -30,31 +30,20 @@
         {
             label2 = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
-            label2 = new System.Windows.Forms.Label();
             SuspendLayout();
-            // 
-            // listViewActivityLog
-            // 
-            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
-            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
-            listViewActivityLog.Name = "listViewActivityLog";
-            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
-            listViewActivityLog.TabIndex = 7;
-            listViewActivityLog.UseCompatibleStateImageBehavior = false;
-            listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
             // label2
             // 
             label2.BackColor = System.Drawing.Color.Transparent;
             label2.Dock = System.Windows.Forms.DockStyle.Top;
             label2.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label2.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             label2.Location = new System.Drawing.Point(0, 0);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(1533, 92);
             label2.TabIndex = 8;
-            label2.Text = "Task Report";
+            label2.Text = "Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewActivityLog

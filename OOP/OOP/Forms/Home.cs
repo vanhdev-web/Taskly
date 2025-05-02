@@ -49,9 +49,9 @@ namespace OOP
 
             // Áp dụng các sự kiện chuột ban đầu cho các Panel chính (hiệu ứng hover, v.v.)
             // Logic này vẫn thuộc về View
-            ApplyMouseEvents(TopPanel);
-            ApplyMouseEvents(projectPanel);
-            ApplyMouseEvents(taskPanel);
+            //ApplyMouseEvents(TopPanel);
+            //ApplyMouseEvents(projectPanel);
+            //ApplyMouseEvents(taskPanel);
         }
 
         // Triển khai các phương thức từ IHomeView
@@ -141,10 +141,13 @@ namespace OOP
 
         public void SwitchForm(Form newForm)
         {
+            newForm.StartPosition = FormStartPosition.Manual;
+            newForm.Location = this.Location;  // Lưu vị trí form hiện tại
+
             this.Hide();
-            newForm.ShowDialog();
-            this.Close();
+            newForm.Show();  // hoặc ShowDialog() nếu cần
         }
+
 
         public void ExitApplication()
         {

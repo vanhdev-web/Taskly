@@ -141,8 +141,9 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Transparent;
             label1.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
-            label1.ForeColor = System.Drawing.Color.White;
+            label1.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             label1.Location = new System.Drawing.Point(110, 26);
             label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             label1.Name = "label1";
@@ -166,7 +167,7 @@
             WelcomeName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             WelcomeName.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
             WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            WelcomeName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            WelcomeName.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             WelcomeName.Location = new System.Drawing.Point(306, 26);
             WelcomeName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             WelcomeName.Name = "WelcomeName";
@@ -194,12 +195,12 @@
             // 
             // panel3
             // 
-            panel3.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel3.BackColor = System.Drawing.Color.FromArgb(63, 150, 252);
             panel3.Controls.Add(btnHome);
             panel3.EdgeColor = System.Drawing.Color.Transparent;
             panel3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel3.Location = new System.Drawing.Point(5, 6);
-            panel3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            panel3.Location = new System.Drawing.Point(0, 0);
+            panel3.Margin = new System.Windows.Forms.Padding(0);
             panel3.Name = "panel3";
             panel3.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
             panel3.Size = new System.Drawing.Size(474, 108);
@@ -236,7 +237,7 @@
             panel4.Controls.Add(btnTask);
             panel4.EdgeColor = System.Drawing.Color.Transparent;
             panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel4.Location = new System.Drawing.Point(5, 126);
+            panel4.Location = new System.Drawing.Point(5, 114);
             panel4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             panel4.Name = "panel4";
             panel4.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
@@ -274,7 +275,7 @@
             menu.Controls.Add(btnProject);
             menu.EdgeColor = System.Drawing.Color.Transparent;
             menu.ForeColor = System.Drawing.Color.Transparent;
-            menu.Location = new System.Drawing.Point(0, 240);
+            menu.Location = new System.Drawing.Point(0, 228);
             menu.Margin = new System.Windows.Forms.Padding(0);
             menu.Name = "menu";
             menu.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
@@ -312,7 +313,7 @@
             panel5.Controls.Add(btnUser);
             panel5.EdgeColor = System.Drawing.Color.Transparent;
             panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel5.Location = new System.Drawing.Point(5, 354);
+            panel5.Location = new System.Drawing.Point(5, 342);
             panel5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             panel5.Name = "panel5";
             panel5.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
@@ -352,7 +353,7 @@
             panel2.Controls.Add(btnExit);
             panel2.EdgeColor = System.Drawing.Color.Transparent;
             panel2.ForeColor = System.Drawing.Color.White;
-            panel2.Location = new System.Drawing.Point(5, 474);
+            panel2.Location = new System.Drawing.Point(5, 462);
             panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             panel2.Name = "panel2";
             panel2.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);

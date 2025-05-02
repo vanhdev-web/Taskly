@@ -185,14 +185,7 @@ namespace OOP
 
         private void ctmFinished_Click(object sender, EventArgs e)
         {
-            //List<AbaseTask> taskslistother = new List<AbaseTask>();
-            //foreach (AbaseTask task in (GetUserTasks()))
-            //{
-            //    if (task.status == "Finished")
-            //    {
-            //        taskslistother.Add(task);
-            //    }
-            //}
+
 
             using (var dbcontext = new TaskManagementDBContext())
             {
@@ -215,16 +208,6 @@ namespace OOP
 
         private void ctnSection_Click(object sender, EventArgs e)
         {
-            //List<AbaseTask> taskslistother = new List<AbaseTask>();
-            //foreach (AbaseTask task in (GetUserTasks()))
-            //{
-            //    if (task.status != "Finished")
-            //    {
-            //        Console.WriteLine(task.taskName);
-            //        taskslistother.Add(task);
-            //    }
-            //}
-            //LoadTasks(taskslistother);
 
             using (var dbcontext = new TaskManagementDBContext())
             {
@@ -255,10 +238,10 @@ namespace OOP
             SwitchForm(new Tasks());
         }
 
-        //private void btnUser_Click(object sender, EventArgs e)
-        //{
-        //    SwitchForm(new MainUser());
-        //}
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            SwitchForm(new MainUser());
+        }
 
         private void btnProject_Click(object sender, EventArgs e)
         {

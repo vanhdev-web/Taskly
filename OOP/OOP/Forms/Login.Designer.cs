@@ -126,7 +126,7 @@ namespace OOP
             // 
             Logintext.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Logintext.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Logintext.ForeColor = Color.Cornsilk;
+            Logintext.ForeColor = Color.FromArgb(63, 150, 252);
             Logintext.Location = new Point(127, -1);
             Logintext.Name = "Logintext";
             Logintext.Size = new Size(897, 96);
@@ -175,7 +175,7 @@ namespace OOP
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.Font = new System.Drawing.Font("Segoe UI Semibold", 32F, FontStyle.Bold);
-            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.ForeColor = Color.FromArgb(63, 150, 252);
             label3.Location = new Point(-20, 194);
             label3.Name = "label3";
             label3.Size = new Size(627, 96);

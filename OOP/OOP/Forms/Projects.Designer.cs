@@ -269,7 +269,7 @@ namespace OOP
             // 
             // menu
             // 
-            menu.BackColor = Color.FromArgb(30, 30, 32);
+            menu.BackColor = Color.FromArgb(63, 150, 252);
             menu.Controls.Add(button7);
             menu.EdgeColor = Color.Transparent;
             menu.ForeColor = Color.Transparent;
@@ -518,7 +518,7 @@ namespace OOP
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
-            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.ForeColor = Color.FromArgb(63, 150, 252);
             label3.Location = new Point(110, 26);
             label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
@@ -541,7 +541,7 @@ namespace OOP
             // 
             WelcomeName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             WelcomeName.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            WelcomeName.ForeColor = SystemColors.ControlLightLight;
+            WelcomeName.ForeColor = Color.FromArgb(63, 150, 252);
             WelcomeName.Location = new Point(306, 16);
             WelcomeName.Margin = new Padding(5, 0, 5, 0);
             WelcomeName.Name = "WelcomeName";
