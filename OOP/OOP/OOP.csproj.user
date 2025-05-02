@@ -81,6 +81,9 @@
     <EmbeddedResource Update="Forms\Projects.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Update="Usercontrols\HomeProjectUserControl.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Update="Usercontrols\HomeTaskUserControl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -88,9 +91,6 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="Usercontrols\MilestoneUserControl.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Usercontrols\NotiUserControl.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>

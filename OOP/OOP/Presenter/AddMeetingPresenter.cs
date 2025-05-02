@@ -22,7 +22,6 @@ namespace OOP.Presenter
             _projectManager = new ProjectManager();
             _activityLogService = new ActivityLogService(new TaskManagementDBContext());
         }
-
         public void InitializeProjects()
         {
             List<string> projectNames = new List<string>();

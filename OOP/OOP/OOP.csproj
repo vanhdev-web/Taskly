@@ -48,9 +48,6 @@
     <Compile Update="Usercontrols\TasksFullUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="Usercontrols\NotiUserControl.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />

@@ -156,7 +156,6 @@ C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercon
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercontrols.MeetingUserControl.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercontrols.MemberItem.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercontrols.MilestoneUserControl.resources
-C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.NotiUserControl.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercontrols.ProjectTaskUserControl.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Usercontrols.TasksFullUserControl.resources
 C:\Mac\Home\Documents\GitHub\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.csproj.GenerateResource.cache

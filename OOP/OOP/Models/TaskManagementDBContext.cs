@@ -17,7 +17,7 @@ namespace OOP.Models
         public DbSet<Task> Tasks { get; set; }
         public DbSet<Meeting> Meetings { get; set; }
         public DbSet<Milestone> Milestones { get; set; }
-        public DbSet<Notification> Notifications { get; set; }
+  
         public DbSet<MeetingMemberManagement> MeetingMemberManagements { get; set; }    
         public DbSet<MilestoneMemberManagement> MilestoneMemberManagements { get; set; }
         public DbSet<ActivityLog> ActivityLogs { get; set; }

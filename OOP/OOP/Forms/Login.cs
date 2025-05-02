@@ -151,7 +151,7 @@ namespace OOP
 
         private void SeedData(TaskManagementDBContext context)
         {
-            if (context.Users.Any() || context.Projects.Any() || context.Tasks.Any() || context.Meetings.Any() || context.Milestones.Any() || context.Notifications.Any())
+            if (context.Users.Any() || context.Projects.Any() || context.Tasks.Any() || context.Meetings.Any() || context.Milestones.Any())
             {
                 return; // Dữ liệu đã được khởi tạo
             }
@@ -173,14 +173,7 @@ namespace OOP
                 new Milestone {  Description = "User training", taskName = "Training", status = "Unfinished", deadline = DateTime.Parse("2025-06-25"), AssignedTo = 5, ProjectID = 3 },
             };
 
-            var notifications = new List<Notification>
-            {
-                new Notification { Title = "Welcome", UserID = 1, CreateAt = DateTime.Now.AddDays(-10), Content = "Welcome to the project management system." },
-                new Notification { Title = "Task Assigned", UserID = 2, CreateAt = DateTime.Now.AddDays(-5), Content = "You have been assigned a new task." },
-                new Notification { Title = "Meeting Reminder", UserID = 3, CreateAt = DateTime.Now.AddDays(-2), Content = "Reminder: Meeting scheduled tomorrow." },
-                new Notification { Title = "Project Update", UserID = 4, CreateAt = DateTime.Now.AddDays(-1), Content = "Project deadline has been updated." },
-                new Notification { Title = "System Maintenance", UserID = 5, CreateAt = DateTime.Now, Content = "System maintenance scheduled for this weekend." },
-            };
+            
 
             var projects = new List<Project>
             {
@@ -217,7 +210,7 @@ namespace OOP
             context.Meetings.AddRange(meetings);
             context.SaveChanges();
             context.Milestones.AddRange(milestones); context.SaveChanges();
-            context.Notifications.AddRange(notifications); context.SaveChanges();
+
   
 
 

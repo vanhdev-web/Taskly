@@ -75,10 +75,10 @@ namespace OOP
                 //Activitylog đăng ký
                 ActivityLogService activityLogService = new ActivityLogService(db);
                 await activityLogService.LogActivityAsync(userId: null, objectType: "User", objectId: newUser.ID, action: "Register", details: $"User Name :{newUser.Username} Email : {newUser.Email} ");
-                MessageBox.Show("Activitlog đăng ký");
+                
           
 
-                NotificationManager.Instance.SendAccountNotification(newUser.ID);
+              
                 MessageBox.Show("Đăng ký thành công!");
                 this.Close();
 
