@@ -5,3 +5,5 @@
 *.pdb
 *.cache
 *.json
+*.db-wal
+*.db-shm
