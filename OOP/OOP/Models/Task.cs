@@ -17,7 +17,7 @@ namespace OOP.Models
         public int taskID { get; set; }
 
         [StringLength(100)]
-        [Column("TaskName",TypeName = "nvarchar")]
+        [Column("TaskName", TypeName = "nvarchar")]
         [Required]
         public string taskName { get; set; }
 
@@ -30,26 +30,26 @@ namespace OOP.Models
 
         public int AssignedTo { get; set; } // ✅ Moved AssignedTo to AbaseTask
         [ForeignKey("AssignedTo")]
-        public virtual User UserAssignedTo { get; set; } 
+        public virtual User UserAssignedTo { get; set; }
 
         public int ProjectID { get; set; } // ✅ Moved ProjectID to AbaseTask
         [ForeignKey("ProjectID")]
-        public virtual Project Project { get; set; } 
+        public virtual Project Project { get; set; }
 
-     
 
-      
-       
 
-      
 
-        public AbaseTask( string taskName, string status, DateTime deadline,  int assignedTo)
+
+
+
+
+        public AbaseTask(string taskName, string status, DateTime deadline, int assignedTo)
         {
-    
+
             this.taskName = taskName;
             this.status = status;
             this.deadline = deadline;
-       
+
             this.AssignedTo = assignedTo; // ✅ Now all tasks have AssignedTo
         }
         public AbaseTask() { }
@@ -61,7 +61,7 @@ namespace OOP.Models
             return 0;
         }
 
-   
+
 
         public virtual void Message()
         {
@@ -76,10 +76,10 @@ namespace OOP.Models
     {
 
 
-        public Task( string taskName, string status, DateTime deadline,  int assignedTo)
-            : base( taskName, status, deadline,  assignedTo)
+        public Task(string taskName, string status, DateTime deadline, int assignedTo)
+            : base(taskName, status, deadline, assignedTo)
         {
-           
+
         }
         public Task() : base()
         {
@@ -100,18 +100,18 @@ namespace OOP.Models
     {
         [Required]
         public string Location { get; set; }
-    
 
-        [Required]  
+
+        [Required]
         public string Hour { get; set; }
 
         public virtual ICollection<MeetingMemberManagement> MeetingUsers { get; set; }
 
-        public Meeting( string taskName, string status, DateTime deadline, string hour,  string location, int assignedTo)
-            : base( taskName, status, deadline,  assignedTo)
+        public Meeting(string taskName, string status, DateTime deadline, string hour, string location, int assignedTo)
+            : base(taskName, status, deadline, assignedTo)
         {
             Location = location;
-    
+
             Hour = hour;
         }
 
@@ -138,8 +138,8 @@ namespace OOP.Models
         public string Description { get; set; }
         public virtual ICollection<MilestoneMemberManagement> MilestoneUsers { get; set; }
 
-        public Milestone( string taskName, string status, DateTime deadline, string description,  int assignedTo)
-            : base( taskName, status, deadline,  assignedTo)
+        public Milestone(string taskName, string status, DateTime deadline, string description, int assignedTo)
+            : base(taskName, status, deadline, assignedTo)
         {
             Description = description;
         }
@@ -160,4 +160,3 @@ namespace OOP.Models
 
 
 }
-
