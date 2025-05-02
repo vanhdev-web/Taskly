@@ -57,81 +57,68 @@ namespace OOP.Forms
             get { return cbbAssignedUser.Text.Trim(); } // [cite: 24]
             set { cbbAssignedUser.Text = value; }
         }
-
         public void SetProjectOptions(List<string> projectNames)
         {
-            cbbSelectProject.Items.Clear(); // [cite: 8]
-            foreach (string projectName in projectNames) // [cite: 9]
+            using (var db = new TaskManagementDBContext())
             {
-                // giả sử có thuộc tính adminId trong form này
-
-                // lấy danh sách project có adminid phù hợp
+                // Lọc các project do chính user quản lý
                 var filteredProjects = db.Projects
-                                         .Where(p => p.AdminID == User.LoggedInUser.ID)
+                                         .Where(p => p.AdminID == User.LoggedInUser.ID &&
+                                                     projectNames.Contains(p.projectName))
                                          .ToList();
 
-                // đổ tên project vào combobox
+                // Đổ tên project vào combobox
                 cbbSelectProject.Items.Clear();
                 foreach (var project in filteredProjects)
                 {
                     cbbSelectProject.Items.Add(project.projectName);
                 }
 
-                // nếu có project thì chọn mặc định là project đầu tiên
+                // Nếu có project thì chọn mặc định là project đầu tiên
                 if (cbbSelectProject.Items.Count > 0)
                 {
                     cbbSelectProject.SelectedIndex = 0;
                     string selectedProjectName = cbbSelectProject.SelectedItem.ToString();
 
-                    // tìm lại projectid từ tên
                     var selectedProject = filteredProjects
                                           .FirstOrDefault(p => p.projectName == selectedProjectName);
                     if (selectedProject == null) return;
 
                     int selectedProjectId = selectedProject.projectID;
 
-                    // lấy danh sách userid từ các bảng task, meeting, milestone thuộc projectid
-                    var taskUsers = db.Tasks
-                                      .Where(t => t.ProjectID == selectedProjectId)
-                                      .Select(t => t.AssignedTo);
+                    // Lấy tất cả userId liên quan đến task, meeting, milestone
+                    var userIds = db.Tasks
+                                    .Where(t => t.ProjectID == selectedProjectId)
+                                    .Select(t => t.AssignedTo)
+                                    .Union(db.Meetings
+                                              .Where(m => m.ProjectID == selectedProjectId)
+                                              .Select(m => m.AssignedTo))
+                                    .Union(db.Milestones
+                                              .Where(ms => ms.ProjectID == selectedProjectId)
+                                              .Select(ms => ms.AssignedTo))
+                                    .Distinct()
+                                    .ToList();
 
-                    var meetingUsers = db.Meetings
-                                         .Where(m => m.ProjectID == selectedProjectId)
-                                         .Select(m => m.AssignedTo);
-
-                    var milestoneUsers = db.Milestones
-                                           .Where(ms => ms.ProjectID == selectedProjectId)
-                                           .Select(ms => ms.AssignedTo);
-
-                    var userIds = taskUsers
-                                  .Union(meetingUsers)
-                                  .Union(milestoneUsers)
-                                  .Distinct()
-                                  .ToList();
-
-                    // lấy thông tin người dùng từ userids
+                    // Lấy user theo danh sách userId
                     var users = db.Users
                                   .Where(u => userIds.Contains(u.ID))
                                   .ToList();
 
-                    // Add "Myself" first
+                    // Đổ user vào combobox
                     cbbAssignedUser.Items.Clear();
                     cbbAssignedUser.Items.Add("Myself");
-
-                    // Then add all other users except the logged-in user
                     foreach (var user in users)
                     {
-                        if (user.ID != User.LoggedInUser.ID) // skip logged-in user here
+                        if (user.ID != User.LoggedInUser.ID)
                         {
                             cbbAssignedUser.Items.Add(user.Username);
                         }
                     }
-
                 }
-
-                cbbSelectProject.Items.Add(projectName); // [cite: 9]
             }
         }
+
+
 
         public void SetAssignedUserOptions(List<string> userNames)
         {

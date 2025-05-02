@@ -288,7 +288,7 @@ namespace OOP
                     DisplayMembers(selectedProject); // cập nhật giao diện
                     ActivityLogService activityLogService = new ActivityLogService(dbContext);
                     await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "Project", objectId: selectedProject.projectID, action: "Add Member", details: $"{User.LoggedInUser.Username} đã mời {user.Username} vào dự án {selectedProject.projectName} ");
-                    MessageBox.Show($"Đã thêm {newMember} vào dự án dưới dạng một nhiệm vụ mặc định.");
+                    MessageBox.Show($"Đã thêm {newMember} vào dự án");
                 }
             }
         }

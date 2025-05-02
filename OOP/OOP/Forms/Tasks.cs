@@ -277,40 +277,40 @@ namespace OOP
 
         }
 
-        private void taskToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void taskToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Addtask addTaskForm = new Addtask(projects, taskManager.Tasks, users);
-            if (addTaskForm.ShowDialog() == DialogResult.OK)
+            if (addTaskForm.ShowDialog() == DialogResult.OK && addTaskForm.NewTask != null)
             {
-                taskManager.AddTask(addTaskForm.NewTask);
+                await taskManager.AddTask(addTaskForm.NewTask);
                 LoadTasks(GetUserTasks());
                 addTaskForm.NewTask.Message();
             }
-
         }
 
-        private void milestoneToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void milestoneToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddMilestone addMilestone = new AddMilestone();
-            if (addMilestone.ShowDialog() == DialogResult.OK)
+            if (addMilestone.ShowDialog() == DialogResult.OK && addMilestone.milestone != null)
             {
-                taskManager.AddTask(addMilestone.milestone); // Thêm task mới vào danh sách
+                await taskManager.AddTask(addMilestone.milestone);
                 LoadTasks(GetUserTasks());
                 addMilestone.milestone.Message();
             }
-
         }
 
-        private void meetingToolStripMenuItem_Click(object sender, EventArgs e)
+        private async void meetingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddMeeting addMeeting = new AddMeeting(users);
-            if (addMeeting.ShowDialog() == DialogResult.OK)
+            if (addMeeting.ShowDialog() == DialogResult.OK && addMeeting.newMeeting != null)
             {
-                taskManager.AddTask(addMeeting.newMeeting); // Thêm task mới vào danh sách
+                await taskManager.AddTask(addMeeting.newMeeting);
                 LoadTasks(GetUserTasks());
                 addMeeting.newMeeting.Message();
             }
         }
+
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
