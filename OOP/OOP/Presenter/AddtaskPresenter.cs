@@ -1,7 +1,7 @@
-﻿using OOP.Forms; // IAddtaskView
-using OOP.Models; // User, Project, Task (using Models.Task explicitly)
-using ModelUser = OOP.Models.User; // Alias for clarity
-using OOP.Services; // TaskService, ProjectManager, UserService
+﻿using OOP.Forms;
+using OOP.Models;
+using ModelUser = OOP.Models.User;
+using OOP.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,14 +13,14 @@ namespace OOP.Presenter
     {
         private IAddtaskView _view;
         private TaskService _taskService;
-        private ProjectManager _projectManager; // [cite: 43]
-        private UserService _userService; // Used for User.LoggedInUser, etc.
+        private ProjectManager _projectManager;
+        private UserService _userService;
 
         public AddtaskPresenter(IAddtaskView view)
         {
             _view = view;
             _taskService = new TaskService();
-            _projectManager = new ProjectManager(); // [cite: 43]
+            _projectManager = new ProjectManager();
             _userService = new UserService();
         }
 
@@ -39,61 +39,61 @@ namespace OOP.Presenter
         {
             List<string> projectNames = new List<string>();
 
-            if (ModelUser.LoggedInUser == null) return; // [cite: 45]
+            if (ModelUser.LoggedInUser == null) return;
 
-            foreach (Project project in _projectManager.Projects) // [cite: 45]
+            foreach (Project project in _projectManager.Projects)
             {
-                if (project == null || project.members == null) continue; // [cite: 45]
+                if (project == null || project.members == null) continue;
 
-                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}"); // [cite: 46]
+                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}");
 
-                bool isMember = false; // [cite: 47]
+                bool isMember = false;
                 // Original code had a commented out loop to check if logged-in user is a member of the project
                 // For MVP, we'll implement this logic properly if needed.
                 // Assuming "members" is a list of strings like "username (id)".
-                foreach (string member in project.members) // [cite: 47]
+                foreach (string member in project.members)
                 {
-                    string memberUsername = member.Split('(')[0].Trim(); // [cite: 47]
-                    if (memberUsername == ModelUser.LoggedInUser.Username) // [cite: 47]
+                    string memberUsername = member.Split('(')[0].Trim();
+                    if (memberUsername == ModelUser.LoggedInUser.Username)
                     {
-                        isMember = true; // [cite: 48]
-                        break; // [cite: 48]
+                        isMember = true;
+                        break;
                     }
                 }
 
-                if (project.AdminID == ModelUser.LoggedInUser.ID || isMember) // [cite: 49]
+                if (project.AdminID == ModelUser.LoggedInUser.ID || isMember)
                 {
-                    projectNames.Add($"{project.projectName}"); // [cite: 49]
+                    projectNames.Add($"{project.projectName}");
                 }
             }
             _view.SetProjectOptions(projectNames);
 
             // Select the first project if available, as in original logic
-            if (projectNames.Count > 0) // [cite: 10]
+            if (projectNames.Count > 0)
             {
-                _view.SelectedProjectName = projectNames[0]; // [cite: 10]
+                _view.SelectedProjectName = projectNames[0];
             }
         }
 
-        public void HandleProjectSelectionChanged(string projectName) // [cite: 49]
+        public void HandleProjectSelectionChanged(string projectName)
         {
             // Original code used `savedProjectName` field. We pass it directly now.
             UpdateAssignedUserComboBox(projectName);
         }
 
-        private void UpdateAssignedUserComboBox(string projectName) // [cite: 50]
+        private void UpdateAssignedUserComboBox(string projectName)
         {
             List<string> userNames = new List<string>();
 
-            int selectedProjectId = _taskService.GetProjectIdByName(projectName); // [cite: 51, 52]
+            int selectedProjectId = _taskService.GetProjectIdByName(projectName);
 
-            if (selectedProjectId == 0) return; // [cite: 52]
+            if (selectedProjectId == 0) return;
 
-            List<ModelUser> usersInProject = _taskService.GetProjectMembers(selectedProjectId); // [cite: 52, 53, 54, 55, 56, 57, 58]
+            List<ModelUser> usersInProject = _taskService.GetProjectMembers(selectedProjectId);
 
-            foreach (var user in usersInProject) // [cite: 59]
+            foreach (var user in usersInProject)
             {
-                userNames.Add(user.Username); // [cite: 59]
+                userNames.Add(user.Username);
             }
             _view.SetAssignedUserOptions(userNames);
         }
@@ -101,65 +101,65 @@ namespace OOP.Presenter
 
         public void ConfirmTask()
         {
-            string taskName = _view.TaskName; // [cite: 23]
-            DateTime deadline = _view.TaskDeadline; // [cite: 24]
-            string projectName = _view.SelectedProjectName; // [cite: 24]
-            string receiverUsername = _view.SelectedAssignedUser; // [cite: 24]
+            string taskName = _view.TaskName;
+            DateTime deadline = _view.TaskDeadline;
+            string projectName = _view.SelectedProjectName;
+            string receiverUsername = _view.SelectedAssignedUser;
 
-            if (string.IsNullOrWhiteSpace(taskName) || string.IsNullOrWhiteSpace(projectName) || string.IsNullOrWhiteSpace(receiverUsername)) // [cite: 25]
+            if (string.IsNullOrWhiteSpace(taskName) || string.IsNullOrWhiteSpace(projectName) || string.IsNullOrWhiteSpace(receiverUsername))
             {
-                _view.DisplayErrorMessage("Please fill in all fields."); // [cite: 25]
-                return; // [cite: 26]
+                _view.DisplayErrorMessage("Please fill in all fields.");
+                return;
             }
 
-            int projectId = _taskService.GetProjectIdByName(projectName); // [cite: 26]
-            if (projectId == 0) // [cite: 27]
+            int projectId = _taskService.GetProjectIdByName(projectName);
+            if (projectId == 0)
             {
-                _view.DisplayErrorMessage("Project not found."); // [cite: 27]
-                return; // [cite: 28]
+                _view.DisplayErrorMessage("Project not found.");
+                return;
             }
 
-            int receiverID = 0; // [cite: 28]
-            if (receiverUsername == "Myself") // [cite: 29]
+            int receiverID = 0;
+            if (receiverUsername == "Myself")
             {
-                receiverID = ModelUser.LoggedInUser.ID; // [cite: 29]
+                receiverID = ModelUser.LoggedInUser.ID;
             }
             else
             {
                 // Retrieve user from database based on username and project membership
-                ModelUser matchedUser = _taskService.GetUserByUsernameAndProject(receiverUsername, projectId); // [cite: 30, 31, 32, 33, 34, 35, 36, 37]
+                ModelUser matchedUser = _taskService.GetUserByUsernameAndProject(receiverUsername, projectId);
 
-                if (matchedUser == null) // [cite: 38]
+                if (matchedUser == null)
                 {
-                    _view.DisplayErrorMessage($"{receiverUsername} is not a member of this project."); // [cite: 38]
-                    return; // [cite: 39]
+                    _view.DisplayErrorMessage($"{receiverUsername} is not a member of this project.");
+                    return;
                 }
-                receiverID = matchedUser.ID; // [cite: 39]
+                receiverID = matchedUser.ID;
             }
 
             // Create and save the new task using the service
-            Task newTask = _taskService.CreateTask(taskName, deadline, receiverID, projectId); // [cite: 40, 41]
+            Task newTask = _taskService.CreateTask(taskName, deadline, receiverID, projectId);
 
-            _view.CloseView(newTask); // [cite: 42, 43]
+            _view.CloseView(newTask);
         }
 
         public void CancelTask()
         {
-            _view.CancelValidation(new CancelEventArgs(), true); // Simulating cancel button behavior [cite: 22, 23]
-            _view.CloseView(null); // Close with a null task or specific cancel result [cite: 22, 23]
+            _view.CancelValidation(new CancelEventArgs(), true); // Simulating cancel button behavior
+            _view.CloseView(null); // Close with a null task or specific cancel result
         }
 
-        public void ValidateTaskName(string taskName, CancelEventArgs e) // [cite: 61]
+        public void ValidateTaskName(string taskName, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(taskName)) // [cite: 61]
+            if (string.IsNullOrWhiteSpace(taskName))
             {
-                _view.CancelValidation(e, true); // Chặn chuyển focus nếu input trống [cite: 61, 62]
-                _view.SetTaskNameError("Please enter task name!"); // [cite: 62]
+                _view.CancelValidation(e, true); // Chặn chuyển focus nếu input trống
+                _view.SetTaskNameError("Please enter task name!");
             }
             else
             {
-                _view.CancelValidation(e, false); // Cho phép focus rời khỏi control [cite: 63, 64]
-                _view.SetTaskNameError(null); // [cite: 64]
+                _view.CancelValidation(e, false); // Cho phép focus rời khỏi control
+                _view.SetTaskNameError(null);
             }
         }
     }

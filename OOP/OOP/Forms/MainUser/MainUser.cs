@@ -12,20 +12,50 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using OOP.Models;
 using OOP.Services;
 using OOP.Usercontrols;
+using OOP.Forms.MainUser; // Added for IUserView
 
 namespace OOP
 {
-    public partial class MainUser : BaseForm
+    public partial class MainUser : BaseForm, IUserView
     {
+        private UserPresenter _presenter;
+
         public MainUser()
         {
             InitializeComponent();
-            LoadUserActivities();
-            lblUserName.Text = User.LoggedInUser.Username;
-            lblEmail.Text = User.LoggedInUser.Email;
-            if (User.LoggedInUser.Avatar != null && User.LoggedInUser.Avatar.Length > 0)
+            _presenter = new UserPresenter(this);
+            _presenter.LoadUserData(); // Load user data via presenter
+        }
+
+        // IUserView implementation
+        public int CurrentUserID
+        {
+            get { return User.LoggedInUser.ID; }
+        }
+
+        public void DisplayActivityHistory(string[] activities)
+        {
+            listViewActivityLog.Items.Clear();
+            if (activities.Any())
             {
-                using (MemoryStream ms = new MemoryStream(User.LoggedInUser.Avatar))
+                foreach (string activity in activities)
+                {
+                    listViewActivityLog.Items.Add(activity);
+                }
+            }
+            else
+            {
+                listViewActivityLog.Items.Add("You have no activity logs yet!");
+            }
+        }
+
+        public void DisplayUser(string username, string email, byte[] avatarData)
+        {
+            lblUserName.Text = username;
+            lblEmail.Text = email;
+            if (avatarData != null && avatarData.Length > 0)
+            {
+                using (MemoryStream ms = new MemoryStream(avatarData))
                 {
                     try
                     {
@@ -42,36 +72,28 @@ namespace OOP
             {
                 avatar.Image = Properties.Resources.DefaultAvatar; // Ảnh mặc định nếu không có ảnh
             }
-
         }
-        private void LoadUserActivities()
+
+        public void DisplayProjects(string[] projectNames)
         {
-            int userId = User.LoggedInUser.ID;
-
-            using (var context = new TaskManagementDBContext())
-            {
-                var activities = context.ActivityLogs
-                    .Where(a => a.UserId == userId)
-                    .OrderByDescending(a => a.Timestamp)
-                    .ToList();
-
-                listViewActivityLog.Items.Clear();
-
-                if (activities.Any())
-                {
-                    foreach (var act in activities)
-                    {
-                        string display = $"[{act.Timestamp}] {act.Action} - {act.Details}";
-                        listViewActivityLog.Items.Add(display);
-                    }
-                }
-                else
-                {
-                    listViewActivityLog.Items.Add("You have no activity logs yet!");
-                }
-            }
+            // You'll need a UI element (e.g., a ListBox or DataGridView) to display project names.
+            // For now, I'll just add a placeholder for where you would implement this.
+            // Example: listBoxProjects.Items.Clear();
+            //          foreach (string projectName in projectNames)
+            //          {
+            //              listBoxProjects.Items.Add(projectName);
+            //          }
         }
 
+        // Removed password related properties as per request
+        public string OldPassword { get { return string.Empty; } }
+        public string NewPassword { get { return string.Empty; } }
+        public string ConfirmPassword { get { return string.Empty; } }
+
+        public void ShowMessage(string message)
+        {
+            MessageBox.Show(message);
+        }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -92,7 +114,6 @@ namespace OOP
             SwitchForm(new Projects());
         }
 
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             ExitApplication(); // Gọi hàm chung để thoát
@@ -100,7 +121,7 @@ namespace OOP
 
         private void WelcomeName_Click(object sender, EventArgs e)
         {
-
+            // Event handler for WelcomeName click, if any specific action is needed.
         }
     }
 }
