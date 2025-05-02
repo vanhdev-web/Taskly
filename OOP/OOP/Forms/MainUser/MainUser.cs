@@ -123,5 +123,10 @@ namespace Taskly
         {
             // Event handler for WelcomeName click, if any specific action is needed.
         }
+
+        private void lblUserName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -99,15 +99,14 @@ namespace Taskly.Presenters
             {
                 await _activityLogService.LogActivityAsync(
                     userId: ModelUser.LoggedInUser.ID,
-                    objectType: "MileStone",
+                    objectType: "Milestone",
                     objectId: newMilestone.taskID,
                     action: "Create Milestone",
-                    details: $"{ModelUser.LoggedInUser.Username} đã tạo một cột mộc {newMilestone.taskName} cho dự án {project.projectName}"
+                    details: $"{ModelUser.LoggedInUser.Username} đã tạo một cột mốc {newMilestone.taskName} cho dự án {project.projectName}"
                 );
             }
 
             // Hiển thị thông báo thành công (thay thế MessageBox.Show)
-            _view.DisplaySuccessMessage("Activitlog thêm Milestone"); // Thêm phương thức này vào IAddMeetingView
             _view.CloseView(newMilestone);
         }
 

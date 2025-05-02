@@ -23,12 +23,12 @@ namespace Taskly.Forms
         private int taskId;
         private TaskReportPresenter _presenter;
 
-        public TaskReport(int taskId)
+        public TaskReport(int taskId, string type)
         {
             InitializeComponent();
             this.taskId = taskId;
             _presenter = new TaskReportPresenter(this, taskId);
-            _presenter.LoadActivities();
+            _presenter.LoadActivities(type);
         }
 
         public void SetActivityLogs(List<ActivityLogEntry> logs)

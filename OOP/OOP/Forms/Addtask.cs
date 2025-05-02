@@ -120,17 +120,23 @@ namespace Taskly.Forms
 
 
 
-        public void SetAssignedUserOptions(List<string> userNames)
-        {
-            cbbAssignedUser.Items.Clear(); // [cite: 19]
-            cbbAssignedUser.Items.Add("Myself"); // [cite: 20]
-            foreach (var user in userNames) // [cite: 20]
-            {
-                cbbAssignedUser.Items.Add(user); // [cite: 20]
-            }
-        }
+		public void SetAssignedUserOptions(List<string> userNames)
+		{
+			cbbAssignedUser.Items.Clear();
+			cbbAssignedUser.Items.Add("Myself");
 
-        public void DisplayErrorMessage(string message)
+			foreach (var user in userNames)
+			{
+				// Skip nếu là chính mình để tránh bị trùng
+				if (user != User.LoggedInUser.Username)
+				{
+					cbbAssignedUser.Items.Add(user);
+				}
+			}
+		}
+
+
+		public void DisplayErrorMessage(string message)
         {
             MessageBox.Show(message); // [cite: 25, 27, 38]
         }

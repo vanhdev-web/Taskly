@@ -26,7 +26,7 @@ namespace Taskly.Usercontrols
         }
         private void TaskPanel_Click(object sender, EventArgs e)
         {
-            TaskReport report = new TaskReport(meeting.taskID);
+            TaskReport report = new TaskReport(meeting.taskID, "Meeting");
             report.ShowDialog();
         }
 
@@ -86,7 +86,7 @@ namespace Taskly.Usercontrols
                         objectType: "Meeting",
                         objectId: meeting.taskID,
                         action: "Finish Meeting",
-                        details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{meeting.taskName}\" lúc {DateTime.Now}"
+                        details: $"{User.LoggedInUser.Username} đã hoàn thành meeting \"{meeting.taskName}\" lúc {DateTime.Now}"
                     );
 
 

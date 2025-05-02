@@ -60,13 +60,13 @@ namespace Taskly
             projectName = new Label();
             projectRole = new Label();
             TopPanel = new Panel();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             label3 = new Label();
             btnHam = new PictureBox();
             WelcomeName = new Label();
             panel1 = new Panel();
             AllTasks = new Label();
             taskContainer = new Panel();
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             projectPanel.SuspendLayout();
             projectContainer.SuspendLayout();
             panel11.SuspendLayout();
@@ -402,10 +402,10 @@ namespace Taskly
             // memberPanel
             // 
             memberPanel.AutoScroll = true;
-            memberPanel.Location = new Point(658, 230);
+            memberPanel.Location = new Point(658, 176);
             memberPanel.Margin = new Padding(5, 4, 5, 4);
             memberPanel.Name = "memberPanel";
-            memberPanel.Size = new Size(679, 118);
+            memberPanel.Size = new Size(679, 172);
             memberPanel.TabIndex = 6;
             memberPanel.Paint += panel2_Paint_1;
             // 
@@ -436,7 +436,7 @@ namespace Taskly
             btnAddMember.Image = Properties.Resources.add_White;
             btnAddMember.ImageAlign = ContentAlignment.MiddleLeft;
             btnAddMember.InactiveColor = Color.Transparent;
-            btnAddMember.Location = new Point(658, 116);
+            btnAddMember.Location = new Point(658, 89);
             btnAddMember.Margin = new Padding(5, 6, 5, 6);
             btnAddMember.Name = "btnAddMember";
             btnAddMember.Padding = new Padding(162, 0, 0, 0);
@@ -489,6 +489,30 @@ namespace Taskly
             TopPanel.Name = "TopPanel";
             TopPanel.Size = new Size(1734, 116);
             TopPanel.TabIndex = 10;
+            // 
+            // nightControlBox1
+            // 
+            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            nightControlBox1.BackColor = Color.Transparent;
+            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = Color.White;
+            nightControlBox1.Cursor = Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = Color.Transparent;
+            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
+            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new Point(1590, 0);
+            nightControlBox1.MaximizeHoverColor = Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = Color.Transparent;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new Size(139, 31);
+            nightControlBox1.TabIndex = 4;
             // 
             // label3
             // 
@@ -560,30 +584,6 @@ namespace Taskly
             taskContainer.Padding = new Padding(20, 14, 0, 0);
             taskContainer.Size = new Size(1346, 474);
             taskContainer.TabIndex = 23;
-            // 
-            // nightControlBox1
-            // 
-            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            nightControlBox1.BackColor = Color.Transparent;
-            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
-            nightControlBox1.CloseHoverForeColor = Color.White;
-            nightControlBox1.Cursor = Cursors.Hand;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = Color.Transparent;
-            nightControlBox1.DisableMinimizeColor = Color.Transparent;
-            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = false;
-            nightControlBox1.EnableMaximizeColor = Color.Transparent;
-            nightControlBox1.EnableMinimizeButton = false;
-            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1590, 11);
-            nightControlBox1.MaximizeHoverColor = Color.Transparent;
-            nightControlBox1.MaximizeHoverForeColor = Color.Transparent;
-            nightControlBox1.MinimizeHoverColor = Color.Transparent;
-            nightControlBox1.MinimizeHoverForeColor = Color.Transparent;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new Size(139, 31);
-            nightControlBox1.TabIndex = 4;
             // 
             // Projects
             // 

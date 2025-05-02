@@ -16,7 +16,7 @@ namespace Taskly.Usercontrols
 
         private void TaskPanel_Click(object sender, EventArgs e)
         {
-            TaskReport report = new TaskReport(task.taskID);
+            TaskReport report = new TaskReport(task.taskID, "Task");
             report.ShowDialog();
         }
         public Panel TaskPanel // Thuộc tính công khai để truy cập Panel

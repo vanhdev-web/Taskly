@@ -1,6 +1,7 @@
 ﻿using Taskly.Models;
 using Taskly.Services; // If TaskManagementDBContext is initialized here, otherwise in the form directly.
 using System.Collections.Generic;
+using System;
 
 namespace Taskly.Forms
 {
@@ -17,12 +18,12 @@ namespace Taskly.Forms
             _model = new TaskReportModel(new TaskManagementDBContext()); // Initialize your DbContext here or inject it
         }
 
-        public void LoadActivities()
+        public void LoadActivities(String type)
         {
             _view.ClearActivityLogView();
             _view.SetupActivityLogColumns();
 
-            var logs = _model.GetActivityLogsForTask(_taskId);
+            var logs = _model.GetActivityLogsForTask(_taskId, type);
 
             if (logs.Count == 0)
             {

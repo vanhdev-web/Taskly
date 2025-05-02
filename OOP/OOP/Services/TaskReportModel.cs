@@ -13,11 +13,11 @@ namespace Taskly.Models
             _dbContext = dbContext;
         }
 
-        public List<ActivityLogEntry> GetActivityLogsForTask(int taskId)
+        public List<ActivityLogEntry> GetActivityLogsForTask(int taskId, string objectType)
         {
-            // Join với Users để lấy username của người action
+            // Lọc đúng theo objectType (Task/Meeting/Milestone) và ID
             var logs = _dbContext.ActivityLogs
-                                 .Where(log => log.ObjectType == "Task" && log.ObjectId == taskId)
+                                 .Where(log => log.ObjectType == objectType && log.ObjectId == taskId)
                                  .Join(_dbContext.Users,
                                        log => log.UserId,
                                        user => user.ID,
@@ -44,6 +44,9 @@ namespace Taskly.Models
             }
             return activityLogEntries;
         }
+
+
+
     }
 
     public class ActivityLogEntry

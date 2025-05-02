@@ -6,6 +6,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using ModelUser = Taskly.Models.User;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Windows.Forms;
 
 namespace Taskly.Presenter
 {
@@ -100,10 +103,10 @@ namespace Taskly.Presenter
                     action: "Create Meeting",
                     details: $"{ModelUser.LoggedInUser.Username} đã tạo một cuộc họp {newMeeting.taskName} cho dự án {project.projectName}"
                 );
+                MessageBox.Show("Cuộc họp đã được tạo thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+            
 
-            // Hiển thị thông báo thành công (thay thế MessageBox.Show)
-            _view.DisplaySuccessMessage("Activitlog thêm meeting"); // Thêm phương thức này vào IAddMeetingView
 
             _view.CloseView(newMeeting);
         }

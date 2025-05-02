@@ -35,11 +35,11 @@ namespace Taskly.Forms
             txtbMilestoneName = new System.Windows.Forms.TextBox();
             lalMilestoneDate = new System.Windows.Forms.Label();
             dtpMilestonedate = new System.Windows.Forms.DateTimePicker();
-            btnMilestoneConfirm = new ReaLTaiizor.Controls.Button();
-            btnMilestoneCancel = new ReaLTaiizor.Controls.Button();
             cbbSelectProject = new System.Windows.Forms.ComboBox();
             label1 = new System.Windows.Forms.Label();
             errMilestoneName = new System.Windows.Forms.ErrorProvider(components);
+            btnMilestoneConfirm = new System.Windows.Forms.Button();
+            btnMilestoneCancel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)errMilestoneName).BeginInit();
             SuspendLayout();
             // 
@@ -83,50 +83,6 @@ namespace Taskly.Forms
             dtpMilestonedate.Size = new Size(486, 39);
             dtpMilestonedate.TabIndex = 3;
             // 
-            // btnMilestoneConfirm
-            // 
-            btnMilestoneConfirm.BackColor = Color.White;
-            btnMilestoneConfirm.BorderColor = Color.White;
-            btnMilestoneConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnMilestoneConfirm.EnteredBorderColor = Color.White;
-            btnMilestoneConfirm.EnteredColor = Color.White;
-            btnMilestoneConfirm.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            btnMilestoneConfirm.Image = null;
-            btnMilestoneConfirm.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMilestoneConfirm.InactiveColor = Color.White;
-            btnMilestoneConfirm.Location = new Point(155, 435);
-            btnMilestoneConfirm.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            btnMilestoneConfirm.Name = "btnMilestoneConfirm";
-            btnMilestoneConfirm.PressedBorderColor = Color.White;
-            btnMilestoneConfirm.PressedColor = Color.White;
-            btnMilestoneConfirm.Size = new Size(212, 61);
-            btnMilestoneConfirm.TabIndex = 6;
-            btnMilestoneConfirm.Text = "OK";
-            btnMilestoneConfirm.TextAlignment = StringAlignment.Center;
-            btnMilestoneConfirm.Click += btnMilestoneConfirm_Click;
-            // 
-            // btnMilestoneCancel
-            // 
-            btnMilestoneCancel.BackColor = Color.White;
-            btnMilestoneCancel.BorderColor = Color.White;
-            btnMilestoneCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnMilestoneCancel.EnteredBorderColor = Color.White;
-            btnMilestoneCancel.EnteredColor = Color.White;
-            btnMilestoneCancel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
-            btnMilestoneCancel.Image = null;
-            btnMilestoneCancel.ImageAlign = ContentAlignment.MiddleLeft;
-            btnMilestoneCancel.InactiveColor = Color.White;
-            btnMilestoneCancel.Location = new Point(534, 435);
-            btnMilestoneCancel.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            btnMilestoneCancel.Name = "btnMilestoneCancel";
-            btnMilestoneCancel.PressedBorderColor = Color.White;
-            btnMilestoneCancel.PressedColor = Color.White;
-            btnMilestoneCancel.Size = new Size(212, 61);
-            btnMilestoneCancel.TabIndex = 7;
-            btnMilestoneCancel.Text = "Cancel";
-            btnMilestoneCancel.TextAlignment = StringAlignment.Center;
-            btnMilestoneCancel.Click += btnMilestoneCancel_Click;
-            // 
             // cbbSelectProject
             // 
             cbbSelectProject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -152,16 +108,38 @@ namespace Taskly.Forms
             // 
             errMilestoneName.ContainerControl = this;
             // 
+            // btnMilestoneConfirm
+            // 
+            btnMilestoneConfirm.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnMilestoneConfirm.Location = new Point(183, 453);
+            btnMilestoneConfirm.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnMilestoneConfirm.Name = "btnMilestoneConfirm";
+            btnMilestoneConfirm.Size = new Size(212, 56);
+            btnMilestoneConfirm.TabIndex = 14;
+            btnMilestoneConfirm.Text = "OK";
+            btnMilestoneConfirm.UseVisualStyleBackColor = true;
+            // 
+            // btnMilestoneCancel
+            // 
+            btnMilestoneCancel.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold);
+            btnMilestoneCancel.Location = new Point(494, 453);
+            btnMilestoneCancel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnMilestoneCancel.Name = "btnMilestoneCancel";
+            btnMilestoneCancel.Size = new Size(212, 56);
+            btnMilestoneCancel.TabIndex = 15;
+            btnMilestoneCancel.Text = "Cancel";
+            btnMilestoneCancel.UseVisualStyleBackColor = true;
+            // 
             // AddMilestone
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 32);
             ClientSize = new Size(898, 574);
-            Controls.Add(label1);
-            Controls.Add(cbbSelectProject);
             Controls.Add(btnMilestoneCancel);
             Controls.Add(btnMilestoneConfirm);
+            Controls.Add(label1);
+            Controls.Add(cbbSelectProject);
             Controls.Add(dtpMilestonedate);
             Controls.Add(lalMilestoneDate);
             Controls.Add(txtbMilestoneName);
@@ -182,10 +160,12 @@ namespace Taskly.Forms
         private System.Windows.Forms.TextBox txtbMilestoneName;
         private System.Windows.Forms.Label lalMilestoneDate;
         private System.Windows.Forms.DateTimePicker dtpMilestonedate;
-        private ReaLTaiizor.Controls.Button btnMilestoneConfirm;
-        private ReaLTaiizor.Controls.Button btnMilestoneCancel;
+        private ReaLTaiizor.Controls.Button d;
+      
         private System.Windows.Forms.ComboBox cbbSelectProject;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ErrorProvider errMilestoneName;
+        private System.Windows.Forms.Button btnMilestoneCancel;
+        private System.Windows.Forms.Button btnMilestoneConfirm;
     }
 }

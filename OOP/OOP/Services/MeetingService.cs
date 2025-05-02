@@ -24,6 +24,7 @@ namespace Taskly.Services
                 };
                 dbcontext.Meetings.Add(meeting);
                 dbcontext.SaveChanges();
+
                 return meeting;
             }
         }

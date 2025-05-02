@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUser));
             TopPanel = new System.Windows.Forms.Panel();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             WelcomeName = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             btnHam = new System.Windows.Forms.PictureBox();
@@ -49,7 +50,6 @@
             lblEmail = new System.Windows.Forms.Label();
             lblActivityLog = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
@@ -76,6 +76,30 @@
             TopPanel.Name = "TopPanel";
             TopPanel.Size = new System.Drawing.Size(1707, 116);
             TopPanel.TabIndex = 15;
+            // 
+            // nightControlBox1
+            // 
+            nightControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            nightControlBox1.BackColor = System.Drawing.Color.Transparent;
+            nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
+            nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new System.Drawing.Point(1563, 0);
+            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new System.Drawing.Size(139, 31);
+            nightControlBox1.TabIndex = 19;
             // 
             // WelcomeName
             // 
@@ -327,9 +351,9 @@
             // 
             // avatar
             // 
-            avatar.Location = new System.Drawing.Point(475, 173);
+            avatar.Location = new System.Drawing.Point(480, 142);
             avatar.Name = "avatar";
-            avatar.Size = new System.Drawing.Size(460, 314);
+            avatar.Size = new System.Drawing.Size(400, 400);
             avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             avatar.TabIndex = 17;
             avatar.TabStop = false;
@@ -338,21 +362,23 @@
             // 
             lblUserName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             lblUserName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            lblUserName.Location = new System.Drawing.Point(1102, 243);
+            lblUserName.Location = new System.Drawing.Point(1031, 230);
             lblUserName.Name = "lblUserName";
             lblUserName.Size = new System.Drawing.Size(566, 67);
             lblUserName.TabIndex = 18;
             lblUserName.Text = "UserName";
+            lblUserName.Click += lblUserName_Click;
             // 
             // lblEmail
             // 
             lblEmail.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             lblEmail.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            lblEmail.Location = new System.Drawing.Point(1112, 339);
+            lblEmail.Location = new System.Drawing.Point(1031, 326);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new System.Drawing.Size(578, 50);
             lblEmail.TabIndex = 19;
             lblEmail.Text = "email@gmail.com";
+        
             // 
             // lblActivityLog
             // 
@@ -373,30 +399,6 @@
             listViewActivityLog.TabIndex = 21;
             listViewActivityLog.UseCompatibleStateImageBehavior = false;
             listViewActivityLog.View = System.Windows.Forms.View.List;
-            // 
-            // nightControlBox1
-            // 
-            nightControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(199, 80, 80);
-            nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.Transparent;
-            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.Transparent;
-            nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = false;
-            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
-            nightControlBox1.EnableMinimizeButton = false;
-            nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new System.Drawing.Point(1563, 11);
-            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
-            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
-            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
-            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Transparent;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            nightControlBox1.TabIndex = 19;
             // 
             // MainUser
             // 

@@ -20,7 +20,7 @@ namespace Taskly.Usercontrols
         }
         private void TaskPanel_Click(object sender, EventArgs e)
         {
-            TaskReport report = new TaskReport(milestone.taskID);
+            TaskReport report = new TaskReport(milestone.taskID, "Milestone");
             report.ShowDialog();
         }
         public MilestoneUserControl(Milestone milestone)
@@ -75,10 +75,10 @@ namespace Taskly.Usercontrols
                     ActivityLogService activityLogService = new ActivityLogService(dbcontext);
                     await activityLogService.LogActivityAsync(
                         userId: User.LoggedInUser.ID,
-                        objectType: "Task",
+                        objectType: "Milestone",
                         objectId: milestone.taskID,
-                        action: "Finish Task",
-                        details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{milestone.taskName}\" lúc {DateTime.Now}"
+                        action: "Finish Milestone",
+                        details: $"{User.LoggedInUser.Username} đã hoàn thành cột mốc \"{milestone.taskName}\" lúc {DateTime.Now}"
                     );
 
 
