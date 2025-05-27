@@ -699,7 +699,6 @@
             btnNoti.TabIndex = 2;
             btnNoti.Text = "              User";
             btnNoti.TextAlignment = System.Drawing.StringAlignment.Near;
-            btnNoti.Click += btnUser_Click;
             // 
             // panel7
             // 

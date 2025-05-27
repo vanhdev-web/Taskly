@@ -50,37 +50,6 @@ namespace OOP.Forms
                              .ToList();
 
                 listViewActivityLog.Items.Clear();
-<<<<<<< HEAD
-                listViewActivityLog.Columns.Clear();
-
-                // Set kiểu hiển thị là Details
-                listViewActivityLog.View = View.Details;
-
-                // Thêm các cột
-                listViewActivityLog.Columns.Add("Time", 150);
-                listViewActivityLog.Columns.Add("User", 120);
-                listViewActivityLog.Columns.Add("Action", 120);
-                listViewActivityLog.Columns.Add("Details", 300);
-
-                if (logs.Count == 0)
-                {
-                    var noItem = new ListViewItem("No activities found for this task.");
-                    noItem.SubItems.Add(""); // giữ cột trống cho khớp
-                    noItem.SubItems.Add("");
-                    noItem.SubItems.Add("");
-                    listViewActivityLog.Items.Add(noItem);
-                    return;
-                }
-
-                // Load dữ liệu vào từng dòng
-                foreach (var log in logs)
-                {
-                    var item = new ListViewItem(log.Timestamp.ToString("dd/MM/yyyy HH:mm")); // Time
-                    item.SubItems.Add(log.Username); // User
-                    item.SubItems.Add(log.Action);   // Action
-                    item.SubItems.Add(log.Details);  // Details
-
-=======
 
                 if (logs.Count == 0)
                 {
@@ -94,18 +63,10 @@ namespace OOP.Forms
                     item.SubItems.Add(log.Username);
                     item.SubItems.Add(log.Action);
                     item.SubItems.Add(log.Details);
->>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
                     listViewActivityLog.Items.Add(item);
                 }
             }
         }
 
-<<<<<<< HEAD
-        private void TaskReport_Load(object sender, EventArgs e)
-        {
-            
-        }
-=======
->>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
     }
 }

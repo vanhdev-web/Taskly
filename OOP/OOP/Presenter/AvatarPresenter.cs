@@ -1,14 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.IO;
-<<<<<<< HEAD
-using OOP.Services;
-using System.Windows.Forms;
-using OOP.Models; // Thêm namespace của Model
-=======
 using System.Windows.Forms;
 using OOP.Model; // Thêm namespace của Model
->>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
 
 namespace OOP.Presenter
 {
