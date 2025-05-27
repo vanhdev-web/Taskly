@@ -62,7 +62,10 @@ namespace OOP.Forms
         {
             MessageBox.Show(message); // [cite: 10, 21]
         }
-
+        public void DisplaySuccessMessage(string message) // Implement phương thức này
+        {
+            MessageBox.Show(message);
+        }
         public void CloseView(Milestone createdMilestone)
         {
             this.milestone = createdMilestone; // [cite: 25]
@@ -116,6 +119,7 @@ namespace OOP.Forms
 
         void SetProjects(List<string> projectNames);
         void DisplayErrorMessage(string message);
+        void DisplaySuccessMessage(string message);
         void CloseView(Milestone createdMilestone);
         void SetMilestoneNameError(string message);
         void CancelValidation(CancelEventArgs e, bool cancel);

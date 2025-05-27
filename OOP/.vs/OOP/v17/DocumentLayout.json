@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\home.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\presenter\\addmeetingpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +23,8 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\services\\meetingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\presenter\\userpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\userpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmilestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\addmilestonepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\presenter\\addmemberpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\presenter\\addmemberpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addtask.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmembers.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,12 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 301,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -99,31 +71,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Home.resx",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.resx",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Home.resx",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.resx",
-              "RelativeToolTip": "OOP\\Forms\\Home.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-27T08:03:52.515Z",
+              "Title": "AddMilestone.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs*",
+              "RelativeToolTip": "OOP\\Forms\\AddMilestone.cs*",
+              "ViewState": "AgIAAEMAAAAA/P//////v0MAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T09:48:55.796Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Home.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
-              "RelativeToolTip": "OOP\\Forms\\Home.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAASwH0AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AddMeeting.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAewEsAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T08:03:37.301Z",
+              "WhenOpened": "2025-05-27T08:02:19.574Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "AddMeetingPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMeetingPresenter.cs",
+              "RelativeDocumentMoniker": "OOP\\Presenter\\AddMeetingPresenter.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMeetingPresenter.cs",
+              "RelativeToolTip": "OOP\\Presenter\\AddMeetingPresenter.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwFkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T06:58:59.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddMilestonePresenter.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs",
+              "RelativeDocumentMoniker": "OOP\\Presenter\\AddMilestonePresenter.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs*",
+              "RelativeToolTip": "OOP\\Presenter\\AddMilestonePresenter.cs*",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAawGgAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T07:01:16.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddMembers.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T07:55:54.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MeetingService.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Services\\MeetingService.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\MeetingService.cs",
@@ -136,124 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AddMeeting.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T08:02:19.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\UserPresenter.cs",
-              "RelativeDocumentMoniker": "OOP\\Presenter\\UserPresenter.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\UserPresenter.cs",
-              "RelativeToolTip": "OOP\\Presenter\\UserPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T08:00:07.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddMembers.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:55:54.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddMeetingPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMeetingPresenter.cs",
-              "RelativeDocumentMoniker": "OOP\\Presenter\\AddMeetingPresenter.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMeetingPresenter.cs",
-              "RelativeToolTip": "OOP\\Presenter\\AddMeetingPresenter.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:58:59.833Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddmemberPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddmemberPresenter.cs",
-              "RelativeDocumentMoniker": "OOP\\Presenter\\AddmemberPresenter.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddmemberPresenter.cs",
-              "RelativeToolTip": "OOP\\Presenter\\AddmemberPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:59:58.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Addtask.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.Designer.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.Designer.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.Designer.cs",
-              "RelativeToolTip": "OOP\\Forms\\Addtask.Designer.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAAqwO8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:58:43.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AddMilestone.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMilestone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:03:59.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Addtask.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwKUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:58:09.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddMilestonePresenter.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs",
-              "RelativeDocumentMoniker": "OOP\\Presenter\\AddMilestonePresenter.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMilestonePresenter.cs",
-              "RelativeToolTip": "OOP\\Presenter\\AddMilestonePresenter.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAA6wHEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:01:16.355Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "AddMembers.Designer.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.Designer.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.Designer.cs",
@@ -261,12 +156,11 @@
               "RelativeToolTip": "OOP\\Forms\\AddMembers.Designer.cs",
               "ViewState": "AgIAAIYAAAAAAAAAAAAqwKEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:56:41.909Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T07:56:41.909Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "AddtaskPresenter.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddtaskPresenter.cs",
               "RelativeDocumentMoniker": "OOP\\Presenter\\AddtaskPresenter.cs",
@@ -274,12 +168,11 @@
               "RelativeToolTip": "OOP\\Presenter\\AddtaskPresenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:55:37.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T07:55:37.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 8,
               "Title": "MilestoneService.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Services\\MilestoneService.cs",
               "RelativeDocumentMoniker": "OOP\\Services\\MilestoneService.cs",
@@ -287,32 +180,29 @@
               "RelativeToolTip": "OOP\\Services\\MilestoneService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T07:55:32.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T07:55:32.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 9,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "OOP\\Properties\\Resources.resx",
               "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Properties\\Resources.resx",
               "RelativeToolTip": "OOP\\Properties\\Resources.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-05-27T06:59:45.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T06:59:45.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 10,
               "Title": "OOP",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\Source\\Repos\\Taskly\\OOP\\OOP\\OOP.csproj",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\OOP.csproj",
               "RelativeDocumentMoniker": "OOP\\OOP.csproj",
-              "ToolTip": "C:\\Users\\GODxDEMON\\Source\\Repos\\Taskly\\OOP\\OOP\\OOP.csproj",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\OOP.csproj",
               "RelativeToolTip": "OOP\\OOP.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-27T06:59:39.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T06:59:39.251Z"
             }
           ]
         },

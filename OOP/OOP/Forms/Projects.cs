@@ -14,6 +14,7 @@ using System.Reflection;
 
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using OOP.Forms;
 
 namespace OOP
 {
@@ -560,10 +561,10 @@ namespace OOP
             SwitchForm(new Tasks());
         }
 
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            SwitchForm(new MainUser());
-        }
+        //private void btnUser_Click(object sender, EventArgs e)
+        //{
+        //    SwitchForm(new MainUser());
+        //}
 
         private void btnProject_Click(object sender, EventArgs e)
         {

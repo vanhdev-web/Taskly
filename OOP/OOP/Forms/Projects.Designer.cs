@@ -307,30 +307,30 @@ namespace OOP
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 9;
             panel2.Text = "Dashboard";
-            // 
-            // btnNoti
-            // 
-            btnNoti.BackColor = Color.Transparent;
-            btnNoti.BorderColor = Color.Transparent;
-            btnNoti.Cursor = Cursors.Hand;
-            btnNoti.Dock = DockStyle.Fill;
-            btnNoti.EnteredBorderColor = Color.Transparent;
-            btnNoti.EnteredColor = Color.Transparent;
-            btnNoti.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            btnNoti.Image = (Image)resources.GetObject("btnNoti.Image");
-            btnNoti.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNoti.InactiveColor = Color.Transparent;
-            btnNoti.Location = new Point(24, 10);
-            btnNoti.Margin = new Padding(5, 6, 5, 6);
-            btnNoti.Name = "btnNoti";
-            btnNoti.Padding = new Padding(162, 0, 0, 0);
-            btnNoti.PressedBorderColor = Color.Transparent;
-            btnNoti.PressedColor = Color.Transparent;
-            btnNoti.Size = new Size(442, 88);
-            btnNoti.TabIndex = 2;
-            btnNoti.Text = "              User";
-            btnNoti.TextAlignment = StringAlignment.Near;
-            btnNoti.Click += btnUser_Click;
+            //// 
+            //// btnNoti
+            //// 
+            //btnNoti.BackColor = Color.Transparent;
+            //btnNoti.BorderColor = Color.Transparent;
+            //btnNoti.Cursor = Cursors.Hand;
+            //btnNoti.Dock = DockStyle.Fill;
+            //btnNoti.EnteredBorderColor = Color.Transparent;
+            //btnNoti.EnteredColor = Color.Transparent;
+            //btnNoti.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 163);
+            //btnNoti.Image = (Image)resources.GetObject("btnNoti.Image");
+            //btnNoti.ImageAlign = ContentAlignment.MiddleLeft;
+            //btnNoti.InactiveColor = Color.Transparent;
+            //btnNoti.Location = new Point(24, 10);
+            //btnNoti.Margin = new Padding(5, 6, 5, 6);
+            //btnNoti.Name = "btnNoti";
+            //btnNoti.Padding = new Padding(162, 0, 0, 0);
+            //btnNoti.PressedBorderColor = Color.Transparent;
+            //btnNoti.PressedColor = Color.Transparent;
+            //btnNoti.Size = new Size(442, 88);
+            //btnNoti.TabIndex = 2;
+            //btnNoti.Text = "              User";
+            //btnNoti.TextAlignment = StringAlignment.Near;
+            //btnNoti.Click += btnUser_Click;
             // 
             // panel7
             // 

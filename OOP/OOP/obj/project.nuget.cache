@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ms5hADk/uYk=",
+  "dgSpecHash": "mmh2d6mM44c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\GODxDEMON\\Source\\Repos\\Taskly\\OOP\\OOP\\OOP.csproj",
+  "projectFilePath": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\OOP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GODxDEMON\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\GODxDEMON\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
