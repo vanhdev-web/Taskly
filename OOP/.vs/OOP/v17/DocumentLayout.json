@@ -6,6 +6,94 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\homeprojectusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\homeprojectusercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\homeprojectusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\homeprojectusercontrol.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\projects.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projects.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\projectreport.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projectreport.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\notiusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\notiusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\milestoneusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\milestoneusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\memberitem.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\memberitem.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\meetingusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\meetingusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\mainuser\\mainuser.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\mainuser\\mainuser.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\login.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\login.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\hometaskusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\hometaskusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\usercontrols\\homeprojectusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\usercontrols\\homeprojectusercontrol.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\home.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\baseform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\baseform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\avatarform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\avatarform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addtask.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addtask.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmilestone.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmilestone.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmembers.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmeeting.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\projectreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmembers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -16,10 +104,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\tasks.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,10 +120,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\taskreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\taskreport.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\taskreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,7 +145,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 301,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,74 +170,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AddMembers.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAqwHEAAAABAAAAAAAAAA==",
+              "Title": "HomeProjectUserControl.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.cs",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeProjectUserControl.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.cs",
+              "RelativeToolTip": "OOP\\Usercontrols\\HomeProjectUserControl.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:28:46.666Z"
+              "WhenOpened": "2025-05-27T15:33:38.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddMeeting.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
-              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Title": "HomeProjectUserControl.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.Designer.cs",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeProjectUserControl.Designer.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.Designer.cs",
+              "RelativeToolTip": "OOP\\Usercontrols\\HomeProjectUserControl.Designer.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAYwBYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:28:11.802Z"
+              "WhenOpened": "2025-05-27T15:33:28.314Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Tasks.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
-              "RelativeToolTip": "OOP\\Forms\\Tasks.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:27:56.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Tasks.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.Designer.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.Designer.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.Designer.cs",
-              "RelativeToolTip": "OOP\\Forms\\Tasks.Designer.cs",
-              "ViewState": "AgIAAIkCAAAAAAAAAAAqwHkDAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:26:39.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Addtask.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
-              "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAA7wEIAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:24:33.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AvatarPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
-              "RelativeDocumentMoniker": "OOP\\Presenter\\AvatarPresenter.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
-              "RelativeToolTip": "OOP\\Presenter\\AvatarPresenter.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAqwD0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:20:59.408Z"
+              "DocumentIndex": 3,
+              "Title": "Projects.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Projects.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Projects.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Projects.resx",
+              "RelativeToolTip": "OOP\\Forms\\Projects.resx",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:58.409Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -174,7 +221,314 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectReport.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\ProjectReport.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.resx",
+              "RelativeToolTip": "OOP\\Forms\\ProjectReport.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:57.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotiUserControl.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\NotiUserControl.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\NotiUserControl.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\NotiUserControl.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\NotiUserControl.resx",
+              "ViewState": "AgIAAGwAAAAAAAAAAAD4v3oAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:56.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MilestoneUserControl.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\MilestoneUserControl.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MilestoneUserControl.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\MilestoneUserControl.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:56.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MemberItem.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MemberItem.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\MemberItem.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MemberItem.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\MemberItem.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:55.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "MeetingUserControl.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MeetingUserControl.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\MeetingUserControl.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\MeetingUserControl.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\MeetingUserControl.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:54.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainUser.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\MainUser\\MainUser.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\MainUser\\MainUser.resx",
+              "RelativeToolTip": "OOP\\Forms\\MainUser\\MainUser.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:53.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Login.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Login.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Login.resx",
+              "RelativeToolTip": "OOP\\Forms\\Login.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:53.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeTaskUserControl.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeTaskUserControl.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeTaskUserControl.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeTaskUserControl.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\HomeTaskUserControl.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:52.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeProjectUserControl.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.resx",
+              "RelativeDocumentMoniker": "OOP\\Usercontrols\\HomeProjectUserControl.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Usercontrols\\HomeProjectUserControl.resx",
+              "RelativeToolTip": "OOP\\Usercontrols\\HomeProjectUserControl.resx",
+              "ViewState": "AgIAAGwAAAAAAAAAAAD4v3oAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:51.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Home.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Home.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.resx",
+              "RelativeToolTip": "OOP\\Forms\\Home.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:50.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BaseForm.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\BaseForm.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\BaseForm.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\BaseForm.resx",
+              "RelativeToolTip": "OOP\\Forms\\BaseForm.resx",
+              "ViewState": "AgIAAGoAAAAAAAAAAAD4v3gAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:48.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AvatarForm.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AvatarForm.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AvatarForm.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AvatarForm.resx",
+              "RelativeToolTip": "OOP\\Forms\\AvatarForm.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:47.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Addtask.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.resx",
+              "RelativeToolTip": "OOP\\Forms\\Addtask.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:47.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddMilestone.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMilestone.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMilestone.resx",
+              "RelativeToolTip": "OOP\\Forms\\AddMilestone.resx",
+              "ViewState": "AgIAAGsAAAAAAAAAAAD4v3kAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:45.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AddMembers.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.resx",
+              "RelativeToolTip": "OOP\\Forms\\AddMembers.resx",
+              "ViewState": "AgIAAGoAAAAAAAAAAAD4v3gAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:43.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AddMeeting.resx",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.resx",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.resx",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.resx",
+              "RelativeToolTip": "OOP\\Forms\\AddMeeting.resx",
+              "ViewState": "AgIAAGgAAAAAAAAAAAD4v3YAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-27T15:32:33.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProjectReport.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\ProjectReport.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\ProjectReport.cs",
+              "RelativeToolTip": "OOP\\Forms\\ProjectReport.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAA8wCQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:32:04.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AddMeeting.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMeeting.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMeeting.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:28:11.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.cs",
+              "RelativeToolTip": "OOP\\Forms\\Tasks.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:27:56.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Tasks.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.Designer.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Tasks.Designer.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Tasks.Designer.cs",
+              "RelativeToolTip": "OOP\\Forms\\Tasks.Designer.cs",
+              "ViewState": "AgIAAIkCAAAAAAAAAAAqwHkDAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:26:39.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Addtask.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\Addtask.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Addtask.cs",
+              "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAA7wEIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:24:33.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AvatarPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
+              "RelativeDocumentMoniker": "OOP\\Presenter\\AvatarPresenter.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AvatarPresenter.cs",
+              "RelativeToolTip": "OOP\\Presenter\\AvatarPresenter.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAqwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:20:59.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TaskReport.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\TaskReport.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
+              "RelativeToolTip": "OOP\\Forms\\TaskReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:15:04.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AddMembers.cs",
+              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeDocumentMoniker": "OOP\\Forms\\AddMembers.cs",
+              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\AddMembers.cs",
+              "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAqwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T15:28:46.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "TaskReport.Designer.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\TaskReport.Designer.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\TaskReport.Designer.cs",
@@ -186,19 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TaskReport.cs",
-              "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
-              "RelativeDocumentMoniker": "OOP\\Forms\\TaskReport.cs",
-              "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\TaskReport.cs",
-              "RelativeToolTip": "OOP\\Forms\\TaskReport.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAqwEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:15:04.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 30,
               "Title": "Home.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Home.cs",
@@ -211,18 +553,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 25,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs",
               "RelativeDocumentMoniker": "OOP\\Forms\\Home.cs",
               "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs [Design]",
               "RelativeToolTip": "OOP\\Forms\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T14:41:09.262Z"
+              "WhenOpened": "2025-05-27T14:41:09.262Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 31,
               "Title": "HomePresenter.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\HomePresenter.cs",
               "RelativeDocumentMoniker": "OOP\\Presenter\\HomePresenter.cs",
@@ -234,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 32,
               "Title": "AddMeetingPresenter.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Presenter\\AddMeetingPresenter.cs",
               "RelativeDocumentMoniker": "OOP\\Presenter\\AddMeetingPresenter.cs",
@@ -246,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 33,
               "Title": "IUserView.cs",
               "DocumentMoniker": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Models\\IUserView.cs",
               "RelativeDocumentMoniker": "OOP\\Models\\IUserView.cs",

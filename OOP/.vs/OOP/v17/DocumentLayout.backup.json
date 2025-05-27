@@ -14,7 +14,7 @@
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\addmeeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|c:\\users\\godxdemon\\source\\repos\\taskly\\oop\\oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{498AF7CB-ABCC-481F-A120-99E5FB569005}|OOP\\OOP.csproj|solutionrelative:oop\\forms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -65,7 +65,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 301,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -84,6 +84,10 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AddMembers.cs",
@@ -93,8 +97,7 @@
               "RelativeToolTip": "OOP\\Forms\\AddMembers.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAAAqwHEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:28:46.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:28:46.666Z"
             },
             {
               "$type": "Document",
@@ -106,8 +109,7 @@
               "RelativeToolTip": "OOP\\Forms\\AddMeeting.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:28:11.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:28:11.802Z"
             },
             {
               "$type": "Document",
@@ -119,8 +121,7 @@
               "RelativeToolTip": "OOP\\Forms\\Tasks.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:27:56.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:27:56.985Z"
             },
             {
               "$type": "Document",
@@ -132,8 +133,7 @@
               "RelativeToolTip": "OOP\\Forms\\Tasks.Designer.cs",
               "ViewState": "AgIAAIkCAAAAAAAAAAAqwHkDAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:26:39.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:26:39.327Z"
             },
             {
               "$type": "Document",
@@ -145,8 +145,7 @@
               "RelativeToolTip": "OOP\\Forms\\Addtask.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAA7wEIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:24:33.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:24:33.351Z"
             },
             {
               "$type": "Document",
@@ -158,8 +157,7 @@
               "RelativeToolTip": "OOP\\Presenter\\AvatarPresenter.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAqwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:20:59.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:20:59.408Z"
             },
             {
               "$type": "Document",
@@ -184,8 +182,7 @@
               "RelativeToolTip": "OOP\\Forms\\TaskReport.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:17:50.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:17:50.702Z"
             },
             {
               "$type": "Document",
@@ -197,8 +194,7 @@
               "RelativeToolTip": "OOP\\Forms\\TaskReport.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAqwEcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T15:15:04.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T15:15:04.871Z"
             },
             {
               "$type": "Document",
@@ -222,8 +218,7 @@
               "ToolTip": "C:\\Users\\GODxDEMON\\source\\repos\\Taskly\\OOP\\OOP\\Forms\\Home.cs [Design]",
               "RelativeToolTip": "OOP\\Forms\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T14:41:09.262Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-05-27T14:41:09.262Z"
             },
             {
               "$type": "Document",
@@ -235,12 +230,7 @@
               "RelativeToolTip": "OOP\\Presenter\\HomePresenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T14:45:31.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "WhenOpened": "2025-05-27T14:45:31.032Z"
             },
             {
               "$type": "Document",
@@ -252,8 +242,7 @@
               "RelativeToolTip": "OOP\\Presenter\\AddMeetingPresenter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T14:11:35.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T14:11:35.853Z"
             },
             {
               "$type": "Document",
