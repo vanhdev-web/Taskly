@@ -1,0 +1,176 @@
+[
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "9937",
+    "ProjectName": "Nuôi mèo",
+    "taskName": "Mua",
+    "status": "Unfinished",
+    "deadline": "2025-03-28T07:32:26.8314591+07:00",
+    "AssignedTo": 7
+  },
+  {
+    "$type": "OOP.Models.Milestone, OOP",
+    "Description": null,
+    "taskID": "5042",
+    "ProjectName": "Nuôi mèo",
+    "taskName": "Cat babies",
+    "status": "Unfinished",
+    "deadline": "2025-03-28T07:32:35.1144701+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Meeting, OOP",
+    "Location": "UEH",
+    "Participants": [],
+    "Hour": "17:30",
+    "taskID": "2718",
+    "ProjectName": "Nuôi mèo",
+    "taskName": "Choose cat",
+    "status": "Finished",
+    "deadline": "2025-03-28T07:32:49.09956+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "3860",
+    "ProjectName": "New Project",
+    "taskName": "Mua chos",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T08:40:38.5959605+07:00",
+    "AssignedTo": 6
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "2321",
+    "ProjectName": "Nuôi mèo",
+    "taskName": "HiHIHI",
+    "status": "Finished",
+    "deadline": "2025-03-28T08:42:16.3263562+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "6488",
+    "ProjectName": "Sup",
+    "taskName": "HiHIHI",
+    "status": "Finished",
+    "deadline": "2025-03-28T08:43:02.8249999+07:00",
+    "AssignedTo": 2
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "1025",
+    "ProjectName": "Are u there bro",
+    "taskName": "HIHI",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T08:43:16.188221+07:00",
+    "AssignedTo": 6
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "5113",
+    "ProjectName": "Mua Iphone 16 pro max",
+    "taskName": "Đi dạy tối t6",
+    "status": "Finished",
+    "deadline": "2025-03-28T08:54:15.143674+07:00",
+    "AssignedTo": 8
+  },
+  {
+    "$type": "OOP.Models.Milestone, OOP",
+    "Description": null,
+    "taskID": "4889",
+    "ProjectName": "Mua Iphone 16 pro max",
+    "taskName": "Tích đủ 10tr",
+    "status": "Finished",
+    "deadline": "2025-03-28T08:54:30.6316219+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Meeting, OOP",
+    "Location": "UEH A",
+    "Participants": [],
+    "Hour": "17:30",
+    "taskID": "9356",
+    "ProjectName": "Mua Iphone 16 pro max",
+    "taskName": "Họp bàn cách kiếm tiền",
+    "status": "Finished",
+    "deadline": "2025-03-28T08:54:41.7140888+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "9985",
+    "ProjectName": "Sup",
+    "taskName": "HIHI",
+    "status": "Finished",
+    "deadline": "2025-03-28T09:14:08.3645734+07:00",
+    "AssignedTo": 1
+  },
+  {
+    "$type": "OOP.Models.Milestone, OOP",
+    "Description": null,
+    "taskID": "3952",
+    "ProjectName": "Mua Iphone 16 pro max",
+    "taskName": "",
+    "status": "Finished",
+    "deadline": "2025-03-28T09:21:49.6443519+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "6876",
+    "ProjectName": "Sup",
+    "taskName": "dd",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T13:05:03.3340118+07:00",
+    "AssignedTo": 1
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "9942",
+    "ProjectName": "Sup",
+    "taskName": "ọdfg",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T13:08:52.7987292+07:00",
+    "AssignedTo": 1
+  },
+  {
+    "$type": "OOP.Models.Meeting, OOP",
+    "Location": "",
+    "Participants": [],
+    "Hour": "",
+    "taskID": "7367",
+    "ProjectName": "",
+    "taskName": "dfdfd",
+    "status": "Incompleted",
+    "deadline": "2025-03-28T13:15:24.4031839+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "4562",
+    "ProjectName": "Nghiên cứu khoa học",
+    "taskName": "làm bài tập",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T13:26:56.8190202+07:00",
+    "AssignedTo": 0
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "7627",
+    "ProjectName": "Thi Hackathon",
+    "taskName": "Coding ",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T13:27:25.145199+07:00",
+    "AssignedTo": 2
+  },
+  {
+    "$type": "OOP.Models.Task, OOP",
+    "taskID": "6335",
+    "ProjectName": "Thi Hackathon",
+    "taskName": "Thuyết trình ",
+    "status": "Unfinish",
+    "deadline": "2025-03-28T13:27:46.2799374+07:00",
+    "AssignedTo": 2
+  }
+]

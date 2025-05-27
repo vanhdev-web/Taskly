@@ -1,0 +1,91 @@
+[
+  {
+    "tasks": [],
+    "projectID": 1,
+    "projectName": "Sup",
+    "projectDescription": "I have no ideas",
+    "members": [],
+    "AdminID": 1,
+    "AdminName": null,
+    "CreatedBy": "hi",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 2,
+    "projectName": "SCUMS",
+    "projectDescription": "What's this project about ",
+    "members": [
+      "No \n(Member)"
+    ],
+    "AdminID": 5,
+    "AdminName": null,
+    "CreatedBy": "No",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 3,
+    "projectName": "HELLO WORLD",
+    "projectDescription": "hihihi",
+    "members": [
+      "Hihihi \n(Member)",
+      "He \n(Admin)",
+      "Hào \n(Member)",
+      "Bao \n(Member)"
+    ],
+    "AdminID": 5,
+    "AdminName": "No",
+    "CreatedBy": "No",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 6,
+    "projectName": "Newest",
+    "projectDescription": "What's this project about ",
+    "members": [
+      "No (Member)",
+      "Hi (Member)"
+    ],
+    "AdminID": 6,
+    "AdminName": "Bao",
+    "CreatedBy": "Bao",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 8,
+    "projectName": "Nuôi mèo",
+    "projectDescription": "What's this project about ",
+    "members": [
+      "Bao (Member)"
+    ],
+    "AdminID": 7,
+    "AdminName": "Ian",
+    "CreatedBy": "Ian",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 6,
+    "projectName": "Nghiên cứu khoa học",
+    "projectDescription": "What's this project about ",
+    "members": [],
+    "AdminID": 2,
+    "AdminName": "Hi",
+    "CreatedBy": "Hi",
+    "UserRole": 0
+  },
+  {
+    "tasks": [],
+    "projectID": 7,
+    "projectName": "Thi Hackathon",
+    "projectDescription": "What's this project about ",
+    "members": [],
+    "AdminID": 2,
+    "AdminName": "Hi",
+    "CreatedBy": "Hi",
+    "UserRole": 0
+  }
+]

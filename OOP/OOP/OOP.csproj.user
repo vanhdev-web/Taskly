@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectView>ShowAllFiles</ProjectView>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Forms\AddMeeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AddMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AddMilestone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Addtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\AvaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Inbox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\ProjectActivityFeed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Projects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Tasks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

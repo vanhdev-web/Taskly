@@ -1,0 +1,78 @@
+[
+  {
+    "tasks": [],
+    "projectID": 1,
+    "projectName": "Project Alpha",
+    "projectDescription": "First project description",
+    "AdminID": 1,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 2,
+    "projectName": "Project Beta",
+    "projectDescription": "Second project description",
+    "AdminID": 2,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 3,
+    "projectName": "Project Gamma",
+    "projectDescription": "Third project description",
+    "AdminID": 3,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 4,
+    "projectName": "Project Delta",
+    "projectDescription": "Fourth project description",
+    "AdminID": 4,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 5,
+    "projectName": "Project Epsilon",
+    "projectDescription": "Fifth project description",
+    "AdminID": 5,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 7,
+    "projectName": "chohao",
+    "projectDescription": "What's this project about?",
+    "AdminID": 9,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 8,
+    "projectName": "project moi",
+    "projectDescription": "What's this project about?",
+    "AdminID": 6,
+    "Admin": null,
+    "members": []
+  },
+  {
+    "tasks": [],
+    "projectID": 10,
+    "projectName": "test",
+    "projectDescription": "What's this project about?",
+    "AdminID": 6,
+    "Admin": null,
+    "members": [
+      "user1",
+      "user2",
+      "user1"
+    ]
+  }
+]
