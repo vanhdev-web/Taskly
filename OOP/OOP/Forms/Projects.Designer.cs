@@ -50,7 +50,7 @@ namespace OOP
             menu = new ReaLTaiizor.Controls.Panel();
             button7 = new ReaLTaiizor.Controls.Button();
             panel2 = new ReaLTaiizor.Controls.Panel();
-            btnNoti = new ReaLTaiizor.Controls.Button();
+            btnUser = new ReaLTaiizor.Controls.Button();
             panel7 = new ReaLTaiizor.Controls.Panel();
             btnExit = new ReaLTaiizor.Controls.Button();
             panel3 = new Panel();
@@ -309,7 +309,7 @@ namespace OOP
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(30, 30, 32);
-            panel2.Controls.Add(btnNoti);
+            panel2.Controls.Add(btnUser);
             panel2.EdgeColor = Color.Transparent;
             panel2.ForeColor = SystemColors.ControlLightLight;
             panel2.Location = new Point(5, 354);
@@ -321,29 +321,29 @@ namespace OOP
             panel2.TabIndex = 9;
             panel2.Text = "Dashboard";
             // 
-            // btnNoti
+            // btnUser
             // 
-            btnNoti.BackColor = Color.Transparent;
-            btnNoti.BorderColor = Color.Transparent;
-            btnNoti.Cursor = Cursors.Hand;
-            btnNoti.Dock = DockStyle.Fill;
-            btnNoti.EnteredBorderColor = Color.Transparent;
-            btnNoti.EnteredColor = Color.Transparent;
-            btnNoti.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 163);
-            btnNoti.Image = (Image)resources.GetObject("btnNoti.Image");
-            btnNoti.ImageAlign = ContentAlignment.MiddleLeft;
-            btnNoti.InactiveColor = Color.Transparent;
-            btnNoti.Location = new Point(24, 10);
-            btnNoti.Margin = new Padding(5, 6, 5, 6);
-            btnNoti.Name = "btnNoti";
-            btnNoti.Padding = new Padding(162, 0, 0, 0);
-            btnNoti.PressedBorderColor = Color.Transparent;
-            btnNoti.PressedColor = Color.Transparent;
-            btnNoti.Size = new Size(442, 88);
-            btnNoti.TabIndex = 2;
-            btnNoti.Text = "              User";
-            btnNoti.TextAlignment = StringAlignment.Near;
-            btnNoti.Click += btnUser_Click;
+            btnUser.BackColor = Color.Transparent;
+            btnUser.BorderColor = Color.Transparent;
+            btnUser.Cursor = Cursors.Hand;
+            btnUser.Dock = DockStyle.Fill;
+            btnUser.EnteredBorderColor = Color.Transparent;
+            btnUser.EnteredColor = Color.Transparent;
+            btnUser.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 163);
+            btnUser.Image = (Image)resources.GetObject("btnUser.Image");
+            btnUser.ImageAlign = ContentAlignment.MiddleLeft;
+            btnUser.InactiveColor = Color.Transparent;
+            btnUser.Location = new Point(24, 10);
+            btnUser.Margin = new Padding(5, 6, 5, 6);
+            btnUser.Name = "btnUser";
+            btnUser.Padding = new Padding(162, 0, 0, 0);
+            btnUser.PressedBorderColor = Color.Transparent;
+            btnUser.PressedColor = Color.Transparent;
+            btnUser.Size = new Size(442, 88);
+            btnUser.TabIndex = 2;
+            btnUser.Text = "              User";
+            btnUser.TextAlignment = StringAlignment.Near;
+            btnUser.Click += btnUser_Click;
             // 
             // panel7
             // 
@@ -657,7 +657,7 @@ namespace OOP
         private Label AllTasks;
         private Panel taskContainer;
         private ReaLTaiizor.Controls.Panel panel2;
-        private ReaLTaiizor.Controls.Button btnNoti;
+        private ReaLTaiizor.Controls.Button btnUser;
         private Button btnReport;
     }
 }

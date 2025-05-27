@@ -44,8 +44,8 @@ namespace OOP.Services
                     db.Tasks.Add(newtask);
                     db.SaveChanges();
                     var AssingedUser = (from u in db.Users
-                               where u.ID == newtask.AssignedTo
-                               select u).FirstOrDefault();
+                                        where u.ID == newtask.AssignedTo
+                                        select u).FirstOrDefault();
                     var project = (from p in db.Projects
                                    where p.projectID == newtask.ProjectID
                                    select p).FirstOrDefault();
@@ -76,7 +76,7 @@ namespace OOP.Services
             //    }
             //    MessageBox.Show("Chuẩn bị ra");
             //}
-            
+
 
             Tasks.Add(task);
             //SaveTasksToFile();

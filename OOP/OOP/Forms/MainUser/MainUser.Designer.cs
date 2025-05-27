@@ -42,7 +42,7 @@
             menu = new ReaLTaiizor.Controls.Panel();
             btnProject = new ReaLTaiizor.Controls.Button();
             panel5 = new ReaLTaiizor.Controls.Panel();
-            btnNoti = new ReaLTaiizor.Controls.Button();
+            btnUser = new ReaLTaiizor.Controls.Button();
             panel2 = new ReaLTaiizor.Controls.Panel();
             btnExit = new ReaLTaiizor.Controls.Button();
             avatar = new System.Windows.Forms.PictureBox();
@@ -273,7 +273,7 @@
             // panel5
             // 
             panel5.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
-            panel5.Controls.Add(btnNoti);
+            panel5.Controls.Add(btnUser);
             panel5.EdgeColor = System.Drawing.Color.Transparent;
             panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             panel5.Location = new System.Drawing.Point(5, 354);
@@ -285,31 +285,31 @@
             panel5.TabIndex = 5;
             panel5.Text = "Dashboard";
             // 
-            // btnNoti
+            // btnUser
             // 
-            btnNoti.BackColor = System.Drawing.Color.Transparent;
-            btnNoti.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnNoti.BackgroundImage");
-            btnNoti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            btnNoti.BorderColor = System.Drawing.Color.Transparent;
-            btnNoti.Cursor = System.Windows.Forms.Cursors.Hand;
-            btnNoti.Dock = System.Windows.Forms.DockStyle.Fill;
-            btnNoti.EnteredBorderColor = System.Drawing.Color.Transparent;
-            btnNoti.EnteredColor = System.Drawing.Color.Transparent;
-            btnNoti.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
-            btnNoti.Image = null;
-            btnNoti.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            btnNoti.InactiveColor = System.Drawing.Color.Transparent;
-            btnNoti.Location = new System.Drawing.Point(24, 10);
-            btnNoti.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            btnNoti.Name = "btnNoti";
-            btnNoti.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
-            btnNoti.PressedBorderColor = System.Drawing.Color.Transparent;
-            btnNoti.PressedColor = System.Drawing.Color.Transparent;
-            btnNoti.Size = new System.Drawing.Size(442, 88);
-            btnNoti.TabIndex = 2;
-            btnNoti.Text = "              User";
-            btnNoti.TextAlignment = System.Drawing.StringAlignment.Near;
-            btnNoti.Click += btnUser_Click;
+            btnUser.BackColor = System.Drawing.Color.Transparent;
+            btnUser.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnUser.BackgroundImage");
+            btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            btnUser.BorderColor = System.Drawing.Color.Transparent;
+            btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            btnUser.EnteredBorderColor = System.Drawing.Color.Transparent;
+            btnUser.EnteredColor = System.Drawing.Color.Transparent;
+            btnUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
+            btnUser.Image = null;
+            btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            btnUser.InactiveColor = System.Drawing.Color.Transparent;
+            btnUser.Location = new System.Drawing.Point(24, 10);
+            btnUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            btnUser.Name = "btnUser";
+            btnUser.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnUser.PressedBorderColor = System.Drawing.Color.Transparent;
+            btnUser.PressedColor = System.Drawing.Color.Transparent;
+            btnUser.Size = new System.Drawing.Size(442, 88);
+            btnUser.TabIndex = 2;
+            btnUser.Text = "              User";
+            btnUser.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnUser.Click += btnUser_Click;
             // 
             // panel2
             // 
@@ -443,7 +443,7 @@
         private ReaLTaiizor.Controls.Panel menu;
         private ReaLTaiizor.Controls.Button btnProject;
         private ReaLTaiizor.Controls.Panel panel5;
-        private ReaLTaiizor.Controls.Button btnNoti;
+        private ReaLTaiizor.Controls.Button btnUser;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnExit;
         private System.Windows.Forms.PictureBox avatar;

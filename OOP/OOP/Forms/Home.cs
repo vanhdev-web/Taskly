@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualBasic.ApplicationServices;
+﻿// Home.cs
+using Microsoft.VisualBasic.ApplicationServices;
 using OOP;
 using OOP.Models;
 using OOP.Services;
@@ -17,24 +18,43 @@ using User = OOP.Models.User;
 
 namespace OOP
 {
-    public partial class Home : BaseForm, IHomeView
+    public partial class Home : BaseForm, IHomeView // Kế thừa BaseForm và triển khai IHomeView
     {
         private HomePresenter _presenter;
-        private bool sidebarExpand = true;
+
+        // Các sự kiện mà View cung cấp cho Presenter
+        public event Action<AbaseTask> TaskItemClicked;
+        public event Action<Project> ProjectItemClicked;
+        public event Action HomeButtonClicked;
+        public event Action TaskButtonClicked;
+        public event Action UserButtonClicked;
+        public event Action ProjectButtonClicked;
+        public event Action ExitButtonClicked;
 
         public Home()
         {
             InitializeComponent();
             _presenter = new HomePresenter(this);
-            //Mouse Hover
+
+            // Gán sự kiện Click cho các nút điều hướng chính
+            // Các sự kiện này sẽ kích hoạt các Action đã khai báo ở trên để Presenter lắng nghe
+            btnHome.Click += (s, e) => HomeButtonClicked?.Invoke();
+            btnTask.Click += (s, e) => TaskButtonClicked?.Invoke();
+            btnUser.Click += (s, e) => UserButtonClicked?.Invoke();
+            btnProject.Click += (s, e) => ProjectButtonClicked?.Invoke();
+            btnExit.Click += (s, e) => ExitButtonClicked?.Invoke();
+
+            // Khởi tạo Presenter để nó load dữ liệu và các thành phần khác
+            _presenter.InitializeHome();
+
+            // Áp dụng các sự kiện chuột ban đầu cho các Panel chính (hiệu ứng hover, v.v.)
+            // Logic này vẫn thuộc về View
             ApplyMouseEvents(TopPanel);
             ApplyMouseEvents(projectPanel);
             ApplyMouseEvents(taskPanel);
-
-            _presenter.LoadHomeData(); // Load all initial data via presenter
         }
 
-        // IHomeView implementations
+        // Triển khai các phương thức từ IHomeView
         public void SetTimeDetail(string time)
         {
             timeDetail.Text = time;
@@ -47,7 +67,8 @@ namespace OOP
 
         public void SetAvatarImage(Image image)
         {
-            avatar.Image = image;
+            // View tự xử lý ảnh mặc định nếu image là null
+            avatar.Image = image ?? Properties.Resources.DefaultAvatar;
         }
 
         public void ShowErrorMessage(string message)
@@ -63,9 +84,17 @@ namespace OOP
         public void AddTaskItem(AbaseTask task)
         {
             HomeTaskUserControl taskItem = new HomeTaskUserControl(task);
-            taskItem.Dock = DockStyle.Top; // Stack tasks from top to bottom
+            taskItem.Dock = DockStyle.Top;
             taskContainer.Controls.Add(taskItem);
-            ApplyMouseEvents(taskItem.TaskPanel);
+
+            // Gán sự kiện Click cho Panel bên trong HomeTaskUserControl
+            // Khi Panel này được click, kích hoạt sự kiện TaskItemClicked của View
+            // để Presenter lắng nghe và xử lý.
+            if (taskItem.TaskPanel != null) // Đảm bảo TaskPanel tồn tại
+            {
+                taskItem.TaskPanel.Click += (s, e) => TaskItemClicked?.Invoke(task);
+                ApplyMouseEvents(taskItem.TaskPanel); // Áp dụng hiệu ứng hover nếu có
+            }
         }
 
         public void ClearProjectContainer()
@@ -76,23 +105,50 @@ namespace OOP
         public void AddProjectItem(Project project)
         {
             HomeProjectUserControl projectItem = new HomeProjectUserControl(project);
-            projectItem.Dock = DockStyle.Top; // Stack Project from top to bottom
+            projectItem.Dock = DockStyle.Top;
             projectContainer.Controls.Add(projectItem);
-            ApplyMouseEvents(projectItem.ProjectPanel);
+
+            // Gán sự kiện Click cho Panel bên trong HomeProjectUserControl
+            if (projectItem.ProjectPanel != null) // Đảm bảo ProjectPanel tồn tại
+            {
+                projectItem.ProjectPanel.Click += (s, e) => ProjectItemClicked?.Invoke(project);
+                ApplyMouseEvents(projectItem.ProjectPanel); // Áp dụng hiệu ứng hover nếu có
+            }
         }
 
+        // Phương thức ApplyMouseEvents: Nơi gán hiệu ứng hover (Mouse EnteR/Leave)
+        // và xử lý click chung cho các Panel mà không cần truyền tham số quá cụ thể.
+        // Logic này vẫn giữ nguyên trong View.
         public void ApplyMouseEvents(Control control)
         {
-            // Existing implementation of ApplyMouseEvents
-            // This method directly manipulates UI elements, so it stays in the View.
-            // (The actual implementation of ApplyMouseEvents is not provided in the original extract,
-            // but assuming it exists in BaseForm or directly in Home.cs)
+            control.MouseEnter += (s, e) => {
+                if (s is Control c)
+                {
+                    c.BackColor = Color.LightGray; // Hoặc màu bạn mong muốn khi hover
+                }
+            };
+            control.MouseLeave += (s, e) => {
+                if (s is Control c)
+                {
+                    c.BackColor = Color.Transparent; // Trả lại màu nền ban đầu
+                }
+            };
+
+            // Nếu bạn có một logic chung cho tất cả các click của ApplyMouseEvents
+            // ví dụ: phát ra âm thanh, hoặc hiệu ứng chung, bạn có thể thêm vào đây.
+            // Tuy nhiên, đối với việc mở form chi tiết Task/Project, chúng ta đã xử lý riêng ở AddTaskItem/AddProjectItem.
         }
 
         public void SwitchForm(Form newForm)
         {
-            // Existing implementation of SwitchForm
-            // This method directly manipulates UI forms, so it stays in the View.
+            this.Hide();
+            newForm.ShowDialog();
+            this.Close();
+        }
+
+        public void ExitApplication()
+        {
+            Application.Exit();
         }
 
         public void StartSidebarTransition()
@@ -100,56 +156,26 @@ namespace OOP
             sidebarTransition.Start();
         }
 
-        // Event Handlers (Delegate to Presenter for logic)
+        // Event handler cho Timer của Sidebar (vẫn ở View vì nó điều khiển UI trực tiếp)
         private void sidebarTransition_Tick(Object sender, EventArgs e)
         {
-            _presenter.ToggleSidebar(ref sidebarExpand, sidebar, sidebarTransition);
+            // View gọi Presenter để xử lý logic thay đổi kích thước sidebar
+            _presenter.ToggleSidebar(sidebar, sidebarTransition);
         }
 
-        private void Home_Load(object sender, EventArgs e)
-        {
-            // Initial data loading handled by presenter in constructor
-        }
+        // Các event handler khác của View (nếu không có logic nghiệp vụ, giữ lại)
+        private void Home_Load(object sender, EventArgs e) { /* Presenter đã lo phần khởi tạo */ }
+        private void btnHam_Click(object sender, EventArgs e) { StartSidebarTransition(); }
+        private void panel6_Paint(object sender, PaintEventArgs e) { }
+        private void WelcomeName_Click(object sender, EventArgs e) { }
 
-        private void btnHam_Click(object sender, EventArgs e)
-        {
-            StartSidebarTransition();
-        }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            SwitchForm(new Home());
-        }
-        private void btnTask_Click(object sender, EventArgs e)
-        {
-            SwitchForm(new Tasks());
-        }
-
-        private void btnUser_Click(object sender, EventArgs e)
-        {
-            SwitchForm(new MainUser());
-        }
-
-        private void btnProject_Click(object sender, EventArgs e)
-        {
-            SwitchForm(new Projects());
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            ExitApplication();
-            // Gọi hàm chung để thoát
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-            //
-        }
-
-        private void WelcomeName_Click(object sender, EventArgs e)
-        {
-            //
-        }
+        // Các sự kiện click của các nút điều hướng chính đã được gán ở constructor
+        // nên các phương thức btnHome_Click, btnTask_Click,... có thể bị xóa
+        // nếu không còn đoạn code nào khác trong đó.
+        // Nếu có, bạn có thể chuyển chúng thành private và gọi Invoke() như ở constructor.
+        // private void btnHome_Click(object sender, EventArgs e) { HomeButtonClicked?.Invoke(); }
+        // private void btnTask_Click(object sender, EventArgs e) { TaskButtonClicked?.Invoke(); }
+        // ...
     }
     public interface IHomeView
     {
@@ -158,11 +184,27 @@ namespace OOP
         void SetAvatarImage(Image image);
         void ShowErrorMessage(string message);
         void ClearTaskContainer();
-        void AddTaskItem(AbaseTask task);
+        void AddTaskItem(AbaseTask task); // View sẽ tự biết cách tạo UserControl và gán sự kiện cho nó
         void ClearProjectContainer();
-        void AddProjectItem(Project project);
-        void ApplyMouseEvents(Control control); // This needs to be in the View as it manipulates UI elements directly.
-        void SwitchForm(Form newForm); // This needs to be in the View as it manipulates UI forms directly.
-        void StartSidebarTransition(); // To start the sidebar animation
+        void AddProjectItem(Project project); // View sẽ tự biết cách tạo UserControl và gán sự kiện cho nó
+
+        // Các phương thức điều hướng và thoát ứng dụng cũng được chuyển lên View
+        void SwitchForm(Form newForm);
+        void ExitApplication();
+
+        // Phương thức để View bắt đầu hiệu ứng sidebar (nếu Presenter yêu cầu)
+        void StartSidebarTransition();
+
+        // Phương thức để View thông báo cho Presenter khi một Task item được click
+        event Action<AbaseTask> TaskItemClicked;
+        // Phương thức để View thông báo cho Presenter khi một Project item được click
+        event Action<Project> ProjectItemClicked;
+
+        // Phương thức để View thông báo cho Presenter khi một nút điều hướng được click
+        event Action HomeButtonClicked;
+        event Action TaskButtonClicked;
+        event Action UserButtonClicked;
+        event Action ProjectButtonClicked;
+        event Action ExitButtonClicked;
     }
 }

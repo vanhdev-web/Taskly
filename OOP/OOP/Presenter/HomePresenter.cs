@@ -1,11 +1,12 @@
-﻿using OOP.Models;
+﻿// HomePresenter.cs
+using OOP.Models;
 using OOP.Services;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Drawing;
-using System.Windows.Forms; // For MessageBox and Image related operations if needed by presenter for direct UI interaction (e.g., error messages)
+using System.Windows.Forms; // Cần cho Timer, MessageBox
 
 namespace OOP
 {
@@ -14,17 +15,29 @@ namespace OOP
         private IHomeView _view;
         private TaskManager _taskManager;
         private ProjectManager _projectManager;
-        private Timer _timer;
+        private Timer _timer; // Giữ timer trong Presenter để quản lý logic thời gian
+
+        private bool _sidebarExpand = true; // State của sidebar, được quản lý bởi Presenter
 
         public HomePresenter(IHomeView view)
         {
             _view = view;
             _taskManager = TaskManager.GetInstance();
             _projectManager = new ProjectManager();
+
+            // Đăng ký các sự kiện từ View
+            _view.TaskItemClicked += OnTaskItemClicked;
+            _view.ProjectItemClicked += OnProjectItemClicked;
+            _view.HomeButtonClicked += OnHomeButtonClicked;
+            _view.TaskButtonClicked += OnTaskButtonClicked;
+            _view.UserButtonClicked += OnUserButtonClicked;
+            _view.ProjectButtonClicked += OnProjectButtonClicked;
+            _view.ExitButtonClicked += OnExitButtonClicked;
         }
 
-        public void LoadHomeData()
+        public void InitializeHome()
         {
+            // Các hoạt động khởi tạo ban đầu, được gọi từ constructor của View
             UpdateDateTime();
             InitializeTimer();
             LoadTasks();
@@ -34,9 +47,12 @@ namespace OOP
 
         private void InitializeTimer()
         {
-            _timer = new Timer();
-            _timer.Interval = 1000; // Cập nhật mỗi giây
-            _timer.Tick += Timer_Tick;
+            if (_timer == null) // Tránh tạo lại timer nếu đã có
+            {
+                _timer = new Timer();
+                _timer.Interval = 1000; // Cập nhật mỗi giây
+                _timer.Tick += Timer_Tick;
+            }
             _timer.Start();
         }
 
@@ -64,6 +80,7 @@ namespace OOP
             foreach (Project project in userProjects)
             {
                 List<AbaseTask> projectTasks = _taskManager.GetTasksByProject(project.projectName);
+
                 foreach (AbaseTask task in projectTasks)
                 {
                     if (task.AssignedTo > 0 && task.AssignedTo == User.LoggedInUser.ID)
@@ -84,7 +101,7 @@ namespace OOP
             _view.ClearTaskContainer();
             foreach (AbaseTask task in GetUserTasks())
             {
-                _view.AddTaskItem(task);
+                _view.AddTaskItem(task); // View sẽ tạo và hiển thị task item
             }
         }
 
@@ -93,7 +110,7 @@ namespace OOP
             _view.ClearProjectContainer();
             int loggedInUserId = User.LoggedInUser.ID;
 
-            using (var context = new TaskManagementDBContext())
+            using (var context = new TaskManagementDBContext()) // Giả định TaskManagementDBContext tồn tại
             {
                 foreach (Project project in _projectManager.Projects)
                 {
@@ -121,7 +138,7 @@ namespace OOP
 
                     if (isAdmin || isAssignedInProject)
                     {
-                        _view.AddProjectItem(project);
+                        _view.AddProjectItem(project); // View sẽ tạo và hiển thị project item
                     }
                 }
             }
@@ -144,26 +161,29 @@ namespace OOP
                         catch (Exception ex)
                         {
                             _view.ShowErrorMessage($"Lỗi hiển thị ảnh đại diện: {ex.Message}");
-                            _view.SetAvatarImage(Properties.Resources.DefaultAvatar); // Ảnh mặc định nếu lỗi
+                            // Lưu ý: Properties.Resources.DefaultAvatar cần được truy cập từ View hoặc truyền vào
+                            // Vì đây là Presenter, nó không nên trực tiếp truy cập Resources.
+                            // Cách tốt hơn là View sẽ tự xử lý ảnh mặc định nếu nhận được null hoặc lỗi.
+                            _view.SetAvatarImage(null); // Gửi null hoặc chỉ báo lỗi để View tự quyết định ảnh mặc định
                         }
                     }
                 }
                 else
                 {
-                    _view.SetAvatarImage(Properties.Resources.DefaultAvatar);
-                    // Ảnh mặc định nếu không có ảnh
+                    _view.SetAvatarImage(null); // Gửi null để View tự quyết định ảnh mặc định
                 }
             }
         }
 
-        public void ToggleSidebar(ref bool sidebarExpand, Panel sidebar, Timer sidebarTransition)
+        // Logic điều khiển Sidebar, nhận các thông số từ View
+        public void ToggleSidebar(Panel sidebar, Timer sidebarTransition)
         {
-            if (sidebarExpand)
+            if (_sidebarExpand)
             {
                 sidebar.Width -= 10;
                 if (sidebar.Width <= 72)
                 {
-                    sidebarExpand = false;
+                    _sidebarExpand = false;
                     sidebarTransition.Stop();
                 }
             }
@@ -172,10 +192,52 @@ namespace OOP
                 sidebar.Width += 10;
                 if (sidebar.Width >= 150)
                 {
-                    sidebarExpand = true;
+                    _sidebarExpand = true;
                     sidebarTransition.Stop();
                 }
             }
+        }
+
+        // --- Event Handlers cho các sự kiện từ View ---
+        private void OnTaskItemClicked(AbaseTask task)
+        {
+            // Logic khi một task item được click
+            MessageBox.Show($"Bạn đã click vào Task: {task.taskName}");
+            // Ví dụ: Mở form chi tiết Task
+            // _view.SwitchForm(new TasksDetailForm(task)); // Giả định tồn tại
+        }
+
+        private void OnProjectItemClicked(Project project)
+        {
+            // Logic khi một project item được click
+            MessageBox.Show($"Bạn đã click vào Project: {project.projectName}");
+            // Ví dụ: Mở form chi tiết Project
+            // _view.SwitchForm(new ProjectsDetailForm(project)); // Giả định tồn tại
+        }
+
+        private void OnHomeButtonClicked()
+        {
+            _view.SwitchForm(new Home());
+        }
+
+        private void OnTaskButtonClicked()
+        {
+            _view.SwitchForm(new Tasks());
+        }
+
+        private void OnUserButtonClicked()
+        {
+            _view.SwitchForm(new MainUser());
+        }
+
+        private void OnProjectButtonClicked()
+        {
+            _view.SwitchForm(new Projects());
+        }
+
+        private void OnExitButtonClicked()
+        {
+            _view.ExitApplication();
         }
     }
 }

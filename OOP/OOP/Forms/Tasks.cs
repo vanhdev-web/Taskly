@@ -163,7 +163,7 @@ namespace OOP
             List<AbaseTask> taskslistother = new List<AbaseTask>();
             foreach (AbaseTask task in (GetUserTasks()))
             {
-                    taskslistother.Add(task);
+                taskslistother.Add(task);
             }
             taskslistother.Sort();
             taskslistother.Reverse();
@@ -200,11 +200,11 @@ namespace OOP
                             where t.AssignedTo == User.LoggedInUser.ID && t.status == "Finished"
                             select t).ToList<AbaseTask>();
                 var meetings = (from m in dbcontext.Meetings
-                               where m.AssignedTo == User.LoggedInUser.ID && m.status == "Finished"
-                               select m).ToList<AbaseTask>();
+                                where m.AssignedTo == User.LoggedInUser.ID && m.status == "Finished"
+                                select m).ToList<AbaseTask>();
                 var milestones = (from ms in dbcontext.Milestones
-                                 where ms.AssignedTo == User.LoggedInUser.ID && ms.status == "Finished"
-                                 select ms).ToList<AbaseTask>();
+                                  where ms.AssignedTo == User.LoggedInUser.ID && ms.status == "Finished"
+                                  select ms).ToList<AbaseTask>();
                 var taskslistother = task.Union(meetings).Union(milestones).ToList();
 
 
