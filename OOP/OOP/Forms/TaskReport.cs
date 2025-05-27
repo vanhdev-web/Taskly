@@ -50,6 +50,7 @@ namespace OOP.Forms
                              .ToList();
 
                 listViewActivityLog.Items.Clear();
+<<<<<<< HEAD
                 listViewActivityLog.Columns.Clear();
 
                 // Set kiểu hiển thị là Details
@@ -79,14 +80,32 @@ namespace OOP.Forms
                     item.SubItems.Add(log.Action);   // Action
                     item.SubItems.Add(log.Details);  // Details
 
+=======
+
+                if (logs.Count == 0)
+                {
+                    listViewActivityLog.Items.Add(new ListViewItem("No activities found for this task."));
+                    return;
+                }
+
+                foreach (var log in logs)
+                {
+                    var item = new ListViewItem(log.Timestamp.ToString("dd/MM/yyyy HH:mm"));
+                    item.SubItems.Add(log.Username);
+                    item.SubItems.Add(log.Action);
+                    item.SubItems.Add(log.Details);
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
                     listViewActivityLog.Items.Add(item);
                 }
             }
         }
 
+<<<<<<< HEAD
         private void TaskReport_Load(object sender, EventArgs e)
         {
             
         }
+=======
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
     }
 }

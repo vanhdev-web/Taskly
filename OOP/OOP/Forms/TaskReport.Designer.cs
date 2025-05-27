@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
             listViewActivityLog = new System.Windows.Forms.ListView();
             label2 = new System.Windows.Forms.Label();
             SuspendLayout();
@@ -42,6 +43,12 @@
             listViewActivityLog.UseCompatibleStateImageBehavior = false;
             listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
+=======
+            label2 = new System.Windows.Forms.Label();
+            listViewActivityLog = new System.Windows.Forms.ListView();
+            SuspendLayout();
+            // 
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
             // label2
             // 
             label2.BackColor = System.Drawing.Color.Transparent;
@@ -53,9 +60,25 @@
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(1533, 92);
             label2.TabIndex = 8;
+<<<<<<< HEAD
             label2.Text = "Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+=======
+            label2.Text = "Task Report";
+            label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // listViewActivityLog
+            // 
+            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
+            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.Name = "listViewActivityLog";
+            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
+            listViewActivityLog.TabIndex = 7;
+            listViewActivityLog.UseCompatibleStateImageBehavior = false;
+            listViewActivityLog.View = System.Windows.Forms.View.List;
+            // 
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
             // TaskReport
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -66,13 +89,23 @@
             Controls.Add(listViewActivityLog);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             Name = "TaskReport";
+<<<<<<< HEAD
             Text = "Report";
             Load += TaskReport_Load;
+=======
+            Text = "TaskReport";
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
             ResumeLayout(false);
         }
 
         #endregion
+<<<<<<< HEAD
         private System.Windows.Forms.ListView listViewActivityLog;
         private System.Windows.Forms.Label label2;
+=======
+
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView listViewActivityLog;
+>>>>>>> 19c078fde4c3375dc5e2f518615aec576e5e9a5d
     }
 }
