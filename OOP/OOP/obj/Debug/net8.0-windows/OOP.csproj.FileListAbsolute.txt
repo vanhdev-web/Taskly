@@ -515,7 +515,6 @@ C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Avat
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\BaseForm.resources
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Home.resources
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Login.resources
-C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectActivityFeed.resources
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Projects.resources
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Register.resources
 C:\Users\GODxDEMON\Source\Repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Tasks.resources
@@ -676,3 +675,6 @@ C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\bin\Debug\net8.0-windows\runtimes
 C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.csproj.Up2Date
 C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.genruntimeconfig.cache
 C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\ref\OOP.dll
+C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.MainUser.resources
+C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.ProjectReport.resources
+C:\Users\GODxDEMON\source\repos\Taskly\OOP\OOP\obj\Debug\net8.0-windows\OOP.Forms.TaskReport.resources

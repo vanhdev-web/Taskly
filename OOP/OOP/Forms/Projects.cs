@@ -153,7 +153,7 @@ namespace OOP
 
             using (var dbContext = new TaskManagementDBContext())
             {
-               
+
                 Project newProject = new Project
                 {
                     projectName = inputName,
@@ -287,7 +287,7 @@ namespace OOP
                     // Tạo một task mặc định để gán user vào project
                     Task newTask = new Task
                     {
-                      
+
                         taskName = $"Auto-Assigned Task for {newMember}",
                         status = "Unfinished",
                         deadline = DateTime.Now.AddDays(7),
@@ -301,12 +301,11 @@ namespace OOP
                     DisplayMembers(selectedProject); // cập nhật giao diện
                     ActivityLogService activityLogService = new ActivityLogService(dbContext);
                     await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "Project", objectId: selectedProject.projectID, action: "Add Member", details: $"{User.LoggedInUser.Username} đã mời {user.Username} vào dự án {selectedProject.projectName} ");
-                    MessageBox.Show("Activitlog thêm thành viên");
                     MessageBox.Show($"Đã thêm {newMember} vào dự án dưới dạng một nhiệm vụ mặc định.");
                 }
             }
         }
-        
+
 
         private ProjectManager projectManager = new ProjectManager();
         private void UpdateComboBox()
@@ -561,10 +560,10 @@ namespace OOP
             SwitchForm(new Tasks());
         }
 
-        //private void btnUser_Click(object sender, EventArgs e)
-        //{
-        //    SwitchForm(new MainUser());
-        //}
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            SwitchForm(new MainUser());
+        }
 
         private void btnProject_Click(object sender, EventArgs e)
         {
@@ -599,6 +598,13 @@ namespace OOP
                 taskContainer.Controls.Add(taskItem);
                 ApplyMouseEvents(taskItem.TaskPanel);
             }
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            ProjectReport feedForm = new ProjectReport();
+            feedForm.StartPosition = FormStartPosition.CenterParent;
+            feedForm.ShowDialog();
         }
     }
 

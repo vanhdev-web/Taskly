@@ -15,6 +15,7 @@ namespace OOP
 {
     public partial class Register : Form
     {
+        private int userID;
         public Register()
         {
             InitializeComponent();
@@ -82,14 +83,21 @@ namespace OOP
                 this.Close();
 
                 // Chọn avatar nếu muốn
-                AvatarForm avatarForm = new AvatarForm();
+                AvatarForm avatarForm = new AvatarForm(newUser.ID); // newUser.Id là ID của người dùng vừa đăng ký
                 if (avatarForm.ShowDialog() == DialogResult.OK)
                 {
-                    newUser.Avatar = avatarForm.GetAvatarBytes();
-
-                    // Cập nhật user trong database
-                    db.Users.Update(newUser);
-                    db.SaveChanges();
+                    // Sau khi AvatarForm đóng với DialogResult.OK,
+                    // AvatarPresenter đã tự động lưu avatar vào database (nếu người dùng đã chọn Save).
+                    // Do đó, không cần gọi GetAvatarBytesFromView() hay cập nhật database ở đây nữa.
+                    MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close(); // Đóng form Register
+                }
+                else
+                {
+                    // Xử lý trường hợp người dùng đóng AvatarForm mà không chọn Save (ví dụ: nhấn Cancel)
+                    MessageBox.Show("Avatar selection skipped or cancelled.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Bạn có thể chọn đóng form Register hoặc tiếp tục mà không có avatar
+                    this.Close();
                 }
 
 
