@@ -1,21 +1,16 @@
-﻿using OOP.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using OOP.Models;
+using OOP.Presenter;
+using OOP.Presenters; // AddmemberPresenter
 
-
-namespace OOP
+namespace OOP.Forms
 {
-    public partial class Addmember : Form
+    public partial class Addmember : Form, IAddmemberView
     {
-        public TextBox txtUsername;
-        private Projects parentForm;
+        private AddmemberPresenter _presenter;
+        private Projects parentForm; // Reference to the parent form
 
         public Addmember(Projects parent)
         {
@@ -27,95 +22,93 @@ namespace OOP
             this.parentForm = parent;
             InitializeComponent();
             this.Load += Addmember_Load;
+            _presenter = new AddmemberPresenter(this); // Initialize presenter with this view
         }
-        public void Addmembercs(Projects parent)
-        {
-            if (parent == null)
-            {
-                MessageBox.Show("Error: Parent form is null!");
-                return;
-            }
-            this.parentForm = parent;
-            InitializeComponent();
-        }
+
+        //// Phương thức Addmembercs có vẻ trùng lặp với constructor, giữ nguyên để không làm thay đổi cấu trúc gốc
+        //public void Addmembercs(Projects parent)
+        //{
+        //    if (parent == null)
+        //    {
+        //        MessageBox.Show("Error: Parent form is null!");
+        //        return;
+        //    }
+        //    this.parentForm = parent;
+        //    InitializeComponent();
+        //}
+
+        // IAddmemberView implementation
         public string MemberName
         {
             get { return txtUsername?.Text.Trim() ?? string.Empty; }
         }
 
+        // If you decide to re-introduce roles, uncomment this and its usage in Presenter
         //public RoleType SelectedRole
         //{
-        //    get { return RoleType.Member; } // sửa thành cái này là ngon
+        //    get { return RoleType.Member; }
         //}
 
-        private void Addmember_Load(object sender, EventArgs e)
+        public void DisplayErrorMessage(string message)
         {
-            // Xóa dữ liệu cũ nếu có
-            comboBox1.Items.Clear();
-
-            // Chỉ thêm RoleType.Member
-            //comboBox1.Items.Add(RoleType.Member.ToString());
-
-            //// Chọn mặc định là "Member"
-            //comboBox1.SelectedItem = RoleType.Member.ToString();
-        }
-        public void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            MessageBox.Show(message);
         }
 
-        public void panel1_Click(object sender, EventArgs e)
+        public void CloseViewOk()
         {
-
-        }
-
-
-
-
-        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        //add user nè
-        public void BtnSubmit_Click(object sender, EventArgs e)
-        {
-            if (parentForm == null)
-            {
-                MessageBox.Show("Error: Parent form is not set.");
-                return;
-            }
-
-            string username = txtUsername.Text;
-            if (string.IsNullOrWhiteSpace(username))
-            {
-                MessageBox.Show("Please enter a username.");
-                return;
-            }
-
-            // Chỉ cho phép RoleType.Member
-            //RoleType selectedRole = RoleType.Member;
-
-            // Gửi thông tin đến Projects
-            //parentForm.AddMember(username, selectedRole);
-
-            // Gán kết quả để lấy dữ liệu từ Projects
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        public void SetRoleOptions(string[] roles)
         {
-
+            comboBox1.Items.Clear();
+            //comboBox1.Items.AddRange(roles);
+            //if (roles.Length > 0)
+            //{
+            //    comboBox1.SelectedItem = roles[0]; // Select the first role by default
+            //}
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        // Event Handlers (delegates to Presenter)
+        private void Addmember_Load(object sender, EventArgs e)
         {
-
+            // _presenter.InitializeRoles(); // If roles are reintroduced
         }
 
-        private void WelcomeName_Click(object sender, EventArgs e)
+        public void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            // Nothing specific here, presenter doesn't need to react to every text change unless validation is real-time
         }
+
+        public void panel1_Click(object sender, EventArgs e)
+        {
+            // Nothing specific here
+        }
+
+        public void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Nothing specific here
+        }
+
+        public void BtnSubmit_Click(object sender, EventArgs e)
+        {
+            // Don't check parentForm directly here, Presenter will handle if parentForm is needed
+            _presenter.AddMember(parentForm); // Pass parentForm to Presenter if it needs to interact with it
+        }
+
+        private void label1_Click(object sender, EventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
+        private void WelcomeName_Click(object sender, EventArgs e) { }
+    }
+
+    // Interface for the View
+    public interface IAddmemberView
+    {
+        string MemberName { get; }
+        //RoleType SelectedRole { get; } // Uncomment if roles are used
+        void DisplayErrorMessage(string message);
+        void CloseViewOk();
+        void SetRoleOptions(string[] roles);
     }
 }

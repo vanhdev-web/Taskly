@@ -1,314 +1,166 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using OOP.Models;
-using OOP.Services;
-using Task = OOP.Models.Task;
+using OOP.Models; // Ensure this points to your Models namespace for Task, Project, User
+using ModelUser = OOP.Models.User; // Alias for clarity
+using OOP.Presenter; // AddtaskPresenter
 
-namespace OOP
+namespace OOP.Forms
 {
-    public partial class Addtask : Form
+    public partial class Addtask : Form, IAddtaskView
     {
-        public Task NewTask { get; set; }
-        List<Project> projects;
-        List<AbaseTask> tasks;
-        List<User> users;
+        private AddtaskPresenter _presenter;
 
+        // Keeping these properties as they were in the original constructor,
+        // though in a strict MVP, the Presenter would ideally manage data directly
+        // via services and pass only necessary info to the View.
+        // However, user requested to keep old methods/variables.
+        public Models.Task NewTask { get; set; } // [cite: 2]
+        List<Project> projects; // [cite: 3]
+        List<AbaseTask> tasks; // [cite: 3] (Assuming AbaseTask is the base type, will use Models.Task internally for clarity)
+        List<ModelUser> users; // [cite: 3]
 
-        public Addtask(List<Project> projects, List<AbaseTask> tasks, List<User> users)
+        public Addtask(List<Project> projects, List<AbaseTask> tasks, List<ModelUser> users) // [cite: 4]
         {
-            InitializeComponent();
-            this.projects = projects;
-            this.tasks = tasks;
-            this.users = users;
-            UpdateComboBox();
-
+            InitializeComponent(); // [cite: 4]
+            this.projects = projects; // [cite: 5]
+            this.tasks = tasks; // [cite: 5]
+            this.users = users; // [cite: 5]
+            _presenter = new AddtaskPresenter(this);
+            _presenter.InitializeData(); // Call presenter to initialize UI elements
         }
 
-        private void Addtask_Load(object sender, EventArgs e)
+        // IAddtaskView implementation
+        public string TaskName
         {
+            get { return txtbInputNameTask.Text.Trim(); } // [cite: 23]
+            set { txtbInputNameTask.Text = value; }
+        }
 
-            using (var db = new TaskManagementDBContext())
+        public DateTime TaskDeadline
+        {
+            get { return dtpNewTask.Value; } // [cite: 24]
+            set { dtpNewTask.Value = value; }
+        }
+
+        public string SelectedProjectName
+        {
+            get { return cbbSelectProject.Text; } // [cite: 24]
+            set { cbbSelectProject.Text = value; }
+        }
+
+        public string SelectedAssignedUser
+        {
+            get { return cbbAssignedUser.Text.Trim(); } // [cite: 24]
+            set { cbbAssignedUser.Text = value; }
+        }
+
+        public void SetProjectOptions(List<string> projectNames)
+        {
+            cbbSelectProject.Items.Clear(); // [cite: 8]
+            foreach (string projectName in projectNames) // [cite: 9]
             {
-                // giả sử có thuộc tính adminId trong form này
-
-                // lấy danh sách project có adminid phù hợp
-                var filteredProjects = db.Projects
-                                         .Where(p => p.AdminID == User.LoggedInUser.ID)
-                                         .ToList();
-
-                // đổ tên project vào combobox
-                cbbSelectProject.Items.Clear();
-                foreach (var project in filteredProjects)
-                {
-                    cbbSelectProject.Items.Add(project.projectName);
-                }
-
-                // nếu có project thì chọn mặc định là project đầu tiên
-                if (cbbSelectProject.Items.Count > 0)
-                {
-                    cbbSelectProject.SelectedIndex = 0;
-                    string selectedProjectName = cbbSelectProject.SelectedItem.ToString();
-
-                    // tìm lại projectid từ tên
-                    var selectedProject = filteredProjects
-                                          .FirstOrDefault(p => p.projectName == selectedProjectName);
-                    if (selectedProject == null) return;
-
-                    int selectedProjectId = selectedProject.projectID;
-
-                    // lấy danh sách userid từ các bảng task, meeting, milestone thuộc projectid
-                    var taskUsers = db.Tasks
-                                      .Where(t => t.ProjectID == selectedProjectId)
-                                      .Select(t => t.AssignedTo);
-
-                    var meetingUsers = db.Meetings
-                                         .Where(m => m.ProjectID == selectedProjectId)
-                                         .Select(m => m.AssignedTo);
-
-                    var milestoneUsers = db.Milestones
-                                           .Where(ms => ms.ProjectID == selectedProjectId)
-                                           .Select(ms => ms.AssignedTo);
-
-                    var userIds = taskUsers
-                                  .Union(meetingUsers)
-                                  .Union(milestoneUsers)
-                                  .Distinct()
-                                  .ToList();
-
-                    // lấy thông tin người dùng từ userids
-                    var users = db.Users
-                                  .Where(u => userIds.Contains(u.ID))
-                                  .ToList();
-
-                    // đổ username vào combobox
-                    cbbAssignedUser.Items.Clear();
-                    cbbAssignedUser.Items.Add("Myself"); 
-                    foreach (var user in users)
-                    {
-                        cbbAssignedUser.Items.Add(user.Username);
-                    }
-                }
+                cbbSelectProject.Items.Add(projectName); // [cite: 9]
             }
         }
 
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void SetAssignedUserOptions(List<string> userNames)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult = DialogResult.Cancel;
-            Close();
-        }
-
-        private void btnConfirm_Click(object sender, EventArgs e)
-        {
-
-            string taskName = txtbInputNameTask.Text.Trim();
-            DateTime deadline = dtpNewTask.Value;
-            string projectName = cbbSelectProject.Text;
-            string receiverUsername = cbbAssignedUser.Text.Trim();
-
-            if (string.IsNullOrWhiteSpace(taskName) || string.IsNullOrWhiteSpace(projectName) || string.IsNullOrWhiteSpace(receiverUsername))
+            cbbAssignedUser.Items.Clear(); // [cite: 19]
+            cbbAssignedUser.Items.Add("Myself"); // [cite: 20]
+            foreach (var user in userNames) // [cite: 20]
             {
-                MessageBox.Show("Please fill in all fields.");
-                return;
-            }
-
-            using (var db = new TaskManagementDBContext())
-            {
-                // tìm project theo tên
-                var selectedProject = db.Projects.FirstOrDefault(p => p.projectName == projectName);
-
-                if (selectedProject == null)
-                {
-                    MessageBox.Show("Project not found.");
-                    return;
-                }
-
-                int receiverID = 0;
-
-                if (receiverUsername == "Myself")
-                {
-                    receiverID = User.LoggedInUser.ID;
-                }
-                else
-                {
-                    // lấy tất cả task, meeting, milestone có cùng projectid
-                    var taskUserIds = db.Tasks
-                                        .Where(t => t.ProjectID == selectedProject.projectID)
-                                        .Select(t => t.AssignedTo);
-
-                    var meetingUserIds = db.Meetings
-                                           .Where(m => m.ProjectID == selectedProject.projectID)
-                                           .Select(m => m.AssignedTo);
-
-                    var milestoneUserIds = db.Milestones
-                                             .Where(ms => ms.ProjectID == selectedProject.projectID)
-                                             .Select(ms => ms.AssignedTo);
-
-                    var allUserIds = taskUserIds
-                                    .Union(meetingUserIds)
-                                    .Union(milestoneUserIds)
-                                    .Distinct()
-                                    .ToList();
-
-                    // tìm user trong database theo username và thuộc danh sách trên
-                    var matchedUser = db.Users
-                                        .Where(u => allUserIds.Contains(u.ID))
-                                        .FirstOrDefault(u => u.Username.Trim() == receiverUsername);
-
-                    if (matchedUser == null)
-                    {
-                        MessageBox.Show($"{receiverUsername} is not a member of this project.");
-                        return;
-                    }
-
-                    receiverID = matchedUser.ID;
-                }
-
-                // tạo task mới
-                var newTask = new Task
-                {
-                    taskName = taskName,
-                    status = "Unfinished",
-                    deadline = deadline,
-                    AssignedTo = receiverID,
-                    ProjectID = selectedProject.projectID
-                };
-
-                // lưu vào database
-
-
-                // gán vào thuộc tính
-                NewTask = newTask;
-
-                DialogResult = DialogResult.OK;
-                Close();
-            }
-        } 
-
-
-
-           
-        
-
-
-        private ProjectManager projectManager = new ProjectManager();
-        private void UpdateComboBox()
-        {
-            cbbSelectProject.Items.Clear();
-
-            if (User.LoggedInUser == null) return; // Kiểm tra user đăng nhập
-
-            foreach (Project project in projectManager.Projects)
-            {
-                if (project == null || project.members == null) continue; // Kiểm tra null tránh lỗi
-
-                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}");
-
-                bool isMember = false;
-                //foreach (string member in project.members)
-                //{
-                //    string memberUsername = member.Split('(')[0].Trim(); // Lấy username trước dấu "(" và Trim()
-                //    if (memberUsername == User.LoggedInUser.Username)
-                //    {
-                //        isMember = true;
-                //        break;
-                //    }
-                //}
-
-                if (project.AdminID == User.LoggedInUser.ID || isMember)
-                {
-                    cbbSelectProject.Items.Add($"{project.projectName}");
-                }
+                cbbAssignedUser.Items.Add(user); // [cite: 20]
             }
         }
 
-        private void cbbSelectProject_SelectionChangeCommitted(object sender, EventArgs e)
+        public void DisplayErrorMessage(string message)
         {
-            savedProjectName = cbbSelectProject.Text;
-            UpdateMember();
-        }
-        string savedProjectName;
-        private void UpdateMember()
-        {
-            cbbAssignedUser.Items.Clear();
-            cbbAssignedUser.Items.Add("Myself");
-
-            using (var db = new TaskManagementDBContext())
-            {
-                var selectedProject = db.Projects.FirstOrDefault(p => p.projectName == savedProjectName);
-                if (selectedProject == null) return;
-
-                int selectedProjectId = selectedProject.projectID;
-
-                // lấy danh sách userid từ các bảng task, meeting, milestone thuộc projectid
-                var taskUsers = db.Tasks
-                                  .Where(t => t.ProjectID == selectedProjectId)
-                                  .Select(t => t.AssignedTo);
-
-                var meetingUsers = db.Meetings
-                                     .Where(m => m.ProjectID == selectedProjectId)
-                                     .Select(m => m.AssignedTo);
-
-                var milestoneUsers = db.Milestones
-                                       .Where(ms => ms.ProjectID == selectedProjectId)
-                                       .Select(ms => ms.AssignedTo);
-
-                var userIds = taskUsers
-                              .Union(meetingUsers)
-                              .Union(milestoneUsers)
-                              .Distinct()
-                              .ToList();
-
-                var users = db.Users
-                              .Where(u => userIds.Contains(u.ID))
-                              .ToList();
-
-                foreach (var user in users)
-                {
-                    cbbAssignedUser.Items.Add(user.Username);
-                }
-            }
+            MessageBox.Show(message); // [cite: 25, 27, 38]
         }
 
-        private void cbbAssignedUser_Click(object sender, EventArgs e)
+        public void CloseView(Models.Task createdTask)
         {
-            //  UpdateMember();
+            this.NewTask = createdTask; // [cite: 42]
+            this.DialogResult = DialogResult.OK; // [cite: 43]
+            this.Close(); // [cite: 43]
         }
 
-        private void txtbInputNameTask_Validating(object sender, CancelEventArgs e)
+        public void SetTaskNameError(string message)
         {
-            if (string.IsNullOrWhiteSpace(txtbInputNameTask.Text))
-            {
-                e.Cancel = true; // Chặn chuyển focus nếu input trống
-                errLoginTask.SetError(txtbInputNameTask, "Please enter task name!");
-            }
-            else
-            {
-                e.Cancel = false; // Cho phép focus rời khỏi control
-                errLoginTask.SetError(txtbInputNameTask, null);
-            }
+            errLoginTask.SetError(txtbInputNameTask, message); // [cite: 62, 64]
         }
 
-        private void btnConfirm_Validating(object sender, CancelEventArgs e)
+        public void CancelValidation(CancelEventArgs e, bool cancel)
         {
-
+            e.Cancel = cancel; // [cite: 61, 63]
         }
+
+        // Event Handlers (delegates to Presenter)
+        private void Addtask_Load(object sender, EventArgs e) // [cite: 6]
+        {
+            // Initial data loading is now handled by _presenter.InitializeData() in constructor.
+            // This method might be left empty or used for other view-specific setup not related to data.
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e) // [cite: 22]
+        {
+            // Empty as per original code
+        }
+
+        private void label1_Click(object sender, EventArgs e) // [cite: 21]
+        {
+            // Empty as per original code
+        }
+
+        private void button1_Click(object sender, EventArgs e) // [cite: 22] (This was the Cancel button)
+        {
+            _presenter.CancelTask();
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e) // [cite: 22]
+        {
+            _presenter.ConfirmTask();
+        }
+
+        private void cbbSelectProject_SelectionChangeCommitted(object sender, EventArgs e) // [cite: 49]
+        {
+            // savedProjectName was a private field in the original view.
+            // Now, we pass the selected project name to the presenter.
+            _presenter.HandleProjectSelectionChanged(cbbSelectProject.Text);
+        }
+
+        private void cbbAssignedUser_Click(object sender, EventArgs e) // [cite: 60]
+        {
+            // Empty as per original code, or potentially trigger _presenter.UpdateMembers() if needed.
+            // Original comment was: // UpdateMember();
+        }
+
+        private void txtbInputNameTask_Validating(object sender, CancelEventArgs e) // [cite: 61]
+        {
+            _presenter.ValidateTaskName(txtbInputNameTask.Text, e);
+        }
+
+        private void btnConfirm_Validating(object sender, CancelEventArgs e) // [cite: 65]
+        {
+            // Empty as per original code
+        }
+    }
+
+    // Interface for the View
+    public interface IAddtaskView
+    {
+        string TaskName { get; set; }
+        DateTime TaskDeadline { get; set; }
+        string SelectedProjectName { get; set; }
+        string SelectedAssignedUser { get; set; }
+
+        void SetProjectOptions(List<string> projectNames);
+        void SetAssignedUserOptions(List<string> userNames);
+        void DisplayErrorMessage(string message);
+        void CloseView(Models.Task createdTask);
+        void SetTaskNameError(string message);
+        void CancelValidation(CancelEventArgs e, bool cancel);
     }
 }
