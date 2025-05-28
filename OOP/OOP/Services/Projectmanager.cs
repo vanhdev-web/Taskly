@@ -145,6 +145,24 @@ namespace Taskly.Services
                 return project;
             }
         }
+        public Project FindProjectById(int projectId)
+        {
+            using (var context = new TaskManagementDBContext())
+            {
+                var project = (from p in context.Projects
+                               where p.projectID == projectId
+                               select new Project
+                               {
+                                   projectID = p.projectID,
+                                   projectName = p.projectName,
+                                   projectDescription = p.projectDescription,
+                                   AdminID = p.AdminID
+                               }).FirstOrDefault();
+
+                return project;
+            }
+        }
+
         public List<Project> FindProjectsByMember(User user)
         {
             using (var dbContext = new TaskManagementDBContext())

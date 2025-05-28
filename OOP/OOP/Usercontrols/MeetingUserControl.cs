@@ -19,6 +19,7 @@ namespace Taskly.Usercontrols
     {
         private Meeting meeting;  // Tham chiếu đến Meeting gốc
         public event EventHandler<Meeting> OnMeetingFinished;
+        public ProjectManager projectManager = new ProjectManager(); // Khởi tạo projectManager để truy cập dự án
 
         public Panel TaskPanel // Thuộc tính công khai để truy cập Panel
         {
@@ -48,6 +49,8 @@ namespace Taskly.Usercontrols
             //taskProject.Text = meeting.ProjectName; // Dùng location thay vì project
             location.Text = "Tại " + meeting.Location;
             hour.Text = "Giờ: " + meeting.Hour;
+            var project = projectManager.FindProjectById(meeting.ProjectID);
+            taskProject.Text = project != null ? project.projectName : "(Không rõ dự án)";
             UpdateButtonState();
         }
 

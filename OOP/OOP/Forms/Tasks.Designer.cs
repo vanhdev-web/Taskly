@@ -110,33 +110,33 @@
             contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { ctmCloset, ctmFarest, ctmFinished, ctnSection });
             contextMenuStrip1.Name = "contextMenuStrip1";
-            contextMenuStrip1.Size = new System.Drawing.Size(274, 156);
+            contextMenuStrip1.Size = new System.Drawing.Size(167, 92);
             // 
             // ctmCloset
             // 
             ctmCloset.Name = "ctmCloset";
-            ctmCloset.Size = new System.Drawing.Size(273, 38);
+            ctmCloset.Size = new System.Drawing.Size(166, 22);
             ctmCloset.Text = "Gần nhất";
             ctmCloset.Click += ctmCloset_Click;
             // 
             // ctmFarest
             // 
             ctmFarest.Name = "ctmFarest";
-            ctmFarest.Size = new System.Drawing.Size(273, 38);
+            ctmFarest.Size = new System.Drawing.Size(166, 22);
             ctmFarest.Text = "Xa nhất";
             ctmFarest.Click += ctmFarest_Click;
             // 
             // ctmFinished
             // 
             ctmFinished.Name = "ctmFinished";
-            ctmFinished.Size = new System.Drawing.Size(273, 38);
+            ctmFinished.Size = new System.Drawing.Size(166, 22);
             ctmFinished.Text = "Hoàn thành";
             ctmFinished.Click += ctmFinished_Click;
             // 
             // ctnSection
             // 
             ctnSection.Name = "ctnSection";
-            ctnSection.Size = new System.Drawing.Size(273, 38);
+            ctnSection.Size = new System.Drawing.Size(166, 22);
             ctnSection.Text = "Chưa hoàn thành";
             ctnSection.Click += ctnSection_Click;
             // 
@@ -157,9 +157,9 @@
             TopPanel.Dock = System.Windows.Forms.DockStyle.Top;
             TopPanel.ForeColor = System.Drawing.SystemColors.Control;
             TopPanel.Location = new System.Drawing.Point(0, 0);
-            TopPanel.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            TopPanel.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             TopPanel.Name = "TopPanel";
-            TopPanel.Size = new System.Drawing.Size(1733, 116);
+            TopPanel.Size = new System.Drawing.Size(933, 55);
             TopPanel.TabIndex = 14;
             // 
             // nightControlBox1
@@ -177,7 +177,7 @@
             nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
             nightControlBox1.EnableMinimizeButton = false;
             nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new System.Drawing.Point(1589, 0);
+            nightControlBox1.Location = new System.Drawing.Point(857, 0);
             nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
             nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
             nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
@@ -191,10 +191,10 @@
             WelcomeName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             WelcomeName.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
-            WelcomeName.Location = new System.Drawing.Point(656, 8);
-            WelcomeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            WelcomeName.Location = new System.Drawing.Point(353, 4);
+            WelcomeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             WelcomeName.Name = "WelcomeName";
-            WelcomeName.Size = new System.Drawing.Size(642, 82);
+            WelcomeName.Size = new System.Drawing.Size(345, 38);
             WelcomeName.TabIndex = 18;
             WelcomeName.Text = "Welcome back";
             WelcomeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -204,20 +204,20 @@
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label5.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
-            label5.Location = new System.Drawing.Point(110, 29);
-            label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label5.Location = new System.Drawing.Point(59, 14);
+            label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(139, 50);
+            label5.Size = new System.Drawing.Size(72, 25);
             label5.TabIndex = 2;
             label5.Text = "Taskly";
             // 
             // btnHam
             // 
             btnHam.Image = Properties.Resources.image__8_;
-            btnHam.Location = new System.Drawing.Point(38, 29);
-            btnHam.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            btnHam.Location = new System.Drawing.Point(20, 14);
+            btnHam.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             btnHam.Name = "btnHam";
-            btnHam.Size = new System.Drawing.Size(65, 56);
+            btnHam.Size = new System.Drawing.Size(35, 26);
             btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             btnHam.TabIndex = 1;
             btnHam.TabStop = false;
@@ -239,31 +239,31 @@
             // 
             mnuList.BackColor = System.Drawing.SystemColors.Control;
             mnuList.Name = "mnuList";
-            mnuList.Size = new System.Drawing.Size(69, 22);
+            mnuList.Size = new System.Drawing.Size(37, 22);
             mnuList.Text = "List";
             // 
             // mnuBoard
             // 
             mnuBoard.Name = "mnuBoard";
-            mnuBoard.Size = new System.Drawing.Size(96, 22);
+            mnuBoard.Size = new System.Drawing.Size(50, 22);
             mnuBoard.Text = "Board";
             // 
             // mnuCalendar
             // 
             mnuCalendar.Name = "mnuCalendar";
-            mnuCalendar.Size = new System.Drawing.Size(128, 22);
+            mnuCalendar.Size = new System.Drawing.Size(66, 22);
             mnuCalendar.Text = "Calendar";
             // 
             // mnuDashboard
             // 
             mnuDashboard.Name = "mnuDashboard";
-            mnuDashboard.Size = new System.Drawing.Size(149, 22);
+            mnuDashboard.Size = new System.Drawing.Size(76, 22);
             mnuDashboard.Text = "Dashboard";
             // 
             // mnuFiles
             // 
             mnuFiles.Name = "mnuFiles";
-            mnuFiles.Size = new System.Drawing.Size(81, 22);
+            mnuFiles.Size = new System.Drawing.Size(42, 22);
             mnuFiles.Text = "Files";
             // 
             // menuStrip1
@@ -287,11 +287,11 @@
             taskContainer.Controls.Add(panel8);
             taskContainer.Controls.Add(panel1);
             taskContainer.Controls.Add(panel9);
-            taskContainer.Location = new System.Drawing.Point(347, 306);
-            taskContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            taskContainer.Location = new System.Drawing.Point(187, 143);
+            taskContainer.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             taskContainer.Name = "taskContainer";
-            taskContainer.Padding = new System.Windows.Forms.Padding(20, 14, 0, 0);
-            taskContainer.Size = new System.Drawing.Size(1348, 874);
+            taskContainer.Padding = new System.Windows.Forms.Padding(11, 7, 0, 0);
+            taskContainer.Size = new System.Drawing.Size(727, 411);
             taskContainer.TabIndex = 22;
             // 
             // panel8
@@ -301,21 +301,21 @@
             panel8.Controls.Add(label6);
             panel8.Controls.Add(pictureBox2);
             panel8.Controls.Add(label7);
-            panel8.Location = new System.Drawing.Point(14, 214);
-            panel8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel8.Location = new System.Drawing.Point(8, 100);
+            panel8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             panel8.Name = "panel8";
-            panel8.Size = new System.Drawing.Size(1298, 68);
+            panel8.Size = new System.Drawing.Size(700, 33);
             panel8.TabIndex = 5;
             // 
             // label4
             // 
             label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label4.ForeColor = System.Drawing.Color.DarkGray;
-            label4.Location = new System.Drawing.Point(1023, -3);
-            label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label4.Location = new System.Drawing.Point(551, -1);
+            label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label4.Name = "label4";
-            label4.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label4.Size = new System.Drawing.Size(277, 67);
+            label4.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label4.Size = new System.Drawing.Size(149, 31);
             label4.TabIndex = 4;
             label4.Text = "Taskly";
             label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,11 +324,11 @@
             // 
             label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            label6.Location = new System.Drawing.Point(64, 2);
-            label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label6.Location = new System.Drawing.Point(34, 1);
+            label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label6.Name = "label6";
-            label6.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label6.Size = new System.Drawing.Size(784, 64);
+            label6.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label6.Size = new System.Drawing.Size(422, 30);
             label6.TabIndex = 3;
             label6.Text = "Check bài nhóm";
             label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -338,10 +338,10 @@
             pictureBox2.ErrorImage = Properties.Resources.check;
             pictureBox2.Image = (System.Drawing.Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.InitialImage = null;
-            pictureBox2.Location = new System.Drawing.Point(9, 10);
-            pictureBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox2.Location = new System.Drawing.Point(5, 5);
+            pictureBox2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(46, 50);
+            pictureBox2.Size = new System.Drawing.Size(25, 23);
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -350,11 +350,11 @@
             // 
             label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label7.ForeColor = System.Drawing.Color.DarkGray;
-            label7.Location = new System.Drawing.Point(831, -3);
-            label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label7.Location = new System.Drawing.Point(447, -1);
+            label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label7.Name = "label7";
-            label7.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label7.Size = new System.Drawing.Size(183, 67);
+            label7.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label7.Size = new System.Drawing.Size(99, 31);
             label7.TabIndex = 2;
             label7.Text = "29/03/2025";
             label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,21 +366,21 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label3);
-            panel1.Location = new System.Drawing.Point(14, 115);
-            panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel1.Location = new System.Drawing.Point(8, 54);
+            panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             panel1.Name = "panel1";
-            panel1.Size = new System.Drawing.Size(1298, 68);
+            panel1.Size = new System.Drawing.Size(700, 33);
             panel1.TabIndex = 5;
             // 
             // label1
             // 
             label1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label1.ForeColor = System.Drawing.Color.DarkGray;
-            label1.Location = new System.Drawing.Point(1023, -3);
-            label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label1.Location = new System.Drawing.Point(551, -1);
+            label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label1.Size = new System.Drawing.Size(277, 67);
+            label1.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label1.Size = new System.Drawing.Size(149, 31);
             label1.TabIndex = 4;
             label1.Text = "Taskly";
             label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -389,11 +389,11 @@
             // 
             label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            label2.Location = new System.Drawing.Point(64, 2);
-            label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label2.Location = new System.Drawing.Point(34, 1);
+            label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label2.Size = new System.Drawing.Size(784, 64);
+            label2.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label2.Size = new System.Drawing.Size(422, 30);
             label2.TabIndex = 3;
             label2.Text = "Check bài nhóm";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -403,10 +403,10 @@
             pictureBox1.ErrorImage = Properties.Resources.check;
             pictureBox1.Image = (System.Drawing.Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.InitialImage = null;
-            pictureBox1.Location = new System.Drawing.Point(9, 10);
-            pictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox1.Location = new System.Drawing.Point(5, 5);
+            pictureBox1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new System.Drawing.Size(46, 50);
+            pictureBox1.Size = new System.Drawing.Size(25, 23);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
@@ -415,11 +415,11 @@
             // 
             label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             label3.ForeColor = System.Drawing.Color.DarkGray;
-            label3.Location = new System.Drawing.Point(831, 2);
-            label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            label3.Location = new System.Drawing.Point(447, 1);
+            label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label3.Name = "label3";
-            label3.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            label3.Size = new System.Drawing.Size(183, 67);
+            label3.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            label3.Size = new System.Drawing.Size(99, 31);
             label3.TabIndex = 2;
             label3.Text = "29/03/2025";
             label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -431,21 +431,21 @@
             panel9.Controls.Add(taskContent);
             panel9.Controls.Add(checkBox);
             panel9.Controls.Add(taskDeadline);
-            panel9.Location = new System.Drawing.Point(14, 22);
-            panel9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel9.Location = new System.Drawing.Point(8, 10);
+            panel9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             panel9.Name = "panel9";
-            panel9.Size = new System.Drawing.Size(1298, 68);
+            panel9.Size = new System.Drawing.Size(700, 33);
             panel9.TabIndex = 4;
             // 
             // taskProject
             // 
             taskProject.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             taskProject.ForeColor = System.Drawing.Color.DarkGray;
-            taskProject.Location = new System.Drawing.Point(1023, -3);
-            taskProject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskProject.Location = new System.Drawing.Point(551, -1);
+            taskProject.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             taskProject.Name = "taskProject";
-            taskProject.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            taskProject.Size = new System.Drawing.Size(277, 67);
+            taskProject.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            taskProject.Size = new System.Drawing.Size(149, 31);
             taskProject.TabIndex = 4;
             taskProject.Text = "Taskly";
             taskProject.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -454,11 +454,11 @@
             // 
             taskContent.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             taskContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            taskContent.Location = new System.Drawing.Point(64, 2);
-            taskContent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskContent.Location = new System.Drawing.Point(34, 1);
+            taskContent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             taskContent.Name = "taskContent";
-            taskContent.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            taskContent.Size = new System.Drawing.Size(758, 64);
+            taskContent.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            taskContent.Size = new System.Drawing.Size(408, 30);
             taskContent.TabIndex = 3;
             taskContent.Text = "Check bài nhóm";
             taskContent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -468,10 +468,10 @@
             checkBox.ErrorImage = Properties.Resources.check;
             checkBox.Image = (System.Drawing.Image)resources.GetObject("checkBox.Image");
             checkBox.InitialImage = null;
-            checkBox.Location = new System.Drawing.Point(9, 10);
-            checkBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            checkBox.Location = new System.Drawing.Point(5, 5);
+            checkBox.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             checkBox.Name = "checkBox";
-            checkBox.Size = new System.Drawing.Size(46, 50);
+            checkBox.Size = new System.Drawing.Size(25, 23);
             checkBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             checkBox.TabIndex = 1;
             checkBox.TabStop = false;
@@ -480,11 +480,11 @@
             // 
             taskDeadline.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             taskDeadline.ForeColor = System.Drawing.Color.DarkGray;
-            taskDeadline.Location = new System.Drawing.Point(831, -3);
-            taskDeadline.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            taskDeadline.Location = new System.Drawing.Point(447, -1);
+            taskDeadline.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             taskDeadline.Name = "taskDeadline";
-            taskDeadline.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            taskDeadline.Size = new System.Drawing.Size(183, 67);
+            taskDeadline.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            taskDeadline.Size = new System.Drawing.Size(99, 31);
             taskDeadline.TabIndex = 2;
             taskDeadline.Text = "29/03/2025";
             taskDeadline.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -495,10 +495,10 @@
             btnMore.ContextMenuStrip = contextMenuStrip1;
             btnMore.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
             btnMore.ImageList = imageList1;
-            btnMore.Location = new System.Drawing.Point(615, 158);
-            btnMore.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            btnMore.Location = new System.Drawing.Point(331, 74);
+            btnMore.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnMore.Name = "btnMore";
-            btnMore.Size = new System.Drawing.Size(152, 77);
+            btnMore.Size = new System.Drawing.Size(82, 36);
             btnMore.TabIndex = 19;
             btnMore.Text = "Sort";
             btnMore.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -509,10 +509,10 @@
             // 
             btnAddTask.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             btnAddTask.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
-            btnAddTask.Location = new System.Drawing.Point(360, 158);
-            btnAddTask.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            btnAddTask.Location = new System.Drawing.Point(194, 74);
+            btnAddTask.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             btnAddTask.Name = "btnAddTask";
-            btnAddTask.Size = new System.Drawing.Size(212, 77);
+            btnAddTask.Size = new System.Drawing.Size(114, 36);
             btnAddTask.TabIndex = 17;
             btnAddTask.Text = "Add";
             btnAddTask.UseVisualStyleBackColor = false;
@@ -522,10 +522,10 @@
             // 
             pictureBox3.BackColor = System.Drawing.Color.White;
             pictureBox3.Image = Properties.Resources.add;
-            pictureBox3.Location = new System.Drawing.Point(370, 170);
-            pictureBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox3.Location = new System.Drawing.Point(199, 80);
+            pictureBox3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new System.Drawing.Size(46, 51);
+            pictureBox3.Size = new System.Drawing.Size(25, 24);
             pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 23;
             pictureBox3.TabStop = false;
@@ -540,10 +540,10 @@
             sidebar.Controls.Add(panel2);
             sidebar.Controls.Add(panel7);
             sidebar.Dock = System.Windows.Forms.DockStyle.Left;
-            sidebar.Location = new System.Drawing.Point(0, 116);
-            sidebar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            sidebar.Location = new System.Drawing.Point(0, 55);
+            sidebar.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             sidebar.Name = "sidebar";
-            sidebar.Size = new System.Drawing.Size(308, 1103);
+            sidebar.Size = new System.Drawing.Size(167, 461);
             sidebar.TabIndex = 25;
             // 
             // panel4
@@ -552,11 +552,11 @@
             panel4.Controls.Add(btnHome);
             panel4.EdgeColor = System.Drawing.Color.Transparent;
             panel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel4.Location = new System.Drawing.Point(4, 3);
-            panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel4.Location = new System.Drawing.Point(2, 1);
+            panel4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             panel4.Name = "panel4";
-            panel4.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
-            panel4.Size = new System.Drawing.Size(474, 109);
+            panel4.Padding = new System.Windows.Forms.Padding(13, 5, 5, 5);
+            panel4.Size = new System.Drawing.Size(255, 51);
             panel4.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel4.TabIndex = 4;
             panel4.Text = "Dashboard";
@@ -573,13 +573,13 @@
             btnHome.Image = Properties.Resources.Home__2_;
             btnHome.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             btnHome.InactiveColor = System.Drawing.Color.Transparent;
-            btnHome.Location = new System.Drawing.Point(25, 10);
-            btnHome.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnHome.Location = new System.Drawing.Point(13, 5);
+            btnHome.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             btnHome.Name = "btnHome";
-            btnHome.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnHome.Padding = new System.Windows.Forms.Padding(87, 0, 0, 0);
             btnHome.PressedBorderColor = System.Drawing.Color.Transparent;
             btnHome.PressedColor = System.Drawing.Color.Transparent;
-            btnHome.Size = new System.Drawing.Size(440, 89);
+            btnHome.Size = new System.Drawing.Size(237, 41);
             btnHome.TabIndex = 2;
             btnHome.Text = "              Home";
             btnHome.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -591,11 +591,11 @@
             panel5.Controls.Add(btnTask);
             panel5.EdgeColor = System.Drawing.Color.Transparent;
             panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel5.Location = new System.Drawing.Point(0, 115);
+            panel5.Location = new System.Drawing.Point(0, 53);
             panel5.Margin = new System.Windows.Forms.Padding(0);
             panel5.Name = "panel5";
-            panel5.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
-            panel5.Size = new System.Drawing.Size(474, 109);
+            panel5.Padding = new System.Windows.Forms.Padding(13, 5, 5, 5);
+            panel5.Size = new System.Drawing.Size(255, 51);
             panel5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel5.TabIndex = 4;
             panel5.Text = "Dashboard";
@@ -612,13 +612,13 @@
             btnTask.Image = Properties.Resources.image__1___1_1;
             btnTask.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnTask.InactiveColor = System.Drawing.Color.Transparent;
-            btnTask.Location = new System.Drawing.Point(25, 10);
-            btnTask.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnTask.Location = new System.Drawing.Point(13, 5);
+            btnTask.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             btnTask.Name = "btnTask";
-            btnTask.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnTask.Padding = new System.Windows.Forms.Padding(87, 0, 0, 0);
             btnTask.PressedBorderColor = System.Drawing.Color.Transparent;
             btnTask.PressedColor = System.Drawing.Color.Transparent;
-            btnTask.Size = new System.Drawing.Size(440, 89);
+            btnTask.Size = new System.Drawing.Size(237, 41);
             btnTask.TabIndex = 2;
             btnTask.Text = "              Task";
             btnTask.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -630,11 +630,11 @@
             menu.Controls.Add(btnProject);
             menu.EdgeColor = System.Drawing.Color.Transparent;
             menu.ForeColor = System.Drawing.Color.Transparent;
-            menu.Location = new System.Drawing.Point(0, 224);
+            menu.Location = new System.Drawing.Point(0, 104);
             menu.Margin = new System.Windows.Forms.Padding(0);
             menu.Name = "menu";
-            menu.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
-            menu.Size = new System.Drawing.Size(474, 109);
+            menu.Padding = new System.Windows.Forms.Padding(13, 5, 5, 5);
+            menu.Size = new System.Drawing.Size(255, 51);
             menu.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             menu.TabIndex = 3;
             menu.Text = "Dashboard";
@@ -651,13 +651,13 @@
             btnProject.Image = Properties.Resources.image;
             btnProject.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnProject.InactiveColor = System.Drawing.Color.Transparent;
-            btnProject.Location = new System.Drawing.Point(25, 10);
-            btnProject.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            btnProject.Location = new System.Drawing.Point(13, 5);
+            btnProject.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             btnProject.Name = "btnProject";
-            btnProject.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnProject.Padding = new System.Windows.Forms.Padding(87, 0, 0, 0);
             btnProject.PressedBorderColor = System.Drawing.Color.Transparent;
             btnProject.PressedColor = System.Drawing.Color.Transparent;
-            btnProject.Size = new System.Drawing.Size(440, 89);
+            btnProject.Size = new System.Drawing.Size(237, 41);
             btnProject.TabIndex = 2;
             btnProject.Text = "               Project";
             btnProject.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -669,11 +669,10 @@
             panel2.Controls.Add(btnUser);
             panel2.EdgeColor = System.Drawing.Color.Transparent;
             panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel2.Location = new System.Drawing.Point(5, 339);
-            panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            panel2.Location = new System.Drawing.Point(3, 158);
             panel2.Name = "panel2";
-            panel2.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
-            panel2.Size = new System.Drawing.Size(474, 108);
+            panel2.Padding = new System.Windows.Forms.Padding(13, 5, 4, 5);
+            panel2.Size = new System.Drawing.Size(255, 51);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 10;
             panel2.Text = "Dashboard";
@@ -693,13 +692,12 @@
             btnUser.Image = null;
             btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnUser.InactiveColor = System.Drawing.Color.Transparent;
-            btnUser.Location = new System.Drawing.Point(24, 10);
-            btnUser.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            btnUser.Location = new System.Drawing.Point(13, 5);
             btnUser.Name = "btnUser";
-            btnUser.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnUser.Padding = new System.Windows.Forms.Padding(87, 0, 0, 0);
             btnUser.PressedBorderColor = System.Drawing.Color.Transparent;
             btnUser.PressedColor = System.Drawing.Color.Transparent;
-            btnUser.Size = new System.Drawing.Size(442, 88);
+            btnUser.Size = new System.Drawing.Size(238, 41);
             btnUser.TabIndex = 2;
             btnUser.Text = "              User";
             btnUser.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -711,11 +709,11 @@
             panel7.Controls.Add(btnExit);
             panel7.EdgeColor = System.Drawing.Color.Transparent;
             panel7.ForeColor = System.Drawing.Color.White;
-            panel7.Location = new System.Drawing.Point(4, 459);
-            panel7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            panel7.Location = new System.Drawing.Point(2, 215);
+            panel7.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             panel7.Name = "panel7";
-            panel7.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
-            panel7.Size = new System.Drawing.Size(474, 109);
+            panel7.Padding = new System.Windows.Forms.Padding(13, 5, 5, 5);
+            panel7.Size = new System.Drawing.Size(255, 51);
             panel7.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel7.TabIndex = 9;
             panel7.Text = "Dashboard";
@@ -732,13 +730,13 @@
             btnExit.Image = Properties.Resources.exit;
             btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnExit.InactiveColor = System.Drawing.Color.Transparent;
-            btnExit.Location = new System.Drawing.Point(25, 10);
-            btnExit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnExit.Location = new System.Drawing.Point(13, 5);
+            btnExit.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             btnExit.Name = "btnExit";
-            btnExit.Padding = new System.Windows.Forms.Padding(162, 0, 0, 0);
+            btnExit.Padding = new System.Windows.Forms.Padding(87, 0, 0, 0);
             btnExit.PressedBorderColor = System.Drawing.Color.Transparent;
             btnExit.PressedColor = System.Drawing.Color.Transparent;
-            btnExit.Size = new System.Drawing.Size(440, 89);
+            btnExit.Size = new System.Drawing.Size(237, 41);
             btnExit.TabIndex = 2;
             btnExit.Text = "              Exit";
             btnExit.TextAlignment = System.Drawing.StringAlignment.Near;
@@ -748,10 +746,10 @@
             // 
             pictureBox4.BackColor = System.Drawing.Color.White;
             pictureBox4.Image = Properties.Resources.sort;
-            pictureBox4.Location = new System.Drawing.Point(630, 170);
-            pictureBox4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            pictureBox4.Location = new System.Drawing.Point(339, 80);
+            pictureBox4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new System.Drawing.Size(46, 51);
+            pictureBox4.Size = new System.Drawing.Size(25, 24);
             pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 24;
             pictureBox4.TabStop = false;
@@ -764,14 +762,14 @@
             ctmsAddoption.ImageScalingSize = new System.Drawing.Size(20, 20);
             ctmsAddoption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { taskToolStripMenuItem, milestoneToolStripMenuItem, meetingToolStripMenuItem });
             ctmsAddoption.Name = "ctmsAddoption";
-            ctmsAddoption.Size = new System.Drawing.Size(195, 118);
+            ctmsAddoption.Size = new System.Drawing.Size(127, 70);
             // 
             // taskToolStripMenuItem
             // 
             taskToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
             taskToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
             taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            taskToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            taskToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             taskToolStripMenuItem.Text = "Task";
             taskToolStripMenuItem.Click += taskToolStripMenuItem_Click;
             // 
@@ -780,7 +778,7 @@
             milestoneToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
             milestoneToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
             milestoneToolStripMenuItem.Name = "milestoneToolStripMenuItem";
-            milestoneToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            milestoneToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             milestoneToolStripMenuItem.Text = "Milestone";
             milestoneToolStripMenuItem.Click += milestoneToolStripMenuItem_Click;
             // 
@@ -789,16 +787,16 @@
             meetingToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(60, 63, 65);
             meetingToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(220, 220, 220);
             meetingToolStripMenuItem.Name = "meetingToolStripMenuItem";
-            meetingToolStripMenuItem.Size = new System.Drawing.Size(194, 38);
+            meetingToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             meetingToolStripMenuItem.Text = "Meeting";
             meetingToolStripMenuItem.Click += meetingToolStripMenuItem_Click;
             // 
             // Tasks
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
-            ClientSize = new System.Drawing.Size(1733, 1219);
+            ClientSize = new System.Drawing.Size(933, 516);
             ControlBox = false;
             Controls.Add(sidebar);
             Controls.Add(pictureBox4);
@@ -808,7 +806,7 @@
             Controls.Add(btnAddTask);
             Controls.Add(TopPanel);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             MaximizeBox = false;
             Name = "Tasks";
             contextMenuStrip1.ResumeLayout(false);

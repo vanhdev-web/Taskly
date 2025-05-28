@@ -91,18 +91,16 @@ namespace Taskly
             projectPanel.Controls.Add(projectContainer);
             projectPanel.Controls.Add(btnDeleteProject);
             projectPanel.Controls.Add(btnCreateProject);
-            projectPanel.Location = new Point(356, 134);
-            projectPanel.Margin = new Padding(5, 6, 5, 6);
+            projectPanel.Location = new Point(192, 63);
             projectPanel.Name = "projectPanel";
-            projectPanel.Size = new Size(1378, 128);
+            projectPanel.Size = new Size(743, 61);
             projectPanel.TabIndex = 10;
             // 
             // btnReport
             // 
-            btnReport.Location = new Point(1153, 28);
-            btnReport.Margin = new Padding(5, 6, 5, 6);
+            btnReport.Location = new Point(621, 13);
             btnReport.Name = "btnReport";
-            btnReport.Size = new Size(150, 68);
+            btnReport.Size = new Size(81, 32);
             btnReport.TabIndex = 9;
             btnReport.Text = "Report";
             btnReport.UseVisualStyleBackColor = true;
@@ -113,50 +111,45 @@ namespace Taskly
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(5, 26);
-            label6.Margin = new Padding(5, 0, 5, 0);
+            label6.Location = new Point(3, 12);
             label6.Name = "label6";
-            label6.Size = new Size(227, 50);
+            label6.Size = new Size(116, 25);
             label6.TabIndex = 2;
             label6.Text = "My Projects";
             // 
             // projectContainer
             // 
             projectContainer.Controls.Add(panel11);
-            projectContainer.Location = new Point(260, -2);
-            projectContainer.Margin = new Padding(5, 6, 5, 6);
+            projectContainer.Location = new Point(140, -1);
             projectContainer.Name = "projectContainer";
-            projectContainer.Size = new Size(510, 178);
+            projectContainer.Size = new Size(275, 83);
             projectContainer.TabIndex = 5;
             projectContainer.Paint += projectContainer_Paint;
             // 
             // panel11
             // 
             panel11.Controls.Add(comboBox1);
-            panel11.Location = new Point(26, 18);
-            panel11.Margin = new Padding(5, 6, 5, 6);
+            panel11.Location = new Point(14, 8);
             panel11.Name = "panel11";
-            panel11.Size = new Size(457, 104);
+            panel11.Size = new Size(246, 49);
             panel11.TabIndex = 5;
             // 
             // comboBox1
             // 
             comboBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(11, 20);
-            comboBox1.Margin = new Padding(5, 6, 5, 6);
+            comboBox1.Location = new Point(6, 9);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(443, 45);
+            comboBox1.Size = new Size(240, 27);
             comboBox1.TabIndex = 4;
             comboBox1.Text = " Project List";
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // btnDeleteProject
             // 
-            btnDeleteProject.Location = new Point(974, 28);
-            btnDeleteProject.Margin = new Padding(5, 6, 5, 6);
+            btnDeleteProject.Location = new Point(524, 13);
             btnDeleteProject.Name = "btnDeleteProject";
-            btnDeleteProject.Size = new Size(138, 68);
+            btnDeleteProject.Size = new Size(74, 32);
             btnDeleteProject.TabIndex = 8;
             btnDeleteProject.Text = "Delete";
             btnDeleteProject.UseVisualStyleBackColor = true;
@@ -164,10 +157,9 @@ namespace Taskly
             // 
             // btnCreateProject
             // 
-            btnCreateProject.Location = new Point(791, 28);
-            btnCreateProject.Margin = new Padding(5, 6, 5, 6);
+            btnCreateProject.Location = new Point(426, 13);
             btnCreateProject.Name = "btnCreateProject";
-            btnCreateProject.Size = new Size(135, 68);
+            btnCreateProject.Size = new Size(73, 32);
             btnCreateProject.TabIndex = 7;
             btnCreateProject.Text = "Create";
             btnCreateProject.UseVisualStyleBackColor = true;
@@ -183,10 +175,9 @@ namespace Taskly
             sidebar.Controls.Add(panel2);
             sidebar.Controls.Add(panel7);
             sidebar.Dock = DockStyle.Left;
-            sidebar.Location = new Point(0, 116);
-            sidebar.Margin = new Padding(5, 6, 5, 6);
+            sidebar.Location = new Point(0, 55);
             sidebar.Name = "sidebar";
-            sidebar.Size = new Size(308, 1106);
+            sidebar.Size = new Size(167, 461);
             sidebar.TabIndex = 11;
             // 
             // panel4
@@ -195,11 +186,10 @@ namespace Taskly
             panel4.Controls.Add(button4);
             panel4.EdgeColor = Color.Transparent;
             panel4.ForeColor = SystemColors.ControlLightLight;
-            panel4.Location = new Point(5, 6);
-            panel4.Margin = new Padding(5, 6, 5, 6);
+            panel4.Location = new Point(3, 3);
             panel4.Name = "panel4";
-            panel4.Padding = new Padding(24, 10, 8, 10);
-            panel4.Size = new Size(474, 108);
+            panel4.Padding = new Padding(13, 5, 4, 5);
+            panel4.Size = new Size(255, 51);
             panel4.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel4.TabIndex = 4;
             panel4.Text = "Dashboard";
@@ -216,13 +206,12 @@ namespace Taskly
             button4.Image = Properties.Resources.Home__2_;
             button4.ImageAlign = ContentAlignment.TopLeft;
             button4.InactiveColor = Color.Transparent;
-            button4.Location = new Point(24, 10);
-            button4.Margin = new Padding(5, 6, 5, 6);
+            button4.Location = new Point(13, 5);
             button4.Name = "button4";
-            button4.Padding = new Padding(162, 0, 0, 0);
+            button4.Padding = new Padding(87, 0, 0, 0);
             button4.PressedBorderColor = Color.Transparent;
             button4.PressedColor = Color.Transparent;
-            button4.Size = new Size(442, 88);
+            button4.Size = new Size(238, 41);
             button4.TabIndex = 2;
             button4.Text = "              Home";
             button4.TextAlignment = StringAlignment.Near;
@@ -234,11 +223,10 @@ namespace Taskly
             panel5.Controls.Add(button5);
             panel5.EdgeColor = Color.Transparent;
             panel5.ForeColor = SystemColors.ControlLightLight;
-            panel5.Location = new Point(5, 126);
-            panel5.Margin = new Padding(5, 6, 5, 6);
+            panel5.Location = new Point(3, 60);
             panel5.Name = "panel5";
-            panel5.Padding = new Padding(24, 10, 8, 10);
-            panel5.Size = new Size(474, 108);
+            panel5.Padding = new Padding(13, 5, 4, 5);
+            panel5.Size = new Size(255, 51);
             panel5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel5.TabIndex = 4;
             panel5.Text = "Dashboard";
@@ -255,13 +243,12 @@ namespace Taskly
             button5.Image = Properties.Resources.image__1___1_1;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
             button5.InactiveColor = Color.Transparent;
-            button5.Location = new Point(24, 10);
-            button5.Margin = new Padding(5, 6, 5, 6);
+            button5.Location = new Point(13, 5);
             button5.Name = "button5";
-            button5.Padding = new Padding(162, 0, 0, 0);
+            button5.Padding = new Padding(87, 0, 0, 0);
             button5.PressedBorderColor = Color.Transparent;
             button5.PressedColor = Color.Transparent;
-            button5.Size = new Size(442, 88);
+            button5.Size = new Size(238, 41);
             button5.TabIndex = 2;
             button5.Text = "              Task";
             button5.TextAlignment = StringAlignment.Near;
@@ -273,11 +260,11 @@ namespace Taskly
             menu.Controls.Add(button7);
             menu.EdgeColor = Color.Transparent;
             menu.ForeColor = Color.Transparent;
-            menu.Location = new Point(0, 240);
+            menu.Location = new Point(0, 114);
             menu.Margin = new Padding(0);
             menu.Name = "menu";
-            menu.Padding = new Padding(24, 10, 8, 10);
-            menu.Size = new Size(474, 108);
+            menu.Padding = new Padding(13, 5, 4, 5);
+            menu.Size = new Size(255, 51);
             menu.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             menu.TabIndex = 3;
             menu.Text = "Dashboard";
@@ -294,13 +281,12 @@ namespace Taskly
             button7.Image = Properties.Resources.image;
             button7.ImageAlign = ContentAlignment.MiddleLeft;
             button7.InactiveColor = Color.Transparent;
-            button7.Location = new Point(24, 10);
-            button7.Margin = new Padding(5, 6, 5, 6);
+            button7.Location = new Point(13, 5);
             button7.Name = "button7";
-            button7.Padding = new Padding(162, 0, 0, 0);
+            button7.Padding = new Padding(87, 0, 0, 0);
             button7.PressedBorderColor = Color.Transparent;
             button7.PressedColor = Color.Transparent;
-            button7.Size = new Size(442, 88);
+            button7.Size = new Size(238, 41);
             button7.TabIndex = 2;
             button7.Text = "               Project";
             button7.TextAlignment = StringAlignment.Near;
@@ -312,11 +298,10 @@ namespace Taskly
             panel2.Controls.Add(btnUser);
             panel2.EdgeColor = Color.Transparent;
             panel2.ForeColor = SystemColors.ControlLightLight;
-            panel2.Location = new Point(5, 354);
-            panel2.Margin = new Padding(5, 6, 5, 6);
+            panel2.Location = new Point(3, 168);
             panel2.Name = "panel2";
-            panel2.Padding = new Padding(24, 10, 8, 10);
-            panel2.Size = new Size(474, 108);
+            panel2.Padding = new Padding(13, 5, 4, 5);
+            panel2.Size = new Size(255, 51);
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 9;
             panel2.Text = "Dashboard";
@@ -333,13 +318,12 @@ namespace Taskly
             btnUser.Image = (Image)resources.GetObject("btnUser.Image");
             btnUser.ImageAlign = ContentAlignment.MiddleLeft;
             btnUser.InactiveColor = Color.Transparent;
-            btnUser.Location = new Point(24, 10);
-            btnUser.Margin = new Padding(5, 6, 5, 6);
+            btnUser.Location = new Point(13, 5);
             btnUser.Name = "btnUser";
-            btnUser.Padding = new Padding(162, 0, 0, 0);
+            btnUser.Padding = new Padding(87, 0, 0, 0);
             btnUser.PressedBorderColor = Color.Transparent;
             btnUser.PressedColor = Color.Transparent;
-            btnUser.Size = new Size(442, 88);
+            btnUser.Size = new Size(238, 41);
             btnUser.TabIndex = 2;
             btnUser.Text = "              User";
             btnUser.TextAlignment = StringAlignment.Near;
@@ -351,11 +335,10 @@ namespace Taskly
             panel7.Controls.Add(btnExit);
             panel7.EdgeColor = Color.Transparent;
             panel7.ForeColor = Color.White;
-            panel7.Location = new Point(5, 474);
-            panel7.Margin = new Padding(5, 6, 5, 6);
+            panel7.Location = new Point(3, 225);
             panel7.Name = "panel7";
-            panel7.Padding = new Padding(24, 10, 8, 10);
-            panel7.Size = new Size(474, 108);
+            panel7.Padding = new Padding(13, 5, 4, 5);
+            panel7.Size = new Size(255, 51);
             panel7.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel7.TabIndex = 8;
             panel7.Text = "Dashboard";
@@ -372,13 +355,12 @@ namespace Taskly
             btnExit.Image = Properties.Resources.exit;
             btnExit.ImageAlign = ContentAlignment.MiddleLeft;
             btnExit.InactiveColor = Color.Transparent;
-            btnExit.Location = new Point(24, 10);
-            btnExit.Margin = new Padding(5, 6, 5, 6);
+            btnExit.Location = new Point(13, 5);
             btnExit.Name = "btnExit";
-            btnExit.Padding = new Padding(162, 0, 0, 0);
+            btnExit.Padding = new Padding(87, 0, 0, 0);
             btnExit.PressedBorderColor = Color.Transparent;
             btnExit.PressedColor = Color.Transparent;
-            btnExit.Size = new Size(442, 88);
+            btnExit.Size = new Size(238, 41);
             btnExit.TabIndex = 2;
             btnExit.Text = "              Exit";
             btnExit.TextAlignment = StringAlignment.Near;
@@ -392,20 +374,19 @@ namespace Taskly
             panel3.Controls.Add(btnAddMember);
             panel3.Controls.Add(projectName);
             panel3.Controls.Add(projectRole);
-            panel3.Location = new Point(344, 276);
-            panel3.Margin = new Padding(5, 6, 5, 6);
+            panel3.Location = new Point(185, 129);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1360, 364);
+            panel3.Size = new Size(732, 171);
             panel3.TabIndex = 9;
             panel3.Paint += panel3_Paint;
             // 
             // memberPanel
             // 
             memberPanel.AutoScroll = true;
-            memberPanel.Location = new Point(658, 176);
-            memberPanel.Margin = new Padding(5, 4, 5, 4);
+            memberPanel.Location = new Point(354, 82);
+            memberPanel.Margin = new Padding(3, 2, 3, 2);
             memberPanel.Name = "memberPanel";
-            memberPanel.Size = new Size(679, 172);
+            memberPanel.Size = new Size(366, 81);
             memberPanel.TabIndex = 6;
             memberPanel.Paint += panel2_Paint_1;
             // 
@@ -414,12 +395,12 @@ namespace Taskly
             description.BackColor = Color.FromArgb(30, 30, 32);
             description.Font = new Font("Segoe UI", 11F);
             description.ForeColor = Color.Gray;
-            description.Location = new Point(15, 84);
-            description.Margin = new Padding(5, 4, 5, 4);
+            description.Location = new Point(8, 39);
+            description.Margin = new Padding(3, 2, 3, 2);
             description.Multiline = true;
             description.Name = "description";
             description.PlaceholderText = "What's this project about";
-            description.Size = new Size(518, 264);
+            description.Size = new Size(281, 126);
             description.TabIndex = 5;
             description.Text = "What's this project about";
             description.TextChanged += description_TextChanged;
@@ -436,13 +417,12 @@ namespace Taskly
             btnAddMember.Image = Properties.Resources.add_White;
             btnAddMember.ImageAlign = ContentAlignment.MiddleLeft;
             btnAddMember.InactiveColor = Color.Transparent;
-            btnAddMember.Location = new Point(658, 89);
-            btnAddMember.Margin = new Padding(5, 6, 5, 6);
+            btnAddMember.Location = new Point(354, 42);
             btnAddMember.Name = "btnAddMember";
-            btnAddMember.Padding = new Padding(162, 0, 0, 0);
+            btnAddMember.Padding = new Padding(87, 0, 0, 0);
             btnAddMember.PressedBorderColor = Color.Transparent;
             btnAddMember.PressedColor = Color.Transparent;
-            btnAddMember.Size = new Size(281, 90);
+            btnAddMember.Size = new Size(151, 42);
             btnAddMember.TabIndex = 2;
             btnAddMember.Text = "           Add Member";
             btnAddMember.TextAlignment = StringAlignment.Near;
@@ -453,10 +433,9 @@ namespace Taskly
             projectName.AutoSize = true;
             projectName.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             projectName.ForeColor = SystemColors.ButtonHighlight;
-            projectName.Location = new Point(16, 0);
-            projectName.Margin = new Padding(5, 0, 5, 0);
+            projectName.Location = new Point(9, 0);
             projectName.Name = "projectName";
-            projectName.Size = new Size(287, 65);
+            projectName.Size = new Size(146, 32);
             projectName.TabIndex = 1;
             projectName.Text = "Description";
             projectName.Click += label1_Click;
@@ -466,10 +445,9 @@ namespace Taskly
             projectRole.AutoSize = true;
             projectRole.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             projectRole.ForeColor = SystemColors.ButtonHighlight;
-            projectRole.Location = new Point(658, 10);
-            projectRole.Margin = new Padding(5, 0, 5, 0);
+            projectRole.Location = new Point(354, 5);
             projectRole.Name = "projectRole";
-            projectRole.Size = new Size(299, 65);
+            projectRole.Size = new Size(152, 32);
             projectRole.TabIndex = 2;
             projectRole.Text = "Project Role";
             projectRole.Click += label2_Click;
@@ -485,9 +463,8 @@ namespace Taskly
             TopPanel.Dock = DockStyle.Top;
             TopPanel.ForeColor = SystemColors.Control;
             TopPanel.Location = new Point(0, 0);
-            TopPanel.Margin = new Padding(5, 6, 5, 6);
             TopPanel.Name = "TopPanel";
-            TopPanel.Size = new Size(1734, 116);
+            TopPanel.Size = new Size(934, 55);
             TopPanel.TabIndex = 10;
             // 
             // nightControlBox1
@@ -505,7 +482,7 @@ namespace Taskly
             nightControlBox1.EnableMaximizeColor = Color.Transparent;
             nightControlBox1.EnableMinimizeButton = false;
             nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1590, 0);
+            nightControlBox1.Location = new Point(858, 0);
             nightControlBox1.MaximizeHoverColor = Color.Transparent;
             nightControlBox1.MaximizeHoverForeColor = Color.Transparent;
             nightControlBox1.MinimizeHoverColor = Color.Transparent;
@@ -519,20 +496,18 @@ namespace Taskly
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 163);
             label3.ForeColor = Color.FromArgb(63, 150, 252);
-            label3.Location = new Point(110, 26);
-            label3.Margin = new Padding(5, 0, 5, 0);
+            label3.Location = new Point(59, 12);
             label3.Name = "label3";
-            label3.Size = new Size(139, 50);
+            label3.Size = new Size(72, 25);
             label3.TabIndex = 2;
             label3.Text = "Taskly";
             // 
             // btnHam
             // 
             btnHam.Image = Properties.Resources.image__8_;
-            btnHam.Location = new Point(36, 30);
-            btnHam.Margin = new Padding(5, 6, 5, 6);
+            btnHam.Location = new Point(19, 14);
             btnHam.Name = "btnHam";
-            btnHam.Size = new Size(65, 58);
+            btnHam.Size = new Size(35, 27);
             btnHam.SizeMode = PictureBoxSizeMode.Zoom;
             btnHam.TabIndex = 1;
             btnHam.TabStop = false;
@@ -542,10 +517,9 @@ namespace Taskly
             WelcomeName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             WelcomeName.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             WelcomeName.ForeColor = Color.FromArgb(63, 150, 252);
-            WelcomeName.Location = new Point(306, 16);
-            WelcomeName.Margin = new Padding(5, 0, 5, 0);
+            WelcomeName.Location = new Point(165, 8);
             WelcomeName.Name = "WelcomeName";
-            WelcomeName.Size = new Size(1421, 82);
+            WelcomeName.Size = new Size(764, 38);
             WelcomeName.TabIndex = 1;
             WelcomeName.Text = "Welcome back";
             WelcomeName.TextAlign = ContentAlignment.MiddleCenter;
@@ -554,10 +528,9 @@ namespace Taskly
             // 
             panel1.Controls.Add(AllTasks);
             panel1.Controls.Add(taskContainer);
-            panel1.Location = new Point(344, 332);
-            panel1.Margin = new Padding(5, 6, 5, 6);
+            panel1.Location = new Point(185, 164);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1383, 890);
+            panel1.Size = new Size(750, 409);
             panel1.TabIndex = 5;
             // 
             // AllTasks
@@ -565,10 +538,9 @@ namespace Taskly
             AllTasks.AutoSize = true;
             AllTasks.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             AllTasks.ForeColor = SystemColors.ButtonHighlight;
-            AllTasks.Location = new Point(16, 316);
-            AllTasks.Margin = new Padding(5, 0, 5, 0);
+            AllTasks.Location = new Point(7, 139);
             AllTasks.Name = "AllTasks";
-            AllTasks.Size = new Size(217, 65);
+            AllTasks.Size = new Size(109, 32);
             AllTasks.TabIndex = 7;
             AllTasks.Text = "All tasks";
             // 
@@ -578,19 +550,19 @@ namespace Taskly
             taskContainer.AutoScroll = true;
             taskContainer.BackColor = Color.FromArgb(30, 30, 32);
             taskContainer.BorderStyle = BorderStyle.FixedSingle;
-            taskContainer.Location = new Point(15, 410);
-            taskContainer.Margin = new Padding(5, 4, 5, 4);
+            taskContainer.Location = new Point(7, 184);
+            taskContainer.Margin = new Padding(3, 2, 3, 2);
             taskContainer.Name = "taskContainer";
-            taskContainer.Padding = new Padding(20, 14, 0, 0);
-            taskContainer.Size = new Size(1346, 474);
+            taskContainer.Padding = new Padding(11, 7, 0, 0);
+            taskContainer.Size = new Size(726, 223);
             taskContainer.TabIndex = 23;
             // 
             // Projects
             // 
-            AutoScaleDimensions = new SizeF(13F, 32F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(30, 30, 32);
-            ClientSize = new Size(1734, 1222);
+            ClientSize = new Size(934, 516);
             ControlBox = false;
             Controls.Add(projectPanel);
             Controls.Add(sidebar);
@@ -599,7 +571,6 @@ namespace Taskly
             Controls.Add(panel1);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(5, 6, 5, 6);
             Name = "Projects";
             Text = "Projects";
             Load += Projects_Load;

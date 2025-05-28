@@ -13,6 +13,7 @@ namespace Taskly.Usercontrols
     {
         private Milestone milestone;  // Tham chiếu đến Milestone gốc
         public event EventHandler<Milestone> OnTaskFinished;
+        public ProjectManager projectManager = new ProjectManager(); // Khởi tạo projectManager để truy cập dự án
 
         public Panel TaskPanel // Thuộc tính công khai để truy cập Panel
         {
@@ -40,6 +41,8 @@ namespace Taskly.Usercontrols
             taskContent.Text = milestone.taskName;
             //taskProject.Text = milestone.ProjectName;
             taskDeadline.Text = $"{milestone.deadline:dd/MM/yyyy}";
+            var project = projectManager.FindProjectById(milestone.ProjectID);
+            taskProject.Text = project != null ? project.projectName : "(Không rõ dự án)";
             UpdateButtonState();
         }
 

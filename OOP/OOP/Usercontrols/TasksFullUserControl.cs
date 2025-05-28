@@ -13,6 +13,7 @@ namespace Taskly.Usercontrols
     {
         private Task task;  // Tham chiếu đến Task gốc
         public event EventHandler<Task> OnTaskFinished;
+        public ProjectManager projectManager = new ProjectManager(); // Khởi tạo projectManager để truy cập dự án
 
         private void TaskPanel_Click(object sender, EventArgs e)
         {
@@ -39,9 +40,13 @@ namespace Taskly.Usercontrols
         {
             taskContent.Text = task.taskName;
             taskDeadline.Text = $"{task.deadline:dd/MM/yyyy}";
-            //taskProject.Text = task.ProjectName;
+
+            var project = projectManager.FindProjectById(task.ProjectID);
+            taskProject.Text = project != null ? project.projectName : "(Không rõ dự án)";
+
             UpdateButtonState();
         }
+
 
         private void UpdateButtonState()
         {
