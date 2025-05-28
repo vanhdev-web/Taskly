@@ -83,9 +83,9 @@ namespace OOP.Usercontrols
                     ActivityLogService activityLogService = new ActivityLogService(dbcontext);
                     await activityLogService.LogActivityAsync(
                         userId: User.LoggedInUser.ID,
-                        objectType: "Task",
+                        objectType: "Meeting",
                         objectId: meeting.taskID,
-                        action: "Finish Task",
+                        action: "Finish Meeting",
                         details: $"{User.LoggedInUser.Username} đã hoàn thành task \"{meeting.taskName}\" lúc {DateTime.Now}"
                     );
 

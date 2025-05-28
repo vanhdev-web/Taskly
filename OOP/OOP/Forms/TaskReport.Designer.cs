@@ -40,31 +40,33 @@
             label2.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             label2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             label2.Location = new System.Drawing.Point(0, 0);
+            label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(1533, 92);
+            label2.Size = new System.Drawing.Size(825, 43);
             label2.TabIndex = 8;
             label2.Text = "Report";
             label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewActivityLog
             // 
-            listViewActivityLog.Location = new System.Drawing.Point(73, 128);
-            listViewActivityLog.Margin = new System.Windows.Forms.Padding(6);
+            listViewActivityLog.FullRowSelect = true;
+            listViewActivityLog.Location = new System.Drawing.Point(39, 60);
             listViewActivityLog.Name = "listViewActivityLog";
-            listViewActivityLog.Size = new System.Drawing.Size(1375, 673);
+            listViewActivityLog.Size = new System.Drawing.Size(742, 318);
             listViewActivityLog.TabIndex = 7;
             listViewActivityLog.UseCompatibleStateImageBehavior = false;
-            listViewActivityLog.View = System.Windows.Forms.View.List;
+            listViewActivityLog.View = System.Windows.Forms.View.Details;
             // 
             // TaskReport
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
-            ClientSize = new System.Drawing.Size(1533, 871);
+            ClientSize = new System.Drawing.Size(825, 408);
             Controls.Add(label2);
             Controls.Add(listViewActivityLog);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             Name = "TaskReport";
             Text = "TaskReport";
             ResumeLayout(false);
