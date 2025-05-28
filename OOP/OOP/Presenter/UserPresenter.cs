@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using OOP.Models;
 using OOP.Services;
+using OOP;
+using OOP.Forms.MainUser; // For User.LoggedInUser
 
 namespace OOP.Services
 {
@@ -30,39 +32,38 @@ namespace OOP.Services
                     .Where(p => p.AdminID == view.CurrentUserID)
                     .Select(p => p.projectName)
                     .ToArray();
-
                 view.DisplayProjects(projectNames);
 
-                var activities = db.Notifications
-                    .Where(n => n.UserID == view.CurrentUserID)
-                    .OrderByDescending(n => n.CreateAt)
-                    .Select(n => $"[{n.CreateAt:dd/MM/yyyy}] {n.Title}: {n.Content}")
+                var activities = db.ActivityLogs // Thay đổi ở đây: db.Notifications thành db.ActivityLogs
+                    .Where(a => a.UserId == view.CurrentUserID) // Sử dụng UserId thay vì UserID
+                    .OrderByDescending(a => a.Timestamp) // Sử dụng Timestamp thay vì CreateAt
+                    .Select(a => $"[{a.Timestamp}] {a.Action} - {a.Details}") // Điều chỉnh format string để khớp với ActivityLog
                     .ToArray();
-
                 view.DisplayActivityHistory(activities);
             }
         }
 
-        public void ChangePassword()
-        {
-            var user = db.Users.FirstOrDefault(u => u.ID == view.CurrentUserID);
-            if (user != null && user.Password == view.OldPassword)
-            {
-                if (view.NewPassword == view.ConfirmPassword && !string.IsNullOrWhiteSpace(view.NewPassword))
-                {
-                    user.Password = view.NewPassword;
-                    db.SaveChanges();
-                    view.ShowMessage("Password changed successfully.");
-                }
-                else
-                {
-                    view.ShowMessage("New password confirmation does not match.");
-                }
-            }
-            else
-            {
-                view.ShowMessage("Old password is incorrect.");
-            }
-        }
+        // Removed ChangePassword method as requested
+        // public void ChangePassword()
+        // {
+        //     var user = db.Users.FirstOrDefault(u => u.ID == view.CurrentUserID);
+        //     if (user != null && user.Password == view.OldPassword)
+        //     {
+        //         if (view.NewPassword == view.ConfirmPassword && !string.IsNullOrWhiteSpace(view.NewPassword))
+        //         {
+        //             user.Password = view.NewPassword;
+        //             db.SaveChanges();
+        //             view.ShowMessage("Password changed successfully.");
+        //         }
+        //         else
+        //         {
+        //             view.ShowMessage("New password confirmation does not match.");
+        //         }
+        //     }
+        //     else
+        //     {
+        //         view.ShowMessage("Old password is incorrect.");
+        //     }
+        // }
     }
 }

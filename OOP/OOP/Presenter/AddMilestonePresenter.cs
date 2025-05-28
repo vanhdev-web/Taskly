@@ -13,14 +13,14 @@ namespace OOP.Presenters
     {
         private IAddMilestoneView _view;
         private MilestoneService _milestoneService;
-        private ProjectManager _projectManager; // [cite: 28]
+        private ProjectManager _projectManager;
         private ActivityLogService _activityLogService;
 
         public AddMilestonePresenter(IAddMilestoneView view)
         {
             _view = view;
             _milestoneService = new MilestoneService();
-            _projectManager = new ProjectManager(); // [cite: 28]
+            _projectManager = new ProjectManager();
             _activityLogService = new ActivityLogService(new TaskManagementDBContext());
         }
 
@@ -28,15 +28,15 @@ namespace OOP.Presenters
         {
             List<string> projectNames = new List<string>();
 
-            if (ModelUser.LoggedInUser == null) return; // Kiểm tra user đăng nhập [cite: 30]
+            if (ModelUser.LoggedInUser == null) return; // Kiểm tra user đăng nhập
 
-            foreach (Project project in _projectManager.Projects) // [cite: 30]
+            foreach (Project project in _projectManager.Projects)
             {
-                if (project == null || project.members == null) continue; // Kiểm tra null tránh lỗi [cite: 31]
+                if (project == null || project.members == null) continue; // Kiểm tra null tránh lỗi
 
-                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}"); // [cite: 31, 32]
+                Console.WriteLine($"Project: {project.projectID} - {project.projectName}, AdminID: {project.AdminID}, Members: {string.Join(", ", project.members)}");
 
-                bool isMember = false; // [cite: 32]
+                bool isMember = false;
                 // Original code had a commented out loop to check if logged-in user is a member of the project
                 // For MVP, we'll keep the logic as it was (commented out) or implement it if required.
                 // For now, based on the provided code, it appears 'isMember' would always be false
@@ -44,18 +44,18 @@ namespace OOP.Presenters
                 /*
                 foreach (string member in project.members)
                 {
-                    string memberUsername = member.Split('(')[0].Trim(); // Lấy username trước dấu "(" và Trim() [cite: 32]
-                    if (memberUsername == ModelUser.LoggedInUser.Username) // [cite: 32, 33]
+                    string memberUsername = member.Split('(')[0].Trim(); // Lấy username trước dấu "(" và Trim()
+                    if (memberUsername == ModelUser.LoggedInUser.Username)
                     {
-                        isMember = true; // [cite: 33]
+                        isMember = true;
                         break;
                     }
                 }
                 */
 
-                if (project.AdminID == ModelUser.LoggedInUser.ID || isMember) // [cite: 34]
+                if (project.AdminID == ModelUser.LoggedInUser.ID || isMember)
                 {
-                    projectNames.Add($"{project.projectName}"); // [cite: 34]
+                    projectNames.Add($"{project.projectName}");
                 }
             }
             _view.SetProjects(projectNames);
@@ -63,16 +63,16 @@ namespace OOP.Presenters
 
         public async void ConfirmMilestone()
         {
-            string taskName = _view.MilestoneName; // [cite: 7]
-            DateTime deadline = _view.MilestoneDeadline; // [cite: 8]
-            string projectName = _view.SelectedProjectName; // [cite: 8]
+            string taskName = _view.MilestoneName;
+            DateTime deadline = _view.MilestoneDeadline;
+            string projectName = _view.SelectedProjectName;
 
-            int projectId = _milestoneService.GetProjectIdByName(projectName); // [cite: 9, 10]
+            int projectId = _milestoneService.GetProjectIdByName(projectName);
 
-            if (projectId == 0) // [cite: 10]
+            if (projectId == 0)
             {
-                _view.DisplayErrorMessage("Dự án không tồn tại."); // [cite: 10]
-                return; // [cite: 11]
+                _view.DisplayErrorMessage("Dự án không tồn tại.");
+                return;
             }
             // Lấy thông tin dự án để ghi log
             Project project = null;
@@ -82,19 +82,19 @@ namespace OOP.Presenters
                            where p.projectID == projectId
                            select p).FirstOrDefault();
             }
-            List<ModelUser> members = _milestoneService.GetProjectMembers(projectId); // [cite: 20]
+            List<ModelUser> members = _milestoneService.GetProjectMembers(projectId);
 
-            if (members.Count == 0) // [cite: 21]
+            if (members.Count == 0)
             {
-                _view.DisplayErrorMessage("Không có thành viên nào thuộc dự án này."); // [cite: 21]
-                return; // [cite: 22]
+                _view.DisplayErrorMessage("Không có thành viên nào thuộc dự án này.");
+                return;
             }
 
             // Create the milestone
-            Milestone newMilestone = _milestoneService.CreateMilestone(taskName, deadline, projectId); // [cite: 23, 24]
+            Milestone newMilestone = _milestoneService.CreateMilestone(taskName, deadline, projectId);
 
             // Add milestone members
-            _milestoneService.AddMilestoneMembers(newMilestone.taskID, members); // [cite: 25, 26, 27]
+            _milestoneService.AddMilestoneMembers(newMilestone.taskID, members);
             if (ModelUser.LoggedInUser != null && project != null)
             {
                 await _activityLogService.LogActivityAsync(
@@ -108,27 +108,27 @@ namespace OOP.Presenters
 
             // Hiển thị thông báo thành công (thay thế MessageBox.Show)
             _view.DisplaySuccessMessage("Activitlog thêm Milestone"); // Thêm phương thức này vào IAddMeetingView
-            _view.CloseView(newMilestone); // [cite: 28]
+            _view.CloseView(newMilestone);
         }
 
         public void CancelMilestone()
         {
             _view.CancelValidation(new CancelEventArgs(), true); // Simulating cancel button
             _view.CloseView(null); // Or close with DialogResult.Cancel, depending on IAddMilestoneView implementation
-                                   // The original code sets DialogResult = DialogResult.Cancel and Close() [cite: 35]
+                                   // The original code sets DialogResult = DialogResult.Cancel and Close()
         }
 
-        public void ValidateMilestoneName(string milestoneName, CancelEventArgs e) // [cite: 35]
+        public void ValidateMilestoneName(string milestoneName, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(milestoneName)) // [cite: 35]
+            if (string.IsNullOrWhiteSpace(milestoneName))
             {
-                _view.CancelValidation(e, true); // Chặn chuyển focus nếu input trống [cite: 36]
-                _view.SetMilestoneNameError("Please enter task name!"); // [cite: 36]
+                _view.CancelValidation(e, true); // Chặn chuyển focus nếu input trống
+                _view.SetMilestoneNameError("Please enter task name!");
             }
             else
             {
-                _view.CancelValidation(e, false); // Cho phép focus rời khỏi control [cite: 38]
-                _view.SetMilestoneNameError(null); // [cite: 39]
+                _view.CancelValidation(e, false); // Cho phép focus rời khỏi control
+                _view.SetMilestoneNameError(null);
             }
         }
     }

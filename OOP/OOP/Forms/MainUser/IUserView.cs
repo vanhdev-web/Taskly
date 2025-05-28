@@ -12,6 +12,7 @@ namespace OOP.Forms.MainUser
         void DisplayActivityHistory(string[] activities);
         void DisplayUser(string username, string email, byte[] avatar);
         void DisplayProjects(string[] projectNames);
+        // Removed password related properties
         string OldPassword { get; }
         string NewPassword { get; }
         string ConfirmPassword { get; }
