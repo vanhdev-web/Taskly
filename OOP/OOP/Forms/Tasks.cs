@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore.ValueGeneration;
 using OOP.Forms;
 using OOP.Models;
 using OOP.Services;
 using OOP.Usercontrols;
-using System.Linq;
 
 namespace OOP
 {
@@ -17,50 +14,11 @@ namespace OOP
     {
         TaskManager taskManager = TaskManager.GetInstance();
         private ProjectManager projectManager = new ProjectManager();
-        public List<AbaseTask> GetUserTasks()
-        {
-            List<Project> userProjects = projectManager.FindProjectsByMember(User.LoggedInUser);
-            List<AbaseTask> userTasks = new List<AbaseTask>();
 
-            if (userProjects.Count == 0)
-            {
-                Console.WriteLine("User không thuộc bất kỳ project nào.");
-                return userTasks; // Trả về danh sách rỗng nếu user không có project
-            }
-
-
-            using (var db = new TaskManagementDBContext())
-            {
-                int userId = User.LoggedInUser.ID;
-
-                // lấy các task mà được assign cho user
-                var tasks = db.Tasks
-                    .Where(t => t.AssignedTo == userId && !t.taskName.Contains("AddUserToNewProject###"))
-                    .ToList();
-
-                userTasks.AddRange(tasks);
-
-                // lấy các meeting mà được assign cho user
-                var meetings = db.Meetings
-                                 .Where(m => m.AssignedTo == userId)
-                                 .ToList();
-
-                userTasks.AddRange(meetings);
-
-                // lấy các milestone mà được assign cho user
-                var milestones = db.Milestones
-                                   .Where(ms => ms.AssignedTo == userId)
-                                   .ToList();
-
-                userTasks.AddRange(milestones);
-            }
-
-            return userTasks;
-        }
         public Tasks()
         {
             InitializeComponent();
-            LoadTasks(GetUserTasks());
+            LoadTasks(taskManager.GetUserTasks(User.LoggedInUser, projectManager));
             // Apply mouse events
             ApplyMouseEvents(taskContainer);
             ApplyMouseEvents(sidebar);
@@ -85,7 +43,6 @@ namespace OOP
                 if (tsi == e.ClickedItem)
                 {
                     tsi.BackColor = SystemColors.ControlDark;
-
                 }
                 else
                 {
@@ -108,16 +65,14 @@ namespace OOP
         }
         private List<Project> projects = new List<Project>();
         private List<User> users = new List<User>();
-
         private void LoadTasks(List<AbaseTask> tasks)
         {
             // Xóa các control cũ trước khi thêm mới
             taskContainer.Controls.Clear();
-
             foreach (AbaseTask task in tasks)
             {
                 Console.WriteLine(task.taskName);
-                if (task is Task t)
+                if (task is Models.Task t)
                 {
                     TasksFullUserControl taskItem = new TasksFullUserControl(t);
                     taskItem.Dock = DockStyle.Top;
@@ -154,14 +109,14 @@ namespace OOP
             if (addTaskForm.ShowDialog() == DialogResult.OK)
             {
                 taskManager.AddTask(addTaskForm.NewTask);
-                LoadTasks(GetUserTasks());
+                LoadTasks(taskManager.GetUserTasks(User.LoggedInUser, projectManager));
             }
         }
 
         private void ctmCloset_Click(object sender, EventArgs e)
         {
             List<AbaseTask> taskslistother = new List<AbaseTask>();
-            foreach (AbaseTask task in (GetUserTasks()))
+            foreach (AbaseTask task in (taskManager.GetUserTasks(User.LoggedInUser, projectManager)))
             {
                 taskslistother.Add(task);
             }
@@ -174,7 +129,7 @@ namespace OOP
         private void ctmFarest_Click(object sender, EventArgs e)
         {
             List<AbaseTask> taskslistother = new List<AbaseTask>();
-            foreach (AbaseTask task in (GetUserTasks()))
+            foreach (AbaseTask task in (taskManager.GetUserTasks(User.LoggedInUser, projectManager)))
             {
                 taskslistother.Add(task);
             }
@@ -185,48 +140,12 @@ namespace OOP
 
         private void ctmFinished_Click(object sender, EventArgs e)
         {
-
-
-            using (var dbcontext = new TaskManagementDBContext())
-            {
-                var task = (from t in dbcontext.Tasks
-                            where t.AssignedTo == User.LoggedInUser.ID && t.status == "Finished"
-                            select t).ToList<AbaseTask>();
-                var meetings = (from m in dbcontext.Meetings
-                                where m.AssignedTo == User.LoggedInUser.ID && m.status == "Finished"
-                                select m).ToList<AbaseTask>();
-                var milestones = (from ms in dbcontext.Milestones
-                                  where ms.AssignedTo == User.LoggedInUser.ID && ms.status == "Finished"
-                                  select ms).ToList<AbaseTask>();
-                var taskslistother = task.Union(meetings).Union(milestones).ToList();
-
-
-
-                LoadTasks(taskslistother);
-            }
+            LoadTasks(taskManager.GetFinishedTasks(User.LoggedInUser));
         }
 
         private void ctnSection_Click(object sender, EventArgs e)
         {
-
-            using (var dbcontext = new TaskManagementDBContext())
-            {
-                var task = (from t in dbcontext.Tasks
-                            where t.AssignedTo == User.LoggedInUser.ID && t.status != "Finished"
-                            select t).ToList<AbaseTask>();
-                var meetings = (from m in dbcontext.Meetings
-                                where m.AssignedTo == User.LoggedInUser.ID && m.status != "Finished"
-                                select m).ToList<AbaseTask>();
-                var milestones = (from ms in dbcontext.Milestones
-                                  where ms.AssignedTo == User.LoggedInUser.ID && ms.status != "Finished"
-                                  select ms).ToList<AbaseTask>();
-                var taskslistother = task.Union(meetings).Union(milestones).ToList();
-
-
-
-                LoadTasks(taskslistother);
-            }
-
+            LoadTasks(taskManager.GetUnfinishedTasks(User.LoggedInUser));
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -266,7 +185,7 @@ namespace OOP
             if (addTaskForm.ShowDialog() == DialogResult.OK && addTaskForm.NewTask != null)
             {
                 await taskManager.AddTask(addTaskForm.NewTask);
-                LoadTasks(GetUserTasks());
+                LoadTasks(taskManager.GetUserTasks(User.LoggedInUser, projectManager));
                 addTaskForm.NewTask.Message();
             }
         }
@@ -277,7 +196,7 @@ namespace OOP
             if (addMilestone.ShowDialog() == DialogResult.OK && addMilestone.milestone != null)
             {
                 await taskManager.AddTask(addMilestone.milestone);
-                LoadTasks(GetUserTasks());
+                LoadTasks(taskManager.GetUserTasks(User.LoggedInUser, projectManager));
                 addMilestone.milestone.Message();
             }
         }
@@ -288,7 +207,7 @@ namespace OOP
             if (addMeeting.ShowDialog() == DialogResult.OK && addMeeting.newMeeting != null)
             {
                 await taskManager.AddTask(addMeeting.newMeeting);
-                LoadTasks(GetUserTasks());
+                LoadTasks(taskManager.GetUserTasks(User.LoggedInUser, projectManager));
                 addMeeting.newMeeting.Message();
             }
         }
@@ -297,7 +216,8 @@ namespace OOP
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            ExitApplication(); // Gọi hàm chung để thoát
+            ExitApplication();
+            // Gọi hàm chung để thoát
         }
     }
 }

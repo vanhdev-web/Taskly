@@ -4,11 +4,11 @@ using OOP.Models; // Assuming TaskManagementDBContext and Project are in OOP.Mod
 
 namespace OOP.Models
 {
-    public class ProjectReportModel
+    public class ProjectReportService
     {
         private readonly TaskManagementDBContext _dbContext;
 
-        public ProjectReportModel(TaskManagementDBContext dbContext)
+        public ProjectReportService(TaskManagementDBContext dbContext)
         {
             _dbContext = dbContext;
         }

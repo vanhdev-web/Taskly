@@ -7,14 +7,14 @@ namespace OOP.Forms
     public class TaskReportPresenter
     {
         private readonly ITaskReportView _view;
-        private readonly TaskReportModel _model;
+        private readonly TaskReportService _model;
         private readonly int _taskId;
 
         public TaskReportPresenter(ITaskReportView view, int taskId)
         {
             _view = view;
             _taskId = taskId;
-            _model = new TaskReportModel(new TaskManagementDBContext()); // Initialize your DbContext here or inject it
+            _model = new TaskReportService(new TaskManagementDBContext()); // Initialize your DbContext here or inject it
         }
 
         public void LoadActivities()

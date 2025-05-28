@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore;
 namespace OOP.Services
 {
-    internal class ProjectManager
+    public class ProjectManager
     {
         public List<Project> Projects { get; set; }
 

@@ -19,32 +19,21 @@ namespace OOP
     {
         private int selectedProjectID = -1;
         List<Models.Project> projects = new List<Models.Project>();
+        private ProjectsService _projectsService;
 
         public Projects()
         {
             InitializeComponent();
-
+            _projectsService = new ProjectsService();
             LoadProjectsFromFile();
             UpdateComboBox();
-
         }
 
         private void LoadProjectsFromFile()
         {
-            using (var context = new TaskManagementDBContext())
-            {
-                var query = from p in context.Projects
-                            select new Project
-                            {
-                                projectID = p.projectID,
-                                projectName = p.projectName,
-                                projectDescription = p.projectDescription,
-                                AdminID = p.AdminID
-                            };
-
-                projects = query.ToList();
-            }
+            projects = _projectsService.LoadProjects();
         }
+
         public static class Prompt
         {
             public static string ShowDialog(string text, string caption)
@@ -57,28 +46,20 @@ namespace OOP
                     Text = caption,
                     StartPosition = FormStartPosition.CenterScreen
                 };
-
                 Label textLabel = new Label() { Left = 10, Top = 20, Text = text };
                 TextBox textBox = new TextBox() { Left = 10, Top = 50, Width = 260 };
                 Button confirmation = new Button() { Text = "OK", Left = 100, Width = 100, Top = 80 };
-
-                // Gán sự kiện Click mà không dùng lambda
                 confirmation.Click += new EventHandler(Confirmation_Click);
-
                 prompt.Controls.Add(textLabel);
                 prompt.Controls.Add(textBox);
                 prompt.Controls.Add(confirmation);
                 prompt.AcceptButton = confirmation;
-
-                // Lưu textBox vào Tag để truy xuất khi cần
                 prompt.Tag = textBox;
-
                 prompt.ShowDialog();
 
                 return textBox.Text;
             }
 
-            // Xử lý sự kiện Click của button
             private static void Confirmation_Click(object sender, EventArgs e)
             {
                 Button btn = sender as Button;
@@ -91,13 +72,12 @@ namespace OOP
                     }
                 }
             }
-
         }
+
         private void panel1_Click(object sender, EventArgs e)
         {
 
         }
-
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
@@ -119,7 +99,6 @@ namespace OOP
 
         }
 
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -128,7 +107,6 @@ namespace OOP
         private async void btnCreateProject_Click(object sender, EventArgs e)
         {
             string inputName = Prompt.ShowDialog("Nhập tên dự án:", "Tạo Project");
-
             if (string.IsNullOrWhiteSpace(inputName))
             {
                 MessageBox.Show("Tên dự án không được để trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -137,45 +115,22 @@ namespace OOP
 
             string projectDescription = "What's this project about?";
 
-
-            using (var dbContext = new TaskManagementDBContext())
+            Project newProject = new Project
             {
+                projectName = inputName,
+                projectDescription = projectDescription,
+                AdminID = User.LoggedInUser.ID
+            };
 
-                Project newProject = new Project
-                {
-                    projectName = inputName,
-                    projectDescription = projectDescription,
-                    AdminID = User.LoggedInUser.ID
-                };
-
-                dbContext.Projects.Add(newProject);
-                dbContext.SaveChanges();
-
-                // Cập nhật ComboBox
-                comboBox1.Items.Add($"{newProject.projectID} - {newProject.projectName}");
-                ActivityLogService activityLogService = new ActivityLogService(dbContext);
-                await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "Project", objectId: newProject.projectID, action: "Create Project", details: $"{User.LoggedInUser.Username} đã tạo dự án {newProject.projectName} lúc {DateTime.Now}");
-                MessageBox.Show("Activitlog tạo project");
-
-                MessageBox.Show("Tạo dự án thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-
-
+            await _projectsService.CreateProjectAsync(newProject);
+            comboBox1.Items.Add($"{newProject.projectID} - {newProject.projectName}");
+            MessageBox.Show("Tạo dự án thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-
-
-
-
-
-
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
-
-
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -215,133 +170,51 @@ namespace OOP
                 return;
             }
 
-            // Tách lấy ID project từ comboBox
             string selectedText = comboBox1.SelectedItem.ToString();
-            string[] parts = selectedText.Split('-');
-            if (parts.Length < 2 || !int.TryParse(parts[0].Trim(), out int selectedProjectID))
+            if (int.TryParse(selectedText.Split('-')[0].Trim(), out int selectedProjectID))
             {
-                MessageBox.Show("Dữ liệu project không hợp lệ!");
-                return;
-            }
-
-            using (var dbContext = new TaskManagementDBContext())
-            {
-                // Dùng from-where-select để tìm project
-                var selectedProject = (from p in dbContext.Projects
-                                       where p.projectID == selectedProjectID
-                                       select p).FirstOrDefault();
-
-                if (selectedProject == null)
-                {
-                    MessageBox.Show("Không tìm thấy project!");
-                    return;
-                }
-
-                // Hiện form thêm thành viên
                 Addmember userForm = new Addmember(this);
                 if (userForm.ShowDialog() == DialogResult.OK)
                 {
                     string newMember = userForm.MemberName;
-
                     if (string.IsNullOrWhiteSpace(newMember))
                     {
                         MessageBox.Show("Thông tin thành viên không hợp lệ!");
                         return;
                     }
 
-                    // Tìm user bằng from-where-select
-                    var user = (from u in dbContext.Users
-                                where u.Username.ToLower() == newMember.ToLower()
-                                select u).FirstOrDefault();
-
-                    if (user == null)
+                    bool success = await _projectsService.AddMemberToProjectAsync(selectedProjectID, newMember, User.LoggedInUser);
+                    if (success)
                     {
-                        MessageBox.Show("Người dùng không tồn tại! Vui lòng nhập tên thành viên hợp lệ.");
-                        return;
+                        Project selectedProject = _projectsService.FindProjectById(selectedProjectID);
+                        if (selectedProject != null)
+                        {
+                            DisplayMembers(selectedProject);
+                        }
+
+                        MessageBox.Show($"Đã thêm {newMember} vào dự án");
                     }
-
-                    // Kiểm tra nếu user đã được gán task trong project
-                    var assignedTasks = from t in dbContext.Tasks
-                                        where t.ProjectID == selectedProjectID && t.AssignedTo == user.ID
-                                        select t;
-
-                    if (assignedTasks.Any())
-                    {
-                        MessageBox.Show($"Thành viên {newMember} đã được gán vào dự án này!");
-                        return;
-                    }
-
-                    // Tạo một task mặc định để gán user vào project
-                    Task newTask = new Task
-                    {
-                        taskName ="AddUserToNewProject###",
-                        status = "Unfinished",
-                        deadline = DateTime.Now.AddDays(7),
-                        AssignedTo = user.ID,
-                        ProjectID = selectedProjectID
-                    };
-
-                    dbContext.Tasks.Add(newTask);
-                    dbContext.SaveChanges();
-                    //selectedProject.members.Add(user);
-                    DisplayMembers(selectedProject); // cập nhật giao diện
-                    ActivityLogService activityLogService = new ActivityLogService(dbContext);
-                    await activityLogService.LogActivityAsync(userId: User.LoggedInUser.ID, objectType: "Project", objectId: selectedProject.projectID, action: "Add Member", details: $"{User.LoggedInUser.Username} đã mời {user.Username} vào dự án {selectedProject.projectName} ");
-                    MessageBox.Show($"Đã thêm {newMember} vào dự án");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Dữ liệu project không hợp lệ!");
             }
         }
 
-
-        private ProjectManager projectManager = new ProjectManager();
         private void UpdateComboBox()
         {
             comboBox1.Items.Clear();
-
             if (User.LoggedInUser == null) return;
 
-            using (var context = new TaskManagementDBContext())
+            List<Project> allProjects = _projectsService.GetAllUserProjects(User.LoggedInUser.ID);
+
+            foreach (var project in allProjects)
             {
-                int userId = User.LoggedInUser.ID;
-
-                // lấy danh sách project mà người dùng là admin
-                var adminProjects = from p in context.Projects
-                                    where p.AdminID == userId
-                                    select p;
-
-                // lấy danh sách project từ Tasks mà user được gán
-                var taskProjects = from t in context.Tasks
-                                   where t.AssignedTo == userId
-                                   join p in context.Projects on t.ProjectID equals p.projectID
-                                   select p;
-
-                // lấy danh sách project từ Meetings mà user được gán
-                var meetingProjects = from m in context.Meetings
-                                      where m.AssignedTo == userId
-                                      join p in context.Projects on m.ProjectID equals p.projectID
-                                      select p;
-
-                // lấy danh sách project từ Milestones mà user được gán
-                var milestoneProjects = from m in context.Milestones
-                                        where m.AssignedTo == userId
-                                        join p in context.Projects on m.ProjectID equals p.projectID
-                                        select p;
-
-                // hợp tất cả các project lại và loại bỏ trùng lặp
-                var allProjects = adminProjects
-                                  .Union(taskProjects)
-                                  .Union(meetingProjects)
-                                  .Union(milestoneProjects)
-                                  .Distinct()
-                                  .ToList();
-
-                // thêm vào comboBox
-                foreach (var project in allProjects)
-                {
-                    comboBox1.Items.Add($"{project.projectID} - {project.projectName}");
-                }
+                comboBox1.Items.Add($"{project.projectID} - {project.projectName}");
             }
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             if (selectedProjectID == -1)
@@ -352,23 +225,14 @@ namespace OOP
 
             DialogResult result = MessageBox.Show($"Bạn có chắc chắn muốn xóa project ID {selectedProjectID}?", "Xác nhận xóa",
                                                   MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
             if (result == DialogResult.Yes)
             {
                 try
                 {
-                    if (projectManager == null)
-                    {
-                        MessageBox.Show("Hệ thống chưa khởi tạo project manager!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-
-                    // Xóa project theo ID
-                    projectManager.DeleteProject(selectedProjectID);
-                    projectManager.SaveProjectsToFile();
+                    _projectsService.DeleteProject(selectedProjectID, User.LoggedInUser.ID);
                     LoadProjectsFromFile();
                     UpdateComboBox();
-                    // Xóa khỏi comboBox1
+
                     for (int i = 0; i < comboBox1.Items.Count; i++)
                     {
                         if (comboBox1.Items[i].ToString().StartsWith($"{selectedProjectID} -"))
@@ -378,8 +242,7 @@ namespace OOP
                         }
                     }
 
-                    selectedProjectID = -1; // Reset ID sau khi xóa
-
+                    selectedProjectID = -1;
                     MessageBox.Show("Project đã được xóa!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
@@ -403,130 +266,69 @@ namespace OOP
             }
 
             comboBox1.Items.Clear();
-
             foreach (Project project in projects)
             {
                 comboBox1.Items.Add($"{project.projectID} - {project.projectName}");
             }
         }
 
-
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex != -1) // Kiểm tra nếu có project được chọn
+            if (comboBox1.SelectedIndex != -1)
             {
                 string selectedProjectText = comboBox1.SelectedItem.ToString();
-
-                if (int.TryParse(selectedProjectText.Split('-')[0].Trim(), out selectedProjectID)) // Gán ID vào biến toàn cục
+                if (int.TryParse(selectedProjectText.Split('-')[0].Trim(), out selectedProjectID))
                 {
-                    // Tìm project theo ID
-                    Project selectedProject = null;
-                    foreach (Project project in projects)
-                    {
-                        if (project.projectID == selectedProjectID)
-                        {
-                            selectedProject = project;
-                            break; // Thoát vòng lặp khi tìm thấy project
-                        }
-                    }
+                    Project selectedProject = _projectsService.FindProjectById(selectedProjectID);
 
                     if (selectedProject != null)
                     {
                         description.Text = selectedProject.projectDescription;
-                        // Hiển thị mô tả của project
                         DisplayMembers(selectedProject);
                         LoadTasks(selectedProject);
                     }
                 }
                 else
                 {
-                    selectedProjectID = -1; // Nếu parse thất bại, reset ID
+                    selectedProjectID = -1;
                 }
             }
         }
 
-
         private void description_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter) // Kiểm tra nếu nhấn Enter
+            if (e.KeyCode == Keys.Enter)
             {
-                if (comboBox1.SelectedIndex != -1) // Đảm bảo có project được chọn
+                if (comboBox1.SelectedIndex != -1)
                 {
                     string selectedProjectText = comboBox1.SelectedItem.ToString();
                     int selectedProjectID = int.Parse(selectedProjectText.Split('-')[0].Trim());
 
-                    // Tìm project theo ID bằng vòng lặp
-                    Project selectedProject = null;
-                    foreach (Project project in projects)
-                    {
-                        if (project.projectID == selectedProjectID)
-                        {
-                            selectedProject = project;
-                            break; // Thoát vòng lặp ngay khi tìm thấy
-                        }
-                    }
+                    Project selectedProject = _projectsService.FindProjectById(selectedProjectID);
 
                     if (selectedProject != null)
                     {
-                        selectedProject.projectDescription = description.Text; // Cập nhật mô tả
-
-                        //SaveProjectsToFile(); // Lưu vào file JSON
+                        selectedProject.projectDescription = description.Text;
+                        _projectsService.UpdateProjectDescription(selectedProject.projectID, description.Text);
                         MessageBox.Show("Mô tả đã được lưu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
             }
         }
+
         private void DisplayMembers(Project project)
         {
             memberPanel.Controls.Clear();
+            List<User> members = _projectsService.GetProjectMembers(project.projectID, project.AdminID);
 
-            using (var dbContext = new TaskManagementDBContext())
+            foreach (var user in members)
             {
-                var taskMemberIds = dbContext.Tasks
-                    .Where(t => t.ProjectID == project.projectID)
-                    .Select(t => t.AssignedTo);
-
-                var meetingMemberIds = dbContext.Meetings
-                    .Where(m => m.ProjectID == project.projectID)
-                    .Select(m => m.AssignedTo);
-
-                var milestoneMemberIds = dbContext.Milestones
-                    .Where(ms => ms.ProjectID == project.projectID)
-                    .Select(ms => ms.AssignedTo);
-
-                var allMemberIds = taskMemberIds
-                    .Union(meetingMemberIds)
-                    .Union(milestoneMemberIds)
-                    .Distinct()
-                    .ToList();
-
-                var admin = dbContext.Users.FirstOrDefault(u => u.ID == project.AdminID);
-                if (admin != null)
-                {
-                    MemberItem ownerItem = new MemberItem(admin.Username, true);
-                    ownerItem.Dock = DockStyle.Left;
-                    memberPanel.Controls.Add(ownerItem);
-                }
-
-                foreach (var userId in allMemberIds)
-                {
-                    if (userId == project.AdminID)
-                        continue;
-
-                    var user = dbContext.Users.FirstOrDefault(u => u.ID == userId);
-                    if (user != null)
-                    {
-                        MemberItem memberItem = new MemberItem(user.Username, false);
-                        memberItem.Dock = DockStyle.Left;
-                        memberPanel.Controls.Add(memberItem);
-                    }
-                }
-
-
-
+                MemberItem memberItem = new MemberItem(user.Username, user.ID == project.AdminID);
+                memberItem.Dock = DockStyle.Left;
+                memberPanel.Controls.Add(memberItem);
             }
         }
+
         private void panel2_Paint_1(object sender, PaintEventArgs e)
         {
 
@@ -541,6 +343,7 @@ namespace OOP
         {
             SwitchForm(new Home());
         }
+
         private void btnTask_Click(object sender, EventArgs e)
         {
             SwitchForm(new Tasks());
@@ -558,29 +361,27 @@ namespace OOP
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            ExitApplication(); // Gọi hàm chung để thoát
+            ExitApplication();
         }
 
         private void description_Enter(object sender, EventArgs e)
         {
-            description.ForeColor = Color.Gray; // Giữ màu đúng khi nhập vào
+            description.ForeColor = Color.Gray;
         }
 
         private void description_TextChanged(object sender, EventArgs e)
         {
-            description.ForeColor = Color.Gray; // Cập nhật màu khi nhập
+            description.ForeColor = Color.Gray;
         }
 
-        TaskManager taskManager = TaskManager.GetInstance();
         private void LoadTasks(Project project)
         {
-            // Xóa các control cũ trong panel trước khi thêm mới
             taskContainer.Controls.Clear();
-
-            foreach (AbaseTask task in taskManager.GetTasksByProject(project.projectName))
+            List<AbaseTask> tasks = _projectsService.GetTasksByProjectName(project.projectName);
+            foreach (AbaseTask task in tasks)
             {
                 ProjectTaskUserControl taskItem = new ProjectTaskUserControl(task);
-                taskItem.Dock = DockStyle.Top; // Stack tasks from top to bottom
+                taskItem.Dock = DockStyle.Top;
                 taskContainer.Controls.Add(taskItem);
                 ApplyMouseEvents(taskItem.TaskPanel);
             }
@@ -593,5 +394,4 @@ namespace OOP
             feedForm.ShowDialog();
         }
     }
-
 }

@@ -8,14 +8,14 @@ namespace OOP.Forms
     public class ProjectReportPresenter
     {
         private readonly IProjectReportView _view;
-        private readonly ProjectReportModel _model;
+        private readonly ProjectReportService _model;
         private readonly int _loggedInUserId;
 
         public ProjectReportPresenter(IProjectReportView view, int loggedInUserId)
         {
             _view = view;
             _loggedInUserId = loggedInUserId;
-            _model = new ProjectReportModel(new TaskManagementDBContext()); // Initialize your DbContext
+            _model = new ProjectReportService(new TaskManagementDBContext()); // Initialize your DbContext
         }
 
         public void LoadProjects()
