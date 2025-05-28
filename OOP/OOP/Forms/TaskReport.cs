@@ -18,75 +18,65 @@ using OOP.Forms;
 
 namespace OOP.Forms
 {
-    public partial class TaskReport : Form
+    public partial class TaskReport : Form, ITaskReportView
     {
         private int taskId;
+        private TaskReportPresenter _presenter;
 
         public TaskReport(int taskId)
         {
             InitializeComponent();
             this.taskId = taskId;
-            LoadActivities();
+            _presenter = new TaskReportPresenter(this, taskId);
+            _presenter.LoadActivities();
         }
 
-        private void LoadActivities()
+        public void SetActivityLogs(List<ActivityLogEntry> logs)
         {
-            using (var db = new TaskManagementDBContext())
+            foreach (var log in logs)
             {
-                // Join với Users để lấy username của người action
-                var logs = db.ActivityLogs
-                             .Where(log => log.ObjectType == "Task" && log.ObjectId == taskId)
-                             .Join(db.Users,
-                                   log => log.UserId,
-                                   user => user.ID,
-                                   (log, user) => new
-                                   {
-                                       log.Timestamp,
-                                       log.Action,
-                                       log.Details,
-                                       Username = user.Username ?? "Unknown"
-                                   })
-                             .OrderByDescending(x => x.Timestamp)
-                             .ToList();
-
-                listViewActivityLog.Items.Clear();
-                listViewActivityLog.Columns.Clear();
-
-                // Set kiểu hiển thị là Details
-                listViewActivityLog.View = View.Details;
-
-                // Thêm các cột
-                listViewActivityLog.Columns.Add("Time", 150);
-                listViewActivityLog.Columns.Add("User", 120);
-                listViewActivityLog.Columns.Add("Action", 120);
-                listViewActivityLog.Columns.Add("Details", 300);
-
-                if (logs.Count == 0)
-                {
-                    var noItem = new ListViewItem("No activities found for this task.");
-                    noItem.SubItems.Add(""); // giữ cột trống cho khớp
-                    noItem.SubItems.Add("");
-                    noItem.SubItems.Add("");
-                    listViewActivityLog.Items.Add(noItem);
-                    return;
-                }
-
-                // Load dữ liệu vào từng dòng
-                foreach (var log in logs)
-                {
-                    var item = new ListViewItem(log.Timestamp.ToString("dd/MM/yyyy HH:mm")); // Time
-                    item.SubItems.Add(log.Username); // User
-                    item.SubItems.Add(log.Action);   // Action
-                    item.SubItems.Add(log.Details);  // Details
-
-                    listViewActivityLog.Items.Add(item);
-                }
+                var item = new ListViewItem(log.Timestamp.ToString("dd/MM/yyyy HH:mm"));
+                item.SubItems.Add(log.Username);
+                item.SubItems.Add(log.Action);
+                item.SubItems.Add(log.Details);
+                listViewActivityLog.Items.Add(item);
             }
+        }
+
+        public void DisplayNoActivitiesFoundMessage()
+        {
+            var noItem = new ListViewItem("No activities found for this task.");
+            noItem.SubItems.Add(""); // giữ cột trống cho khớp
+            noItem.SubItems.Add("");
+            noItem.SubItems.Add("");
+            listViewActivityLog.Items.Add(noItem);
+        }
+
+        public void ClearActivityLogView()
+        {
+            listViewActivityLog.Items.Clear();
+            listViewActivityLog.Columns.Clear();
+            listViewActivityLog.View = View.Details;
+        }
+
+        public void SetupActivityLogColumns()
+        {
+            listViewActivityLog.Columns.Add("Time", 150);
+            listViewActivityLog.Columns.Add("User", 120);
+            listViewActivityLog.Columns.Add("Action", 120);
+            listViewActivityLog.Columns.Add("Details", 300);
         }
 
         private void TaskReport_Load(object sender, EventArgs e)
         {
-            
+            // Initial load handled by constructor, but if there were other load logic, it would go here.
+        }
     }
-}
+    public interface ITaskReportView
+    {
+        void SetActivityLogs(List<ActivityLogEntry> logs);
+        void DisplayNoActivitiesFoundMessage();
+        void ClearActivityLogView();
+        void SetupActivityLogColumns();
+    }
 }

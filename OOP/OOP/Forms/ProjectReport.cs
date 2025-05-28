@@ -1,75 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore;
-using OOP.Models;
-using OOP.Properties;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+using OOP.Models; // Assuming Project and User are in OOP.Models
+using OOP.Services; // For TaskManagementDBContext and User.LoggedInUser
 
 namespace OOP.Forms
 {
-    public partial class ProjectReport : Form
+    public partial class ProjectReport : Form, IProjectReportView
     {
+        private ProjectReportPresenter _presenter;
+
         public ProjectReport()
         {
             InitializeComponent();
+            // Assuming User.LoggedInUser.ID is available for the current user
+            _presenter = new ProjectReportPresenter(this, User.LoggedInUser.ID);
         }
 
         private void ProjectReport_Load(object sender, EventArgs e)
         {
-            LoadListProject();
+            _presenter.LoadProjects();
         }
 
-        private void LoadListProject()
+        public void SetProjectList(List<Project> projects)
         {
-            using (var context = new TaskManagementDBContext())
+            comboBoxProjectList.DataSource = projects;
+            comboBoxProjectList.DisplayMember = "projectName";
+            comboBoxProjectList.ValueMember = "projectID";
+        }
+
+        public void SetActivityLogs(List<ActivityLogEntry> logs)
+        {
+            listViewActivityLog.Items.Clear(); // Clear existing "No activities" message if any
+            foreach (var log in logs)
             {
-                int userId = User.LoggedInUser.ID;
-
-                // Lấy project mà user là admin
-                var adminProjects = from p in context.Projects
-                                    where p.AdminID == userId
-                                    select p;
-
-                // Lấy project từ các Task được gán cho user
-                var taskProjects = from t in context.Tasks
-                                   where t.AssignedTo == userId
-                                   join p in context.Projects on t.ProjectID equals p.projectID
-                                   select p;
-
-                // Lấy project từ các Meeting được gán cho user
-                var meetingProjects = from m in context.Meetings
-                                      where m.AssignedTo == userId
-                                      join p in context.Projects on m.ProjectID equals p.projectID
-                                      select p;
-
-                // Lấy project từ các Milestone được gán cho user
-                var milestoneProjects = from m in context.Milestones
-                                        where m.AssignedTo == userId
-                                        join p in context.Projects on m.ProjectID equals p.projectID
-                                        select p;
-
-                // Hợp nhất tất cả các project và loại bỏ trùng
-                var allProjects = adminProjects
-                                  .Union(taskProjects)
-                                  .Union(meetingProjects)
-                                  .Union(milestoneProjects)
-                                  .Distinct()
-                                  .ToList();
-
-                // Gán vào ComboBox (chỉ lấy tên)
-                comboBoxProjectList.DataSource = allProjects;
-                comboBoxProjectList.DisplayMember = "projectName";
-                comboBoxProjectList.ValueMember = "projectID";
+                var item = new ListViewItem(log.Timestamp.ToString("dd/MM/yyyy HH:mm"));
+                item.SubItems.Add(log.Username);
+                item.SubItems.Add(log.Action);
+                item.SubItems.Add(log.Details);
+                listViewActivityLog.Items.Add(item);
             }
         }
 
+        public void DisplayNoActivitiesFoundMessage()
+        {
+            listViewActivityLog.Items.Clear();
+            var noItem = new ListViewItem("This project does not have any activities!");
+            noItem.SubItems.Add("");
+            noItem.SubItems.Add("");
+            noItem.SubItems.Add("");
+            listViewActivityLog.Items.Add(noItem);
+        }
+
+        public void ClearActivityLogView()
+        {
+            listViewActivityLog.Items.Clear();
+            listViewActivityLog.Columns.Clear();
+            listViewActivityLog.View = View.Details;
+        }
+
+        public void SetupActivityLogColumns()
+        {
+            listViewActivityLog.Columns.Add("Time", 150);
+            listViewActivityLog.Columns.Add("User", 120);
+            listViewActivityLog.Columns.Add("Action", 120);
+            listViewActivityLog.Columns.Add("Details", 300);
+        }
+
+        public void DisplayProjectNotFoundMessage()
+        {
+            listViewActivityLog.Items.Clear();
+            listViewActivityLog.Items.Add("Project not found!");
+        }
 
         private void comboBoxProjectList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -77,70 +79,22 @@ namespace OOP.Forms
             if (comboBoxProjectList.SelectedItem == null)
                 return;
 
-            // Cast SelectedItem to Project directly
             var selectedProject = comboBoxProjectList.SelectedItem as Project;
-            if (selectedProject == null)
-            {
-                listViewActivityLog.Items.Clear();
-                listViewActivityLog.Items.Add("Project not found!");
-                return;
-            }
-
-            using (var context = new TaskManagementDBContext())
-            {
-                var projectId = selectedProject.projectID;
-
-                // Get activities for the selected project
-                var ProjectActivities = context.ActivityLogs
-                    .Where(a => a.ObjectType == "Project" && a.ObjectId == projectId)
-                    .ToList();
-
-                var TaskActivities = context.ActivityLogs
-                    .Where(a => a.ObjectType == "Task")
-                    .Join(context.Tasks, a => a.ObjectId, t => t.taskID, (a, t) => new { a, t })
-                    .Where(x => x.t.ProjectID == projectId)
-                    .Select(x => x.a)
-
-                    .Concat(
-                        context.ActivityLogs
-                        .Where(a => a.ObjectType == "Meeting")
-                        .Join(context.Meetings, a => a.ObjectId, m => m.taskID, (a, m) => new { a, m })
-                        .Where(x => x.m.ProjectID == projectId)
-                        .Select(x => x.a)
-                    )
-                    .Concat(
-                        context.ActivityLogs
-                        .Where(a => a.ObjectType == "Milestone") // double-check spelling again
-                        .Join(context.Milestones, a => a.ObjectId, ms => ms.taskID, (a, ms) => new { a, ms })
-                        .Where(x => x.ms.ProjectID == projectId)
-                        .Select(x => x.a)
-                    )
-                    .ToList();
-
-                listViewActivityLog.Items.Clear();
-
-                if (!ProjectActivities.Any() && !TaskActivities.Any())
-                {
-                    listViewActivityLog.Items.Add("This project does not have any activities!");
-                }
-                else
-                {
-                    foreach (var pa in ProjectActivities)
-                        listViewActivityLog.Items.Add(pa.Details);
-
-                    foreach (var ta in TaskActivities)
-                        listViewActivityLog.Items.Add(ta.Details);
-                }
-            }
+            _presenter.OnProjectSelected(selectedProject);
         }
-
-
-
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-           
+            // Existing empty handler
         }
+    }
+    public interface IProjectReportView
+    {
+        void SetProjectList(List<Project> projects);
+        void SetActivityLogs(List<ActivityLogEntry> logs);
+        void DisplayNoActivitiesFoundMessage();
+        void ClearActivityLogView();
+        void SetupActivityLogColumns();
+        void DisplayProjectNotFoundMessage();
     }
 }
