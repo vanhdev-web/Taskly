@@ -1,115 +1,47 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using OOP.Models;
+using OOP.Services;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System.Windows.Forms;
-using OOP.Models;
+using System;
+using Task = System.Threading.Tasks.Task; // Đặt bí danh cho System.Threading.Tasks.Task thành 'Task
+using ModelTask = OOP.Models.Task; // Đặt bí danh cho OOP.Models.Task thành 'ModelTask
 
 namespace OOP
 {
-    public partial class Login : Form, ILoginView
+    public class LoginService
     {
-        private LoginPresenter _presenter;
-
-        public string Username => txtUsername.Text;
-        public string Password => txtPassword.Text;
-
-        public event EventHandler LoginAttempt;
-        public event EventHandler RegisterRequested;
-        public event KeyPressEventHandler UsernameKeyPress;
-        public event KeyPressEventHandler PasswordKeyPress;
-        public event EventHandler LoginLoad;
-
-        public Login()
+        public async Task<User> AuthenticateUser(string username, string password)
         {
-            InitializeComponent();
-            _presenter = new LoginPresenter(this, new LoginService()); // Initialize presenter with view and model
-
-            // Attach event handlers
-            btnLogin.Click += (sender, e) => LoginAttempt?.Invoke(sender, e);
-            btnRegister.Click += (sender, e) => RegisterRequested?.Invoke(sender, e);
-            txtUsername.KeyPress += (sender, e) => UsernameKeyPress?.Invoke(sender, e);
-            txtPassword.KeyPress += (sender, e) => PasswordKeyPress?.Invoke(sender, e);
-            this.Load += (sender, e) => LoginLoad?.Invoke(sender, e);
+            using (var context = new TaskManagementDBContext())
+            {
+                var user = await context.Users
+                                        .FirstOrDefaultAsync(u => u.Username == username && u.Password == password);
+                return user;
+            }
         }
 
-        public void ShowMessage(string message)
+        public async Task LogActivity(int? userId, string objectType, int objectId, string action, string details)
         {
-            MessageBox.Show(message);
+            using (var context = new TaskManagementDBContext())
+            {
+                ActivityLogService activityLogService = new ActivityLogService(context);
+                await activityLogService.LogActivityAsync(userId, objectType, objectId, action, details);
+            }
         }
 
-        public void ClearUsername()
+        public void EnsureDatabaseCreated()
         {
-            txtUsername.Clear();
+            using (var context = new TaskManagementDBContext())
+            {
+                context.Database.EnsureCreated();
+            }
         }
 
-        public void ClearPassword()
-        {
-            txtPassword.Clear();
-        }
-
-        public void FocusUsername()
-        {
-            txtUsername.Focus();
-        }
-
-        public void FocusPassword()
-        {
-            txtPassword.Focus();
-        }
-
-        public void HideView()
-        {
-            this.Hide();
-        }
-
-        public void ShowHomeForm()
-        {
-            Home mainForm = new Home();
-            mainForm.Show();
-        }
-
-        public void ShowRegisterForm()
-        {
-            Register register = new Register();
-            register.Show();
-        }
-
-        // Keep the original event handlers for design-time and direct access if needed,
-        // but the core logic will be handled by the presenter.
-        private async void btnLogin_Click(object sender, EventArgs e)
-        {
-            // This will now trigger the LoginAttempt event, handled by the presenter
-            LoginAttempt?.Invoke(sender, e);
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-            // This will now trigger the RegisterRequested event, handled by the presenter
-            RegisterRequested?.Invoke(sender, e);
-        }
-
-        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            UsernameKeyPress?.Invoke(sender, e);
-        }
-
-        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            PasswordKeyPress?.Invoke(sender, e);
-        }
-
-        private void Logintext_Click(object sender, EventArgs e)
-        {
-            // Original empty method, keep as is
-        }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-            LoginLoad?.Invoke(sender, e);
-        }
-
-        // Original SeedData method
-        private void SeedData(TaskManagementDBContext context)
+        // SeedData method is now part of the Model, as it deals with data initialization
+        public void SeedData(TaskManagementDBContext context)
         {
             if (context.Users.Any() || context.Projects.Any() || context.Tasks.Any() || context.Meetings.Any() || context.Milestones.Any() || context.Notifications.Any())
             {
@@ -155,13 +87,13 @@ namespace OOP
                 new User { Username = "user4", Password = "pass4", Email = "user4@example.com", },
                 new User { Username = "user5", Password = "pass5", Email = "user5@example.com", },
             };
-            var tasks = new List<Task>
+            var tasks = new List<OOP.Models.Task>
             {
-                new Task {  taskName = "Task One", status = "Finished", deadline = DateTime.Parse("2025-06-01"), AssignedTo = 1, ProjectID = 1 },
-                new Task {  taskName = "Task Two", status = "Unfinished", deadline = DateTime.Parse("2025-05-20"), AssignedTo = 2, ProjectID = 1 },
-                new Task {  taskName = "Task Three", status = "Finished", deadline = DateTime.Parse("2025-06-10"), AssignedTo = 3, ProjectID = 2 },
-                new Task {  taskName = "Task Four", status = "Finished", deadline = DateTime.Parse("2025-06-15"), AssignedTo = 4, ProjectID = 2 },
-                new Task {  taskName = "Task Five", status = "Unfinished", deadline = DateTime.Parse("2025-06-20"), AssignedTo = 5, ProjectID = 3 },
+                new ModelTask {  taskName = "Task One", status = "Finished", deadline = DateTime.Parse("2025-06-01"), AssignedTo = 1, ProjectID = 1 },
+                new ModelTask {  taskName = "Task Two", status = "Unfinished", deadline = DateTime.Parse("2025-05-20"), AssignedTo = 2, ProjectID = 1 },
+                new ModelTask {  taskName = "Task Three", status = "Finished", deadline = DateTime.Parse("2025-06-10"), AssignedTo = 3, ProjectID = 2 },
+                new ModelTask {  taskName = "Task Four", status = "Finished", deadline = DateTime.Parse("2025-06-15"), AssignedTo = 4, ProjectID = 2 },
+                new ModelTask {  taskName = "Task Five", status = "Unfinished", deadline = DateTime.Parse("2025-06-20"), AssignedTo = 5, ProjectID = 3 },
             };
             context.Users.AddRange(users);
             context.SaveChanges();
@@ -194,27 +126,5 @@ namespace OOP
 
             MessageBox.Show("Dữ liệu đã được khởi tạo thành công!");
         }
-    }
-
-    // Interface for the View
-    public interface ILoginView
-    {
-        string Username { get; }
-        string Password { get; }
-
-        event EventHandler LoginAttempt;
-        event EventHandler RegisterRequested;
-        event KeyPressEventHandler UsernameKeyPress;
-        event KeyPressEventHandler PasswordKeyPress;
-        event EventHandler LoginLoad;
-
-        void ShowMessage(string message);
-        void ClearUsername();
-        void ClearPassword();
-        void FocusUsername();
-        void FocusPassword();
-        void HideView();
-        void ShowHomeForm();
-        void ShowRegisterForm();
     }
 }

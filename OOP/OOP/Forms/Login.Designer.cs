@@ -96,7 +96,6 @@ namespace OOP
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += btnLogin_Click;
             // 
             // btnRegister
             // 
@@ -106,7 +105,6 @@ namespace OOP
             btnRegister.TabIndex = 6;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
-            btnRegister.Click += btnRegister_Click;
             // 
             // TopPanel
             // 
