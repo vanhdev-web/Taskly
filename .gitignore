@@ -1,3 +1,14 @@
 *.vsidx
 .vs/
-/OOP/.vs
+.vscode/
+*.dll
+*.pdb
+*.cache
+*.json
+*.db-wal
+*.db-shm
+*.dll
+*.dll
+*.pdb
+*.cache
+*.cache

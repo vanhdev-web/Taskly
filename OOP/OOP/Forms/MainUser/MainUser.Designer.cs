@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUser));
             TopPanel = new System.Windows.Forms.Panel();
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             WelcomeName = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             btnHam = new System.Windows.Forms.PictureBox();
@@ -50,6 +49,7 @@
             lblEmail = new System.Windows.Forms.Label();
             lblActivityLog = new System.Windows.Forms.Label();
             listViewActivityLog = new System.Windows.Forms.ListView();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             TopPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)btnHam).BeginInit();
             sidebar.SuspendLayout();
@@ -77,35 +77,11 @@
             TopPanel.Size = new System.Drawing.Size(1707, 116);
             TopPanel.TabIndex = 15;
             // 
-            // nightControlBox1
-            // 
-            nightControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
-            nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(199, 80, 80);
-            nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
-            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
-            nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMinimizeButton = true;
-            nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new System.Drawing.Point(1568, 0);
-            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            nightControlBox1.TabIndex = 1;
-            // 
             // WelcomeName
             // 
             WelcomeName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            WelcomeName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            WelcomeName.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             WelcomeName.Location = new System.Drawing.Point(702, 13);
             WelcomeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             WelcomeName.Name = "WelcomeName";
@@ -118,7 +94,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
-            label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label5.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             label5.Location = new System.Drawing.Point(110, 29);
             label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -272,7 +248,7 @@
             // 
             // panel5
             // 
-            panel5.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel5.BackColor = System.Drawing.Color.FromArgb(63, 150, 252);
             panel5.Controls.Add(btnUser);
             panel5.EdgeColor = System.Drawing.Color.Transparent;
             panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
@@ -282,7 +258,7 @@
             panel5.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
             panel5.Size = new System.Drawing.Size(474, 108);
             panel5.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-            panel5.TabIndex = 5;
+            panel5.TabIndex = 7;
             panel5.Text = "Dashboard";
             // 
             // btnUser
@@ -309,7 +285,6 @@
             btnUser.TabIndex = 2;
             btnUser.Text = "              User";
             btnUser.TextAlignment = System.Drawing.StringAlignment.Near;
-            btnUser.Click += btnUser_Click;
             // 
             // panel2
             // 
@@ -399,6 +374,30 @@
             listViewActivityLog.UseCompatibleStateImageBehavior = false;
             listViewActivityLog.View = System.Windows.Forms.View.List;
             // 
+            // nightControlBox1
+            // 
+            nightControlBox1.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            nightControlBox1.BackColor = System.Drawing.Color.Transparent;
+            nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
+            nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new System.Drawing.Point(1563, 11);
+            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new System.Drawing.Size(139, 31);
+            nightControlBox1.TabIndex = 19;
+            // 
             // MainUser
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -431,7 +430,6 @@
         #endregion
 
         private System.Windows.Forms.Panel TopPanel;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private System.Windows.Forms.Label WelcomeName;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnHam;
@@ -442,8 +440,6 @@
         private ReaLTaiizor.Controls.Button btnTask;
         private ReaLTaiizor.Controls.Panel menu;
         private ReaLTaiizor.Controls.Button btnProject;
-        private ReaLTaiizor.Controls.Panel panel5;
-        private ReaLTaiizor.Controls.Button btnUser;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnExit;
         private System.Windows.Forms.PictureBox avatar;
@@ -451,5 +447,8 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblActivityLog;
         private System.Windows.Forms.ListView listViewActivityLog;
+        private ReaLTaiizor.Controls.Panel panel5;
+        private ReaLTaiizor.Controls.Button btnUser;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }

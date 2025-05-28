@@ -148,7 +148,7 @@ namespace OOP
         {
             if (User.LoggedInUser != null)
             {
-                _view.SetWelcomeName($"Hey {User.LoggedInUser.Username}, sẵn sàng làm việc chưa? 🚀");
+                _view.SetWelcomeName($"Hey {User.LoggedInUser.Username}, Ready for work? 🚀");
 
                 if (User.LoggedInUser.Avatar != null && User.LoggedInUser.Avatar.Length > 0)
                 {

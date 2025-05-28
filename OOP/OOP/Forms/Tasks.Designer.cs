@@ -170,31 +170,31 @@
             nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
             nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
-            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(105, 105, 105);
+            nightControlBox1.DisableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = System.Drawing.Color.Transparent;
             nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMinimizeButton = true;
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
             nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new System.Drawing.Point(1534, 0);
-            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
+            nightControlBox1.Location = new System.Drawing.Point(1589, 0);
+            nightControlBox1.MaximizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = System.Drawing.Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.Transparent;
             nightControlBox1.Name = "nightControlBox1";
             nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            nightControlBox1.TabIndex = 1;
+            nightControlBox1.TabIndex = 19;
             // 
             // WelcomeName
             // 
             WelcomeName.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             WelcomeName.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            WelcomeName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            WelcomeName.Location = new System.Drawing.Point(702, 13);
+            WelcomeName.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
+            WelcomeName.Location = new System.Drawing.Point(656, 8);
             WelcomeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             WelcomeName.Name = "WelcomeName";
-            WelcomeName.Size = new System.Drawing.Size(508, 82);
+            WelcomeName.Size = new System.Drawing.Size(642, 82);
             WelcomeName.TabIndex = 18;
             WelcomeName.Text = "Welcome back";
             WelcomeName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -203,7 +203,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 163);
-            label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label5.ForeColor = System.Drawing.Color.FromArgb(63, 150, 252);
             label5.Location = new System.Drawing.Point(110, 29);
             label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             label5.Name = "label5";
@@ -281,6 +281,7 @@
             // taskContainer
             // 
             taskContainer.AllowDrop = true;
+            taskContainer.AutoScroll = true;
             taskContainer.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
             taskContainer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             taskContainer.Controls.Add(panel8);
@@ -586,12 +587,12 @@
             // 
             // panel5
             // 
-            panel5.BackColor = System.Drawing.Color.FromArgb(30, 30, 32);
+            panel5.BackColor = System.Drawing.Color.FromArgb(63, 150, 252);
             panel5.Controls.Add(btnTask);
             panel5.EdgeColor = System.Drawing.Color.Transparent;
             panel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel5.Location = new System.Drawing.Point(4, 118);
-            panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            panel5.Location = new System.Drawing.Point(0, 115);
+            panel5.Margin = new System.Windows.Forms.Padding(0);
             panel5.Name = "panel5";
             panel5.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
             panel5.Size = new System.Drawing.Size(474, 109);
@@ -629,7 +630,7 @@
             menu.Controls.Add(btnProject);
             menu.EdgeColor = System.Drawing.Color.Transparent;
             menu.ForeColor = System.Drawing.Color.Transparent;
-            menu.Location = new System.Drawing.Point(0, 230);
+            menu.Location = new System.Drawing.Point(0, 224);
             menu.Margin = new System.Windows.Forms.Padding(0);
             menu.Name = "menu";
             menu.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
@@ -668,7 +669,7 @@
             panel2.Controls.Add(btnUser);
             panel2.EdgeColor = System.Drawing.Color.Transparent;
             panel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            panel2.Location = new System.Drawing.Point(5, 345);
+            panel2.Location = new System.Drawing.Point(5, 339);
             panel2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             panel2.Name = "panel2";
             panel2.Padding = new System.Windows.Forms.Padding(24, 10, 8, 10);
@@ -676,17 +677,20 @@
             panel2.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
             panel2.TabIndex = 10;
             panel2.Text = "Dashboard";
+            panel2.Click += btnUser_Click;
             // 
             // btnUser
             // 
             btnUser.BackColor = System.Drawing.Color.Transparent;
+            btnUser.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnUser.BackgroundImage");
+            btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             btnUser.BorderColor = System.Drawing.Color.Transparent;
             btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
             btnUser.Dock = System.Windows.Forms.DockStyle.Fill;
             btnUser.EnteredBorderColor = System.Drawing.Color.Transparent;
             btnUser.EnteredColor = System.Drawing.Color.Transparent;
             btnUser.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 163);
-            btnUser.Image = (System.Drawing.Image)resources.GetObject("btnUser.Image");
+            btnUser.Image = null;
             btnUser.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             btnUser.InactiveColor = System.Drawing.Color.Transparent;
             btnUser.Location = new System.Drawing.Point(24, 10);
@@ -699,6 +703,7 @@
             btnUser.TabIndex = 2;
             btnUser.Text = "              User";
             btnUser.TextAlignment = System.Drawing.StringAlignment.Near;
+            btnUser.Click += btnUser_Click;
             // 
             // panel7
             // 
@@ -706,7 +711,7 @@
             panel7.Controls.Add(btnExit);
             panel7.EdgeColor = System.Drawing.Color.Transparent;
             panel7.ForeColor = System.Drawing.Color.White;
-            panel7.Location = new System.Drawing.Point(4, 465);
+            panel7.Location = new System.Drawing.Point(4, 459);
             panel7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             panel7.Name = "panel7";
             panel7.Padding = new System.Windows.Forms.Padding(25, 10, 9, 10);
@@ -840,7 +845,6 @@
         private System.Windows.Forms.ToolStripMenuItem ctnSection;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Panel TopPanel;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox btnHam;
         private System.Windows.Forms.MenuStrip miniToolStrip;
@@ -886,5 +890,6 @@
         private ReaLTaiizor.Controls.Button btnExit;
         private ReaLTaiizor.Controls.Panel panel2;
         private ReaLTaiizor.Controls.Button btnUser;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }

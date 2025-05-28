@@ -43,11 +43,11 @@ namespace OOP
             btnRegister = new Button();
             TopPanel = new Panel();
             Logintext = new Label();
-            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             appName = new Label();
             label3 = new Label();
             description = new Label();
             panel1 = new Panel();
+            nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             TopPanel.SuspendLayout();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -112,8 +112,8 @@ namespace OOP
             // 
             TopPanel.BackColor = Color.FromArgb(30, 30, 32);
             TopPanel.BorderStyle = BorderStyle.FixedSingle;
-            TopPanel.Controls.Add(Logintext);
             TopPanel.Controls.Add(nightControlBox1);
+            TopPanel.Controls.Add(Logintext);
             TopPanel.Dock = DockStyle.Top;
             TopPanel.ForeColor = SystemColors.Control;
             TopPanel.Location = new Point(0, 0);
@@ -126,38 +126,14 @@ namespace OOP
             // 
             Logintext.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             Logintext.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Logintext.ForeColor = Color.Cornsilk;
-            Logintext.Location = new Point(127, -1);
+            Logintext.ForeColor = Color.FromArgb(63, 150, 252);
+            Logintext.Location = new Point(401, 0);
             Logintext.Name = "Logintext";
-            Logintext.Size = new Size(897, 96);
+            Logintext.Size = new Size(393, 96);
             Logintext.TabIndex = 19;
             Logintext.Text = "Login";
             Logintext.TextAlign = ContentAlignment.MiddleCenter;
             Logintext.Click += Logintext_Click;
-            // 
-            // nightControlBox1
-            // 
-            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            nightControlBox1.BackColor = Color.Transparent;
-            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
-            nightControlBox1.CloseHoverForeColor = Color.White;
-            nightControlBox1.Cursor = Cursors.Hand;
-            nightControlBox1.DefaultLocation = true;
-            nightControlBox1.DisableMaximizeColor = Color.FromArgb(105, 105, 105);
-            nightControlBox1.DisableMinimizeColor = Color.FromArgb(105, 105, 105);
-            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMaximizeButton = true;
-            nightControlBox1.EnableMaximizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.EnableMinimizeButton = true;
-            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
-            nightControlBox1.Location = new Point(1030, 0);
-            nightControlBox1.MaximizeHoverColor = Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MaximizeHoverForeColor = Color.White;
-            nightControlBox1.MinimizeHoverColor = Color.FromArgb(15, 255, 255, 255);
-            nightControlBox1.MinimizeHoverForeColor = Color.White;
-            nightControlBox1.Name = "nightControlBox1";
-            nightControlBox1.Size = new Size(139, 31);
-            nightControlBox1.TabIndex = 1;
             // 
             // appName
             // 
@@ -175,7 +151,7 @@ namespace OOP
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.Font = new System.Drawing.Font("Segoe UI Semibold", 32F, FontStyle.Bold);
-            label3.ForeColor = SystemColors.ControlLightLight;
+            label3.ForeColor = Color.FromArgb(63, 150, 252);
             label3.Location = new Point(-20, 194);
             label3.Name = "label3";
             label3.Size = new Size(627, 96);
@@ -213,6 +189,30 @@ namespace OOP
             panel1.Size = new Size(1169, 541);
             panel1.TabIndex = 23;
             // 
+            // nightControlBox1
+            // 
+            nightControlBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            nightControlBox1.BackColor = Color.Transparent;
+            nightControlBox1.CloseHoverColor = Color.FromArgb(199, 80, 80);
+            nightControlBox1.CloseHoverForeColor = Color.White;
+            nightControlBox1.Cursor = Cursors.Hand;
+            nightControlBox1.DefaultLocation = true;
+            nightControlBox1.DisableMaximizeColor = Color.Transparent;
+            nightControlBox1.DisableMinimizeColor = Color.Transparent;
+            nightControlBox1.EnableCloseColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.EnableMaximizeButton = false;
+            nightControlBox1.EnableMaximizeColor = Color.Transparent;
+            nightControlBox1.EnableMinimizeButton = false;
+            nightControlBox1.EnableMinimizeColor = Color.FromArgb(160, 160, 160);
+            nightControlBox1.Location = new Point(1017, 11);
+            nightControlBox1.MaximizeHoverColor = Color.Transparent;
+            nightControlBox1.MaximizeHoverForeColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverColor = Color.Transparent;
+            nightControlBox1.MinimizeHoverForeColor = Color.Transparent;
+            nightControlBox1.Name = "nightControlBox1";
+            nightControlBox1.Size = new Size(139, 31);
+            nightControlBox1.TabIndex = 20;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(192F, 192F);
@@ -245,10 +245,10 @@ namespace OOP
         private Button btnRegister;
         private Panel TopPanel;
         private Label Logintext;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private Label appName;
         private Label label3;
         private Label description;
         private Panel panel1;
+        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }

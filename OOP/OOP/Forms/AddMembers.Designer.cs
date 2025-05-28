@@ -55,7 +55,6 @@ namespace OOP.Forms // Changed namespace from OOP to OOP.Forms
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Admin",
             "Member"});
             this.comboBox1.Location = new System.Drawing.Point(208, 167);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
