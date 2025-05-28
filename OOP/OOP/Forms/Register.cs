@@ -86,9 +86,6 @@ namespace OOP
                 AvatarForm avatarForm = new AvatarForm(newUser.ID); // newUser.Id là ID của người dùng vừa đăng ký
                 if (avatarForm.ShowDialog() == DialogResult.OK)
                 {
-                    // Sau khi AvatarForm đóng với DialogResult.OK,
-                    // AvatarPresenter đã tự động lưu avatar vào database (nếu người dùng đã chọn Save).
-                    // Do đó, không cần gọi GetAvatarBytesFromView() hay cập nhật database ở đây nữa.
                     MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close(); // Đóng form Register
                 }
